@@ -11,9 +11,9 @@ navbar:
     - text: "The Afterschool Index"
       menu:
         - text: "Supply Index"
-          href: supplyindex.html
+          href: component-supply.html
         - text: "Demand Index"
-          href: demandindex.html
+          href: component-demand.html
         - text: "Demographics"
           href: demographics.html
     - text: "About"
