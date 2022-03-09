@@ -26,9 +26,5 @@ navbar:
           href: faq.html
         - text: "Data Dictionary"
           href: data.html
-base_url: https://childpovertyactionlab.github.io/dallas-afterschool/
-collections:
-  posts:
-    share: [twitter, linkedin]
 
 output: distill::distill_article
