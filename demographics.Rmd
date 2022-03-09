@@ -1,0 +1,31 @@
+---
+title: "Demographics Overlay"
+output:
+  distill::distill_article:
+    toc: false
+    theme: theme.css
+---
+
+```{r Set-Up Block, include = FALSE}
+##### Load Libraries #####
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(mapboxapi)
+library(htmltools)
+library(CPALtools)
+
+#### Load CRED Locations #####
+dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
+  st_transform(crs = 4269)
+
+dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
+  st_transform(crs = 4269)
+
+attDemand <- st_read(here::here("data/Demand Attributes.geojson")) %>%
+  st_transform(crs = 4269)
+
+attSupply <- st_read(here::here("data/Supply Attributes.geojson")) %>%
+  st_transform(crs = 4269)
+```
+

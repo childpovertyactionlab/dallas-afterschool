@@ -1,0 +1,34 @@
+name: "dallas-afterschool"
+title: "Dallas Afterschool Supply and Demand Analysis"
+theme: theme.css
+description: |
+  Examining the need for after school programs across Dallas County for Dallas Afterschool.
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "The Afterschool Index"
+      menu:
+        - text: "Supply Index"
+          href: supplyindex.html
+        - text: "Demand Index"
+          href: demandindex.html
+        - text: "Demographics"
+          href: demographics.html
+    - text: "About"
+      menu:
+        - text: "About the Index"
+          href: about.html
+        - text: "User Guide"
+          href: howto.html
+        - text: "FAQ"
+          href: faq.html
+        - text: "Data Dictionary"
+          href: data.html
+base_url: https://childpovertyactionlab.github.io/dallas-afterschool/
+collections:
+  posts:
+    share: [twitter, linkedin]
+
+output: distill::distill_article

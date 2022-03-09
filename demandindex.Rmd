@@ -1,0 +1,71 @@
+---
+title: "Demand Index"
+output:
+  distill::distill_article:
+    toc: false
+    theme: theme.css
+---
+
+```{r Set-Up Block, include = FALSE}
+##### Load Libraries #####
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(mapboxapi)
+library(htmltools)
+library(CPALtools)
+
+#### Load CRED Locations #####
+dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
+  st_transform(crs = 4269)
+
+dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
+  st_transform(crs = 4269)
+
+attDemand <- st_read(here::here("data/Demand Attributes.geojson")) %>%
+  st_transform(crs = 4269)
+
+attSupply <- st_read(here::here("data/Supply Attributes.geojson")) %>%
+  st_transform(crs = 4269)
+```
+
+```{r, Supply Attributes, echo = FALSE, message=FALSE, warning=FALSE, layout = "l-screen-inset shaded", fig.height=10}
+##### Leaflet Map #####
+brksSupply <- BAMMtools::getJenksBreaks(dasComponents$indexSupply, k = 6)
+brksDemand <- BAMMtools::getJenksBreaks(dasComponents$indexDemand, k = 6)
+
+palSupply <- colorBin("BuPu", domain = dasComponents$indexSupply, bins = brksSupply)
+palDemand <- colorBin("BuPu", domain = dasComponents$indexDemand, bins = brksDemand)
+
+leaflet() %>%
+#  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
+  addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
+  addPolygons(data = dasComponents,
+              fillColor = ~palDemand(indexDemand),
+              weight = 1,
+              opacity = 1,
+              color = "#686158",
+              #dashArray = "3",
+              fillOpacity = 0.7,
+              group = "Demand Component"
+              ) %>%
+  addPolygons(data = dallasCounty,
+              color = "#686158",
+              weight = 3,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              group = "Dallas County"
+              ) %>%
+  addLegend(data = dasComponents,
+            "bottomright", 
+            pal = palDemand, 
+            values = ~indexDemand,
+            title = "Demand Index",
+            #labFormat = labelFormat(prefix = "$"),
+             opacity = 1) %>%
+
+  addLayersControl(
+    overlayGroups = c("Dallas County", "Demand Component"),
+    position = "topright",
+    options = layersControlOptions(collapsed = FALSE))
+```

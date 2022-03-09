@@ -1,0 +1,17 @@
+---
+title: "Data Dictionary"
+output:
+  distill::distill_article:
+    toc: TRUE
+    theme: theme.css
+---
+
+### American Community Survey
+
+### Dallas Afterschool
+
+### Child and Adult Food Care Program
+
+### Texas Health and Human Services
+
+### Housing and Transportation Index

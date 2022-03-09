@@ -1,0 +1,21 @@
+---
+title: "About the Data"
+output:
+  distill::distill_article:
+    toc: TRUE
+    theme: theme.css
+---
+
+In order to assess the demand and supply of afterschool programs in Dallas County, the Child Poverty Action Lab...
+
+### Problem
+
+### Background
+
+### Data
+
+### Method
+
+### Results
+
+### Discussion
