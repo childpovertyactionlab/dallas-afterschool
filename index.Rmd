@@ -5,6 +5,6 @@ output:
     toc: false
     theme: theme.css
 ---
-Dallas After School Supply and Demand Analysis conducted by the Child Poverty Action Lab of Dallas
+## Introduction
 
-To navigate to your specified focus area, use the navigation bar in the upper right hand corner of the page and hover your mouse over the **Analysis** section.
+## Issue Statement

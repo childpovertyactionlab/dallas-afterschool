@@ -6,6 +6,7 @@ output:
     theme: theme.css
 ---
 
+## Supply and Demand Index
 ```{r Set-Up Block, include = FALSE}
 ##### Load Libraries #####
 library(tidyverse)
