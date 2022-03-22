@@ -1,10 +1,15 @@
 ---
-title: "Dallas Afterschool Analysis"
+title: "Afterschool Program Access"
 output:
   distill::distill_article:
     toc: false
     theme: theme.css
 ---
+
 ## Introduction
 
+[Brief introduction to what the index is for and how Dallas Afterschool plans to use it.]
+
 ## Issue Statement
+
+[Who is this designed to help and how?]
