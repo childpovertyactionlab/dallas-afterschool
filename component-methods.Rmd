@@ -2,18 +2,33 @@
 title: "Components and Methods"
 output:
   distill::distill_article:
-    toc: false
+    toc: TRUE
     theme: theme.css
 ---
-
-## Methods
-
-[Basic description of methodology and reason for use of components]
+## Understanding Afterschool Programs in Dallas County
+[Introduce the concept of supply and demand as individual components and how they can help identify gaps in Dallas County.]
 
 ## Existing Afterschool Environment
 
 [Describe metrics included in Existing Afterschool Environment and reasons for their inclusion]
 
+### Summary of Current Programs
+
+[Table or chart summarizing total number of programs and seats by type.]
+
+### Programs in Dallas County
+
+[ggplot2 map of Dallas Afterschool, CACFP, and HHS programs]
+
 ## Current Neighborhood Conditions
 
 [Describe metrics included in Current Neighborhood Conditions and reasons for their inclusion]
+
+### Expected Population
+
+[Summary of population variables for Dallas County. How many families/children do we expect could go to Afterschool programs in the county?]
+[Specific family types (Single-mother households, households below poverty, etc.)]
+
+## Methodology 
+
+[Basic description of methodology and reason for use of components]

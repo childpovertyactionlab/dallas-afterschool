@@ -2,11 +2,13 @@
 title: "Supply and Demand Index"
 output:
   distill::distill_article:
-    toc: false
+    toc: TRUE
     theme: theme.css
 ---
 
-## Supply and Demand Index
+## Topline results
+[Description of both indexes and results]
+
 ```{r Set-Up Block, include = FALSE}
 ##### Load Libraries #####
 library(tidyverse)
@@ -20,35 +22,81 @@ library(CPALtools)
 dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
   st_transform(crs = 4269)
 
-dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
+dasDemo <- st_read(here::here("data/ACS Demographic Metrics.geojson")) %>%
   st_transform(crs = 4269)
 
-attDemand <- st_read(here::here("data/Demand Attributes.geojson")) %>%
-  st_transform(crs = 4269)
+#unique(dasDemo$SDType)
+LHtype <- dasDemo %>%
+  filter(SDType == "LOW-HIGH")
 
-attSupply <- st_read(here::here("data/Supply Attributes.geojson")) %>%
-  st_transform(crs = 4269)
+#dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
+#  st_transform(crs = 4269)
+
+#attDemand <- st_read(here::here("data/Demand Attributes.geojson")) %>%
+#  st_transform(crs = 4269)
+
+#attSupply <- st_read(here::here("data/Supply Attributes.geojson")) %>%
+#  st_transform(crs = 4269)
 ```
 
-```{r, Supply Attributes, echo = FALSE, message=FALSE, warning=FALSE, layout = "l-screen-inset shaded", fig.height=10}
-##### Leaflet Map #####
-brksSupply <- BAMMtools::getJenksBreaks(dasComponents$indexSupply, k = 6)
-brksDemand <- BAMMtools::getJenksBreaks(dasComponents$indexDemand, k = 6)
+## Supply and Demand in Dallas County
+[Map showing indexes by census tract]
 
-palSupply <- colorBin("BuPu", domain = dasComponents$indexSupply, bins = brksSupply)
-palDemand <- colorBin("BuPu", domain = dasComponents$indexDemand, bins = brksDemand)
+[Include label popups for demographic information]
+
+```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+#names(dasDemo)
+popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
+               "<b>", "Median Household Income: ", "</b>", "$", dasDemo$mhiE, "<br>",
+               "<b>", "Total Population: ", "</b>", dasDemo$tot_popE, "<br>",
+               "<b>", "Asian (%): ", "</b>", round(dasDemo$as_per*100, digits =1), "%", "<br>",
+               "<b>", "Black (%): ", "</b>", round(dasDemo$bl_per*100, digits =1), "%", "<br>",
+               "<b>", "Hispanic (%) : ", "</b>", round(dasDemo$hi_per*100, digits =1), "%", "<br>",
+               "<b>", "White (%): ", "</b>", round(dasDemo$wh_per*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate (u18): ", "</b>", round(dasDemo$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Internet Access (%): ", "</b>", round(dasDemo$int_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mother Households (%): ", "</b>", round(dasDemo$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mother Households Below Poverty (%): ", "</b>", round(dasDemo$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Unemploymet Rate: ", "</b>", round(dasDemo$unemE*100, digits =1), "%"
+               )
+
+brksSupply <- BAMMtools::getJenksBreaks(dasDemo$indexSupply, k = 6)
+brksDemand <- BAMMtools::getJenksBreaks(dasDemo$indexDemand, k = 6)
+
+palSupply <- colorBin("BuPu", domain = dasDemo$indexSupply, bins = brksSupply)
+palDemand <- colorBin("BuPu", domain = dasDemo$indexDemand, bins = brksDemand)
 
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
-  addPolygons(data = dasComponents,
+  addPolygons(data = dasDemo,
               fillColor = ~palDemand(indexDemand),
               weight = 1,
               opacity = 1,
               color = "#686158",
               #dashArray = "3",
               fillOpacity = 0.7,
-              group = "Demand Component"
+              group = "Demand Component",
+              popup = ~popup
+              ) %>%
+  addPolygons(data = dasDemo,
+              fillColor = ~palSupply(indexSupply),
+              weight = 1,
+              opacity = 1,
+              color = "#686158",
+              #dashArray = "3",
+              fillOpacity = 0.7,
+              group = "Supply Component",
+              popup = ~popup
+              ) %>%
+  addPolygons(data = LHtype,
+              color = "#8996A0",
+              weight = 2,
+              fillColor = "#DC5034",
+              smoothFactor = 0.2, 
+              fillOpacity = 0.3,
+              group = "Typology",
+              popup = ~popup
               ) %>%
   addPolygons(data = dallasCounty,
               color = "#686158",
@@ -57,16 +105,30 @@ leaflet() %>%
               fillOpacity = 0,
               group = "Dallas County"
               ) %>%
-  addLegend(data = dasComponents,
+  addLegend(data = dasDemo,
             "bottomright", 
             pal = palDemand, 
             values = ~indexDemand,
             title = "Demand Index",
+            group = "Demand Component",
             #labFormat = labelFormat(prefix = "$"),
-             opacity = 1) %>%
+            opacity = 1) %>%
+  addLegend(data = dasDemo,
+            "bottomright", 
+            pal = palSupply, 
+            values = ~indexSupply,
+            title = "Supply Index",
+            group = "Supply Component",
+            #labFormat = labelFormat(prefix = "$"),
+            opacity = 1) %>%
 
   addLayersControl(
-    overlayGroups = c("Dallas County", "Demand Component"),
+    baseGroups = c("Demand Component", "Supply Component", "Typology"),
+    overlayGroups = c("Dallas County"),
     position = "topright",
     options = layersControlOptions(collapsed = FALSE))
+# %>% hideGroup("Dallas County")
 ```
+
+## Afterschool Program Access
+[Summaries and charts detailing the analysis and the types of people affected by low program supply.]

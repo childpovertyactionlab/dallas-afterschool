@@ -1,5 +1,5 @@
 name: "dallas-afterschool"
-title: "Dallas Afterschool Supply and Demand Analysis"
+title: "Dallas Afterschool Program Access"
 theme: theme.css
 favicon: images/favicon.ico
 description: |
@@ -20,7 +20,7 @@ navbar:
         - text: "Supply and Demand Index"
           href: supply-demand.html
         - text: "Priority Areas"
-          href: priorityareas.html
+          href: priority-areas.html
     - text: "About"
       menu:
         - text: "About the Index"
@@ -31,8 +31,6 @@ navbar:
           href: faq.html
         - text: "Data Dictionary"
           href: data.html
-        - text: "Dallas Aftershool"
-          href: https://dallasafterschool.org/
         - text: "Github"
           href: https://github.com/childpovertyactionlab/dallas-afterschool
           

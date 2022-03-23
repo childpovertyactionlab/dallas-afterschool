@@ -1,21 +1,27 @@
 ---
-title: "About the Data"
+title: "Methods White Paper"
 output:
   distill::distill_article:
     toc: TRUE
     theme: theme.css
 ---
 
-In order to assess the demand and supply of afterschool programs in Dallas County, the Child Poverty Action Lab...
+In order to assess the demand and supply of after school programs in Dallas County, the Child Poverty Action Lab...
 
 ### Problem
+[Problem statement that this analysis is attempting to answer. __from Dallas Afterschool__]
 
 ### Background
+[Why is this analysis being done? Why did Dallas Afterschool reach out to CPAL to conduct this analysis? __from Dallas Afterschool___]
 
 ### Data
+[What types of data sources are used for this analysis and what transformations were done to them in order to conduct the analysis? __from CPAL__]
 
 ### Method
+[What methodology was implemented to calculate each component, what was the process of Principal Components used? __from CPAL__]
 
 ### Results
+[What were the overall results seen from the analysis and did they answer the original problem statement? __from CPAL__]
 
 ### Discussion
+[How will this analysis be used and how can it be improved in future iterations? __from CPAL__]

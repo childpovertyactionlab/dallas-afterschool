@@ -1,11 +1,10 @@
 ---
-title: "Afterschool Program Access"
+title: "Afterschool Supply and Demand in Dallas County"
 output:
   distill::distill_article:
-    toc: false
+    toc: FALSE
     theme: theme.css
 ---
-
 ## Introduction
 
 [Brief introduction to what the index is for and how Dallas Afterschool plans to use it.]

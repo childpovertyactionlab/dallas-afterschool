@@ -2,30 +2,26 @@
 title: "Priority Areas"
 output:
   distill::distill_article:
-    toc: false
+    toc: TRUE
     theme: theme.css
 ---
 
-```{r Set-Up Block, include = FALSE}
-##### Load Libraries #####
-library(tidyverse)
-library(sf)
-library(leaflet)
-library(mapboxapi)
-library(htmltools)
-library(CPALtools)
+## Typology of Program Access
 
-#### Load CRED Locations #####
-dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
-  st_transform(crs = 4269)
+[Description of (Demand-Supply) HIGH-HIGH, HIGH-LOW, LOW-HIGH, LOW-LOW demand in afterschool programs]
 
-dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
-  st_transform(crs = 4269)
+[ggplot2 scatterplot and table visualizing each typology and counts of tracts.]
 
-attDemand <- st_read(here::here("data/Demand Attributes.geojson")) %>%
-  st_transform(crs = 4269)
+## Characteristics of LOW-HIGH
 
-attSupply <- st_read(here::here("data/Supply Attributes.geojson")) %>%
-  st_transform(crs = 4269)
-```
+[Summaries of the demographics of LOW-HIGH group]
 
+[Leaflet map displaying LOW-HIGH census tracts.]
+
+## Recommendations for LOW-HIGH
+
+[List of recommendations for LOW-HIGH typology]
+
+## Insights on Other Typologies
+
+[Any additional important insight for other typology groups, maybe unnecessary.]

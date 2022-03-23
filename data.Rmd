@@ -7,11 +7,16 @@ output:
 ---
 
 ### American Community Survey
+[Links to the ACS and list out all variables and tables used from it.]
 
 ### Dallas Afterschool
+[DAS as main source, what types of programs were included?]
 
 ### Child and Adult Food Care Program
+[CACFP program description]
 
 ### Texas Health and Human Services
+[Which TXHHS programs were included in the analysis and what exclusions were there/]
 
 ### Housing and Transportation Index
+[Which H+T measure were included?]
