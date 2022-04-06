@@ -6,22 +6,14 @@ output:
     theme: theme.css
 ---
 ```{r, import and set-up, include=FALSE}
-library(tidyvere)
+library(tidyverse)
 library(sf)
 library(CPALtools)
-datalib <- "E:/CPAL Dropbox/" # Michael Desktop Directory
-#datalib <- "C:/Users/micha/CPAL Dropbox/"
+#datalib <- "E:/CPAL Dropbox/" # Michael Desktop Directory
+datalib <- "C:/Users/micha/CPAL Dropbox/"
 
-DallasStreets <- st_read(paste0(datalib, "Living Wage Jobs/04_Projects/Housing Audit/Data/Housing Audit Current State.gpkg"), layer = "City of Dallas Streets") %>%
-  filter(CLASS %in% c("DALLAS AREA HIGHWAY", "HIGHWAY", "MAJOR ARTERIAL"))
-
-DallasHighway <- DallasStreets %>%
-  filter(CLASS %in% c("DALLAS AREA HIGHWAY", "HIGHWAY")) %>%
-  st_transform(crs = 6584)
-
-DallasMajor <- DallasStreets %>%
-  filter(CLASS %in% "MAJOR ARTERIAL") %>%
-  st_transform(crs = 6584)
+dallasCounty <- st_read("data/dallasCounty.geojson") %>%
+  st_transform(crs = 4269)
 
 das_metrics <- st_read("data/Calculated Tract Metrics.geojson") %>%
   st_transform(crs = 4269)
@@ -33,7 +25,8 @@ dotdensity <- st_read("data/dotdensityPopulation.geojson") %>%
 ## Understanding Afterschool Programs in Dallas County
 [Introduce the concept of supply and demand as individual components and how they can help identify gaps in Dallas County.]
 Dallas Afterschool Programs by Census Tract
-```{r, map of DAS afterschool programs in county, warning=FALSE}
+
+```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 # Generate Jenks Breaks for plot
 brks_das <- c(0, 1, 3, 6, 10)
 das_metrics$group <- cut(das_metrics$dasPrograms,
@@ -80,7 +73,9 @@ ggplot() +
 
 ```
 
-```{r, dot density population, warning=FALSE}
+Population dot density by race/ethnicity
+
+```{r, dot density population, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 ggplot() +
   geom_sf(data = dotdensity,
           aes(color = variable),

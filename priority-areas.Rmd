@@ -80,10 +80,13 @@ typologytable <- das_metrics %>%
 ## Typology of Program Access
 
 [Description of (Demand-Supply) HIGH-HIGH, HIGH-LOW, LOW-HIGH, LOW-LOW demand in afterschool programs]
-```{r, Typology Table}
+
+```{r, Typology Table, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 typologytable
 ```
+
 [ggplot2 scatterplot and table visualizing each typology and counts of tracts.]
+
 ```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
