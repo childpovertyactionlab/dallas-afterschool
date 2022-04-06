@@ -25,18 +25,17 @@ dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
 dasDemo <- st_read(here::here("data/ACS Demographic Metrics.geojson")) %>%
   st_transform(crs = 4269)
 
-#unique(dasDemo$SDType)
-LHtype <- dasDemo %>%
-  filter(SDType == "LOW-HIGH")
+dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
+  st_transform(crs = 4269) %>%
+  mutate(IndexGroup = ifelse(DesertBrks == "[ -58, -34 ]", "Extreme Need", 
+                             ifelse(DesertBrks ==  "(-34,-11]", "High Need", 
+                                    ifelse(DesertBrks ==  "(-11,15]", "Moderate Need", 
+                                           ifelse(DesertBrks == "(15,50]", "Moderate Excess", 
+                                                  ifelse(DesertBrks == "(50,98]", "High Excess", 
+                                                         ifelse(is.na(DesertBrks), NA, "ERROR")))))))
 
-#dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
-#  st_transform(crs = 4269)
-
-#attDemand <- st_read(here::here("data/Demand Attributes.geojson")) %>%
-#  st_transform(crs = 4269)
-
-#attSupply <- st_read(here::here("data/Supply Attributes.geojson")) %>%
-#  st_transform(crs = 4269)
+desert_en <- dasComponents %>%
+  filter(IndexGroup == "Extreme Need")
 ```
 
 ## Supply and Demand in Dallas County
@@ -57,46 +56,45 @@ popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
                "<b>", "Internet Access (%): ", "</b>", round(dasDemo$int_per*100, digits =1), "%", "<br>",
                "<b>", "Single-Mother Households (%): ", "</b>", round(dasDemo$smhh_per*100, digits =1), "%", "<br>",
                "<b>", "Single-Mother Households Below Poverty (%): ", "</b>", round(dasDemo$smhh_bpE*100, digits =1), "%", "<br>",
-               "<b>", "Unemploymet Rate: ", "</b>", round(dasDemo$unemE*100, digits =1), "%"
+               "<b>", "Unemployment Rate: ", "</b>", round(dasDemo$unemE*100, digits =1), "%"
                )
 
-brksSupply <- BAMMtools::getJenksBreaks(dasDemo$indexSupply, k = 6)
-brksDemand <- BAMMtools::getJenksBreaks(dasDemo$indexDemand, k = 6)
+brksSupply <- BAMMtools::getJenksBreaks(dasComponents$indexSupply, k = 6)
+brksDemand <- BAMMtools::getJenksBreaks(dasComponents$indexDemand, k = 6)
 
-palSupply <- colorBin("BuPu", domain = dasDemo$indexSupply, bins = brksSupply)
-palDemand <- colorBin("BuPu", domain = dasDemo$indexDemand, bins = brksDemand)
+palSupply <- colorBin("PuBu", domain = dasComponents$indexSupply, bins = brksSupply)
+palDemand <- colorBin("OrRd", domain = dasComponents$indexDemand, bins = brksDemand)
 
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
-  addPolygons(data = dasDemo,
+  addPolygons(data = dasComponents,
               fillColor = ~palDemand(indexDemand),
               weight = 1,
               opacity = 1,
               color = "#686158",
               #dashArray = "3",
-              fillOpacity = 0.7,
+              fillOpacity = 0.6,
               group = "Demand Component",
               popup = ~popup
               ) %>%
-  addPolygons(data = dasDemo,
+  addPolygons(data = dasComponents,
               fillColor = ~palSupply(indexSupply),
               weight = 1,
               opacity = 1,
               color = "#686158",
               #dashArray = "3",
-              fillOpacity = 0.7,
+              fillOpacity = 0.6,
               group = "Supply Component",
               popup = ~popup
               ) %>%
-  addPolygons(data = LHtype,
-              color = "#8996A0",
+  addPolygons(data = desert_en,
               weight = 2,
-              fillColor = "#DC5034",
-              smoothFactor = 0.2, 
-              fillOpacity = 0.3,
-              group = "Typology",
-              popup = ~popup
+              opacity = 1,
+              color = "red",
+              #dashArray = "3",
+              fillOpacity = 0,
+              group = "Extreme Need"
               ) %>%
   addPolygons(data = dallasCounty,
               color = "#686158",
@@ -105,7 +103,7 @@ leaflet() %>%
               fillOpacity = 0,
               group = "Dallas County"
               ) %>%
-  addLegend(data = dasDemo,
+  addLegend(data = dasComponents,
             "bottomright", 
             pal = palDemand, 
             values = ~indexDemand,
@@ -113,7 +111,7 @@ leaflet() %>%
             group = "Demand Component",
             #labFormat = labelFormat(prefix = "$"),
             opacity = 1) %>%
-  addLegend(data = dasDemo,
+  addLegend(data = dasComponents,
             "bottomright", 
             pal = palSupply, 
             values = ~indexSupply,
@@ -123,11 +121,11 @@ leaflet() %>%
             opacity = 1) %>%
 
   addLayersControl(
-    baseGroups = c("Demand Component", "Supply Component", "Typology"),
-    overlayGroups = c("Dallas County"),
+    overlayGroups = c("Demand Component", "Supply Component", "Extreme Need"),
+    baseGroups = c("Dallas County"),
     position = "topright",
-    options = layersControlOptions(collapsed = FALSE))
-# %>% hideGroup("Dallas County")
+    options = layersControlOptions(collapsed = FALSE)) %>% 
+  hideGroup("Extreme Need")
 ```
 
 ## Afterschool Program Access
