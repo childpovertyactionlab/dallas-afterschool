@@ -10,7 +10,7 @@ output:
 [Introduce the concept of supply and demand as individual components and how they can help identify gaps in Dallas County.]
 Dallas Afterschool Programs by Census Tract
 
-```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 # Generate Jenks Breaks for plot
 brks_das <- BAMMtools::getJenksBreaks(dasmetrics$ProgSqMi, k = 6)
 dasmetrics$group <- cut(dasmetrics$ProgSqMi,
@@ -52,7 +52,7 @@ ggplot() +
 
 Population dot density by race/ethnicity
 
-```{r, dot density population, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+```{r, dot density population, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 ggplot() +
   geom_sf(data = dotdensity,
           aes(color = variable),
@@ -85,12 +85,74 @@ ggplot() +
 
 ### Summary of Current Programs
 
-[Table or chart summarizing total number of programs and seats by type.]
+```{r, table of programs, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
+das <- das_programs %>%
+  st_drop_geometry(.) %>%
+  dplyr::summarise(count = n(),
+                   capacity = sum(max_capacity)) %>%
+  mutate(source = "Dallas Afterschool",
+         avgseats = round(capacity/count))
+
+hhs <- hhs_programs %>%
+  st_drop_geometry(.) %>%
+  dplyr::summarise(count = n(),
+                   capacity = sum(capacity)) %>%
+  mutate(source = "Texas Health and Human Services",
+         avgseats = round(capacity/count))
+
+cacfp <- cacfp_programs %>%
+  st_drop_geometry(.) %>%
+  dplyr::summarise(count = n(),
+                   capacity = sum(site_license_capacity, na.rm = TRUE)) %>%
+  mutate(source = "Child and Adult Food Care Program",
+         avgseats = round(capacity/count))
+
+programcount <- full_join(das, cacfp) %>%
+  full_join(hhs) %>%
+  select(source, count, capacity, avgseats)
+
+programcount %>%
+  knitr::kable(.,
+               col.names = c('', 'Total Programs', 'Seat Capacity', 'Average Seats'))
+
+```
 
 ### Programs in Dallas County
 
-[ggplot2 map of Dallas Afterschool, CACFP, and HHS programs]
+cacfp = orange
+hhs = red
+das = blue
+```{r, map of programs in dallas county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
+# Generate Plot
+ggplot() +
+  geom_sf(data = cacfp_programs, color = "orange") +
+  geom_sf(data = hhs_programs, color = "red") +
+  geom_sf(data = das_programs, color = "blue") +
+  geom_sf(data = dallasCounty, color = "#323232", fill = NA, size = 2) +
+  geom_sf(data = highways, color = "#323232", size = 1) +
+#  scale_fill_brewer(name = "",
+#                    palette = "BuPu",
+#                    label = labs_plot,
+#                    guide = guide_legend(direction = "horizontal",
+#                                         nrow = 1,
+#                                         label.position = "top")) +
+  labs(title = "Afterschool Programs in Dallas County",
+       subtitle = "DAS, CACFP, and HHS",
+       x = "",
+       y = "",
+       color = "") +
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.key.width = unit(0.5, units = "in"),
+        plot.caption = element_text(size = 36, face = "italic"),
+        legend.spacing = unit(0, "in"), 
+        legend.key.height = unit(0.25, "in"), 
+        legend.spacing.x = unit(0.1, "in"), 
+        legend.justification = "center",
+        legend.margin=margin(4,4,4,4),
+        legend.box.spacing = margin(0.5))
 
+```
 ## Current Neighborhood Conditions
 
 [Describe metrics included in Current Neighborhood Conditions and reasons for their inclusion]

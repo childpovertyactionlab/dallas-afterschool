@@ -46,13 +46,23 @@ dasmetrics <- st_read("data/Calculated Tract Metrics.geojson") %>%
          ProgSqMi = TotPrograms/AreaSqMi,
          eligDen = eligPop/AreaSqMi)
 
+das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
+  st_transform(crs = 4269) %>%
+  .[dallasCounty, ]
+hhs_programs <- st_read(here::here("data/hhsPrograms.geojson")) %>%
+  st_transform(crs = 4269) %>%
+  .[dallasCounty, ] 
+cacfp_programs <- st_read(here::here("data/cacfpprograms.geojson")) %>%
+  st_transform(crs = 4269)  %>%
+  .[dallasCounty, ]
+
 ```
 
 ## Introduction
 
 There are 381,376 children between the ages of 5 and 14 in Dallas County. All these children qualify for afterschool programs. However, for every child in an afterschool program in Dallas, three are waiting for an available program. That leaves over 100,000 children between the ages of 5 and 14 without adult supervision or enrichment opportunities. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety.
 
-```{r, map of density of children between 5 and 14 in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+```{r, map of density of children between 5 and 14 in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 # Generate Jenks Breaks for plot
 brks_das <- BAMMtools::getJenksBreaks(dasmetrics$eligDen, k = 6)
 dasmetrics$group <- cut(dasmetrics$eligDen,
