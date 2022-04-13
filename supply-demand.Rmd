@@ -7,41 +7,8 @@ output:
 ---
 
 ## Topline results
-[Description of both indexes and results]
-
-```{r Set-Up Block, include = FALSE}
-##### Load Libraries #####
-library(tidyverse)
-library(sf)
-library(leaflet)
-library(mapboxapi)
-library(htmltools)
-library(CPALtools)
-
-#### Load CRED Locations #####
-dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
-  st_transform(crs = 4269)
-
-dasDemo <- st_read(here::here("data/ACS Demographic Metrics.geojson")) %>%
-  st_transform(crs = 4269)
-
-dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
-  st_transform(crs = 4269) %>%
-  mutate(IndexGroup = ifelse(DesertBrks == "[ -58, -34 ]", "Extreme Need", 
-                             ifelse(DesertBrks ==  "(-34,-11]", "High Need", 
-                                    ifelse(DesertBrks ==  "(-11,15]", "Moderate Need", 
-                                           ifelse(DesertBrks == "(15,50]", "Moderate Excess", 
-                                                  ifelse(DesertBrks == "(50,98]", "High Excess", 
-                                                         ifelse(is.na(DesertBrks), NA, "ERROR")))))))
-
-desert_en <- dasComponents %>%
-  filter(IndexGroup == "Extreme Need")
-```
 
 ## Supply and Demand in Dallas County
-[Map showing indexes by census tract]
-
-[Include label popups for demographic information]
 
 ```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 #names(dasDemo)
@@ -88,14 +55,6 @@ leaflet() %>%
               group = "Supply Component",
               popup = ~popup
               ) %>%
-  addPolygons(data = desert_en,
-              weight = 2,
-              opacity = 1,
-              color = "red",
-              #dashArray = "3",
-              fillOpacity = 0,
-              group = "Extreme Need"
-              ) %>%
   addPolygons(data = dallasCounty,
               color = "#686158",
               weight = 3,
@@ -103,6 +62,14 @@ leaflet() %>%
               fillOpacity = 0,
               group = "Dallas County"
               ) %>%
+  addPolygons(data = highways,
+              color = "#686158",
+              weight = 2,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              group = "Dallas County"
+              ) %>%
+
   addLegend(data = dasComponents,
             "bottomright", 
             pal = palDemand, 
@@ -121,7 +88,7 @@ leaflet() %>%
             opacity = 1) %>%
 
   addLayersControl(
-    overlayGroups = c("Demand Component", "Supply Component", "Extreme Need"),
+    overlayGroups = c("Demand Component", "Supply Component"),
     baseGroups = c("Dallas County"),
     position = "topright",
     options = layersControlOptions(collapsed = FALSE)) %>% 

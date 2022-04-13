@@ -2425,27 +2425,66 @@ About
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#problem">Problem</a></li>
-<li><a href="#background">Background</a></li>
-<li><a href="#data">Data</a></li>
-<li><a href="#method">Method</a></li>
-<li><a href="#results">Results</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-indices">The Indices</a>
+<ul>
+<li><a href="#existing-after-school-environment-supply-index">Existing After School Environment (Supply Index)</a></li>
+<li><a href="#current-neighborhood-conditions-demand-index">Current Neighborhood Conditions (Demand Index)</a></li>
+</ul></li>
+<li><a href="#data">Data</a>
+<ul>
+<li><a href="#american-community-survey">American Community Survey</a></li>
+<li><a href="#dallas-afterschool">Dallas Afterschool</a></li>
+<li><a href="#child-and-adult-food-care-program">Child and Adult Food Care Program</a></li>
+<li><a href="#texas-health-and-human-services">Texas Health and Human Services</a></li>
+<li><a href="#housing-and-transportation-index">Housing and Transportation Index</a></li>
+</ul></li>
+<li><a href="#method">Method</a>
+<ul>
+<li><a href="#data-collection-processing">Data Collection + Processing</a></li>
+<li><a href="#test-for-normality-standardization">Test for Normality + Standardization</a></li>
+<li><a href="#principal-components-analysis-index-creation">Principal Components Analysis + Index Creation</a></li>
+<li><a href="#typology-group-creation">Typology Group Creation</a></li>
+</ul></li>
+<li><a href="#findings-results">Findings + Results</a></li>
 <li><a href="#discussion">Discussion</a></li>
 </ul>
 </nav>
 </div>
-<p>In order to assess the demand and supply of after school programs in Dallas County, the Child Poverty Action Lab…</p>
-<h3 id="problem">Problem</h3>
-<p>[Problem statement that this analysis is attempting to answer. <strong>from Dallas Afterschool</strong>]</p>
-<h3 id="background">Background</h3>
-<p>[Why is this analysis being done? Why did Dallas Afterschool reach out to CPAL to conduct this analysis? <strong>from Dallas Afterschool</strong>_]</p>
-<h3 id="data">Data</h3>
-<p>[What types of data sources are used for this analysis and what transformations were done to them in order to conduct the analysis? <strong>from CPAL</strong>]</p>
-<h3 id="method">Method</h3>
-<p>[What methodology was implemented to calculate each component, what was the process of Principal Components used? <strong>from CPAL</strong>]</p>
-<h3 id="results">Results</h3>
+<h3 id="introduction">Introduction</h3>
+<p>The Child Poverty Action Lab, in collaboration with Dallas Afterschool developed the Afterschool Program Access Index in order to understand the landscape of afterschool program access across Dallas County and identify where gaps currently exist. The index was developed in order to aid Dallas Afterschool in identifying where to make programmatic investments across Dallas County. The Afterschool Program Access Index focuses on the current supply and prospective demand of afterschool programs available for children between 5 and 14 years of age. In order to accomplish this relevant data was compiled within our two indices: existing after school environment (supply) and current neighborhood conditions (demand). This data was then standardized and combined into each index following the result of a Principal Components Analysis. Indicators were then weighted to calculate each index based on the results of PCA dimensions affiliated with a given census tract. The intersection of each index was then used to determine geographies of high demand and low supply across Dallas County.</p>
+<h2 id="the-indices">The Indices</h2>
+<p>The Afterschool Access Index contains two indices scored on a 0 to 100 scale.</p>
+<h3 id="existing-after-school-environment-supply-index">Existing After School Environment (Supply Index)</h3>
+<p>Census tracts with a high score on this index have a higher density afterschool programs and more program seats available relative to the number of eligible children (between 5 to 14) in a given geographic area.</p>
+<h3 id="current-neighborhood-conditions-demand-index">Current Neighborhood Conditions (Demand Index)</h3>
+<p>Census tracts with a high score on this index have a proportion of families and households with after school program needs. A high score indicates a larger proportion of single-mother households, children below poverty, lower median household income, food insecurity, and lower transportation accessibility.</p>
+<h2 id="data">Data</h2>
+<p>The Afterschool Program Access Index was calculated using locally and nationally available data, most of which is publicly accessible by default. To understand all of the data that we used to create these estimates, visit the Data Dictionary.</p>
+<h3 id="american-community-survey">American Community Survey</h3>
+<p>[Links to the ACS and list out all variables and tables used from it.]</p>
+<h3 id="dallas-afterschool">Dallas Afterschool</h3>
+<p>Data on afterschool program locations and attributes was provided by Dallas Afterschool. An extract of their database, as of {date of extract} is hosted on the project Github (link). For more up-to-date information and further inquiries around afterschool program data, please contact Dalla Afterschool (provide contact info here).</p>
+<h3 id="child-and-adult-food-care-program">Child and Adult Food Care Program</h3>
+<p>[CACFP program description]</p>
+<h3 id="texas-health-and-human-services">Texas Health and Human Services</h3>
+<p>[Which TXHHS programs were included in the analysis and what exclusions were there?]</p>
+<h3 id="housing-and-transportation-index">Housing and Transportation Index</h3>
+<p>[Which H+T measure were included?]</p>
+<h2 id="method">Method</h2>
+<h3 id="data-collection-processing">Data Collection + Processing</h3>
+<p>Data used for the Afterschool Program Access Index was sourced from a variety of public and private sources as detailed in the ‘Data’ section above. Data for this project largely comes at two different scales: Census tract level data produced by the Census Bureau, as well as point-level afterschool program data produced by Dallas Afterschool, the USDA, and Texas Department of Human and Health Services.</p>
+<p>Data from the U.S. Census Bureau was accessed through the TidyCensus package in R at the census tract level. Remaining data was accessed as a flat file from original data sources.</p>
+<p>All data was then processed using a suite of R packages from the such as sf, dplyr, and stringr in order to filter out any programs that were not related to after school programming across Dallas County. Points features were then summarized to census tract levels and metrics related to percent, total value, density, and rate per capita were calculated.</p>
+<p>For indicators in the total value category the goal was to sum all relevant inputs to and obtain the sum value as an indicator (e.g. total Dallas Afterschool Programs). Indicators in the rate per capita category contained inputs which were divided by the relevant population which was divided by 10,000 (e.g. Program seats per 10,000 eligible children). The percentage category was calculated by dividing the relevant input by the relevant population (e.g. percent single-mother households). With these three categories we were able to create a holistic understanding of the supply and demand of afterschool programs.</p>
+<p>All data frames were exported into a geopackage database for further analysis.</p>
+<h3 id="test-for-normality-standardization">Test for Normality + Standardization</h3>
+<p>Once the indicators were calculated it was necessary to transform our variables into a proper standard before calculating the indexes. To do so a test of normality (Shapiro-Wilks) was conducted in order to determine if the data fell within a normal distribution. Indicators which were determined to not fall within a normal distribution by the Shapiro-Wilks test were subsequently log transformed. It was also determined that all indicators must be directionally aligned, to do so any indicators which were related to negative outcomes were multiplied by negative one. This transformation meant that negative indicators would also have negative values, whereas positive indicators would have positive values. The next step involved taking the log transformed indicators and converting them into z-scores in order to have all values within the same scale.</p>
+<h3 id="principal-components-analysis-index-creation">Principal Components Analysis + Index Creation</h3>
+<h3 id="typology-group-creation">Typology Group Creation</h3>
+<h2 id="findings-results">Findings + Results</h2>
 <p>[What were the overall results seen from the analysis and did they answer the original problem statement? <strong>from CPAL</strong>]</p>
-<h3 id="discussion">Discussion</h3>
+<h2 id="discussion">Discussion</h2>
 <p>[How will this analysis be used and how can it be improved in future iterations? <strong>from CPAL</strong>]</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

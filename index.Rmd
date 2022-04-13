@@ -5,10 +5,111 @@ output:
     toc: FALSE
     theme: theme.css
 ---
+
+```{r Set-Up Block, include = FALSE}
+##### Load Libraries #####
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(mapboxapi)
+library(htmltools)
+library(CPALtools)
+library(knitr)
+
+dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
+  st_transform(crs = 4269)
+
+dasDemo <- st_read(here::here("data/ACS Demographic Metrics.geojson")) %>%
+  st_transform(crs = 4269)
+
+dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
+  st_transform(crs = 4269) 
+
+acsmetrics <- st_read("data/ACS Demographic Metrics.geojson")
+
+highways <- st_read(here::here("data/dallasHighways.geojson")) %>%
+  st_transform(crs = 4269) 
+
+citycouncil <- st_read(here::here("data/citycouncil.geojson")) %>%
+  st_transform(crs = 4269) 
+
+dotdensity <- st_read(here::here("data/dotdensityPopulation.geojson")) %>%
+  st_transform(crs = 4269) 
+
+dasmetrics <- st_read("data/Calculated Tract Metrics.geojson") %>%
+  st_transform(crs = 4269) %>%
+  select(-NAME, -mi_smhhE, -unemE, -smhhbp_per, -bp_per, -cpr, -int_per) %>%
+  left_join(., st_drop_geometry(dasComponents)) %>%
+  left_join(., st_drop_geometry(acsmetrics)) %>%
+  mutate(TotSeats = hhsSeats+dasSeats+cacfpSeats,
+         TotPrograms = hhsPrograms+dasPrograms+cacfpPrograms,
+         ProgSqMi = TotPrograms/AreaSqMi,
+         eligDen = eligPop/AreaSqMi)
+
+```
+
 ## Introduction
 
-[Brief introduction to what the index is for and how Dallas Afterschool plans to use it.]
+There are 381,376 children between the ages of 5 and 14 in Dallas County. All these children qualify for afterschool programs. However, for every child in an afterschool program in Dallas, three are waiting for an available program. That leaves over 100,000 children between the ages of 5 and 14 without adult supervision or enrichment opportunities. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety.
+
+```{r, map of density of children between 5 and 14 in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+# Generate Jenks Breaks for plot
+brks_das <- BAMMtools::getJenksBreaks(dasmetrics$eligDen, k = 6)
+dasmetrics$group <- cut(dasmetrics$eligDen,
+                             breaks = brks_das,
+                       include.lowest = TRUE)
+labs_das <- round(brks_das)
+
+# Generate labels based on Jenks breaks for plot
+labs_plot <- paste0("(", labs_das[1:5], " - ", labs_das[2:6], ")")
+
+# Generate Plot
+ggplot() +
+  geom_sf(data = dasmetrics, aes(fill = group), color = "#595959") +
+  geom_sf(data = dallasCounty, color = "#323232", fill = NA, size = 2) +
+  geom_sf(data = highways, color = "#323232", size = 1) +
+  scale_fill_brewer(name = "",
+                    palette = "BuPu",
+                    label = labs_plot,
+                    guide = guide_legend(direction = "horizontal",
+                                         nrow = 1,
+                                         label.position = "top")) +
+  labs(title = "Children Between 5 and 14 in Dallas County (per SqMi)",
+       subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
+       x = "",
+       y = "",
+       color = "") +
+  theme_void() +
+  theme(legend.position = "bottom",
+        legend.key.width = unit(0.5, units = "in"),
+        plot.caption = element_text(size = 36, face = "italic"),
+        legend.spacing = unit(0, "in"), 
+        legend.key.height = unit(0.25, "in"), 
+        legend.spacing.x = unit(0.1, "in"), 
+        legend.justification = "center",
+        legend.margin=margin(4,4,4,4),
+        legend.box.spacing = margin(0.5))
+
+```
+
+## Why OST Matters
+
+Research shows that afterschool programs provide essential services for children and their families. Afterschool programs keep youth safe, support working families, and inspire kids to learn and stay engaged in school. Dallas children enrolled in a program are receiving critical support like homework support **(64%)**, life skills **(69%)**, STEM instruction **(75%)**, meals or healthy snacks **(68%)**, and social emotional connection **(81%)**. These benefits offer opportunities to bridge the achievement gap between students of lower socioeconomic status and their more affluent peers. Additionally, Dallas parents report that afterschool programs are a lifeline for their families. EXPAND 
+
+## COVID-19
+
+Afterschool and summer programs have not been exempt from the stress and economic strain of the pandemic. 
+* Workforce
+* Capacity 
+
+The afterschool field is an integral component of local communities and is demonstrably crucial to the post-pandemic recovery. As communities continue to feel the impact of COVID, youth will need expanded support to emerge from this crisis stronger, resilient, and ready to thrive. 
+
+## Purpose of Tool
+
+Dallas Afterschool seeks to provide free and low-cost afterschool and summer programming available to all students in Dallas County. To improve access to afterschool programs across Dallas County, Dallas Afterschool seeks to understand, at the systems-level, both where current programs and seats are located and where additional seats are needed. Equipped with this information, Dallas Afterschool can work with afterschool providers, government officials, schools, and funders to address gaps in afterschool availability and build on the strength of existing programs. 
 
 ## Issue Statement
 
 [Who is this designed to help and how?]
+
+## Background
