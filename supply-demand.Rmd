@@ -6,9 +6,26 @@ output:
     theme: theme.css
 ---
 
-## Topline results
+## Why are we using scores?
+
+The afterschool program environment is dynamic. Programs may open or close, add or remove seats based on changes in staffing, or move locations at almost any time. Dallas Afterschool closely monitors  the overall afterschool landscape, but specific changes may not be available in real time. Additionally, the characteristics of local communities, measured by the U.S. Census Bureau, are based on a relatively small - but robust - sample of the population as recently as two years ago. More recent changes, like the impact of Covid on communities across the United States, may not be reflected in the underlying census data that we use to assess the need for afterschool programming. 
+
+As a result, it is not possible to  identify the exact number of afterschool seats that are needed in a community to address unmet demand. We may know that a program has the capacity for 50 students, but we may not know that the program has  a waitlist of 75 students. To account for this gap in our analysis, we have developed two sets of scores that can measure the relative position of a neighborhood's  afterschool environment: 1) the supply of seats and programs and 2) the potential need or demand for afterschool programming based on population characteristics. 
+
+We assess these two components through the creation of two indices, which produce scores ranging from 0 to 100. A census tract with a Supply Score of 58 suggests that relative to all other census tracts within Dallas County this particular location is generally in the middle of the pack when it comes to the availability of afterschool programs and seats. Were you looking to incorporate new programs into a community, this hypothetical Census tract [more info?] 
+
+## What the scores are not
+
+The methodology used to generate the supply and demand scores focuses its intent in analyzing areas of the county where additional afterschool programming may have an outsized impact in providing children with additional enrichment opportunities and adult supervision.
+
+The demographic characteristics that make up the demand score includes metrics related to eligible population, single-mother households, household income, child poverty rate, SNAP receiving households, and transportation accessibility weighted against one another. Whereas the supply score is assessed based on a combination of the density of programs, seats to eligible population, count of total programs, and count of total seats. Based on these characteristics communities are identified where each metric  interacts with one another most commonly in Dallas County.
+
+Because these characteristics can often overlap between one another within a household it's important to note that we are not generating an exact count of the needed program seats. These scores are relative measures of today's landscape identifying where seats may be needed most given what we know of programs and populations.
 
 ## Supply and Demand in Dallas County
+
+As seen in the graphic below, the distribution of supply scores through this analysis reveals that a plurality of census tracts in Dallas County currently have a high score (above 75) with the remaining scores being distributed across the lower half of scores. This reveals a disparity in the county of where afterschool programs 
+
 ```{r, Supply Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
 dasComponents %>%
   ggplot(aes(x = indexSupply)) +
@@ -29,6 +46,8 @@ dasComponents %>%
         legend.margin=margin(4,4,4,4),
         legend.box.spacing = margin(0.5))
 ```
+
+The distribution of demand scores below reveals that the majority of census tracts in Dallas County have a moderately high demand (scores between 55-65) for programming based on our analysis
 
 ```{r, Demand Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
 dasComponents %>%
@@ -51,6 +70,7 @@ dasComponents %>%
         legend.box.spacing = margin(0.5))
 ```
 
+The map below visualizes the supply and demand scores for each census tract. By toggling the layer selection on the top right of the map you will be able to view each score. By clicking on any given census tract a popup will appear as well displaying a variety of demographic metrics of interest including race/ethnicity, income, and employment characteristics.
 
 ```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 #names(dasDemo)

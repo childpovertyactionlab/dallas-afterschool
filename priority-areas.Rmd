@@ -83,7 +83,16 @@ typeJoin %>%
 
 These groups were then compared against one another in order to identify areas of the county with high demand for afterschool programs relative to the current supply. With this analysis **21** census tracts were identified as having Moderate Low Supply to Moderate High Demand, and **11** census tracts were identified as having Moderate Low Supply to High Demand.
 
-[ggplot2 scatterplot and table visualizing each typology and counts of tracts.]
+## Primary Typologies
+
+With our classification methods we were able to identify 12 unique categories of need for afterschool programming in Dallas County, which we further classified into three primary categories.
+
+* Supply > Demand: A census tract where the supply score significantly exceeds the demand score. Census tracts in this category tend to have a higher number of program seats available relative to the eligible population.
+
+* Supply < Demand: A census tract where the demand score significantly exceeds the supply score. Census tracts in this category tend to have a lower number of program seats available relative to the eligible population.
+
+* Supply = Demand: A census tract where the supply score and demand score are similar to one another. Census tracts in this category tend to have a similar number of available program seats relative to the eligible population.
+
 
 ```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 leaflet() %>%
@@ -133,7 +142,9 @@ leaflet() %>%
     position = "topright",
     options = layersControlOptions(collapsed = FALSE))
 ```
-## Characteristics of Typology Groups
+
+## What each typology looks like
+
 ```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 typologytable %>%
   mutate(MainGrp = str_to_title(MainGrp),
@@ -146,11 +157,3 @@ typologytable %>%
                col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Population', 'Below Poverty (Under 18)', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density')) %>%
   kable_styling()
 ```
-
-## Recommendations for LOW-HIGH
-
-[List of recommendations for LOW-HIGH typology]
-
-## Insights on Other Typologies
-
-[Any additional important insight for other typology groups, maybe unnecessary.]

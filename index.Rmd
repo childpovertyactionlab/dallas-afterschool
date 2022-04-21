@@ -64,7 +64,7 @@ das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
 
 ## Introduction
 
-There are 381,376 children between the ages of 5 and 14 in Dallas County. All these children qualify for afterschool programs. However, for every child in an afterschool program in Dallas, three are waiting for an available program. That leaves over 100,000 children between the ages of 5 and 14 without adult supervision or enrichment opportunities. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety.
+There are 380,000 children between the ages of 5 and 14 in Dallas County, [number] of whom attend an afterschool program. However, for every child in an afterschool program, three are waiting for an available program. That leaves over 100,000 children between the ages of 5 and 14 without adult supervision or enrichment opportunities during the hours between 3 and 6 pm. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety. 
 
 ```{r, map of density of children between 5 and 14 in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 # Generate Jenks Breaks for plot
@@ -106,9 +106,16 @@ ggplot() +
 
 ```
 
-## Why OST Matters
+## Why Out-of-School-Time (OST) Matters
 
-Research shows that afterschool programs provide essential services for children and their families. Afterschool programs keep youth safe, support working families, and inspire kids to learn and stay engaged in school. Dallas children enrolled in a program are receiving critical support like homework support **(64%)**, life skills **(69%)**, STEM instruction **(75%)**, meals or healthy snacks **(68%)**, and social emotional connection **(81%)**. These benefits offer opportunities to bridge the achievement gap between students of lower socioeconomic status and their more affluent peers. Additionally, Dallas parents report that afterschool programs are a lifeline for their families. EXPAND 
+Research shows that afterschool programs provide essential services for children and their families. Afterschool programs keep youth safe, support working families, and inspire kids to learn and stay engaged in school. Dallas children enrolled in a program are receiving critical resources  like homework support (64%), life skills (69%), STEM instruction (75%), meals or healthy snacks (68%), and social emotional learning (81%). These benefits offer opportunities to bridge the achievement gap between students of lower socioeconomic status and their more affluent peers. Additionally, Dallas parents report that afterschool programs are a lifeline for their families:
+
+* 89% of parents with a child in an afterschool program agree that the program helps them keep their job or work more hours
+
+* 81% of parents overall agree that afterschool programs provide working parents peace of mind
+
+* 97% of parents overwhelmingly support public funding for afterschool programming
+
 
 ## COVID-19
 
@@ -118,12 +125,6 @@ Afterschool and summer programs have not been exempt from the stress and economi
 
 The afterschool field is an integral component of local communities and is demonstrably crucial to the post-pandemic recovery. As communities continue to feel the impact of COVID, youth will need expanded support to emerge from this crisis stronger, resilient, and ready to thrive. 
 
-## Purpose of Tool
+## Objective
 
-Dallas Afterschool seeks to provide free and low-cost afterschool and summer programming available to all students in Dallas County. To improve access to afterschool programs across Dallas County, Dallas Afterschool seeks to understand, at the systems-level, both where current programs and seats are located and where additional seats are needed. Equipped with this information, Dallas Afterschool can work with afterschool providers, government officials, schools, and funders to address gaps in afterschool availability and build on the strength of existing programs. 
-
-## Issue Statement
-
-[Who is this designed to help and how?]
-
-## Background
+To improve access to afterschool programs across Dallas County, Dallas Afterschool seeks to understand, at the systems-level, both where current programs and seats are located and where additional seats are needed. Equipped with this information, Dallas Afterschool can work with afterschool providers, government officials, schools, and funders to address gaps in afterschool availability and build on the strength of existing programs. 

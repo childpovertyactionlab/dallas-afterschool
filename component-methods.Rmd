@@ -7,8 +7,8 @@ output:
 ---
 
 ## Understanding Afterschool Programs in Dallas County
-[Introduce the concept of supply and demand as individual components and how they can help identify gaps in Dallas County.]
-Dallas Afterschool Programs by Census Tract
+
+In order to understand the landscape of afterschool programs across Dallas County we broke the problem down into two components. The existing afterschool environment and current neighborhood conditions. Comparing each component against one another will allow us to estimate where the greatest need for additional afterschool programming is across the county.
 
 ```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 # Generate Jenks Breaks for plot
@@ -52,9 +52,12 @@ ggplot() +
 
 ## Existing Afterschool Environment
 
-[Describe metrics included in Existing Afterschool Environment and reasons for their inclusion]
+Using program data from Dallas Afterschool, we developed a measure of the existing afterschool environment (supply) by comparing afterschool program density, and afterschool eligible children to total seats, and program count. 
 
 ### Summary of Current Programs
+
+In Dallas County, programs affiliated with Dallas Afterschool predominantly use a sliding scale payment model and make up % percent of all programs. With sliding scale programs, children only need to pay an affordable fee relative to their household income in order to participate.
+Additional facility types and fee structures are broken down below. 
 
 ```{r, table of programs, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 das <- das_programs %>%
@@ -112,7 +115,6 @@ das %>%
         legend.margin=margin(4,4,4,4),
         legend.box.spacing = margin(0.5))
 ```
-
 
 ### Programs in Dallas County
 
@@ -206,11 +208,15 @@ leaflet() %>%
     options = layersControlOptions(collapsed = FALSE))
 
 ```
+
 ## Current Neighborhood Conditions
 
-[Describe metrics included in Current Neighborhood Conditions and reasons for their inclusion]
+We understand that the need for afterschool programs in any given neighborhood  will vary based on the demographic characteristics of local  families and children. To assess demand,  we identified a number of characteristics for residents who may have a higher need for afterschool programming. 
 
-### Expected Population
+These characteristics include children experiencing  food insecurity, , parents who travel longer distances to  work or have irregular work schedules,, single parent households, and households facing unemployment. These are all considerations we took  into account to assess current neighborhood conditions and demand for afterschool programming. 
+
+
+### Summary of Current Conditions
 
 ```{r, Eligible Population, echo = FALSE, message=FALSE, warning=FALSE}
 dasmetrics %>%
@@ -235,7 +241,3 @@ dasmetrics %>%
 
 [Summary of population variables for Dallas County. How many families/children do we expect could go to Afterschool programs in the county?]
 [Specific family types (Single-mother households, households below poverty, etc.)]
-
-## Methodology 
-
-[Basic description of methodology and reason for use of components]
