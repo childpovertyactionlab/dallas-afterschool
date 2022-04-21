@@ -50,35 +50,6 @@ ggplot() +
 
 ```
 
-Population dot density by race/ethnicity
-
-```{r, dot density population, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
-ggplot() +
-  geom_sf(data = dotdensity,
-          aes(color = variable),
-          size = 0.001) +
-  geom_sf(data = dallasCounty, color = "#323232", fill = NA, size = 2) +
-  geom_sf(data = highways, color = "#323232", size = 1) +
-  scale_color_manual(values = pal_cpalfac) +
-  labs(title = "Dot Density Map of Dallas County by Race/Ethnicity",
-       subtitle = "1 Dot Per 25 Residents (U.S. Census Bureau, 2020 Census)",
-       caption = "",
-       x = "",
-       y = "",
-       color = "") +
-  theme_void() +
-  theme(legend.position = "bottom",
-        legend.key.width = unit(0.5, units = "in"),
-        plot.caption = element_text(size = 36, face = "italic"),
-        legend.spacing = unit(0, "in"), 
-        legend.key.height = unit(0.25, "in"), 
-        legend.spacing.x = unit(0.1, "in"), 
-        legend.justification = "center",
-        legend.margin=margin(4,4,4,4),
-        legend.box.spacing = margin(0.5)) +
-  guides(colour = guide_legend(override.aes = list(size=10)))
-
-```
 ## Existing Afterschool Environment
 
 [Describe metrics included in Existing Afterschool Environment and reasons for their inclusion]
@@ -88,60 +59,169 @@ ggplot() +
 ```{r, table of programs, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 das <- das_programs %>%
   st_drop_geometry(.) %>%
+  group_by(facility_type) %>%
   dplyr::summarise(count = n(),
                    capacity = sum(max_capacity)) %>%
-  mutate(source = "Dallas Afterschool",
-         avgseats = round(capacity/count))
+  mutate(#source = "Dallas Afterschool",
+         avgseats = round(capacity/count),
+         percap = capacity/sum(capacity),
+         percapStr = paste0(round(percap*100, digits = 1), "%"),
+         facility_type = ifelse(facility_type == "", "Not Available", facility_type))
 
-hhs <- hhs_programs %>%
-  st_drop_geometry(.) %>%
-  dplyr::summarise(count = n(),
-                   capacity = sum(capacity)) %>%
-  mutate(source = "Texas Health and Human Services",
-         avgseats = round(capacity/count))
+#hhs <- hhs_programs %>%
+#  st_drop_geometry(.) %>%
+#  dplyr::summarise(count = n(),
+#                   capacity = sum(capacity)) %>%
+#  mutate(source = "Texas Health and Human Services",
+#         avgseats = round(capacity/count))
+#
+#cacfp <- cacfp_programs %>%
+#  st_drop_geometry(.) %>%
+#  dplyr::summarise(count = n(),
+#                   capacity = sum(site_license_capacity, na.rm = TRUE)) %>%
+#  mutate(source = "Child and Adult Food Care Program",
+#         avgseats = round(capacity/count))
 
-cacfp <- cacfp_programs %>%
-  st_drop_geometry(.) %>%
-  dplyr::summarise(count = n(),
-                   capacity = sum(site_license_capacity, na.rm = TRUE)) %>%
-  mutate(source = "Child and Adult Food Care Program",
-         avgseats = round(capacity/count))
-
-programcount <- full_join(das, cacfp) %>%
-  full_join(hhs) %>%
-  select(source, count, capacity, avgseats)
-
-programcount %>%
+das %>%
+  select(-percap) %>%
   knitr::kable(.,
-               col.names = c('', 'Total Programs', 'Seat Capacity', 'Average Seats'))
-
+               col.names = c('Facility Type', 'Total Programs', 'Seat Capacity', 'Average Seats', 'Percent of Seats')) %>%
+  kable_styling()
 ```
 
-### Programs in Dallas County
-
-cacfp = orange
-hhs = red
-das = blue
-```{r, map of programs in dallas county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
-# Generate Plot
-ggplot() +
-  geom_sf(data = cacfp_programs, color = "orange") +
-  geom_sf(data = hhs_programs, color = "red") +
-  geom_sf(data = das_programs, color = "blue") +
-  geom_sf(data = dallasCounty, color = "#323232", fill = NA, size = 2) +
-  geom_sf(data = highways, color = "#323232", size = 1) +
-#  scale_fill_brewer(name = "",
-#                    palette = "BuPu",
-#                    label = labs_plot,
-#                    guide = guide_legend(direction = "horizontal",
-#                                         nrow = 1,
-#                                         label.position = "top")) +
-  labs(title = "Afterschool Programs in Dallas County",
-       subtitle = "DAS, CACFP, and HHS",
+```{r, Supply Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
+das %>%
+  ggplot(aes(x = percap, y = reorder(facility_type, -percap), fill = facility_type)) +
+  geom_bar(stat = "identity", alpha = 0.7) +
+  scale_x_continuous(labels = scales::percent) +
+  scale_color_manual(values = CPALtools::pal_cpalfac) +
+  scale_fill_manual(values = CPALtools::pal_cpalfac) +
+  labs(title = "Percentage of Total Seats by Facility Type",
+       #subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
        x = "",
        y = "",
        color = "") +
-  theme_void() +
+  theme_bw() +
+  theme(legend.position = "none",
+        legend.key.width = unit(0.5, units = "in"),
+        plot.caption = element_text(size = 36, face = "italic"),
+        legend.spacing = unit(0, "in"), 
+        legend.key.height = unit(0.25, "in"), 
+        legend.spacing.x = unit(0.1, "in"), 
+        legend.justification = "center",
+        legend.margin=margin(4,4,4,4),
+        legend.box.spacing = margin(0.5))
+```
+
+
+### Programs in Dallas County
+
+```{r, map of programs in dallas county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
+#unique(das_programs$facility_type)
+ccc <- das_programs %>%
+  filter(facility_type == "Child Care Center")
+school <- das_programs %>%
+  filter(facility_type == "School")
+missing <- das_programs %>%
+  filter(facility_type == "")
+comcen <- das_programs %>%
+  filter(facility_type == "Community Center/Nonprofit")
+faith <- das_programs %>%
+  filter(facility_type == "Faith Community")
+munbui <- das_programs %>%
+  filter(facility_type == "Municipal Building")
+aptcom <- das_programs %>%
+  filter(facility_type == "Apartment Complex")
+
+leaflet() %>%
+#  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
+  addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
+    addCircleMarkers(data = ccc,
+                     stroke = FALSE,
+                     radius = 4,
+                     fillColor = "#0089C4",
+                     weight = 1,
+                     fillOpacity = 1,
+                     group = "Child Care Center"
+              ) %>%
+    addCircleMarkers(data = school,
+                     stroke = FALSE,
+                     radius = 4,
+                     fillColor = "#DC5034",
+                     weight = 1,
+                     fillOpacity = 1,
+                     group = "School"
+              ) %>%
+    addCircleMarkers(data = missing,
+                     stroke = FALSE,
+                     radius = 4,
+                     fillColor = "#54494B",
+                     weight = 1,
+                     fillOpacity = 1,
+                     group = "Not Available"
+              ) %>%
+    addCircleMarkers(data = comcen,
+                     stroke = FALSE,
+                     radius = 4,
+                     fillColor = "#FFB533",
+                     weight = 1,
+                     fillOpacity = 1,
+                     group = "Non-Profit"
+              ) %>%
+    addCircleMarkers(data = faith,
+                     stroke = FALSE,
+                     radius = 4,
+                     fillColor = "#87F1FF",
+                     weight = 1,
+                     fillOpacity = 1,
+                     group = "Faith Community"
+              ) %>%
+    addCircleMarkers(data = munbui,
+                     stroke = FALSE,
+                     radius = 4,
+                     fillColor = "#ADB533",
+                     weight = 1,
+                     fillOpacity = 1,
+                     group = "Municipal Building"
+              ) %>%
+    addCircleMarkers(data = aptcom,
+                     stroke = FALSE,
+                     radius = 4,
+                     fillColor = "#8078B6",
+                     weight = 1,
+                     fillOpacity = 1,
+                     group = "Apartment Complex"
+              ) %>%
+  addPolygons(data = dallasCounty,
+              color = "#686158",
+              weight = 3,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              group = "Dallas County"
+              ) %>%
+  addLayersControl(
+    baseGroups = c("Dallas County"),
+    overlayGroups = c("Apartment Complex", "Child Care Center", "Faith Community", "Municipal Building", "Non-Profit", "School", "Not Available"),
+    position = "topright",
+    options = layersControlOptions(collapsed = FALSE))
+
+```
+## Current Neighborhood Conditions
+
+[Describe metrics included in Current Neighborhood Conditions and reasons for their inclusion]
+
+### Expected Population
+
+```{r, Eligible Population, echo = FALSE, message=FALSE, warning=FALSE}
+dasmetrics %>%
+  ggplot(aes(x = eligPop)) +
+  geom_histogram(bins = 50, color = "#DC5034", fill = "#DC5034", alpha = 0.7) +
+  labs(title = "Distribution of Eligible Population (5 - 14)",
+       #subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
+       x = "",
+       y = "",
+       color = "") +
+  theme_bw() +
   theme(legend.position = "bottom",
         legend.key.width = unit(0.5, units = "in"),
         plot.caption = element_text(size = 36, face = "italic"),
@@ -151,13 +231,7 @@ ggplot() +
         legend.justification = "center",
         legend.margin=margin(4,4,4,4),
         legend.box.spacing = margin(0.5))
-
 ```
-## Current Neighborhood Conditions
-
-[Describe metrics included in Current Neighborhood Conditions and reasons for their inclusion]
-
-### Expected Population
 
 [Summary of population variables for Dallas County. How many families/children do we expect could go to Afterschool programs in the county?]
 [Specific family types (Single-mother households, households below poverty, etc.)]

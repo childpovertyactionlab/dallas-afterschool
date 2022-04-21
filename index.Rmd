@@ -15,6 +15,7 @@ library(mapboxapi)
 library(htmltools)
 library(CPALtools)
 library(knitr)
+library(kableExtra)
 
 dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
   st_transform(crs = 4269)
@@ -41,20 +42,23 @@ dasmetrics <- st_read("data/Calculated Tract Metrics.geojson") %>%
   select(-NAME, -mi_smhhE, -unemE, -smhhbp_per, -bp_per, -cpr, -int_per) %>%
   left_join(., st_drop_geometry(dasComponents)) %>%
   left_join(., st_drop_geometry(acsmetrics)) %>%
-  mutate(TotSeats = hhsSeats+dasSeats+cacfpSeats,
-         TotPrograms = hhsPrograms+dasPrograms+cacfpPrograms,
+  mutate(#TotSeats = hhsSeats+dasSeats+cacfpSeats,
+         #TotPrograms = hhsPrograms+dasPrograms+cacfpPrograms,
+         TotSeats = dasSeats,
+         TotPrograms = dasPrograms,
+         
          ProgSqMi = TotPrograms/AreaSqMi,
          eligDen = eligPop/AreaSqMi)
 
 das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
   st_transform(crs = 4269) %>%
   .[dallasCounty, ]
-hhs_programs <- st_read(here::here("data/hhsPrograms.geojson")) %>%
-  st_transform(crs = 4269) %>%
-  .[dallasCounty, ] 
-cacfp_programs <- st_read(here::here("data/cacfpprograms.geojson")) %>%
-  st_transform(crs = 4269)  %>%
-  .[dallasCounty, ]
+#hhs_programs <- st_read(here::here("data/hhsPrograms.geojson")) %>%
+#  st_transform(crs = 4269) %>%
+#  .[dallasCounty, ] 
+#cacfp_programs <- st_read(here::here("data/cacfpprograms.geojson")) %>%
+#  st_transform(crs = 4269)  %>%
+#  .[dallasCounty, ]
 
 ```
 
@@ -84,7 +88,7 @@ ggplot() +
                     guide = guide_legend(direction = "horizontal",
                                          nrow = 1,
                                          label.position = "top")) +
-  labs(title = "Children Between 5 and 14 in Dallas County (per SqMi)",
+  labs(title = "Children Between 5-14) in Dallas County (Density per SqMi)",
        subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
        x = "",
        y = "",

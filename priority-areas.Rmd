@@ -10,86 +10,62 @@ output:
 # generate table by group
 typologytable <- dasmetrics %>%
   st_drop_geometry(.) %>%
-  group_by(Typology) %>%
+  group_by(MainGrp) %>%
   summarise(TotalTracts = n(),
             AreaSqMi = sum(AreaSqMi),
-            mhi = median(med_incE),
+            mhi = median(med_incE, na.rm = TRUE),
             eligPop = sum(eligPop),
             bp_u18 = sum(bp_u18E, na.rm = TRUE),
             pop_u18 = sum(pop_u18E, na.rm = TRUE),
             dasPrograms = sum(dasPrograms),
             dasSeats = sum(dasSeats),
-            cacfpPrograms = sum(cacfpPrograms),
-            cacfpSeats = sum(cacfpSeats),
-            hhsPrograms = sum(hhsPrograms),
-            hhsSeats = sum(hhsSeats),
-            totPrograms = sum(dasPrograms+cacfpPrograms+hhsPrograms),
-            totSeats = sum(dasSeats+cacfpSeats+hhsSeats)) %>%
-  mutate(poppro = round(eligPop/totSeats, digits = 3),
-         cpr = round(bp_u18/pop_u18, digits = 3)) %>%
-  select(-(cacfpPrograms:hhsSeats))
+            #cacfpPrograms = sum(cacfpPrograms),
+            #cacfpSeats = sum(cacfpSeats),
+            #hhsPrograms = sum(hhsPrograms),
+            #hhsSeats = sum(hhsSeats),
+            #totPrograms = sum(dasPrograms+cacfpPrograms+hhsPrograms),
+            #totSeats = sum(dasSeats+cacfpSeats+hhsSeats)
+            ) %>%
+  mutate(poppro = round(eligPop/dasSeats, digits = 3),
+         cpr = round(bp_u18/pop_u18, digits = 3))
 
 typeSupply <- dasmetrics %>%
   st_drop_geometry(.) %>%
   group_by(typeSupply) %>%
   dplyr::summarise(Supply = n()) %>%
-  mutate(typeSupply = str_remove(typeSupply, " SUPPLY")) %>%
+  #mutate(typeSupply = str_remove(typeSupply, " SUPPLY")) %>%
   rename(Classification = typeSupply)
 
 typeDemand <- dasmetrics %>%
   st_drop_geometry(.) %>%
   group_by(typeDemand) %>%
   dplyr::summarise(Demand = n()) %>%
-  mutate(typeDemand = str_remove(typeDemand, " DEMAND")) %>%
+  #mutate(typeDemand = str_remove(typeDemand, " DEMAND")) %>%
   rename(Classification = typeDemand)
 
 typeJoin <- left_join(typeSupply, typeDemand) %>%
-  mutate(Order = ifelse(Classification == "HIGH", 1, 
-                        ifelse(Classification == "MOD HIGH", 2, 
-                               ifelse(Classification == "MOD LOW", 3, 
-                                      ifelse(Classification == "LOW", 4, "ERROR"))))) %>%
-    mutate(Classification = ifelse(Classification == "HIGH", "High", 
-                        ifelse(Classification == "MOD HIGH", "Moderate High", 
-                               ifelse(Classification == "MOD LOW", "Moderate Low", 
-                                      ifelse(Classification == "LOW", "Low", "ERROR")))))
+  mutate(Demand = ifelse(is.na(Demand), 0, Demand),
+         Supply = ifelse(is.na(Supply), 0, Supply),
+         Order = ifelse(Classification == "VERY HIGH", 1, 
+                        ifelse(Classification == "HIGH", 2, 
+                               ifelse(Classification == "MODERATE", 3, 
+                                      ifelse(Classification == "LOW", 4, 
+                                             ifelse(Classification == "VERY LOW", 5, "ERROR")))))) %>%
+    mutate(Classification = ifelse(Classification == "VERY HIGH", "Very High", 
+                        ifelse(Classification == "HIGH", "High", 
+                               ifelse(Classification == "MODERATE", "Moderate", 
+                                      ifelse(Classification == "LOW", "Low", 
+                                             ifelse(Classification == "VERY LOW", "Very Low", "ERROR"))))))
 
-#unique(das_metrics$Typology)
-HS_LD <- dasmetrics %>%
-  filter(Typology == "HIGH SUPPLY - LOW DEMAND")
+unique(dasmetrics$MainGrp)
+dem_sup <- dasmetrics %>%
+  filter(MainGrp == "Demand > Supply")
 
-HS_MLD <- dasmetrics %>%
-  filter(Typology == "HIGH SUPPLY - MOD LOW DEMAND")
+sup_dem <- dasmetrics %>%
+  filter(MainGrp == "Demand < Supply")
 
-MHS_HD <- dasmetrics %>%
-  filter(Typology == "MOD HIGH SUPPLY - HIGH DEMAND")
-
-MHS_LD <- dasmetrics %>%
-  filter(Typology == "MOD HIGH SUPPLY - LOW DEMAND")
-
-MHS_MHD <- dasmetrics %>%
-  filter(Typology == "MOD HIGH SUPPLY - MOD HIGH DEMAND")
-
-MHS_MLD <- dasmetrics %>%
-  filter(Typology == "MOD HIGH SUPPLY - MOD LOW DEMAND")
-
-MLS_HD <- dasmetrics %>%
-  filter(Typology == "MOD LOW SUPPLY - HIGH DEMAND")
-
-MLS_LD <- dasmetrics %>%
-  filter(Typology == "MOD LOW SUPPLY - LOW DEMAND")
-
-MLS_MHD <- dasmetrics %>%
-  filter(Typology == "MOD LOW SUPPLY - MOD HIGH DEMAND")
-
-MLS_MLD <- dasmetrics %>%
-  filter(Typology == "MOD LOW SUPPLY - MOD LOW DEMAND")
-
-LS_LD <- dasmetrics %>%
-  filter(Typology == "LOW SUPPLY - LOW DEMAND")
-
-LS_MLD <- dasmetrics %>%
-  filter(Typology == "LOW SUPPLY - MOD LOW DEMAND")
-
+demTsup <- dasmetrics %>%
+  filter(MainGrp == "Demand = Supply")
 ```
 ## Typology of Program Access
 
@@ -101,7 +77,8 @@ In order to assess what census tracts have the highest demand for afterschool pr
 typeJoin %>%
   arrange(Order) %>%
   select(-Order) %>%
-  knitr::kable(.)
+  knitr::kable(.) %>%
+  kable_styling()
 ```
 
 These groups were then compared against one another in order to identify areas of the county with high demand for afterschool programs relative to the current supply. With this analysis **21** census tracts were identified as having Moderate Low Supply to Moderate High Demand, and **11** census tracts were identified as having Moderate Low Supply to High Demand.
@@ -112,101 +89,29 @@ These groups were then compared against one another in order to identify areas o
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
-    addPolygons(data = HS_LD,
-              fillColor = "blue",
+    addPolygons(data = dem_sup,
+              fillColor = "#DC5034",
               weight = 1,
               opacity = 1,
-              color = "blue",
+              color = "#DC5034",
               fillOpacity = 0.7,
-              group = "High Supply - Low Demand"
+              group = "Demand > Supply"
               ) %>%
-  addPolygons(data = HS_MLD,
-              fillColor = "blue",
+  addPolygons(data = demTsup,
+              fillColor = "#8996A0",
               weight = 1,
               opacity = 1,
-              color = "blue",
+              color = "#8996A0",
               fillOpacity = 0.7,
-              group = "High Supply - Mod Low Demand"
+              group = "Demand = Supply"
               ) %>%
-  addPolygons(data = LS_LD,
-              fillColor = "cyan",
+  addPolygons(data = sup_dem,
+              fillColor = "#0089C4",
               weight = 1,
               opacity = 1,
-              color = "cyan",
+              color = "#0089C4",
               fillOpacity = 0.7,
-              group = "Low Supply - Low Demand"
-              ) %>%
-  addPolygons(data = LS_MLD,
-              fillColor = "orange",
-              weight = 1,
-              opacity = 1,
-              color = "orange",
-              fillOpacity = 0.7,
-              group = "Low Supply - Mod Low Demand"
-              ) %>%
-  addPolygons(data = MHS_HD,
-              fillColor = "orange",
-              weight = 1,
-              opacity = 1,
-              color = "orange",
-              fillOpacity = 0.7,
-              group = "Mod High Supply - High Demand"
-              ) %>%
-  addPolygons(data = MHS_LD,
-              fillColor = "blue",
-              weight = 1,
-              opacity = 1,
-              color = "blue",
-              fillOpacity = 0.7,
-              group = "Mod High Supply - Low Demand"
-              ) %>%
-  addPolygons(data = MHS_MHD,
-              fillColor = "cyan",
-              weight = 1,
-              opacity = 1,
-              color = "cyan",
-              fillOpacity = 0.7,
-              group = "Mod High Supply - Mod High Demand"
-              ) %>%
-  addPolygons(data = MHS_MLD,
-              fillColor = "blue",
-              weight = 1,
-              opacity = 1,
-              color = "blue",
-              fillOpacity = 0.7,
-              group = "Mod High Supply - Mod Low Demand"
-              ) %>%
-  addPolygons(data = MLS_HD,
-              fillColor = "red",
-              weight = 1,
-              opacity = 1,
-              color = "red",
-              fillOpacity = 0.7,
-              group = "Mod Low Supply - High Demand"
-              ) %>%
-  addPolygons(data = MLS_LD,
-              fillColor = "orange",
-              weight = 1,
-              opacity = 1,
-              color = "orange",
-              fillOpacity = 0.7,
-              group = "Mod Low Supply - Low Demand"
-              ) %>%
-  addPolygons(data = MLS_MHD,
-              fillColor = "red",
-              weight = 1,
-              opacity = 1,
-              color = "red",
-              fillOpacity = 0.7,
-              group = "Mod Low Supply - Mod High Demand"
-              ) %>%
-  addPolygons(data = MLS_MLD,
-              fillColor = "cyan",
-              weight = 1,
-              opacity = 1,
-              color = "cyan",
-              fillOpacity = 0.7,
-              group = "Mod Low Supply - Mod Low Demand"
+              group = "Supply > Demand"
               ) %>%
     addPolygons(data = dallasCounty,
               color = "#686158",
@@ -224,24 +129,22 @@ leaflet() %>%
               ) %>%
   addLayersControl(
     baseGroups = c("Dallas County"),
-    overlayGroups = c("Dallas City Council", "Low Supply - Low Demand", "Low Supply - Mod Low Demand", 
-                      "Mod Low Supply - Low Demand", "Mod Low Supply - Mod Low Demand", "Mod Low Supply - Mod High Demand", "Mod Low Supply - High Demand",
-                      "Mod High Supply - Low Demand", "Mod High Supply - Mod Low Demand", "Mod High Supply - Mod High Demand", "Mod High Supply - High Demand",
-                      "High Supply - Low Demand", "High Supply - Mod Low Demand"),
+    overlayGroups = c("Dallas City Council", "Demand > Supply", "Supply > Demand", "Demand = Supply"),
     position = "topright",
     options = layersControlOptions(collapsed = FALSE))
 ```
 ## Characteristics of Typology Groups
 ```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 typologytable %>%
-  mutate(Typology = str_to_title(Typology),
+  mutate(MainGrp = str_to_title(MainGrp),
          AreaSqMi = round(AreaSqMi),
          mhi = round(mhi),
          cpr = paste0(round(cpr*100, digits = 1), "%"),
-         popden = round(eligPop/AreaSqMi))%>%
-  select(-(pop_u18:dasSeats)) %>%
+         popden = round(eligPop/AreaSqMi)) %>%
+  select(MainGrp, TotalTracts, AreaSqMi, mhi, eligPop, bp_u18, dasPrograms, dasSeats, poppro, cpr, popden) %>%
   knitr::kable(.,
-               col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Population', 'Below Poverty (Under 18)', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density'))
+               col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Population', 'Below Poverty (Under 18)', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density')) %>%
+  kable_styling()
 ```
 
 ## Recommendations for LOW-HIGH

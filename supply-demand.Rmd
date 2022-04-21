@@ -9,6 +9,48 @@ output:
 ## Topline results
 
 ## Supply and Demand in Dallas County
+```{r, Supply Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
+dasComponents %>%
+  ggplot(aes(x = indexSupply)) +
+  geom_histogram(bins = 50, color = "#0089C4", fill = "#0089C4", alpha = 0.7) +
+  labs(title = "Distribution of Supply Scores",
+       #subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
+       x = "",
+       y = "",
+       color = "") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.width = unit(0.5, units = "in"),
+        plot.caption = element_text(size = 36, face = "italic"),
+        legend.spacing = unit(0, "in"), 
+        legend.key.height = unit(0.25, "in"), 
+        legend.spacing.x = unit(0.1, "in"), 
+        legend.justification = "center",
+        legend.margin=margin(4,4,4,4),
+        legend.box.spacing = margin(0.5))
+```
+
+```{r, Demand Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
+dasComponents %>%
+  ggplot(aes(x = indexDemand)) +
+  geom_histogram(bins = 50, color = "#DC5034", fill = "#DC5034", alpha = 0.7) +
+  labs(title = "Distribution of Demand Scores",
+       #subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
+       x = "",
+       y = "",
+       color = "") +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.width = unit(0.5, units = "in"),
+        plot.caption = element_text(size = 36, face = "italic"),
+        legend.spacing = unit(0, "in"), 
+        legend.key.height = unit(0.25, "in"), 
+        legend.spacing.x = unit(0.1, "in"), 
+        legend.justification = "center",
+        legend.margin=margin(4,4,4,4),
+        legend.box.spacing = margin(0.5))
+```
+
 
 ```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
 #names(dasDemo)
@@ -29,8 +71,8 @@ popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
 brksSupply <- BAMMtools::getJenksBreaks(dasComponents$indexSupply, k = 6)
 brksDemand <- BAMMtools::getJenksBreaks(dasComponents$indexDemand, k = 6)
 
-palSupply <- colorBin("PuBu", domain = dasComponents$indexSupply, bins = brksSupply)
-palDemand <- colorBin("OrRd", domain = dasComponents$indexDemand, bins = brksDemand)
+palSupply <- colorBin("BuPu", domain = dasComponents$indexSupply, bins = brksSupply)
+palDemand <- colorBin("RdPu", domain = dasComponents$indexDemand, bins = brksDemand)
 
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
@@ -39,20 +81,20 @@ leaflet() %>%
               fillColor = ~palDemand(indexDemand),
               weight = 1,
               opacity = 1,
-              color = "#686158",
+              color = ~palDemand(indexDemand),#"#686158",
               #dashArray = "3",
               fillOpacity = 0.6,
-              group = "Demand Component",
+              group = "Demand Score",
               popup = ~popup
               ) %>%
   addPolygons(data = dasComponents,
               fillColor = ~palSupply(indexSupply),
               weight = 1,
               opacity = 1,
-              color = "#686158",
+              color = ~palSupply(indexSupply), #"#686158",
               #dashArray = "3",
               fillOpacity = 0.6,
-              group = "Supply Component",
+              group = "Supply Score",
               popup = ~popup
               ) %>%
   addPolygons(data = dallasCounty,
@@ -69,30 +111,28 @@ leaflet() %>%
               fillOpacity = 0,
               group = "Dallas County"
               ) %>%
-
   addLegend(data = dasComponents,
             "bottomright", 
             pal = palDemand, 
             values = ~indexDemand,
-            title = "Demand Index",
-            group = "Demand Component",
+            title = "Demand Score",
+            group = "Demand Score",
             #labFormat = labelFormat(prefix = "$"),
             opacity = 1) %>%
   addLegend(data = dasComponents,
             "bottomright", 
             pal = palSupply, 
             values = ~indexSupply,
-            title = "Supply Index",
-            group = "Supply Component",
+            title = "Supply Score",
+            group = "Supply Score",
             #labFormat = labelFormat(prefix = "$"),
             opacity = 1) %>%
-
   addLayersControl(
-    overlayGroups = c("Demand Component", "Supply Component"),
+    overlayGroups = c("Demand Score", "Supply Score"),
     baseGroups = c("Dallas County"),
     position = "topright",
     options = layersControlOptions(collapsed = FALSE)) %>% 
-  hideGroup("Extreme Need")
+  hideGroup("Demand Score")
 ```
 
 ## Afterschool Program Access
