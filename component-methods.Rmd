@@ -8,7 +8,7 @@ output:
 
 ## Understanding Afterschool Programs in Dallas County
 
-In order to understand the landscape of afterschool programs across Dallas County we broke the problem down into two components. The existing afterschool environment and current neighborhood conditions. Comparing each component against one another will allow us to estimate where the greatest need for additional afterschool programming is across the county.
+ To understand the landscape of afterschool programs across Dallas County we assessed two components. The existing afterschool environment and current neighborhood characteristics. Comparing these components  will help identify areas in need of additional afterschool programming.
 
 ```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 # Generate Jenks Breaks for plot
@@ -57,6 +57,7 @@ Using program data from Dallas Afterschool, we developed a measure of the existi
 ### Summary of Current Programs
 
 In Dallas County, programs affiliated with Dallas Afterschool predominantly use a sliding scale payment model and make up % percent of all programs. With sliding scale programs, children only need to pay an affordable fee relative to their household income in order to participate.
+
 Additional facility types and fee structures are broken down below. 
 
 ```{r, table of programs, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}

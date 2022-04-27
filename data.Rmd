@@ -6,17 +6,60 @@ output:
     theme: theme.css
 ---
 
-### American Community Survey
-[Links to the ACS and list out all variables and tables used from it.]
+Dallas Afterschool Programs Per Square Mile: 
+Data: Dallas Afterschool, 2021-2022
 
-### Dallas Afterschool
-[DAS as main source, what types of programs were included?]
+Dallas Afterschool Seats Per Capita: 
+Data: Dallas Afterschool, 2021-2022
 
-### Child and Adult Food Care Program
-[CACFP program description]
+Child and Adult Care Food Program Programs Per Square Mile: 
+Data: Texas Department of Agriculture, 2021-2022
 
-### Texas Health and Human Services
-[Which TXHHS programs were included in the analysis and what exclusions were there/]
+Child and Adult Care Food Program Seats Per Capita: 
+Data: Texas Department of Agriculture, 2021-2022
 
-### Housing and Transportation Index
-[Which H+T measure were included?]
+Afterschool Child Care Programs Per Square Mile: 
+Data: Texas Health and Human Services, 2021-2022
+
+Afterschool Child Care Seats Per Capita: 
+Data: Texas Health and Human Services, 2021-2022
+
+Current Neighborhood Conditions
+Median Household Income: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Percent Population Below Poverty: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Percent Under 5 Below Poverty: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Percent Under 18 Below Poverty: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Population Between 5 and 9: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Population Between 10 and 14: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Percent Families Below Poverty: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Percent Single-Mother Households: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Percent Single-Mother Households Below Poverty: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Single-Mother Median Household Income: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Percent Married-Couple Households Below Poverty: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Average Family Size: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates
+
+Unemployment Rate: 
+Data: U.S. Census Bureau, American Community Survey, 2016-2020 5-Year Estimates

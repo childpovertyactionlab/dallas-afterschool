@@ -7,40 +7,50 @@ output:
 ---
 
 ### Introduction
-The Child Poverty Action Lab, in collaboration with Dallas Afterschool developed the Afterschool Program Access Index in order to understand the landscape of afterschool program access across Dallas County and identify where gaps currently exist. The index was developed in order to aid Dallas Afterschool in identifying where to make programmatic investments across Dallas County. 
-The Afterschool Program Access Index focuses on the current supply and prospective demand of afterschool programs available for children between 5 and 14 years of age. In order to accomplish this relevant data was compiled within our two indices: existing after school environment (supply) and current neighborhood conditions (demand). This data was then standardized and combined into each index following the result of a Principal Components Analysis. Indicators were then weighted to calculate each index based on the results of PCA dimensions affiliated with a given census tract. The intersection of each index was then used to determine geographies of high demand and low supply across Dallas County. 
+The Child Poverty Action Lab in collaboration with Dallas Afterschool developed the Afterschool Program Access Index in order to understand the landscape of afterschool programming across Dallas County and identify where gaps currently exist. The index was developed to aid Dallas Afterschool and other stakeholders in identifying where to make programmatic investments across Dallas County. 
+
+The Afterschool Program Access Index focuses on the current supply and prospective demand of afterschool programs available for children between 5 and 14 years of age. For the purposes of this Index, afterschool programs are defined as programs that run at least 4 afternoons per week for three hours per day. This Index does not track enrichment programs that meet once or twice a week such as sports programs, karate classes, art classes, dance class, or other clubs or similar activities.
+
+To achieve this aim, relevant data was compiled within our two indices: existing after school environment (supply) and current neighborhood conditions (demand). This data was then standardized and combined into each index following the result of a Principal Components Analysis. Indicators of high demand were then weighted to calculate each index based on the results of PCA dimensions affiliated with a given census tract. The intersection of each index was then used to determine neighborhoods with  high demand and low supply across Dallas County.
+
 
 ## The Indices
 The Afterschool Access Index contains two indices scored on a 0 to 100 scale.
 
 ### Existing After School Environment (Supply Index)
-Census tracts with a high score on this index have a higher density afterschool programs and more program seats available relative to the number of eligible children (between 5 to 14) in a given geographic area.
+Census tracts with a high score on this index have a higher density of afterschool programs and more program seats available relative to the number of eligible children (between 5 to 14) in a given geographic area.
 
 ### Current Neighborhood Conditions (Demand Index)
-Census tracts with a high score on this index have a proportion of families and households with after school program needs. A high score indicates a larger proportion of single-mother households, children below poverty, lower median household income, food insecurity, and lower transportation accessibility.
+Census tracts with a high score on this index have a proportion of families and households with afterschool program needs. A high score indicates a larger proportion of single-mother households, children below poverty, lower median household income, food insecurity, and lower transportation accessibility.
 
 ## Data
-The Afterschool Program Access Index was calculated using locally and nationally available data, most of which is publicly accessible by default. To understand all of the data that we used to create these estimates, visit the Data Dictionary. 
+The Afterschool Program Access Index was calculated using locally and nationally available data, most of which is publicly accessible. To better understand the data we used to create these estimates, visit the Data Dictionary. 
 
 ### American Community Survey
-[Links to the ACS and list out all variables and tables used from it.]
+Data from the U.S. Census Bureau's American Community Survey was accessed via Kyle Walker's tidycensus R package, drawing on estimates and percentages from tables concerning demographic, economic, housing, and family characteristics of households. An exhaustive list of the specific fields used can be found in the project's source code - found here. (link to Github).
 
 ### Dallas Afterschool
-Data on afterschool program locations and attributes was provided by Dallas Afterschool. An extract of their database, as of {date of extract} is hosted on the project Github (link). For more up-to-date information and further inquiries around afterschool program data, please contact Dalla Afterschool (provide contact info here). 
+Data on afterschool program locations and attributes was provided by Dallas Afterschool. Dallas Afterschool continually updates this database, pulling from Texas Department of Family and Protective Services and Child and Adult Food Care Program databases as well as their knowledge of the afterschool sector.
 
-### Child and Adult Food Care Program
-[CACFP program description]
+An extract of their database, as of February 15, 2022 is hosted on the project Github (link). Parents, guardians, and families can go to www.findafterschoodallas.org for a searchable, updated tool to help them find programming for their children. For further inquiries around afterschool program data, please contact Dallas Afterschool (info@dallasafterschool.org).
 
-### Texas Health and Human Services
-[Which TXHHS programs were included in the analysis and what exclusions were there?]
+## Packages
+In order to complete this analysis a number of open source R packages developed by the R community were used.
 
-### Housing and Transportation Index
-[Which H+T measure were included?]
+* ggplot2 Hadley Wickham
+* dplyr Hadley Wickham
+* tidyr Hadley Wickham
+* stringr Hadley Wickham
+* tidycensus Kyle Walker
+* sf Edzer Pebesma
+* leaflet Joe Cheng
+* knitr Yihue Xi
+* distill JJ Allaire
 
-## Method
+## Methodology
 
 ### Data Collection + Processing
-Data used for the Afterschool Program Access Index was sourced from a variety of public and private sources as detailed in the 'Data' section above. Data for this project largely comes at two different scales: Census tract level data produced by the Census Bureau, as well as point-level afterschool program data produced by Dallas Afterschool, the USDA, and Texas Department of Human and Health Services.
+Data used for the Afterschool Program Access Index was sourced from a variety of public and private sources as detailed in the 'Data' section above. Data for this project largely comes at two different scales: Census tract level data produced by the Census Bureau, as well as address-level afterschool program data produced by Dallas Afterschool.
 
 Data from the U.S. Census Bureau was accessed through the TidyCensus package in R at the census tract level. Remaining data was accessed as a flat file from original data sources.
 
@@ -54,11 +64,32 @@ All data frames were exported into a geopackage database for further analysis.
 Once the indicators were calculated it was necessary to transform our variables into a proper standard before calculating the indexes. To do so a test of normality (Shapiro-Wilks) was conducted in order to determine if the data fell within a normal distribution. Indicators which were determined to not fall within a normal distribution by the Shapiro-Wilks test were subsequently log transformed. It was also determined that all indicators must be directionally aligned, to do so any indicators which were related to negative outcomes were multiplied by negative one. This transformation meant that negative indicators would also have negative values, whereas positive indicators would have positive values. The next step involved taking the log transformed indicators and converting them into z-scores in order to have all values within the same scale. 
 
 ### Principal Components Analysis + Index Creation
+With a number of metrics included in this analysis, there is considerable overlap or correlation between many of the indicators included for each score. For example, the poverty rate and median household income are both measures of relative wealth in a community. Both are used here, however, to help further identify communities not all where a larger share of residents are living in poverty but where incomes are low relative to other communities even if the poverty rate is low. To include the details and indicators that were identified for the Afterschool Landscape Tool we determined that principal components analysis would help us identify variables that were highly related and in need of adjustment prior to calculating any of the scores.
+Once scores were calculated, each was converted into a 0 to 100 scale indicating low (0) and high (100) supply or demand for a given community.
 
 ### Typology Group Creation
+Once each score was generated the jenks distribution was calculated in order to identify groups between very low to very high (supply or demand) grouping each score into one of five groups. 
 
-## Findings + Results
-[What were the overall results seen from the analysis and did they answer the original problem statement? __from CPAL__]
+* Very Low Supply/Demand
+* Low Supply/Demand
+* Moderate Supply/Demand
+* High Supply/Demand
+* Very High Supply/Demand
 
-## Discussion
-[How will this analysis be used and how can it be improved in future iterations? __from CPAL__]
+Each score was then compared against one another to determine the combination of relative supply and demand in a census tract. These groups were then used to determine the three major typologies.
+
+* Supply Exceeds Demand
+* Demand Exceeds Supply
+* Supply Meets Demand
+
+These typologies were determined by comparing the five previously identified groups and determining where supply and demand compared against one another.
+
+## Limitations * Further Changes
+
+One important note with this analysis is that because it is only using afterschool programming affiliated with Dallas Afterschool, it may be missing additional program types such as on campus extra curricular club activities or private programming such as art or music classes that students may attend.
+
+## Sources
+* Dallas After 3PM (note that this is by Afterschool Alliance maybe a third reference )
+https://secureservercdn.net/50.62.89.79/mbx.e81.myftpupload.com/wp-content/uploads/2021/02/Dallas-After-3pm-020221.pdf
+* Dallas Afterschool Policy Brief 
+https://secureservercdn.net/50.62.89.79/mbx.e81.myftpupload.com/wp-content/uploads/2021/02/DAS_Policy_Brief_v8.pdf

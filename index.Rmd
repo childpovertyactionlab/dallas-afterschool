@@ -65,7 +65,7 @@ das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
 
 ## Introduction
 
-There are 380,000 children between the ages of 5 and 14 in Dallas County, [number] of whom attend an afterschool program. However, for every child in an afterschool program, three are waiting for an available program. That leaves over 100,000 children between the ages of 5 and 14 without adult supervision or enrichment opportunities during the hours between 3 and 6 pm. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety. 
+There are 380,000 children between the ages of 5 and 14 in Dallas County, 85,000 of whom attend an afterschool program. This leaves over 100,000 children between the ages of 5 and 14 without adult supervision or enrichment opportunities during the hours between 3 and 6 pm. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety. 
 
 ```{r, map of density of children between 5 and 14 in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 # Generate Jenks Breaks for plot
@@ -120,11 +120,13 @@ Research shows that afterschool programs provide essential services for children
 
 ## COVID-19
 
-Afterschool and summer programs have not been exempt from the stress and economic strain of the pandemic. 
-* Workforce
-* Capacity 
+Afterschool and summer programs have not been exempt from the stress and economic strain of the pandemic. Throughout the pandemic, OST providers quickly pivoted to serve the needs of youth and families: 
 
-The afterschool field is an integral component of local communities and is demonstrably crucial to the post-pandemic recovery. As communities continue to feel the impact of COVID, youth will need expanded support to emerge from this crisis stronger, resilient, and ready to thrive. 
+* 73% of programs served youth remotely
+* 62% connected families to community resources
+* 57% delivered meals to families 
+
+The afterschool field is an integral component of local communities and is crucial to the post-pandemic recovery. As communities continue to feel the impact of COVID, youth will need expanded support to emerge from this crisis stronger, resilient, and ready to thrive. 
 
 ## Objective
 
