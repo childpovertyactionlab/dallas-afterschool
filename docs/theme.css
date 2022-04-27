@@ -11,6 +11,7 @@
 /* Optional: embed custom fonts here with `@import`          */
 /* This must remain at the top of this file.                 */
 @import url('https://fonts.googleapis.com/css2?family=Oswald');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada');
 
 html {
   /*-- Main font sizes --*/
@@ -28,7 +29,7 @@ html {
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   --heading-font:    "Oswald", sans-serif;
   --mono-font:       "Oswald", monospace;
-  --body-font:       "Oswald", sans-serif;
+  --body-font:       "Radio+Canada", sans-serif;
   --navbar-font:     "Oswald", sans-serif;  /* websites + blogs only */
 }
 

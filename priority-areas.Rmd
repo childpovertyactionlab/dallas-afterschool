@@ -67,6 +67,75 @@ sup_dem <- dasmetrics %>%
 demTsup <- dasmetrics %>%
   filter(MainGrp == "Demand = Supply")
 ```
+
+## Afterschool Program Need in Dallas County
+```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+leaflet() %>%
+#  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
+  addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
+    addPolygons(data = dem_sup,
+              fillColor = "#DC5034",
+              weight = 1,
+              opacity = 1,
+              color = "#DC5034",
+              fillOpacity = 0.7,
+              group = "Demand > Supply"
+              ) %>%
+  addPolygons(data = demTsup,
+              fillColor = "#8996A0",
+              weight = 1,
+              opacity = 1,
+              color = "#8996A0",
+              fillOpacity = 0.6,
+              group = "Demand = Supply"
+              ) %>%
+  addPolygons(data = sup_dem,
+              fillColor = "#0089C4",
+              weight = 1,
+              opacity = 1,
+              color = "#0089C4",
+              fillOpacity = 0.6,
+              group = "Supply > Demand"
+              ) %>%
+    addPolygons(data = dallasCounty,
+              color = "#686158",
+              weight = 3,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              opacity = 1,
+              group = "Dallas County"
+              ) %>%
+  addPolygons(data = citycouncil,
+              color = "#EDE8D5",
+              weight = 3,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              opacity = 1,
+              group = "Dallas City Council",
+              label = ~htmlEscape(name)
+              ) %>%
+  addLayersControl(
+    baseGroups = c("Dallas County"),
+    overlayGroups = c("Dallas City Council", "Demand > Supply", "Supply > Demand", "Demand = Supply"),
+    position = "topright",
+    options = layersControlOptions(collapsed = FALSE))
+```
+
+## What each typology looks like
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
+typologytable %>%
+  mutate(MainGrp = str_to_title(MainGrp),
+         AreaSqMi = round(AreaSqMi),
+         mhi = round(mhi),
+         cpr = paste0(round(cpr*100, digits = 1), "%"),
+         popden = round(eligPop/AreaSqMi)) %>%
+  select(MainGrp, TotalTracts, AreaSqMi, mhi, eligPop, bp_u18, dasPrograms, dasSeats, poppro, cpr, popden) %>%
+  knitr::kable(.,
+               col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Population', 'Below Poverty (Under 18)', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density')) %>%
+  kable_styling()
+```
+
 ## Typology of Program Access
 
 In order to assess what census tracts have the highest demand for afterschool programs relative to current supply, each index was classified into one of four groups based on their score.
@@ -92,68 +161,3 @@ With our classification methods we were able to identify 12 unique categories of
 * Supply < Demand: A census tract where the demand score significantly exceeds the supply score. Census tracts in this category tend to have a lower number of program seats available relative to the eligible population.
 
 * Supply = Demand: A census tract where the supply score and demand score are similar to one another. Census tracts in this category tend to have a similar number of available program seats relative to the eligible population.
-
-
-```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
-leaflet() %>%
-#  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
-  addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
-    addPolygons(data = dem_sup,
-              fillColor = "#DC5034",
-              weight = 1,
-              opacity = 1,
-              color = "#DC5034",
-              fillOpacity = 0.7,
-              group = "Demand > Supply"
-              ) %>%
-  addPolygons(data = demTsup,
-              fillColor = "#8996A0",
-              weight = 1,
-              opacity = 1,
-              color = "#8996A0",
-              fillOpacity = 0.7,
-              group = "Demand = Supply"
-              ) %>%
-  addPolygons(data = sup_dem,
-              fillColor = "#0089C4",
-              weight = 1,
-              opacity = 1,
-              color = "#0089C4",
-              fillOpacity = 0.7,
-              group = "Supply > Demand"
-              ) %>%
-    addPolygons(data = dallasCounty,
-              color = "#686158",
-              weight = 3,
-              smoothFactor = 0.2, 
-              fillOpacity = 0,
-              group = "Dallas County"
-              ) %>%
-  addPolygons(data = citycouncil,
-              color = "#686158",
-              weight = 3,
-              smoothFactor = 0.2, 
-              fillOpacity = 0,
-              group = "Dallas City Council"
-              ) %>%
-  addLayersControl(
-    baseGroups = c("Dallas County"),
-    overlayGroups = c("Dallas City Council", "Demand > Supply", "Supply > Demand", "Demand = Supply"),
-    position = "topright",
-    options = layersControlOptions(collapsed = FALSE))
-```
-
-## What each typology looks like
-
-```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
-typologytable %>%
-  mutate(MainGrp = str_to_title(MainGrp),
-         AreaSqMi = round(AreaSqMi),
-         mhi = round(mhi),
-         cpr = paste0(round(cpr*100, digits = 1), "%"),
-         popden = round(eligPop/AreaSqMi)) %>%
-  select(MainGrp, TotalTracts, AreaSqMi, mhi, eligPop, bp_u18, dasPrograms, dasSeats, poppro, cpr, popden) %>%
-  knitr::kable(.,
-               col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Population', 'Below Poverty (Under 18)', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density')) %>%
-  kable_styling()
-```

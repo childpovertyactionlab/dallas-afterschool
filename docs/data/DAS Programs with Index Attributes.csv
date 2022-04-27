@@ -1,0 +1,904 @@
+account_name,account_id,after_school,max_capacity,facility_type,program_published,fees_type,advocacy_type,billing_street,billing_city,billing_zip,website,phone,GEOID,indexSupply,indexDemand,MainGrp
+Bent Tree Child Development Center,001i000001YBHGT,TRUE,391,Child Care Center,TRUE,Sliding Scale,For Profit,17275 ADDISON RD,ADDISON,75001,"",(972) 931-0868,48113013727,82,68,Demand = Supply
+YMCA at George H.W. Bush ES,001i000000Na3Nk,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,3939 Spring Valley Rd.,Addison,75001,www.ymcadallas.org/afterschool,214-907-2759,48113013726,86,65,Demand < Supply
+Foundation Communities at Shadow Brook Learning Center,0013100001lKfcF,TRUE,60,Apartment Complex,TRUE,No Charge,National Nonprofit,2020 S. Cooper St.,Arlington,76013,www.foundcom.org,(202)210-9791,,,,
+Foundation Communities at Sleepy Hollow Learning Center,0013100001lJHrV,TRUE,23,Apartment Complex,TRUE,No Charge,National Nonprofit,2020 S Cooper,Arlington,76013,foundcom.org,201-850-0769,,,,
+Sleepers to Sneakers Day Care,001i000001YBHKZ,TRUE,130,Child Care Center,TRUE,Sliding Scale,For Profit,11707 SEAGOVILLE RD,BALCH SPRINGS,75180,"",(972) 286-5933,48113017201,86,64,Demand < Supply
+"Noahs Ark Learning Center, Inc",001i000001YBHGb,TRUE,128,Child Care Center,TRUE,Sliding Scale,For Profit,4030 PIONEER RD,BALCH SPRINGS,75180,"",(972) 557-4441,48113017315,93,63,Demand < Supply
+Right At School at Mackey Elementary School,0013r00002DdbYv,TRUE,50,School,TRUE,Fee,For Profit,14900 North Spring Ridge Cir. Balch Springs,Balch Springs,75180,"","",48113017315,93,63,Demand < Supply
+Neighborhood Project Ministry,001i000001SPaQy,TRUE,10,Child Care Center,TRUE,No Charge,For Profit,4000 Pioneer Road,Balch Springs,75180,www.neighborhoodproject.vpweb.com,469-386-5455,48113017315,93,63,Demand < Supply
+Cov Kids Club,0010Z00002CZ9RR,TRUE,276,Child Care Center,TRUE,Fee,For Profit,2660 E TRINITY MILLS RD,CARROLLTON,75006,"",972-512-4408,48113013722,100,62,Demand < Supply
+Xplor,001i000001YBHI6,TRUE,255,Child Care Center,TRUE,Sliding Scale,For Profit,2525 E TRINITY MILLS RD,CARROLLTON,75006,www.xplortoday.com,(972) 416-6471,48113013722,100,62,Demand < Supply
+LMNOP  Childrens Academy,001i000001YBHFa,TRUE,200,Child Care Center,TRUE,Sliding Scale,For Profit,2808 TRINITY SQUARE DR,CARROLLTON,75006,"",(972) 417-5909,48113013722,100,62,Demand < Supply
+Mona Montessori Academy,001i000001YBHFb,TRUE,184,School,TRUE,Sliding Scale,For Profit,1417 ISMAILI CENTER CIR,CARROLLTON,75006,"",(972) 245-1599,48113013719,86,59,Demand < Supply
+The Learning Center,0013r00002bSMsK,TRUE,150,"",TRUE,"","",2644 E TRINITY MILLS RD,CARROLLTON,75006,"",972-512-4443,48113013722,100,62,Demand < Supply
+After The Bell Good Summer Program,001i000001YBHHF,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,1012 STUDY LN,CARROLLTON,75006,"",(972) 968-6525,48113013716,95,62,Demand < Supply
+Rising Starz Child Care Center,001i000001YBHHK,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,1200 E JACKSON RD,CARROLLTON,75006,"",(972) 466-3800,48113013716,95,62,Demand < Supply
+The Happy Tree CDC,001i000001YBHGW,TRUE,130,Child Care Center,TRUE,Sliding Scale,For Profit,3225 BELMEADE DR,CARROLLTON,75006,"",(972) 733-1652,48113013722,100,62,Demand < Supply
+Semihan Early Learning Academy,0013r00002dDOUb,TRUE,116,"",TRUE,"","",1615 W BELT LINE RD,CARROLLTON,75006,"",972-446-0178,48113014002,78,86,Demand > Supply
+Enchanted Courtyard Childcare Development Center Inc.,0010Z00001w9aiZ,TRUE,92,Child Care Center,TRUE,Sliding Scale,For Profit,1400 E BELT LINE RD,CARROLLTON,75006,"",214-223-3973,48113013729,81,47,Demand < Supply
+The Clifton School,0013100001oiYQh,TRUE,90,Child Care Center,TRUE,Sliding Scale,For Profit,2206 HEADS LN,Carrollton,75006,www.TheCliftonSchool.com,(972) 416-4000,48113013721,84,70,Demand = Supply
+Foundation Communities at Peters Colony Learning Center,001i000000UedDH,TRUE,60,Apartment Complex,TRUE,No Charge,National Nonprofit,1810 E Peters Colony Dr,Carrollton,75007,"",(214)937-1823,,,,
+YMCA at Junkins Elementary,0013100001mAys3,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,2808 Running Duke Drive,Carrollton,75006,https://www.ymcadallas.org/locations/,(972) 502-2400,48113013721,84,70,Demand = Supply
+Oak Crest Private School,001i000001RaPdd,TRUE,40,Child Care Center,TRUE,Sliding Scale,For Profit,"1200 E. Jackson Road, Building 2",Carrollton,75006,oakcrestschool.org,(214) 483-5400,48113013716,95,62,Demand < Supply
+After The Bell Turner High School Summer Program,001i000001YBHHG,TRUE,25,"",TRUE,Sliding Scale,"",1600 S JOSEY LN,CARROLLTON,75006,"",(972) 968-6525,48113013729,81,47,Demand < Supply
+Childcare Network  #198,001i000001YBHEY,TRUE,180,Child Care Center,TRUE,Sliding Scale,For Profit,195 N CLARK RD,CEDAR HILL,75104,"",(972) 299-9999,48113016626,95,61,Demand < Supply
+Where Kidz Connect Academy,0013100001eEADs,TRUE,177,Child Care Center,TRUE,Sliding Scale,For Profit,513 STRAUS RD,CEDAR HILL,75104,www.wherekidzconnect.com,(972) 293-6767,48113016522,82,68,Demand = Supply
+Oak Tree Academy,001i000001YBHGp,TRUE,136,School,TRUE,Sliding Scale,For Profit,110 KENYA ST,CEDAR HILL,75104,"",(972) 291-7893,48113016626,95,61,Demand < Supply
+Children's Enrichment Program,001i000001YBHEM,TRUE,135,Child Care Center,TRUE,Sliding Scale,For Profit,127 N ROBERTS RD,CEDAR HILL,75104,"",(972) 291-1804,48113016522,82,68,Demand = Supply
+Olives Lil' Angels Learning Center,001i000001YBHGr,TRUE,128,Child Care Center,TRUE,Sliding Scale,For Profit,1021 N JOE WILSON RD,CEDAR HILL,75104,"",(972) 291-1441,48113016629,90,60,Demand < Supply
+Powerhouse Center in Cedar Hill,001i000001YBHH3,TRUE,120,Child Care Center,TRUE,Sliding Scale,For Profit,129 W WINTERGREEN RD,CEDAR HILL,75104,"",(214) 376-8208,48113016511,84,51,Demand < Supply
+Childcare Network #172,001i000001YBHEW,TRUE,110,Child Care Center,TRUE,Sliding Scale,For Profit,240 E BELT LINE RD,CEDAR HILL,75104,"",(972) 299-6027,48113016626,95,61,Demand < Supply
+Wise Academy Inc,001i000001YBHL0,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,125 W WINTERGREEN RD,CEDAR HILL,75104,"",(972) 293-0191,48113016511,84,51,Demand < Supply
+"Discovery Village Learning Center, LLC",001i000001YBHJ4,TRUE,59,Child Care Center,TRUE,Sliding Scale,For Profit,855 N DUNCANVILLE RD,CEDAR HILL,75104,"",(972) 291-6649,48113016630,85,60,Demand < Supply
+Metro Christian Academy,001i000001YBHK4,TRUE,56,Child Care Center,TRUE,Sliding Scale,For Profit,935 S CLARK RD,CEDAR HILL,75104,"",(972) 291-6222,48113016616,80,65,Demand = Supply
+Right At School at Waterford Oaks Elementary,0013r00002DdbYz,TRUE,50,School,TRUE,Fee,For Profit,401 N. Waterford Oaks Dr. Cedar Hill,Cedar Hill,75104,"","",48113016630,85,60,Demand < Supply
+Right At School at High Pointe Elementary,0013r00002DdbZ0,TRUE,50,School,TRUE,Fee,For Profit,1351 High Pointe Lane Cedar Hill,Cedar Hill,75104,"","",48113016529,82,62,Demand < Supply
+Right At School at Highlands Elementary,0013r00002DdbZ1,TRUE,50,School,TRUE,Fee,For Profit,131 Sims Drive Cedar Hill,Cedar Hill,75104,"","",48113016524,80,74,Demand = Supply
+Right At School at Bray Elementary School,0013r00002DdbZ2,TRUE,50,School,TRUE,Fee,For Profit,218 N. Broad St. Cedar Hill,Cedar Hill,75104,"","",48113016524,80,74,Demand = Supply
+Right At School at Collegiate Prep Elementary,0013r00002DdbZ3,TRUE,50,School,TRUE,Fee,For Profit,975 Pickard Drive Cedar Hill,Cedar Hill,75104,"","",48113016615,80,47,Demand < Supply
+Right At School at Plummer Elementary,0013r00002DdbZ4,TRUE,50,School,TRUE,Fee,For Profit,1203 S. Clark Road Cedar Hill,Cedar Hill,75104,"","",48113016524,80,74,Demand = Supply
+Right At School at Lake Ridge Elementary,0013r00002DdbZ5,TRUE,50,School,TRUE,Fee,For Profit,1020 Lake Ridge Parkway Cedar Hill,Cedar Hill,75104,"","",48113016525,76,86,Demand > Supply
+"Tesia's Tiny Tots Day Care Center, Inc",001i000001YBHHQ,TRUE,37,Child Care Center,TRUE,Sliding Scale,For Profit,524 N HIGHWAY 67,CEDAR HILL,75104,"",(972) 293-1477,48113016629,90,60,Demand < Supply
+Destiny Learning Center,0013r00002QSWPL,TRUE,31,Child Care Center,TRUE,Fee,For Profit,917 STRAUS RD,CEDAR HILL,75104,"",682-241-8159,48113016522,82,68,Demand = Supply
+Creme de la Creme - MacArthur Blvd,0010Z00002ACVQ7,TRUE,491,Child Care Center,TRUE,Sliding Scale,For Profit,811 N MACARTHUR BLVD,COPPELL,75019,"",469-702-1538,,,,
+Creme De La Creme - Denton Tap Rd,001i000001YBHFO,TRUE,340,Child Care Center,TRUE,Sliding Scale,For Profit,300 S DENTON TAP RD,COPPELL,75019,"",(972) 462-9064,48113014119,90,60,Demand < Supply
+Childrens Courtyard at Town Center,001i000001YBHEa,TRUE,302,Child Care Center,TRUE,Sliding Scale,For Profit,129 TOWN CENTER BLVD,COPPELL,75019,"",(972) 745-8055,48113020000,89,73,Demand < Supply
+Discover & Share,001i000001YBHEu,TRUE,265,Child Care Center,TRUE,Sliding Scale,"",1445 RIVERCHASE DR,COPPELL,75019,"",(972) 304-1818,48113014121,93,60,Demand < Supply
+Universal Satori Learning Centers Inc,001i000001YBHI9,TRUE,250,Child Care Center,TRUE,Sliding Scale,For Profit,1001 E SANDY LAKE RD,COPPELL,75019,"",(972) 393-3200,48113014121,93,60,Demand < Supply
+Riverchase Montessori Academy,001i000001YBHEB,TRUE,200,School,TRUE,Sliding Scale,For Profit,1555 E SANDY LAKE RD,COPPELL,75019,"",(972) 745-1500,48113014121,93,60,Demand < Supply
+Coppell Early Care and Education,001i000001YBHI7,TRUE,195,Child Care Center,TRUE,Sliding Scale,For Profit,103 SAMUEL BLVD,COPPELL,75019,"",(972) 304-2000,48113014135,84,37,Demand < Supply
+Primrose School of Coppell,0010Z000025h6dN,TRUE,191,Child Care Center,TRUE,Sliding Scale,For Profit,275 E PARKWAY BLVD,COPPELL,75019,"",972-304-8888,48113014135,84,37,Demand < Supply
+The Pierce Academy,001i000001YBHKo,TRUE,119,Child Care Center,TRUE,Sliding Scale,For Profit,150 N MOORE RD,COPPELL,75019,"",(972) 304-0360,48113014135,84,37,Demand < Supply
+YMCA at Lakeside Elementary,001i000001YBHGi,TRUE,110,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,1100 VILLAGE PKWY,COPPELL,75019,https://www.ymcadallas.org/locations/,(214) 534-2826,48113014123,80,74,Demand = Supply
+The Learning Station,0013r00002Hp49r,TRUE,107,Child Care Center,TRUE,Fee,For Profit,130 S MOORE RD,COPPELL,75019,"",972-304-5693,48113014120,86,85,Demand = Supply
+Cottonwood Creek Elementary,0010Z00001SAq5h,TRUE,100,School,TRUE,Sliding Scale,School Run,615 Minyard Drive,Coppell,75019,"","",48113020000,89,73,Demand < Supply
+Denton Creek Elementary at YMCA,0013100001mAynS,TRUE,80,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,250 Natches Trace,Coppell,75019,https://www.ymcadallas.org/locations/,(214) 208-0847,48113020000,89,73,Demand < Supply
+YMCA at Wilson Elementary School,0013100001mBP76,TRUE,80,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,200 South Coppell Rd.,Coppell,75019,https://www.ymcadallas.org/locations/,(214) 496-7500,48113014126,83,59,Demand < Supply
+Kiddin Around Coppell,0013r00002VPqo5,TRUE,68,Child Care Center,TRUE,Fee,For Profit,144 W PARKWAY BLVD,COPPELL,75019,"",972-462-1300,48113020000,89,73,Demand < Supply
+YMCA at Mockingbird Elementary - Coppell,0013100001mAzEY,TRUE,60,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,300 Mockingbird Ln.,Coppell,75019,https://www.ymcadallas.org/locations/,(214) 208-2964,48113014120,86,85,Demand = Supply
+YMCA at Pinkerton Elementary,001i000001YBHGj,TRUE,55,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,260 SOUTHWESTERN BLVD,COPPELL,75019,"",(972) 804-4587,48113014126,83,59,Demand < Supply
+YMCA at Town Center Elementary,0013100001mBPRL,TRUE,50,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,185 N. Heartz Rd.,Coppell,75019,https://www.ymcadallas.org/locations/,(214) 496-7800,48113014135,84,37,Demand < Supply
+Coppell Family YMCA,0013100001mBPZ8,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,146 Town Center Blvd.,Coppell,75229,https://www.ymcadallas.org/locations/town_north/,(972) 393-5121,48113014135,84,37,Demand < Supply
+Mary Rush Children's College At IBOC,001i000001YBHEe,TRUE,999,Child Care Center,TRUE,Sliding Scale,For Profit,7710 S WESTMORELAND RD,DALLAS,75237,"",(972) 572-4262,48113016607,84,42,Demand < Supply
+Golden Eagles Program at Westmorland Rd.,0013100001oiaMm,TRUE,580,Child Care Center,TRUE,Sliding Scale,For Profit,6901 S WESTMORELAND RD,Dallas,75237,"",(972) 709-4700,48113010903,94,59,Demand < Supply
+Golden Eagles Program at Red Bird Center,0013100001oiaKv,TRUE,360,Child Care Center,TRUE,Sliding Scale,For Profit,5701 RED BIRD CENTER DR,Dallas,75237,"",(972) 709-4700,48113010904,90,64,Demand < Supply
+White Rock North School Inc,001i000001YBHKx,TRUE,325,School,TRUE,Sliding Scale,School Run,9711-9727 White Rock Trail,Dallas,75238,http://whiterocknorthschool.com/summer%20camp.html,(214) 348-7410,48113013008,97,59,Demand < Supply
+Temple Emanu El Preschool,001i000001YBHHo,TRUE,324,Faith Community,TRUE,Sliding Scale,Local Nonprofit,8500 HILLCREST AVE,DALLAS,75225,"",(214) 706-0020,48113007801,84,65,Demand = Supply
+Handprints Academy,001i000001YBHSy,TRUE,322,Child Care Center,TRUE,Sliding Scale,For Profit,702 S HAMPTON RD,DALLAS,75208,"",(214) 941-4844,48113005200,83,38,Demand < Supply
+Dallas Children's Theater,001i000001SPRcp,TRUE,300,Community Center/Nonprofit,TRUE,Fee,Local Nonprofit,5938 Skillman street,Dallas,75231,www.dct.org,214-978-0110,48113007809,93,60,Demand < Supply
+Jubilee Park and Community Centers at Main Campus,001i000000Uf14D,TRUE,300,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,917 Bank Street,Dallas,75223,http://www.jubileecenter.org,(972) 741-7852,48113002500,95,59,Demand < Supply
+Akiba Academy Of Dallas,001i000001YBHFo,TRUE,291,School,TRUE,Sliding Scale,School Run,12324 MERIT DR,DALLAS,75251,"",(214) 295-3400,48113013202,87,71,Demand < Supply
+Fellowship Christian Academy Preschool,0013100001mAWOE,TRUE,271,Child Care Center,TRUE,Sliding Scale,For Profit,1821 W. Camp Wisdom Rd.,Dallas,75232,"",(214) 672-9200,48113011101,93,64,Demand < Supply
+Primrose of Prestonwood,001i000001YBHEt,TRUE,250,Child Care Center,TRUE,Sliding Scale,For Profit,15237 MONTFORT RD,DALLAS,75248,"",(469) 791-9131,48113013620,84,65,Demand = Supply
+Ideal Day Care and Learning Center,001i000001YBHJS,TRUE,238,Child Care Center,TRUE,Sliding Scale,For Profit,1000 E RED BIRD LN,DALLAS,75241,"",(214) 371-9228,48113011202,98,62,Demand < Supply
+Rosewood Academy Dallas,0013r00002QWCXR,TRUE,227,Child Care Center,TRUE,Fee,For Profit,2310 STUTZ DR,DALLAS,75235,"",214-350-7673,48113000409,83,65,Demand = Supply
+Red Bird Learning Center,001i000001YBHHL,TRUE,201,Child Care Center,TRUE,Sliding Scale,For Profit,7575 S HAMPTON RD,DALLAS,75232,"",(972) 283-1000,48113010906,94,60,Demand < Supply
+Glenbrook CDC,001i000001YBHFB,TRUE,200,Child Care Center,TRUE,Sliding Scale,For Profit,1339 N MASTERS DR,DALLAS,75217,"",(972) 288-0769,48113011901,89,60,Demand < Supply
+Glen Oaks School,001i000001YBHFC,TRUE,200,School,TRUE,Sliding Scale,For Profit,12105 PLANO RD,DALLAS,75243,"",(972) 231-3135,48113019019,76,23,Demand < Supply
+ST James Episcopal Montessori School,001i000001YBHKf,TRUE,197,School,TRUE,Sliding Scale,School Run,9845 MCCREE RD,DALLAS,75238,"",(214) 348-1349,48113013012,92,74,Demand < Supply
+Handprints Child Care,001i000001YBHEK,TRUE,179,Child Care Center,TRUE,Sliding Scale,For Profit,2805 PEAVY RD,DALLAS,75228,"",(214) 327-3236,48113012301,80,42,Demand < Supply
+Jewish Community Center of Dallas,001i000001YBHI4,TRUE,175,Community Center/Nonprofit,TRUE,Sliding Scale,Local Nonprofit,7900 Northaven Rd,Dallas,75230,http://www.jccdallas.org/,(214) 739-0225,48113013101,88,75,Demand < Supply
+Bright Minds Learning Center LLC,0010Z0000273xxk,TRUE,170,Child Care Center,TRUE,Sliding Scale,For Profit,2726 W ILLINOIS AVE,DALLAS,75233,"",214-330-0413,48113010804,84,40,Demand < Supply
+Riding Rainbows Child Development Center,0010Z0000273xxp,TRUE,170,Child Care Center,TRUE,Sliding Scale,For Profit,7605 C F HAWN FWY,DALLAS,75217,"",214-391-2259,48113009304,75,18,Demand < Supply
+Voice of Hope Redeeming STEM Afterschool (Main Campus),001i000000Uf0f4,TRUE,170,Community Center/Nonprofit,TRUE,Sliding Scale,Local Nonprofit,4120 Gentry Dr,Dallas,75212,http://voiceofhope.org/,214334-1937,48113010500,88,62,Demand < Supply
+"Little Creations Learning Center, LLC",0013r00002YQmj2,TRUE,170,Child Care Center,TRUE,Fee,For Profit,817 HOLCOMB RD,DALLAS,75217,"",214-632-7253,48113009202,84,47,Demand < Supply
+Heavenly Christian Academy,001i000001YBHFK,TRUE,169,Child Care Center,TRUE,Sliding Scale,For Profit,11421 SHILOH RD,DALLAS,75228,"",(972) 681-7545,48113012701,87,62,Demand < Supply
+Abugida Academy,0013100001mAWhW,TRUE,168,School,TRUE,Sliding Scale,For Profit,11501 Plano Rd.,Dallas,75243,"",(214) 553-5530,48113018506,80,71,Demand = Supply
+East Ridge Academy,0010Z000024Fpcf,TRUE,165,Child Care Center,TRUE,Sliding Scale,For Profit,6310 EASTRIDGE DR,DALLAS,75231,"",214-368-7903,48113007809,93,60,Demand < Supply
+Fair Oaks Day School,001i000001YBHF2,TRUE,164,School,TRUE,Sliding Scale,School Run,7825 FAIR OAKS AVE,DALLAS,75231,"",(214) 340-1121,48113007812,90,60,Demand < Supply
+Kids Concepts Child Development,001i000001YBHFj,TRUE,163,Child Care Center,TRUE,Sliding Scale,For Profit,4019 W LEDBETTER DR,DALLAS,75233,"",(214) 331-8808,48113010807,93,62,Demand < Supply
+Sherandas Playhouse II,001i000001YBHHg,TRUE,162,Child Care Center,TRUE,Sliding Scale,For Profit,2124 N PRAIRIE CREEK RD,DALLAS,75227,"",(214) 388-9399,48113009002,87,85,Demand = Supply
+YMCA @ Rogers Dallas,0013r00002bSMsL,TRUE,160,"",TRUE,"","",5314 ABRAMS RD,DALLAS,75214,"",469-348-9622,48113007902,89,59,Demand < Supply
+Springcreek Private School,001i000001YBHKd,TRUE,160,Child Care Center,TRUE,Sliding Scale,For Profit,14855 SPRING CREEK RD,DALLAS,75248,"",(972) 239-0096,48113013607,92,79,Demand = Supply
+Kiddie Korner Private School,001i000001YBHGQ,TRUE,157,Child Care Center,TRUE,Sliding Scale,For Profit,328 W 12TH ST,DALLAS,75208,"",(214) 946-3151,48113005000,89,52,Demand < Supply
+KinderCare Learning Centers at Forest Ln.,001i000001YBHGR,TRUE,155,Child Care Center,TRUE,Sliding Scale,For Profit,9131 FOREST LN,DALLAS,75243,"",(972) 234-3174,48113007810,95,60,Demand < Supply
+The Westwood School Corp.,001i000001YBHEO,TRUE,155,School,TRUE,Sliding Scale,School Run,14340 PROTON RD,DALLAS,75244,WESTWOODSCHOOL.ORG/SUMMER,(972) 239-8598,48113013806,85,69,Demand < Supply
+Lake Highlands Presbyterian CDC,001i000001YBHDx,TRUE,154,Faith Community,TRUE,Sliding Scale,Local Nonprofit,8525 AUDELIA RD,DALLAS,75238,"",(214) 343-7103,48113013013,84,89,Demand > Supply
+American Care Academy Pleasant Grove,0013r00002Hnz9y,TRUE,153,Child Care Center,TRUE,Fee,For Profit,1227 N MASTERS DR,DALLAS,75217,"",972-325-7983,48113011802,83,55,Demand < Supply
+Nueva Vida Day Care Center,001i000001YBHKC,TRUE,151,Child Care Center,TRUE,Sliding Scale,For Profit,2602 W ILLINOIS AVE,DALLAS,75233,"",(214) 333-9171,48113010804,84,40,Demand < Supply
+Boys and Girls Club of East Dallas,0013100001bejbx,TRUE,150,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,4804 Worth St.,Dallas,75246,www.bgca.org,(214) 828-2200,48113001502,77,35,Demand < Supply
+Boys and Girls Club of Oak Cliff,0013100001bejap,TRUE,150,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,2907 Linfield Rd.,Dallas,75216,www.bgca.org,(214) 372-4661,48113008701,88,59,Demand < Supply
+Youth Believing in Change After School and Tutoring Program,001i000001I5DW5,TRUE,150,Faith Community,TRUE,No Charge,Local Nonprofit,8574 Stults Road,Dallas,75243,"","",48113007805,92,62,Demand < Supply
+NMZ Day Care Center Inc.,0013100001k3PJ5,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,8835 Stults Rd.,Dallas,75243,"",(214) 348-9090,48113007805,92,62,Demand < Supply
+Youth World,0013100001bSyFw,TRUE,150,Child Care Center,TRUE,No Charge,Local Nonprofit,1121 W. Wheatland Rd.,Dallas,75232,www.youthworld.org,(214)948-0606,48113011101,93,64,Demand < Supply
+KinderCare Learning Centers LLC,0013r00002Hnz9z,TRUE,150,Child Care Center,TRUE,Fee,For Profit,15610 SPRING CREEK RD,DALLAS,75248,"",972-404-9020,48113013607,92,79,Demand = Supply
+The Modern Tot,0010Z000024Cxw6,TRUE,148,Child Care Center,TRUE,Sliding Scale,For Profit,10801 GARLAND RD,DALLAS,75218,"",214-901-1623,48113012802,90,62,Demand < Supply
+Neighborhood Christian Learning Center of Dallas INC,001i000001YBHGe,TRUE,146,Child Care Center,TRUE,Sliding Scale,For Profit,1111 E LEDBETTER DR,DALLAS,75216,"",(214) 372-4411,48113005901,99,61,Demand < Supply
+Lake Highlands Christian Child,001i000001YBHI0,TRUE,145,Child Care Center,TRUE,Sliding Scale,For Profit,9919 MCCREE RD,DALLAS,75238,"",(214) 348-1123,48113013012,92,74,Demand < Supply
+Richland Academy Learning Center Inc,001i000001YBHHJ,TRUE,144,Child Care Center,TRUE,Sliding Scale,For Profit,9850 WALNUT ST,DALLAS,75243,"",(972) 644-1340,48113019019,76,23,Demand < Supply
+A Missionary C.O.G.I.C.U.I. Learning Center,0013r00002bSMsF,TRUE,143,"",TRUE,"","",7460 S WESTMORELAND RD STE 105,DALLAS,75237,"",214-758-0370,48113016607,84,42,Demand < Supply
+Little Rascals Academy & Day Care,001i000001YBHEq,TRUE,141,Child Care Center,TRUE,Sliding Scale,For Profit,5554 S HAMPTON RD,DALLAS,75232,"",(214) 331-7500,48113011004,91,62,Demand < Supply
+Betty Lin Early Childhood Learning Ctr,001i000001YBHE4,TRUE,140,Child Care Center,TRUE,Sliding Scale,For Profit,1123 E LEDBETTER DR,DALLAS,75216,"",(214) 375-2322,48113005901,99,61,Demand < Supply
+Bryans House,0013100001ciNNs,TRUE,136,Community Center/Nonprofit,TRUE,Sliding Scale,Local Nonprofit,3610 Pipestone Rd.,Dallas,75212,www.bryanshouse.org,(214) 559-3946,48113010500,88,62,Demand < Supply
+Ratcliff Early Learning Academy,0010Z00001w9aib,TRUE,136,Child Care Center,TRUE,Sliding Scale,For Profit,417 W OHIO AVE,DALLAS,75224,"",214-941-6577,48113006200,89,57,Demand < Supply
+Angel's on Earth Learning & Adventure Center,0013r00002YNs2F,TRUE,136,Child Care Center,TRUE,Fee,For Profit,6810 SAMUELL BLVD,DALLAS,75228,"",214-324-3555,48113012207,93,63,Demand < Supply
+Braswell Child Care Development Center at Main Campus,0013100001lJIRd,TRUE,135,Child Care Center,TRUE,Sliding Scale,For Profit,2203 South 2nd  Avenue,Dallas,75210,http://www.braswellkids.com/,(214) 565-0300,48113002703,92,57,Demand < Supply
+Precious Kargo Academy,0010Z00001uFAHB,TRUE,133,Child Care Center,TRUE,Sliding Scale,For Profit,802 S BECKLEY AVE,Dallas,75203,"",214-948-4951,48113004800,96,62,Demand < Supply
+Lake Highlands Baptist Church,0010Z00001a0Bt6,TRUE,130,Faith Community,TRUE,Sliding Scale,Local Nonprofit,642 BROOKHURST DR,DALLAS,75218,"","",48113012900,90,63,Demand < Supply
+After-School All-Stars at E.D. Walker MS,0010Z000024ErAQ,TRUE,125,School,TRUE,No Charge,National Nonprofit,12532 Nuestra Dr,Dallas,75230,"",956.274.2465,48113009604,87,59,Demand < Supply
+After-School All-Stars at Thomas C. Marsh MS,0010Z00001uIGPU,TRUE,125,School,TRUE,No Charge,National Nonprofit,3838 Crown Shore Dr.,Dallas,75224,"",214.907.8594,48113009608,87,70,Demand < Supply
+After-School All-Stars at Hector P. Garcia MS,0013100001lKenZ,TRUE,125,School,TRUE,No Charge,National Nonprofit,700 E 8th St.,Dallas,75203,http://asasnorthtexas.org/,602.410.8728,48113004800,96,62,Demand < Supply
+Jubilee Park at Oran M. Roberts Elementary School,0013100001lqRC3,TRUE,125,School,TRUE,No Charge,Local Nonprofit,4919 E. Grand Ave,Dallas,75223,jubileecenter.org,241-994-8163,48113002500,95,59,Demand < Supply
+St. Philips School and Community Center,001i000001YBHDj,TRUE,125,School,TRUE,No Charge,Local Nonprofit,1600 PENNSYLVANIA AVE,DALLAS,75215,www.stphilips1600.org,(214) 421-5221,48113020900,85,70,Demand < Supply
+Kids Country Childcare and Learning Center,001i000001YBHFy,TRUE,125,Child Care Center,TRUE,Sliding Scale,For Profit,9571 SKILLMAN ST,DALLAS,75243,"",(214) 340-5687,48113018505,75,17,Demand < Supply
+Catholic Charities at Cardinal Farrell Community Center,001i000000zj9JO,TRUE,125,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,321 Calumet Ave,Dallas,75211,www.catholiccharitiesdallas.charityfinders.org/SantaClaraRegionalCommunityCenter,214-337-0175,48113006701,80,39,Demand < Supply
+Bright Horizons at Plaza of Americas,001i000001YBHIg,TRUE,124,Child Care Center,TRUE,Sliding Scale,For Profit,700 N PEARL ST STE N101,DALLAS,75201,"",(214) 999-1021,48113001705,78,89,Demand > Supply
+Alcuin School,001i000001YBHGz,TRUE,123,School,TRUE,Sliding Scale,School Run,6144 Churchill Way,Dallas,75230,www.alcuinschool.org/page,(972) 239-1745,48113013201,85,70,Demand < Supply
+KCE Champions LLC @ St. Philip,0013r00002bSMsH,TRUE,120,"",TRUE,"","",1600 PENNSYLVANIA AVE,DALLAS,75215,"",940-368-3794,48113020900,85,70,Demand < Supply
+Spanish House Elementary School,0013100001nSxiz,TRUE,120,School,TRUE,Sliding Scale,School Run,7159 E Grand Ave,Dallas,75223,http://www.dallasspanishhouse.com/,(214) 826-2323,48113001202,89,62,Demand < Supply
+Richardson ISD - Xplore! Dobie Primary,0013100001pokUx,TRUE,119,School,TRUE,Fee,School Run,14040 ROLLING HILLS LN,Dallas,75240,"",(469) 593-4019,48113019208,77,22,Demand < Supply
+Lighthouse Learning Center,001i000001YBHJr,TRUE,119,Child Care Center,TRUE,Sliding Scale,For Profit,5525 W ILLINOIS AVE,DALLAS,75211,"",(214) 339-2207,48113010704,85,60,Demand < Supply
+Alphabest @ CityScape-East Grand Preparatory,0010Z000028tUpt,TRUE,116,School,TRUE,Sliding Scale,For Profit,6211 E GRAND AVE,DALLAS,75223,"",972-668-0640,48113001203,90,83,Demand = Supply
+AlphaBest @ Geneva Heights-DISD,0010Z0000273xxi,TRUE,115,School,TRUE,Sliding Scale,For Profit,2911 DELMAR AVE,DALLAS,75206,"",972-668-0640,48113000202,87,86,Demand = Supply
+Saint Christopher Montessori,001i000001YBHHX,TRUE,115,School,TRUE,Sliding Scale,School Run,7900 LOVERS LN,DALLAS,75225,"",(214) 363-9391,48113019302,85,59,Demand < Supply
+Mi Escuelita Preschool at Good Shepherd,001i000001YBHK5,TRUE,114,Child Care Center,TRUE,Sliding Scale,For Profit,4931 BERNAL DR,DALLAS,75212,"",(214) 638-1749,48113010601,93,63,Demand < Supply
+A+ Highpointe Academy,0013100001eWtWB,TRUE,113,Child Care Center,TRUE,Sliding Scale,For Profit,3211 W Camp Wisdom Road,Dallas,75241,"",(214) 331-7202,48113010904,90,64,Demand < Supply
+Cornerstone/The Ranch,001i000001YBHFM,TRUE,111,Child Care Center,TRUE,Sliding Scale,For Profit,1050 E CAMP WISDOM RD,DALLAS,75241,"",(972) 224-6716,48113011201,85,59,Demand < Supply
+Nexus Child Development Center,001i000001YBHFp,TRUE,111,Child Care Center,TRUE,Sliding Scale,For Profit,8733 LA PRADA DR,DALLAS,75228,"",(214) 321-0156,48113012302,73,11,Demand < Supply
+Richardson ISD - Prestonwood Elementary,001i000001YBHG9,TRUE,110,School,TRUE,Sliding Scale,School Run,6525 LACOSA DR,DALLAS,75248,"",(469) 593-6739,48113013619,89,77,Demand = Supply
+LaunchPAD,0013r00002ZnCXL,TRUE,110,Child Care Center,TRUE,Fee,For Profit,6502 MILITARY PKWY,DALLAS,75227,"",214-275-3432,48113008401,77,39,Demand < Supply
+Ms Sues Christian Day Care School,001i000001YBHF0,TRUE,108,Child Care Center,TRUE,Sliding Scale,For Profit,1825 Clarendon W,Dallas,75208,"",(214) 942-0081,48113005200,83,38,Demand < Supply
+Angels Playland,001i000001YBHIa,TRUE,107,Child Care Center,TRUE,Fee,For Profit,4014 S COCKRELL HILL RD,DALLAS,75236,"",(214) 337-0171,48113010807,93,62,Demand < Supply
+Pace and Ross Learning Center,001i000001YBHGt,TRUE,103,Child Care Center,TRUE,Sliding Scale,For Profit,3922 S MARSALIS AVE,DALLAS,75216,"",(214) 371-6206,48113005901,99,61,Demand < Supply
+Burning Bush Academy,001i000001YBHE1,TRUE,103,Child Care Center,TRUE,Sliding Scale,For Profit,4943 BONNIE VIEW RD,DALLAS,75241,"",(214) 375-5056,48113008705,88,60,Demand < Supply
+Hamilton Park Methodist Church,0013100001n8NhF,TRUE,102,Faith Community,TRUE,Sliding Scale,For Profit,11881 Schroeder Rd.,Dallas,75243,http://hparkumctest.org/Home/tabid/94/Default.aspx,(972) 231-8538,48113007829,89,60,Demand < Supply
+Youth Conversion at Polk,001i000001YBHTA,TRUE,102,Child Care Center,TRUE,Sliding Scale,For Profit,5505 S POLK ST,DALLAS,75232,"",(469) 682-7123,48113011003,94,61,Demand < Supply
+Redeemers Child Care Center,001i000001YBHH8,TRUE,102,Child Care Center,TRUE,Sliding Scale,For Profit,8519 CRAIGHILL AVE,DALLAS,75209,"",(214) 357-3679,48113007302,87,59,Demand < Supply
+For Keeps Sake,001i000001YBHGs,TRUE,101,Child Care Center,TRUE,Sliding Scale,For Profit,2520 MARTIN LUTHER KING JR BL,DALLAS,75215,"",(214) 421-5337,48113020300,87,64,Demand < Supply
+KIDS UNIVERSITY PREPARATORY LEARNING CENTER,001i000001YBHJe,TRUE,101,Child Care Center,TRUE,Sliding Scale,For Profit,2020 W WHEATLAND RD,DALLAS,75232,"",(972) 228-7256,48113011101,93,64,Demand < Supply
+Gran's Lil' Angels Achievement Academy,001i000001YBHFF,TRUE,101,Child Care Center,TRUE,Sliding Scale,For Profit,6514 S LANCASTER RD,DALLAS,75241,"",(214) 371-8991,48113011401,84,58,Demand < Supply
+Just Keep Livin' at David W Carter High School,0013100001p7hxP,TRUE,100,School,TRUE,No Charge,National Nonprofit,1819 W. Wheatland Road,Dallas,75232,https://www.jklivinfoundation.org/,214-306-8400 x114,48113011101,93,64,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at MLK Jr Learning Center,0013r00002DdN6u,TRUE,100,School,TRUE,No Charge,National Nonprofit,1817 Warren Ave,Dallas,75215,"",214-821-2950,48113020900,85,70,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at Uplift Wisdom Preparatory,0013r00002DdN6w,TRUE,100,School,TRUE,Sliding Scale,National Nonprofit,301 W Camp Wisdom Rd,Dallas,75232,"",214-821-2950,48113011103,82,52,Demand < Supply
+Bethel Early Learning Center,0010Z00001uITtu,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,11211 E Northwest Hwy,Dallas,75238,"",214-348-8375,48113013007,89,64,Demand < Supply
+YMCA at Park South,001i000001HVKUZ,TRUE,100,Community Center/Nonprofit,TRUE,No Charge,National Nonprofit,2500 Romine Ave.,Dallas,75215,www.ymcadallas.org/afterschool,"",48113003700,94,59,Demand < Supply
+Richardson ISD -PACE at Moss Haven Elementary,0013100001lpczN,TRUE,100,School,TRUE,Fee,School Run,9202 Moss Farm Rd.,Dallas,75243,www.risd.org/pace,469-593-2182,48113007812,90,60,Demand < Supply
+Richadson ISD - Merriman Park Elementary,0013100001lpW1G,TRUE,100,School,TRUE,Sliding Scale,School Run,7101 Winedale Dr.,Dallas,75231,www.risd.org/pace,469-593-2760,48113007824,91,65,Demand < Supply
+"City Year at Francisco """"""""Pancho"""""""" Medrano Middle School",0013100001loM67,TRUE,100,School,TRUE,No Charge,National Nonprofit,9815 Brockbank Dr,Dallas,75220,www.cityyear.org/dallas,4695547004,48113009803,94,62,Demand < Supply
+City Year at H. Grady Spruce High School,0013100001loMCh,TRUE,100,School,TRUE,No Charge,National Nonprofit,9733 Old Seagoville Rd,Dallas,75217,www.cityyear.org/dallas,4695547004,48113011701,84,64,Demand < Supply
+City Year at Thomas Jefferson High School,0013100001loMBF,TRUE,100,School,TRUE,No Charge,National Nonprofit,4001 Walnut Hill Ln,Dallas,75229,www.cityyear.org/dallas,4695547004,48113009500,86,59,Demand < Supply
+City Year at Franklin D. Roosevelt High School,0013100001loMDG,TRUE,100,School,TRUE,No Charge,National Nonprofit,525 Bonnie View Rd,Dallas,75203,www.cityyear.org/dallas,4695547004,48113021100,84,,
+City Year at Oliver W. Holmes Middle School,0013100001loM4B,TRUE,100,School,TRUE,No Charge,National Nonprofit,2001 E Kiest Blvd,Dallas,75216,www.cityyear.org/dallas,4695547004,48113008801,88,60,Demand < Supply
+Rae's Hope,001i000001YCpBS,TRUE,100,Community Center/Nonprofit,TRUE,Fee,Local Nonprofit,4410 Leland Ave,Dallas,75215,www.raeshope.org,214 232-7740,48113020800,91,55,Demand < Supply
+City Year at E. B. Comstock Middle School,0013100001loM7o,TRUE,100,School,TRUE,No Charge,National Nonprofit,7044 Hodde St,Dallas,75217,www.cityyear.org/dallas,4695547004,48113009303,87,63,Demand < Supply
+Union Christian Academy,001i000001YBHI8,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,3312 S POLK ST,DALLAS,75224,"",(214) 372-9822,48113006001,77,26,Demand < Supply
+Richardson ISD - Thurgood Marshall Elementary,001i000001YBHIN,TRUE,100,School,TRUE,Fee,School Run,9666 W FERRIS BRANCH BLVD,DALLAS,75243,"",(469) 593-7419,48113007834,84,47,Demand < Supply
+Richardson ISD Xplore! -RISD Academy,001i000001YBHIQ,TRUE,100,School,TRUE,Sliding Scale,School Run,13630 COIT RD,DALLAS,75240,www.risd.org/PACE,(469) 593-7419,48113019208,77,22,Demand < Supply
+Richardson ISD Xplore!- Carolyn Bukhair Elementary,001i000001YBHIR,TRUE,100,School,TRUE,Fee,School Run,13900 MAHAM RD,DALLAS,75240,"",(469) 593-7419,48113019212,72,0,Demand < Supply
+Richardson ISD Xplore!- Skyview Elementary,001i000001YBHIS,TRUE,100,School,TRUE,Sliding Scale,School Run,9229 MEADOWKNOLL DR,DALLAS,75243,"",(469) 593-7419,48113007810,95,60,Demand < Supply
+Little Rascals Child Development Center,001i000001YBHJw,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,2907 N HAMPTON RD,DALLAS,75212,"",(214) 879-0046,48113020500,88,61,Demand < Supply
+Richardson ISD Xplore! - Northlake Elementary,001i000001YBHKQ,TRUE,100,School,TRUE,Sliding Scale,School Run,10059 RAVENSWAY DR,DALLAS,75238,WWW.RISD.ORG/PACE,(469) 593-7419,48113013008,97,59,Demand < Supply
+Good Street Learning Center  INC,001i000001YBHFE,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,3126 HATCHER ST,DALLAS,75215,"",(214) 421-7504,48113020800,91,55,Demand < Supply
+Care Center Ministries Community Center After School Program,0013100001ajiBL,TRUE,100,Child Care Center,TRUE,No Charge,For Profit,7912 Antoinette St.,Dallas,75217,http://www.carecenterministries.org,(214) 824-9852,48113009304,75,18,Demand < Supply
+"Services of Hope, LCC. Extended Day Program at East Grand Prepatory",0013100001bT4O2,TRUE,100,School,TRUE,Sliding Scale,Local Nonprofit,6211 East Grand Avenue.,Dallas,75223,www.servicesofhope.org,(214)276-0234,48113001203,90,83,Demand = Supply
+Metropolitan Christian Academi,001i000001YBHFm,TRUE,98,Child Care Center,TRUE,Sliding Scale,For Profit,3430 S POLK ST,DALLAS,75224,"",(214) 375-2227,48113006001,77,26,Demand < Supply
+Play and Learn Christian Academy,001i000001YBHE2,TRUE,95,Child Care Center,TRUE,Sliding Scale,For Profit,9510 MILITARY PKWY,DALLAS,75227,"",(214) 381-7529,48113012102,91,63,Demand < Supply
+Cornerstone Learning Center 2,0010Z00001a0BsM,TRUE,94,Child Care Center,TRUE,Sliding Scale,For Profit,814 S BELT LINE RD,DALLAS,75253,"","",48113017010,89,64,Demand < Supply
+Peari's Preparatory Academy,0013r00002NExtc,TRUE,90,Child Care Center,TRUE,Fee,For Profit,330 S R L THORNTON FWY,DALLAS,75203,"",214-944-5811,48113021000,96,63,Demand < Supply
+Creative Kids Learning Center,001i000001YBHIx,TRUE,90,Child Care Center,TRUE,Sliding Scale,For Profit,7530 FORNEY RD,DALLAS,75227,"",(214) 388-4622,48113008500,90,58,Demand < Supply
+Southern Crest Day Care Ctr,001i000001YBHEH,TRUE,90,Child Care Center,TRUE,Sliding Scale,For Profit,2324 LOCUST AVE,DALLAS,75216,http://www.southerncrestfullgospelbc.org/scfgbc-learning-center.html,(214) 371-3016,48113008703,89,56,Demand < Supply
+American Care Academy,001i000001YBHDo,TRUE,86,Child Care Center,TRUE,Sliding Scale,For Profit,530 S R L THORNTON FWY,DALLAS,75203,"",(214) 943-7300,48113021000,96,63,Demand < Supply
+El Kinder - Bilingual Early Childhood Education,001i000001YBHEz,TRUE,86,Child Care Center,TRUE,Sliding Scale,For Profit,2523 S BUCKNER BLVD,DALLAS,75227,"",(214) 381-8044,48113009101,93,63,Demand < Supply
+Springhill Montessori School,0010Z000024Cxw4,TRUE,85,Child Care Center,TRUE,Sliding Scale,For Profit,813 N ZANG BLVD,DALLAS,75208,"",214-946-1799,48113004201,94,63,Demand < Supply
+Tyler Street Christian Academy,001i000001YBHH5,TRUE,85,Child Care Center,TRUE,Sliding Scale,For Profit,915 W 9TH ST,DALLAS,75208,"",(214) 941-9717,48113004600,81,42,Demand < Supply
+Aishas Learning Center INC,001i000001YBHDk,TRUE,85,Child Care Center,TRUE,Sliding Scale,For Profit,2750 E LEDBETTER DR,DALLAS,75216,"",(214) 375-2750,48113008705,88,60,Demand < Supply
+Kirbys Kreative Learning Center,001i000001YBHJl,TRUE,85,Child Care Center,TRUE,Sliding Scale,"",330 S R L THORNTON FWY,DALLAS,75203,"",(214) 943-7309,48113021000,96,63,Demand < Supply
+Kiest Park Day Care Center,001i000001YBHFZ,TRUE,85,Child Care Center,TRUE,Sliding Scale,For Profit,2719 S HAMPTON RD,DALLAS,75224,"",(214) 331-1536,48113010804,84,40,Demand < Supply
+Childcare Paradise Learning Center,0013r00002QWCOY,TRUE,85,Child Care Center,TRUE,Fee,For Profit,2146 E OVERTON RD,DALLAS,75216,"",214-374-1350,48113008802,84,56,Demand < Supply
+AlphaBest @ Buckner Prep-Cityscape,0010Z00002CZ9RP,TRUE,85,School,TRUE,Fee,School Run,8510 MILITARY PKWY,DALLAS,75227,"",972-668-0640,48113009001,78,39,Demand < Supply
+Moody Family Childcare & Youth Services Center,0010Z00002CZ9RT,TRUE,84,Child Care Center,TRUE,Fee,For Profit,1651 MATILDA ST,DALLAS,75206,"",214-827-7220,48113001101,88,75,Demand < Supply
+Lots of Luv Child Care,0010Z000023hh0e,TRUE,83,Child Care Center,TRUE,Sliding Scale,For Profit,10130 ROYAL LN,DALLAS,75238,"",214-484-4200,48113013009,77,48,Demand < Supply
+Golden Eagle Program,0010Z00002E2bpi,TRUE,83,Child Care Center,TRUE,Sliding Scale,For Profit,3721 W CAMP WISDOM RD,DALLAS,75237,"",972-298-9437,48113010904,90,64,Demand < Supply
+Inspire,0013r00002TzTMR,TRUE,80,Child Care Center,TRUE,Fee,For Profit,6423 WALNUT HILL LN,DALLAS,75230,"",214-901-1711,48113007604,81,76,Demand = Supply
+A Step Ahead,0013100001cF5G6,TRUE,79,Child Care Center,TRUE,Sliding Scale,For Profit,1050 N Westmoreland Rd. Ste. 308,Dallas,75211,"",(214) 467-4601,48113006900,83,45,Demand < Supply
+Golden Minds Academy,0010Z00001v7FsS,TRUE,79,Child Care Center,TRUE,Sliding Scale,For Profit,9759 Forest Ln Suite 450,Dallas,75243,https://www.goldenmindsacademy.com,(972) 783-4769,48113019035,74,14,Demand < Supply
+St. Paul Christian Academy,0010Z0000273xxq,TRUE,78,Child Care Center,TRUE,Sliding Scale,For Profit,5725 S MARSALIS AVE,DALLAS,75241,"",214-371-9429,48113011202,98,62,Demand < Supply
+A Special Love Childcare Academy Learning Center,0013r00002bSMsG,TRUE,77,"",TRUE,"","",4121 MARVIN D LOVE FWY STE 100,DALLAS,75224,"",972-913-4133,48113006100,85,55,Demand < Supply
+KCE Champions LLC at Uplift-White Rock Hills,0010Z00001uccNr,TRUE,76,School,TRUE,Sliding Scale,For Profit,7370 Valleyglen Dr,Dallas,75228,"",817-933-6664,48113012208,92,61,Demand < Supply
+Dallas ISD DASA at SAN JACINTO EL,0013r00002YvrDo,TRUE,75,School,TRUE,No Charge,School Run,7900 HUME DR,DALLAS,75227,"",(972)749-4200,48113009101,93,63,Demand < Supply
+Dallas ISD DASA at SEAGOVILLE MIDDLE,0013r00002YvrDp,TRUE,75,School,TRUE,No Charge,School Run,950 WOODY RD,DALLAS,75253,"",(972)892-7100,48113017010,89,64,Demand < Supply
+Dallas ISD DASA at Jesus Moroles EXPRESSIVE ARTS VANGUARD,0013r00002YvrDq,TRUE,75,School,TRUE,No Charge,School Run,1400 WALMSLEY AVE,DALLAS,75208,"",(972)794-4400,48113004300,88,67,Demand < Supply
+Dallas ISD DASA at STEVENS PARK EL,0013r00002YvrDr,TRUE,75,School,TRUE,No Charge,School Run,2615 W COLORADO BLVD,DALLAS,75211,"",(972)794-4200,48113006900,83,45,Demand < Supply
+Dallas ISD DASA at T W BROWNE MIDDLE,0013r00002YvrDs,TRUE,75,School,TRUE,No Charge,School Run,3333 SPRAGUE DR,DALLAS,75233,"",(972)502-2500,48113010806,95,61,Demand < Supply
+Dallas ISD DASA at THOMAS L MARSALIS EL,0013r00002YvrDt,TRUE,75,School,TRUE,No Charge,School Run,5640 S MARSALIS AVE,DALLAS,75241,"",(972)749-3500,48113011202,98,62,Demand < Supply
+Dallas ISD DASA at TRINITY HEIGHTS GIFTED AND TALENTED SCHOOL,0013r00002YvrDu,TRUE,75,School,TRUE,No Charge,School Run,1515 LYNN HAVEN AVE,DALLAS,75216,"",(972)925-7500,48113021000,96,63,Demand < Supply
+Dallas ISD DASA at W A BLAIR EL,0013r00002YvrDv,TRUE,75,School,TRUE,No Charge,School Run,7720 GAYGLEN DR,DALLAS,75217,"",(972)794-1600,48113011601,83,63,Demand < Supply
+Dallas ISD DASA at W W BUSHMAN EL,0013r00002YvrDw,TRUE,75,School,TRUE,No Charge,School Run,4200 BONNIE VIEW RD,DALLAS,75216,"",(972)749-1800,48113008703,89,56,Demand < Supply
+Dallas ISD DASA at WHITNEY M YOUNG JR EL,0013r00002YvrDx,TRUE,75,School,TRUE,No Charge,School Run,4601 VETERANS DR,DALLAS,75216,"",(972)749-2000,48113008704,93,61,Demand < Supply
+Dallas ISD DASA at WILLIAM HAWLEY ATWELL LAW ACADEMY,0013r00002YvrDy,TRUE,75,School,TRUE,No Charge,School Run,1303 REYNOLDSTON LN,DALLAS,75232,"",(972)794-6400,48113011003,94,61,Demand < Supply
+Dallas ISD DASA at YOUNG MEN'S LEADERSHIP ACADEMY AT FRED F FLORENCE,0013r00002YvrDz,TRUE,75,School,TRUE,No Charge,School Run,1625 N MASTERS DR,DALLAS,75217,"",(972)749-6000,48113011901,89,60,Demand < Supply
+Dallas ISD DASA at JOHN W RUNYON EL,0013r00002Yvr9R,TRUE,75,School,TRUE,No Charge,School Run,10750 CRADLEROCK DR,DALLAS,75217,"",(972)749-6100,48113011902,82,57,Demand < Supply
+Dallas ISD DASA at JOSE 'JOE' MAY EL,0013r00002YvrDU,TRUE,75,School,TRUE,No Charge,School Run,9818 BROCKBANK DR,DALLAS,75220,"",(972)749-4800,48113009804,72,6,Demand < Supply
+Dallas ISD DASA at JULIAN T SALDIVAR EL,0013r00002YvrDV,TRUE,75,School,TRUE,No Charge,School Run,9510 BROCKBANK DR,DALLAS,75220,"",(972)794-2000,48113007204,75,25,Demand < Supply
+Dallas ISD DASA at KENNEDY-CURRY MIDDLE,0013r00002YvrDW,TRUE,75,School,TRUE,No Charge,School Run,6605 SEBRING,DALLAS,75241,"",(972)925-1600,48113016710,82,60,Demand < Supply
+Dallas ISD DASA at LEE A MCSHAN JR EL,0013r00002YvrDX,TRUE,75,School,TRUE,No Charge,School Run,8307 MEADOW,DALLAS,75231,"",(972)502-6052,48113007823,83,67,Demand = Supply
+Dallas ISD DASA at LEONIDES GONZALEZ CIGARROA MD EL,0013r00002YvrDY,TRUE,75,School,TRUE,No Charge,School Run,9990 WEBB CHAPEL RD,DALLAS,75220,"",(972)502-2900,48113009802,80,44,Demand < Supply
+Dallas ISD DASA at ADELLE TURNER EL,0013r00002YvrCv,TRUE,75,School,TRUE,No Charge,School Run,5505 S POLK ST,DALLAS,75232,"",(972)794-6300,48113011003,94,61,Demand < Supply
+KCE Champions LLC @Prestonwood,0013r00002bSMsI,TRUE,75,"",TRUE,"","",12532 NUESTRA DR,DALLAS,75230,"",940-368-3794,48113009604,87,59,Demand < Supply
+Dallas ISD DASA at ALEX W SPENCE TALENTED/GIFTED ACADEMY,0013r00002YvrDA,TRUE,75,School,TRUE,No Charge,School Run,4001 CAPITOL AVE,DALLAS,75204,"",(972)925-2300,48113000802,81,86,Demand > Supply
+Dallas ISD DASA at ANN RICHARDS STEAM ACADEMY,0013r00002YvrDB,TRUE,75,School,TRUE,No Charge,School Run,3831 N PRAIRIE CREEK,DALLAS,75227,"",(972)892-5400,48113012102,91,63,Demand < Supply
+Dallas ISD DASA at BAYLES EL,0013r00002YvrDC,TRUE,75,School,TRUE,No Charge,School Run,2444 TELEGRAPH AVE,DALLAS,75228,"",(972)749-8900,48113012213,85,70,Demand < Supply
+Dallas ISD DASA at BIRDIE ALEXANDER EL,0013r00002YvrDD,TRUE,75,School,TRUE,No Charge,School Run,1830 GOLDWOOD DR,DALLAS,75232,"",(972)749-3100,48113011101,93,64,Demand < Supply
+Dallas ISD DASA at BOUDE STOREY MIDDLE,0013r00002YvrDE,TRUE,75,School,TRUE,No Charge,School Run,3000 MARYLAND AVE,DALLAS,75216,"",(972)925-8700,48113005600,77,26,Demand < Supply
+Dallas ISD DASA at C A TATUM JR EL,0013r00002YvrDF,TRUE,75,School,TRUE,No Charge,School Run,3002 ST AUGUSTINE RD,DALLAS,75227,"",(972)502-2000,48113012101,76,31,Demand < Supply
+Dallas ISD DASA at CLARA OLIVER EL,0013r00002YvrDG,TRUE,75,School,TRUE,No Charge,School Run,4010 IDAHO AVE,DALLAS,75216,"",(972)749-3400,48113005901,99,61,Demand < Supply
+Dallas ISD DASA at DAVID G BURNET EL,0013r00002YvrDH,TRUE,75,School,TRUE,No Charge,School Run,3200 KINKAID DR,DALLAS,75220,"",(972)794-3000,48113009803,94,62,Demand < Supply
+Dallas ISD DASA at E B COMSTOCK MIDDLE,0013r00002YvrDI,TRUE,75,School,TRUE,No Charge,School Run,7044 HODDE ST,DALLAS,75217,"",(972)794-1300,48113009303,87,63,Demand < Supply
+Dallas ISD DASA at ELADIO R MARTINEZ LEARNING CENTER,0013r00002YvrDJ,TRUE,75,School,TRUE,No Charge,School Run,4500 BERNAL DR,DALLAS,75212,"",(972)794-6900,48113010601,93,63,Demand < Supply
+Dallas ISD DASA at ESPERANZA MEDRANO EL,0013r00002YvrDK,TRUE,75,School,TRUE,No Charge,School Run,2221 LUCAS DR,DALLAS,75219,"",(972)794-3300,48113000401,94,63,Demand < Supply
+Dallas ISD DASA at FRANCISCO MEDRANO MIDDLE,0013r00002YvrDL,TRUE,75,School,TRUE,No Charge,School Run,9815 BROCKBANK,DALLAS,75220,"",(972)925-1300,48113009803,94,62,Demand < Supply
+Dallas ISD DASA at FRANK GUZICK EL,0013r00002YvrDM,TRUE,75,School,TRUE,No Charge,School Run,5000 BERRIDGE LN,DALLAS,75227,"",(972)502-3900,48113012207,93,63,Demand < Supply
+Dallas ISD DASA at GABE P ALLEN CHARTER SCHOOL,0013r00002YvrDN,TRUE,75,School,TRUE,No Charge,School Run,5220 NOMAS ST,DALLAS,75212,"",(972)794-5100,48113010601,93,63,Demand < Supply
+Dallas ISD DASA at H I HOLLAND EL AT LISBON,0013r00002YvrDO,TRUE,75,School,TRUE,No Charge,School Run,4203 S LANCASTER RD,DALLAS,75216,"",(972)749-1900,48113005700,91,59,Demand < Supply
+Dallas ISD DASA at HAROLD WENDELL LANG SR MIDDLE,0013r00002YvrDP,TRUE,75,School,TRUE,No Charge,School Run,1678 CHENAULT,DALLAS,75228,"",(972)925-2400,48113012211,77,34,Demand < Supply
+Dallas ISD DASA at HIGHLAND MEADOWS EL,0013r00002YvrDQ,TRUE,75,School,TRUE,No Charge,School Run,8939 WHITEWING LN,DALLAS,75238,"",(972)502-5200,48113013010,91,60,Demand < Supply
+Dallas ISD DASA at J P STARKS EL,0013r00002YvrDR,TRUE,75,School,TRUE,No Charge,School Run,3033 TIPS BLVD,DALLAS,75216,"",(972)502-8800,48113021100,84,,
+Dallas ISD DASA at JACK LOWE SR EL,0013r00002YvrDS,TRUE,75,School,TRUE,No Charge,School Run,7000 HOLLY HILL DR,DALLAS,75231,"",(972)502-1700,48113007815,77,28,Demand < Supply
+Dallas ISD DASA at JILL STONE EL AT VICKERY MEADOW,0013r00002YvrDT,TRUE,75,School,TRUE,No Charge,School Run,6606 RIDGECREST RD,DALLAS,75231,"",(972)502-7900,48113007833,72,11,Demand < Supply
+Dallas ISD DASA at MOUNT AUBURN STEAM ACADEMY,0013r00002YvrDc,TRUE,75,School,TRUE,No Charge,School Run,6012 E GRAND AVE,DALLAS,75223,"",(972)749-8500,48113001202,89,62,Demand < Supply
+Dallas ISD DASA at LORENZO DE ZAVALA EL,0013r00002YvrDZ,TRUE,75,School,TRUE,No Charge,School Run,3214 N WINNETKA AVE,DALLAS,75212,"",(972)892-6400,48113010102,86,47,Demand < Supply
+Dallas ISD DASA at MARK TWAIN LEADERSHIP VANGUARD,0013r00002YvrDa,TRUE,75,School,TRUE,No Charge,School Run,724 GREEN COVE LN,DALLAS,75232,"",(972)749-3000,48113011002,85,64,Demand < Supply
+Dallas ISD DASA at MARTIN WEISS EL,0013r00002YvrDb,TRUE,75,School,TRUE,No Charge,School Run,8601 WILLOUGHBY BLVD,DALLAS,75232,"",(972)749-4000,48113011104,86,55,Demand < Supply
+Dallas ISD DASA at N W HARLLEE EARLY CHILDHOOD CENTER,0013r00002YvrDd,TRUE,75,School,TRUE,No Charge,School Run,1216 E EIGHTH ST,DALLAS,75203,"",(972)925-6500,48113021000,96,63,Demand < Supply
+Dallas ISD DASA at OLIVER WENDELL HOLMES HUMANITIES/COMMUNICATIONS,0013r00002YvrDe,TRUE,75,School,TRUE,No Charge,School Run,2001 E KIEST BLVD,DALLAS,75216,"",(972)925-8500,48113008801,88,60,Demand < Supply
+Dallas ISD DASA at ORAN M ROBERTS EL,0013r00002YvrDf,TRUE,75,School,TRUE,No Charge,School Run,4919 GRAND AVE,DALLAS,75223,"",(972)749-8700,48113002500,95,59,Demand < Supply
+Dallas ISD DASA at PIEDMONT GLOBAL ACADEMY,0013r00002YvrDg,TRUE,75,School,TRUE,No Charge,School Run,7625 HUME DR,DALLAS,75227,"",(972)749-4100,48113009101,93,63,Demand < Supply
+Dallas ISD DASA at RICHARD LAGOW EL,0013r00002YvrDh,TRUE,75,School,TRUE,No Charge,School Run,637 EDGEWORTH DR,DALLAS,75217,"",(972)749-6600,48113011702,84,65,Demand = Supply
+Dallas ISD DASA at S S CONNER EL,0013r00002YvrDi,TRUE,75,School,TRUE,No Charge,School Run,3037 GREENMEADOW DR,DALLAS,75228,"",(972)749-8200,48113012210,79,45,Demand < Supply
+Dallas ISD DASA at SAM TASBY MIDDLE,0013r00002YvrDj,TRUE,75,School,TRUE,No Charge,School Run,7001 FAIR OAKS AVE,DALLAS,75231,"",(972)502-1900,48113007815,77,28,Demand < Supply
+Dallas ISD DASA at Thomas Tolbert Elementary School,001i000001I53dc,TRUE,75,School,TRUE,No Charge,School Run,4000 Blue Ridge Blvd,Dallas,75233,"","",48113010807,93,62,Demand < Supply
+ALC Early Care And Education Centers,001i000001YBHDl,TRUE,75,Community Center/Nonprofit,TRUE,Sliding Scale,For Profit,6610 TYREE ST,DALLAS,75209,"",(214) 350-8444,48113007102,90,61,Demand < Supply
+St. Simon's After-School Program at Charles Rice Learning Center,0013100001beu4M,TRUE,75,School,TRUE,No Charge,Local Nonprofit,2425 Pine St.,Dallas,75215,www.stsimonsafterschool.com,(972) 749-1100,48113020800,91,55,Demand < Supply
+KCE Champions LLC @ Uplift-Peak,0013r00002QWCOb,TRUE,75,Child Care Center,TRUE,Fee,For Profit,1474 Annex Ave,DALLAS,75204,"",940-368-3794,48113001601,93,,
+Heavenly Learning Center,001i000001YBHJL,TRUE,72,Child Care Center,TRUE,Sliding Scale,For Profit,9625 PLANO RD STE 1700,DALLAS,75238,"",(214) 343-0216,48113013005,93,60,Demand < Supply
+Riding Rainbows Child Development Center,001i000001SQB4a,TRUE,71,Child Care Center,TRUE,Sliding Scale,For Profit,1132 S.Buckner Blvd,Dallas,75217,Ridingrainbowscdc.org,214 391-2259,48113009202,84,47,Demand < Supply
+Voice of Hope Ministries - Gooch Elementary,0013r00002dlRGJ,TRUE,71,"",TRUE,"","",4030 CALCULUS DR,DALLAS,75244,"",214-631-7027,48113009608,87,70,Demand < Supply
+K.B. Polk Recreation Center,0013100001bTucz,TRUE,70,Municipal Building,TRUE,Fee,P&R,6801 Roper St.,Dallas,75209,www.dallasparks.org,(214)670-6308,48113007102,90,61,Demand < Supply
+Richardson ISD - Spring Creek Elementary,0013100001lpWu1,TRUE,70,School,TRUE,Sliding Scale,School Run,7667 Roundrock Road,Dallas,75248,http://www.edline.net/pages/RISD_Departments_and_Programs/PACE/Spring_Creek_Elementary,469 593-4546,48113013607,92,79,Demand = Supply
+Richardson ISD - Stults Road Elementary,001i000001YBHIM,TRUE,70,School,TRUE,Sliding Scale,School Run,8700 STULTS RD,DALLAS,75243,"",(469) 593-7419,48113007805,92,62,Demand < Supply
+Samuell Grand Recreation Center,0013100001bda2G,TRUE,70,Municipal Building,TRUE,Fee,P&R,6200 E. Grand Ave.,Dallas,75223,www.dallasparks.org,(214)670-1383,48113001202,89,62,Demand < Supply
+Our Redeemer Lutheran School,0010Z00002A9mkL,TRUE,68,Child Care Center,TRUE,Sliding Scale,For Profit,7611 PARK LN,DALLAS,75225,"",214-368-1465,48113007801,84,65,Demand = Supply
+Lighthouse Academy,0010Z000024Fpcg,TRUE,68,Child Care Center,TRUE,Sliding Scale,For Profit,3727 DILIDO RD STE 132,DALLAS,75228,"",469-857-3140,48113012211,77,34,Demand < Supply
+Destiny Learning Center,0013r00002TzTMQ,TRUE,68,Child Care Center,TRUE,Fee,For Profit,7620 FERGUSON RD,DALLAS,75228,"",972-270-1668,48113012212,74,23,Demand < Supply
+Mi Escuelita Preschool at Casa View,0010Z000023hh0f,TRUE,68,Community Center/Nonprofit,TRUE,Sliding Scale,Local Nonprofit,11540 FERGUSON RD,DALLAS,75228,"",972-913-6462,48113012604,77,46,Demand < Supply
+"Brighter Day Academy, LLC",001i000001YBHE6,TRUE,68,Child Care Center,TRUE,Sliding Scale,For Profit,10453 N CENTRAL EXPY,DALLAS,75231,"",(214) 265-8585,48113013107,90,59,Demand < Supply
+Reconciliation Outreach Afterschool Program,001i000001B9Vup,TRUE,67,Community Center/Nonprofit,TRUE,Fee,Local Nonprofit,1421 N Peak St,Dallas,75204,www.rodallas.org,(214) 545-6500 ext. 1006,48113001503,88,55,Demand < Supply
+Bachman Recreation Center,0013100001bdQTo,TRUE,65,Municipal Building,TRUE,Fee,P&R,2750 Bachman Dr.,Dallas,75220,www.dallasparks.org,(214) 670-6266,48113000410,93,63,Demand < Supply
+Interfaith Housing Coalition at Main Campus,001i000000Uf17v,TRUE,65,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,5600 Ross Avenue,Dallas,75204,www.ihcdallas.org,(214) 827-7220,48113001101,88,75,Demand < Supply
+Richardson ISD-Forest Ridge Elementary,001i000001YBHKR,TRUE,65,School,TRUE,Sliding Scale,School Run,10330 BUNCHBERRY DR,DALLAS,75243,"",(469) 593-7419,48113019018,86,49,Demand < Supply
+Richardson ISD Xplore! - Wallace Elementary,001i000001YBHF6,TRUE,65,School,TRUE,Sliding Scale,School Run,9921 KIRKHAVEN DR,DALLAS,75238,http://www.edline.net/pages/RISD_Departments_and_Programs/PACE/Wallace_Elementary,(469) 593-7539,48113013005,93,60,Demand < Supply
+UR Power Kids,0013r00002Re5ZG,TRUE,64,Child Care Center,TRUE,Fee,For Profit,1350 MANUFACTURING ST STE 111,DALLAS,75207,"",972-746-8922,48113010003,76,,
+G & J Learning Center,001i000001YBHFA,TRUE,62,Child Care Center,TRUE,Sliding Scale,For Profit,1111 N JIM MILLER RD,DALLAS,75217,"",(214) 398-7926,48113009301,87,62,Demand < Supply
+St John Learners Academy,001i000001YBHKg,TRUE,61,Child Care Center,TRUE,Sliding Scale,For Profit,2600 S MARSALIS AVE,DALLAS,75216,"",(214) 375-4878,48113005400,79,40,Demand < Supply
+Jefferson Place Learning and Developmental Center,001i000001YBHFu,TRUE,61,Child Care Center,TRUE,Sliding Scale,For Profit,3430 S MARSALIS AVE,DALLAS,75216,"",(214) 375-1155,48113005901,99,61,Demand < Supply
+Marcus Recreation Center,0013100001bdR4l,TRUE,60,Municipal Building,TRUE,Fee,P&R,3003 Northaven,Dallas,75229,www.dallasparks.org,(214)670-6599,48113009611,93,63,Demand < Supply
+Reverchon Recreation Center,0013100001bTwlu,TRUE,60,Municipal Building,TRUE,Fee,P&R,3505 Maple Ave.,Dallas,75219,www.dallasparks.org,(214)670-7720,48113000502,79,81,Demand > Supply
+Campbell-Green Recreation Center,0013100001bdR7u,TRUE,60,Municipal Building,TRUE,Fee,P&R,16600 Parkhill Dr.,Dallas,75248,www.dallasparks.org,214-670-6314,48113013619,89,77,Demand = Supply
+Dallas Community Fellowship Inc.,0013100001beYtY,TRUE,60,Child Care Center,TRUE,No Charge,For Profit,3015 E. Ledbetter,Dallas,75216,www.dcficommunity.org,(972)464-7553,48113008704,93,61,Demand < Supply
+Grauwyler Recreation Center,0013100001bdbWj,TRUE,60,Municipal Building,TRUE,Fee,P&R,7780 Harry Hines,Dallas,75235,www.dallasparks.org,(214)670-6302,48113000410,93,63,Demand < Supply
+Cornerstone Kids Enrichment Program,0013100001lJITZ,TRUE,60,Faith Community,TRUE,No Charge,Local Nonprofit,2815 South Ervay Street,Dallas,75215,"",214-208-8053,48113020900,85,70,Demand < Supply
+YMCA Town North at Arthur Kramer Elementary,001i000001YBHHm,TRUE,60,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,7131 MIDBURY DR,DALLAS,75230,"",(972) 794-8300,48113013101,88,75,Demand < Supply
+J.C. Phelps Recreation Center,0013100001bTumf,TRUE,60,Municipal Building,TRUE,Fee,P&R,3030 Tips Blvd.,Dallas,75216,www.dallasparks.org,(214)670-7525,48113021100,84,,
+Kidz Zone at Tom Field Elementary,0013r00002QWCXP,TRUE,60,School,TRUE,Fee,For Profit,2151 ROYAL LN,DALLAS,75229,"",214-557-9987,48113009900,76,74,Demand = Supply
+Kidd Springs Recreation Center,0013100001bT6vk,TRUE,60,Municipal Building,TRUE,Fee,P&R,711 W. Canty St.,Dallas,75208,www.dallasparks.org,214-670-7535,48113004201,94,63,Demand < Supply
+Exline Recreation Center,0013100001bT8ob,TRUE,60,Municipal Building,TRUE,Fee,P&R,2525 Pine St.,Dallas,75215,www.dallasparks.org,(214)670-8121,48113020800,91,55,Demand < Supply
+Community Academy Day Care Center,001i000001YBHEZ,TRUE,57,Child Care Center,TRUE,Sliding Scale,For Profit,1755 E ANN ARBOR AVE,DALLAS,75216,"",(214) 371-5433,48113005700,91,59,Demand < Supply
+Pennys Child Care & Learning Center,0013100001n8YN3,TRUE,56,Child Care Center,TRUE,Sliding Scale,For Profit,7440 S. Westmoreland Rd.,Dallas,75237,www.pennysdaycarecenter.com,(972) 707-7430,48113016607,84,42,Demand < Supply
+Creative Minds Child Care Center,001i000001YBHFJ,TRUE,56,Child Care Center,TRUE,Sliding Scale,For Profit,5606 S COCKRELL HILL RD,DALLAS,75236,"",(214) 330-2733,48113010903,94,59,Demand < Supply
+Torah Day School of Dallas,0013r00002Re5ZF,TRUE,55,Faith Community,TRUE,Fee,For Profit,6324 CHURCHILL WAY,DALLAS,75230,"",972-964-0090,48113013201,85,70,Demand < Supply
+La Marina Day Care Inc.,0013100001hE6Ek,TRUE,54,Child Care Center,TRUE,Sliding Scale,For Profit,513 W. 12th St.,Dallas,75208,"",(214) 330-4930,48113005000,89,52,Demand < Supply
+The Little Red House Learning Center,0013r00002KVTHd,TRUE,54,Child Care Center,TRUE,Fee,For Profit,3700 SAN JACINTO ST,DALLAS,75204,"",214-475-8824,48113001602,80,78,Demand > Supply
+Stepping Stones Early Child Development Center INC at Samuell,001i000001YBHHu,TRUE,52,Child Care Center,TRUE,Sliding Scale,For Profit,5904 SAMUELL BLVD,DALLAS,75228,"",(214) 381-0382,48113012206,80,51,Demand < Supply
+Studio Bella Explorers at Hexter Elementary,0010Z0000234Wgr,TRUE,51,School,TRUE,Fee,For Profit,9720 WATERVIEW RD,DALLAS,75218,"",469-878-8056,48113012900,90,63,Demand < Supply
+The Gifted Minds,0010Z000025ie3V,TRUE,51,Child Care Center,TRUE,Sliding Scale,For Profit,2550 W RED BIRD LN STE 412,DALLAS,75237,"",214-550-0699,48113010906,94,60,Demand < Supply
+Kuddles & Kisses Early Childhood Center LLC,001i000001YBHJm,TRUE,51,Child Care Center,TRUE,Sliding Scale,For Profit,4041 W WHEATLAND RD STE 128,DALLAS,75237,"",(972) 298-4012,48113016607,84,42,Demand < Supply
+Big Thought at Rosemont Primary (3-8),0010Z00002CXxkx,TRUE,50,School,TRUE,Sliding Scale,Local Nonprofit,719 N Montclair Ave,Dallas,75208,bigthought.org,214.475.4594,48113004202,87,60,Demand < Supply
+Park in the Woods Recreation Center,0013100001gF8wL,TRUE,50,Municipal Building,TRUE,Fee,P&R,6801 Mt. Creek Pkwy,Dallas,75249,www.dallasparks.org,214-671-0218,48113016527,82,64,Demand < Supply
+YMCA at Uplift Hampton Preparatory,0013100001ciPml,TRUE,50,School,TRUE,Fee,National Nonprofit,8915 S. Hampton Rd.,Dallas,75232,www.ymcadallas.org/afterschool,(469) 585-6863,48113016634,88,58,Demand < Supply
+YMCA at Eduardo Mata ES,0013100001ciPWb,TRUE,50,School,TRUE,Fee,National Nonprofit,7420 La Vista Dr.,Dallas,75214,www.ymcadallas.org/afterschool,214-415-8527,48113001202,89,62,Demand < Supply
+YMCA @ St. Rita,0013r00002Re5ZH,TRUE,50,School,TRUE,Fee,National Nonprofit,12521 INWOOD RD,DALLAS,75244,"",469-348-9622,48113009603,87,61,Demand < Supply
+YMCA at Mockingbird Elementary,0013100001ciPrH,TRUE,50,School,TRUE,Fee,National Nonprofit,5828 E. Mockingbird Ln.,Dallas,75038,www.ymcadallas.org/afterschool,(469) 348-9622,48113000202,87,86,Demand = Supply
+Boys and Girls Clubs of Greater Dallas at William Lipscomb Elementary School,0013100001p7gxb,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,5801 Worth Street,Dallas,75214,https://bgcdallas.org,"",48113001301,90,60,Demand < Supply
+Youth Conversion at Adelle Turner Elementary School,0013100001p7iJv,TRUE,50,School,TRUE,Fee,Local Nonprofit,5505 S. Polk Street,Dallas,75232,http://www.youthconversion.org/,214-306-8400 x114,48113011003,94,61,Demand < Supply
+Youth Conversion at Thomas L Marsalis Elementary School,0013100001p7iM6,TRUE,50,School,TRUE,Fee,Local Nonprofit,5640 S. Marsalis Ave.,Dallas,75241,http://www.youthconversion.org,214-306-8400 x114,48113011202,98,62,Demand < Supply
+Elevate Your Game at Oran M. Roberts Elementary School,0013100001p7htN,TRUE,50,School,TRUE,No Charge,Local Nonprofit,4919 E. Grand Avenue,Dallas,75223,http://www.elevateyourgameinc.org/,214-306-8400 x114,48113002500,95,59,Demand < Supply
+Fun at Bat-USA Baseball at Barbara Jordan Elementary School,0013100001p7hvY,TRUE,50,School,TRUE,No Charge,Local Nonprofit,1111 W. Kiest Blvd.,Dallas,75224,http://funatbat.org/,214-306-8400 x114,48113006301,80,49,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at Maple Lawn Elementary School,0013100001p7gvf,TRUE,50,School,TRUE,No Charge,National Nonprofit,3120 Inwood Road,Dallas,75235,https://bgcdallas.org/,214039608400 x114,48113000610,72,16,Demand < Supply
+YMCA at Solar Prep for Boys,0010Z000024Fpcm,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1802 Moser Ave.,Dallas,75206,"",214-415-8527,48113000902,88,59,Demand < Supply
+Big Thought at Lakewood Elementary,0010Z00001uambo,TRUE,50,School,TRUE,Sliding Scale,Local Nonprofit,3001 Hillbrook St,Dallas,75214,"",972-971-5065,48113008000,83,61,Demand < Supply
+School of YES! Spring Residency,0013100001okUNy,TRUE,50,Community Center/Nonprofit,TRUE,No Charge,For Profit,223 W Jefferson Blvd,Dallas,75208,www.caramiatheatre.org,214-516-0706,48113004700,81,41,Demand < Supply
+The Parent Helper Daycare & Learning Center,0013r00002Hp49s,TRUE,50,Child Care Center,TRUE,Fee,For Profit,3939 S POLK ST STE 110,DALLAS,75224,"",214-272-3822,48113006100,85,55,Demand < Supply
+Dallas Symphony at Khan Elementary School,0010Z00002CZiJT,TRUE,50,School,TRUE,No Charge,Local Nonprofit,610 N Franklin,Dallas,75211,"","",48113006800,90,58,Demand < Supply
+Dallas Symphony at Moreno Elementary School,0010Z00002CZiJU,TRUE,50,School,TRUE,No Charge,Local Nonprofit,2115 South Hampton Rd,Dallas,75233,"","",48113010804,84,40,Demand < Supply
+Dallas Symphony at Ascher Silberstein Elementary School,0010Z00002CZiJV,TRUE,50,School,TRUE,No Charge,Local Nonprofit,5940 Hollis Ave.,Dallas,75227,"","",48113008402,85,60,Demand < Supply
+Dallas Symphony at Daniel Webster Elementary School,0010Z00002CZiJW,TRUE,50,School,TRUE,No Charge,Local Nonprofit,3815 S Franklin St,Dallas,75233,"","",48113010806,95,61,Demand < Supply
+YMCA at Sudie L. Williams Academy,0010Z00002CZiJY,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,4518 Pomona Rd.,Dallas,75209,"",214-415-8527,48113007302,87,59,Demand < Supply
+South Dallas Education Center,0013100001beYN3,TRUE,50,Child Care Center,TRUE,No Charge,Local Nonprofit,3119 Pine Street,Dallas,75215,smwrightfoundation.org,(214)741-4990,48113003700,94,59,Demand < Supply
+St. Simon's After-School Program at Herbert Marcus Elementary School,0013100001beuKA,TRUE,50,School,TRUE,No Charge,Local Nonprofit,2911 Northhaven Rd.,Dallas,75229,www.stsimonsafterschool.com,(972) 794-2900,48113009611,93,63,Demand < Supply
+St. Simon's After-School Program at Eladio Martinez Elementary School,0013100001beuIn,TRUE,50,School,TRUE,No Charge,Local Nonprofit,4500 Bernal Drive,Dallas,75212,www.stsimonsafterschool.com,(972) 794-6900,48113010601,93,63,Demand < Supply
+St. Simon's After-School Program at Esperanza Medrano Elementary School,0013100001beuJb,TRUE,50,School,TRUE,No Charge,Local Nonprofit,2221 Lucus Dr.,Dallas,75219,www.stsimonsafterschool.com,(972) 794-3300,48113000401,94,63,Demand < Supply
+Cummings Recreation Center,0013100001bTvHJ,TRUE,50,Child Care Center,TRUE,Fee,For Profit,2996 Cummings St.,Dallas,75216,www.dallasparks.org,(214)670-6876,48113008704,93,61,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at Billy Earl Dade Middle School,0013100001bf64C,TRUE,50,School,TRUE,No Charge,National Nonprofit,2801 Park Row,Dallas,75215,www.bgcdallas.org,(972) 749-3800,48113020300,87,64,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at Paul L.Dunbar Learning Center,0013100001bf63d,TRUE,50,School,TRUE,No Charge,National Nonprofit,4200 Metropolitan Ave.,Dallas,75210,www.bgcdallas.org,(214) 815-0748,48113002703,92,57,Demand < Supply
+St. Simon's After-School Program at Ben Milam Elementary School,0013100001beu9H,TRUE,50,School,TRUE,No Charge,Local Nonprofit,4200 McKinney Ave.,Dallas,75205,www.stsimonsafterschool.com,(972) 749-5600,48113000705,83,71,Demand = Supply
+Precious Gift of Life at Asante Resource Center,0013100001bf5xV,TRUE,50,Child Care Center,TRUE,No Charge,For Profit,202 South Jim Miller Road,Dallas,75217,"",(214) 398-0608,48113011601,83,63,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at Madison High School,0013100001bf64v,TRUE,50,School,TRUE,No Charge,National Nonprofit,3000 Matin Luther king jr blvd,Dallas,75215,www.bgcdallas.org,(972) 925-2800,48113003700,94,59,Demand < Supply
+St. Simon's After-School Program at Stephen C. Foster Elementary School,0013100001beuFt,TRUE,50,School,TRUE,No Charge,Local Nonprofit,3700 Clover Lane,Dallas,75220,www.stsimonsafterschool.com,(972) 794-8100,48113009401,86,65,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at Lincoln High School,0013100001bf65F,TRUE,50,School,TRUE,No Charge,National Nonprofit,2826 Elsie Faye Heggins St,Dallas,75215,www.bgcdallas.org,(972) 925-7600,48113003700,94,59,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at J. J. Rhodes,0013r00002DdN6r,TRUE,50,School,TRUE,No Charge,National Nonprofit,4401 S 2nd Ave,Dallas,75210,"",214-821-2950,48113020800,91,55,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at KIPP Pleasant Grove,0013r00002DdN6s,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,2200 N. St. Augustine Dr,Dallas,75227,"",214-821-2950,48113012000,73,17,Demand < Supply
+Boys and Girls Clubs of Greater Dallas at Pease Elementary,0013r00002DdN6v,TRUE,50,School,TRUE,No Charge,National Nonprofit,2914 Cummings St,Dallas,75216,"",214-821-2950,48113008704,93,61,Demand < Supply
+Studio Bella Explorers at Sanger Elementary,0010Z000024Cxw5,TRUE,50,School,TRUE,Sliding Scale,For Profit,8410 SAN LEANDRO DR,DALLAS,75218,"",469-878-8056,48113008102,86,78,Demand = Supply
+Right At School at Bilhartz Elementary School,0013r00002DdbYj,TRUE,50,School,TRUE,Fee,For Profit,6700 Wandt Dr. Dallas,Dallas,75236,"","",48113016533,79,61,Demand < Supply
+Right At School at Acton Elementary School,0013r00002DdbYq,TRUE,50,School,TRUE,Fee,For Profit,7095 W. Wheatland Rd. Dallas,Dallas,75249,"","",48113016527,82,64,Demand < Supply
+Right At School at Hyman Elementary,0013r00002DdbYx,TRUE,50,School,TRUE,Fee,For Profit,8441 Fox Creek Trail Dallas,Dallas,75249,"","",48113016527,82,64,Demand < Supply
+Singing Hills Recreation Center,0013100001gF8qm,TRUE,50,Municipal Building,TRUE,Fee,P&R,1909 Crouch Road,Dallas,75241,www.dallasparks.org,(214)670-7550,48113011300,81,62,Demand < Supply
+Annie's Place,0013r00002VPqo4,TRUE,50,Child Care Center,TRUE,Fee,For Profit,2131 BUTLER ST,DALLAS,75235,"",214-266-8064,48113000401,94,63,Demand < Supply
+Youth Conversion at Harry Stone Elementary School,0013r00002TzR1R,TRUE,50,School,TRUE,Fee,Local Nonprofit,4747 VETERANS DR,DALLAS,75216,"","",48113008704,93,61,Demand < Supply
+Dallas ISD DASA at Harrell Budd Elementary,0013r00002TzR1T,TRUE,50,School,TRUE,No Charge,School Run,2121 S Marsalis Ave.,Dallas,75216,"","",48113005400,79,40,Demand < Supply
+Dallas ISD DASA at Chapel Hill Preparatory,0013r00002TzR8h,TRUE,50,School,TRUE,No Charge,School Run,12701 Templeton Trail,Dallas,75234,"","",48113013804,87,61,Demand < Supply
+Dallas ISD DASA at Ebby Halliday,0013r00002TzR8j,TRUE,50,School,TRUE,No Charge,School Run,10210 Teagarden Road,Dallas,75217,"","",48113017102,78,70,Demand = Supply
+Dallas ISD DASA at HI Holland,0013r00002TzR8k,TRUE,50,School,TRUE,No Charge,School Run,4203 S. Lancaster Rd.,Dallas,75216,"","",48113005700,91,59,Demand < Supply
+Dallas ISD DASA RE McNair,0013r00002TzR8l,TRUE,50,School,TRUE,No Charge,School Run,3150 Bainbridge Dr,Dallas,75237,"","",48113010906,94,60,Demand < Supply
+Dallas ISD DASA at WB Miller,0013r00002TzR8m,TRUE,50,School,TRUE,No Charge,School Run,3111 Bonnie View Road,Dallas,75216,"","",48113008801,88,60,Demand < Supply
+Dallas ISD DASA at Charles Rice,0013r00002TzR8n,TRUE,50,School,TRUE,No Charge,School Run,2425 Pine St.,Dallas,75215,"","",48113020800,91,55,Demand < Supply
+Dallas ISD DASA at Clinton Russell,0013r00002TzR8o,TRUE,50,School,TRUE,No Charge,School Run,3031 S. Beckley Ave.,Dallas,75224,"","",48113005600,77,26,Demand < Supply
+Dallas ISD DASA at RL Thornton,0013r00002TzR8p,TRUE,50,School,TRUE,No Charge,School Run,6011 Old Ox Rd,Dallas,75241,"","",48113011300,81,62,Demand < Supply
+Dallas Park and Recreation at Kahn ES,001i000000Na3Nv,TRUE,50,School,TRUE,No Charge,P&R,610 N Franklin St.,Dallas,75211,www.dallasparks.org,(214) 675-9703,48113006800,90,58,Demand < Supply
+Dallas Park and Recreation at Kiest ES,001i000000Na3Nw,TRUE,50,School,TRUE,No Charge,P&R,"","",,"",(214) 738-8124,48113012502,87,62,Demand < Supply
+Dallas Park and Recreation at Lida Hooe ES,001i000000Na3Nx,TRUE,50,School,TRUE,No Charge,P&R,2419 Gladstone Dr.,Dallas,75211,"",(214) 282-0091,48113005300,76,34,Demand < Supply
+YMCA at Anne Frank ES,001i000000Na3Ni,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,5201 Celestial Rd.,Dallas,75254,"",214-907-2759,48113013624,82,77,Demand > Supply
+YMCA at Arthur Kramer ES,001i000000Na3Nj,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,7131 Midbury Dr.,Dallas,75230,"",214-907-2759,48113013101,88,75,Demand < Supply
+YMCA at Lakewood ES,001i000000Na3Nl,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,3000 Hillbrook St.,Dallas,75214,www.ymcadallas.org/afterschool,214-415-8527,48113008000,83,61,Demand < Supply
+Dallas Park and Recreation at Bayles ES,001i000000Na3Nn,TRUE,50,School,TRUE,No Charge,P&R,2444 Telegraph Ave.,Dallas,75228,"",(214) 738-8124,48113012213,85,70,Demand < Supply
+Dallas Park and Recreation at Cowart ES,001i000000Na3Nr,TRUE,50,School,TRUE,No Charge,P&R,1515 S Ravinia Dr.,Dallas,75211,"",(214) 282-0091,48113006402,77,38,Demand < Supply
+Dallas Parks and Recreation at John Q. Adams ES,0013r00002TzakL,TRUE,50,School,TRUE,No Charge,P&R,8239 Lake June Rd.,Dallas,75217,"",(972) 741-6937,48113009203,77,35,Demand < Supply
+YMCA at Degolyer ES,0010Z00001uamqL,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,3453 Flair Dr.,Dallas,75229,"",214-907-2759,48113009607,84,60,Demand < Supply
+Big Thought at Daniel Webster Elementary,0010Z00001ubqaI,TRUE,50,School,TRUE,Sliding Scale,Local Nonprofit,3815 S Franklin St,Dallas,75233,"",(214) 315-0954,48113010806,95,61,Demand < Supply
+New Horizons Super Kids Club at Victor Hexter Elementary School,0010Z00001ubqf4,TRUE,50,School,TRUE,No Charge,Local Nonprofit,9720 Waterview Rd.,Dallas,75218,"",469-285-6167,48113012900,90,63,Demand < Supply
+St. Simon's Afterschool Program at James S. Hogg Elementary School,0010Z000024DLOj,TRUE,50,School,TRUE,No Charge,Local Nonprofit,1144 North Madison Avenue,Dallas,75208,"","",48113004201,94,63,Demand < Supply
+New Horizons Super Kids (Middles) Club at Alex Sanger MS,0010Z000024EiFA,TRUE,50,School,TRUE,No Charge,Local Nonprofit,8410 San Leandro DR.,Dallas,75218,"","",48113008102,86,78,Demand = Supply
+Big Thought at Onesimo Hernandez Montesorri Academy,0010Z000025hSDe,TRUE,50,School,TRUE,Sliding Scale,Local Nonprofit,5555 Maple Ave,Dallas,75235,bigthought.org,4694-785-4070,48113000401,94,63,Demand < Supply
+Dallas Symphony at Ebby Halliday Elementary School,0010Z00002CZiJ3,TRUE,50,School,TRUE,No Charge,Local Nonprofit,10210 Teagarden Road,Dallas,75217,"","",48113017102,78,70,Demand = Supply
+Lakewood Montessori School,0013r00002Wck3u,TRUE,50,School,TRUE,Fee,School Run,6464 E LOVERS LN,DALLAS,75214,"",214-821-9466,48113007902,89,59,Demand < Supply
+Park Cities Speech,0013100001sCRnO,TRUE,50,Child Care Center,TRUE,Fee,For Profit,8100 Lomo Alto Suite 200,Dallas,75225,http://www.parkcitiesspech.com,(214) 368-8251,48113007301,80,68,Demand = Supply
+KCE Champions LLC at Uplift Luna Primary Preparatory,0013100001m9eKJ,TRUE,50,School,TRUE,Sliding Scale,For Profit,2020 N. Lamar Ste. 100,Dallas,75202,discoverchampions.com,(469) 994-4385,48113002100,87,62,Demand < Supply
+Big Thought at Nathan Adams Elementary School,0013100001m9e2Z,TRUE,50,School,TRUE,Sliding Scale,Local Nonprofit,12600 Welch Rd,Dallas,75244,"","",48113009603,87,61,Demand < Supply
+Big Thought at Highland Meadows Elementary School,0013100001m9e3D,TRUE,50,School,TRUE,Fee,Local Nonprofit,8939 Whitewing Ln,Dallas,75238,http://www.bigthought.org/,"",48113013010,91,60,Demand < Supply
+YMCA at Withers Elementary,0013100001mBLkj,TRUE,50,School,TRUE,Fee,National Nonprofit,3959 Northhaven Rd.,Dallas,75229,https://www.ymcadallas.org/locations/,(972) 794-5000,48113009609,81,86,Demand > Supply
+White Rock Family YMCA,0013100001mBPq0,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,7112 Gaston Ave.,Dallas,75214,https://www.ymcadallas.org/locations/white_rock_ymca/,(214) 328-3849,48113000100,82,63,Demand < Supply
+YMCA at Solar Prep for Girls,0013100001mBLFD,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,2617 N. Henderson Ave.,Dallas,75206,https://www.ymcadallas.org/locations/,214-415-8527,48113000901,86,73,Demand < Supply
+Moody Family YMCA in the Park Cities,0013100001mBPex,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,6000 Preston Rd.,Dallas,75205,https://www.ymcadallas.org/locations/moody_family_ymca/,(214) 526-7293,48113019502,80,53,Demand < Supply
+Lake Highlands Family YMCA,0013100001mBPgy,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,8920 Stults Road,Dallas,75243,https://www.ymcadallas.org/locations/lake_highlands/,(214) 221-9622,48113007805,92,62,Demand < Supply
+Moorland Family YMCA,0013100001mBPiL,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,907 E. Ledbetter Drive,Dallas,75216,https://www.ymcadallas.org/locations/moorland/,(214) 375-2583,48113005901,99,61,Demand < Supply
+Oak Cliff Family YMCA,0013100001mBPmr,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,6701 S. Hampton Rd.,Dallas,75232,https://www.ymcadallas.org/locations/oak_cliff/,(214) 330-6321,48113010906,94,60,Demand < Supply
+Town North Family YMCA,0013100001mBPod,TRUE,50,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,4332 Northhaven Road,Dallas,75229,https://www.ymcadallas.org/locations/town_north/,(214) 357-8431,48113013500,83,74,Demand = Supply
+City Year at Roger Q. Mills Elementary School,0013100001loM9X,TRUE,50,School,TRUE,No Charge,National Nonprofit,1515 Lynn Haven Ave,Dallas,75216,www.cityyear.org/dallas,4695547004,48113021000,96,63,Demand < Supply
+Richardson ISD Xplore! - Spring Valley Elementary,001i000001YBHDp,TRUE,50,School,TRUE,Sliding Scale,School Run,13535 SPRING GROVE AVE,DALLAS,75240,"",(469) 593-7536,48113013610,86,60,Demand < Supply
+Richardson ISD Xplore! - Northwood Hills Elementary,001i000001YBHFs,TRUE,50,School,TRUE,Sliding Scale,School Run,14532 MEANDERING WAY,DALLAS,75254,"",(469) 593-7536,48113013609,87,55,Demand < Supply
+New Horizons Super Kids (Littles) Club at Alex Sanger ES,0013100001mP3MG,TRUE,50,School,TRUE,No Charge,Local Nonprofit,8410 San Leandro Dr.,Dallas,75218,www.newhorizonsofntx.org,469-285-6167,48113008102,86,78,Demand = Supply
+Big Thought at Rosemont Elementary (K-2),0010Z00002DqgRC,TRUE,50,School,TRUE,Sliding Scale,Local Nonprofit,1919 Stevens Forest Drive | Dallas,Dallas,75208,"",281-466-7271,48113004202,87,60,Demand < Supply
+YMCA at Austin Elementary,0013100001mAtCs,TRUE,50,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,161 S. Moore,Dallas,75019,https://www.ymcadallas.org/locations/,(214) 496-7300,48113021000,96,63,Demand < Supply
+YMCA @ St. Pius X,0010Z000028tUpw,TRUE,50,Faith Community,TRUE,Sliding Scale,National Nonprofit,3030 GUS THOMASSON RD,DALLAS,75228,"",469-348-9622,48113012501,75,30,Demand < Supply
+Arlington Park Recreation Center,0013100001bdRJk,TRUE,50,Municipal Building,TRUE,Fee,P&R,1505 Record Crossing,Dallas,75235,www.dallasparks.org,214-670-6326,48113010001,79,59,Demand < Supply
+Dallas Park and Recreation at Ascher Silberstein ES,0013100001bY5qW,TRUE,50,School,TRUE,No Charge,P&R,5940 Hollis Ave.,Dallas,75227,www.dallasparks.org,(972) 741-6937,48113008402,85,60,Demand < Supply
+"Frazier Revitalization, Inc. at Frazier Townhomes",0013100001cEuDv,TRUE,50,Community Center/Nonprofit,TRUE,Sliding Scale,Local Nonprofit,5646 Milton St. Suite 407,Dallas,75206,"",469.221.0704,48113007913,85,76,Demand = Supply
+"Services of Hope, LCC. Extended Day Program at Elisha Pease Elementary School",0013100001bT4Ku,TRUE,50,School,TRUE,No Charge,Local Nonprofit,2914 Cummings Street,Dallas,75216,www.servicesofhope.org,(214)276-0234,48113008704,93,61,Demand < Supply
+Arcadia Park Recreation Center,0013100001bT7VU,TRUE,50,Municipal Building,TRUE,Fee,P&R,5420 S. Arcadia Dr.,Dallas,75211,www.dallasparks.org,(214)670-1909,48113010704,85,60,Demand < Supply
+YMCA at Norris Elementary,0013100001mAyu9,TRUE,50,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,10101 Shepton Lane,Dallas,75035,https://www.ymcadallas.org/locations/,(469) 633-4075,,,,
+A Time & A Season Christian Dayschool,0013100001cF5OQ,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,835 N MARSALIS AVE,DALLAS,75203,"",(214) 941-7770,48113002001,81,67,Demand = Supply
+Kidz Kollege,001i000001YBHGu,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,7307 CHURCHILL GREEN DR,DALLAS,75228,"",(214) 660-4555,48113012208,92,61,Demand < Supply
+Rylie Day Care Center,001i000001YBHHT,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,1509 HAYMARKET RD,DALLAS,75253,"",(972) 286-0357,48113011604,80,66,Demand = Supply
+Scribbles Learning Center Inc,001i000001YBHHZ,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,8025 UMPHRESS RD,DALLAS,75217,"",(214) 398-7400,48113009104,75,32,Demand < Supply
+Hopewell Development Center,001i000001YBHJQ,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,5144 DOLPHIN RD,DALLAS,75223,"",(214) 823-8707,48113002500,95,59,Demand < Supply
+Aunt Faye Early Learning Center,001i000001YBHK2,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,2638 S BECKLEY AVE,DALLAS,75224,"",(214) 948-8684,48113005600,77,26,Demand < Supply
+Creative Steps Academy,001i000001YBHEg,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,3249 W NORTHWEST HWY,DALLAS,75220,"",(214) 357-8029,48113000410,93,63,Demand < Supply
+Kids Korner Learning Center,001i000001YBHEy,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,4707 LARUE,DALLAS,75211,"",(214) 339-4053,48113019900,78,42,Demand < Supply
+Es Haven Academy,001i000001YBHFI,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,813 RYAN RD,DALLAS,75224,"",(214) 374-7443,48113006001,77,26,Demand < Supply
+Little Steps Learning Center #2,001i000001YBHFS,TRUE,49,Child Care Center,TRUE,Sliding Scale,For Profit,7121 LAKE JUNE RD,DALLAS,75217,"",(214) 309-1500,48113009105,85,56,Demand < Supply
+Bright Beginnings Child Development Center,0010Z00002CZ9RQ,TRUE,49,Child Care Center,TRUE,Fee,For Profit,7525 MILITARY PKWY,DALLAS,75227,"",469-439-6018,48113008500,90,58,Demand < Supply
+First Steps Academy & Daycare - Monroe Dr,0010Z00002ACVQ8,TRUE,48,Child Care Center,TRUE,Sliding Scale,For Profit,10120 MONROE DR,DALLAS,75229,"",214-350-8145,48113009701,82,56,Demand < Supply
+Romekias Little Goodies Resource Learning Center,001i000001YBHKW,TRUE,48,Child Care Center,TRUE,Sliding Scale,For Profit,1236 N JIM MILLER RD,DALLAS,75217,"",(972) 982-2194,48113009301,87,62,Demand < Supply
+Little Einsteins Learning Center LLC,0010Z000026ffKv,TRUE,46,Child Care Center,TRUE,Sliding Scale,For Profit,9205 SKILLMAN ST STE 117,DALLAS,75243,"",469-941-4644,48113018505,75,17,Demand < Supply
+Harry Stone Recreation Center,0013100001bdR3i,TRUE,45,Municipal Building,TRUE,Fee,P&R,2403 Millmar,Dallas,75228,www.dallasparks.org,214-670-0949,48113012502,87,62,Demand < Supply
+Readers 2 Leaders at Uplift Heights Preparatory,0013r00002XT1UM,TRUE,45,School,TRUE,Fee,Local Nonprofit,2202 Calypso Street,Dallas,75212,"","",48113020500,88,61,Demand < Supply
+Richardson ISD - Aikin Elementary,001i000001YBHHM,TRUE,45,School,TRUE,Sliding Scale,School Run,12300 PLEASANT VALLEY DR,DALLAS,75243,RISD,(469) 593-7536,48113019035,74,14,Demand < Supply
+Richardson ISD Xplore!-Audelia Creek Elementary,001i000001YBHIT,TRUE,45,School,TRUE,Sliding Scale,School Run,12600 AUDELIA RD,DALLAS,75243,risd.org/pace,(469) 593-7419,48113019019,76,23,Demand < Supply
+St. Mary of Carmal After School Care,0013100001dnlHy,TRUE,45,School,TRUE,Fee,Local Nonprofit,1716 Singleton Blvd.,Dallas,75212,www.smcschool.org,214-748-2934,48113004300,88,67,Demand < Supply
+Care Center Community Center Basketball Program,0013100001ajiEA,TRUE,45,Municipal Building,TRUE,No Charge,P&R,7912 Antoinette St.,Dallas,75217,http://www.carecenterministries.org,(214) 824-9852,48113009304,75,18,Demand < Supply
+Rainbow Land Child Care Center,001i000001YBHGV,TRUE,42,Child Care Center,TRUE,Sliding Scale,For Profit,5739 WORTH ST,DALLAS,75214,"",(214) 826-9161,48113001301,90,60,Demand < Supply
+Imagination Station Child Care Center,001i000001YBHGf,TRUE,42,Child Care Center,TRUE,Sliding Scale,For Profit,7221 SCYENE RD,DALLAS,75227,"",(214) 388-8153,48113008500,90,58,Demand < Supply
+Stepping Stones Early CDC Inc at Lake June,001i000001YBHHt,TRUE,42,Child Care Center,TRUE,Sliding Scale,For Profit,8315 LAKE JUNE RD,DALLAS,75217,"",(214) 309-1555,48113009203,77,35,Demand < Supply
+A Christian Academy,001i000001YBHEk,TRUE,41,Child Care Center,TRUE,Sliding Scale,For Profit,2830 E ILLINOIS AVE,DALLAS,75216,"",(214) 371-9948,48113008802,84,56,Demand < Supply
+Little Birdies Child Care,001i000001YBHGA,TRUE,41,Child Care Center,TRUE,Sliding Scale,For Profit,7655 S POLK ST,DALLAS,75232,"",(972) 228-0849,48113011101,93,64,Demand < Supply
+Tony Little Clubhouse,0013r00002KVTHe,TRUE,41,Child Care Center,TRUE,Fee,For Profit,6909 SCYENE RD,DALLAS,75227,"",972-880-4557,48113008401,77,39,Demand < Supply
+Timberglen Recreation Center,0013100001bdc2Q,TRUE,40,Municipal Building,TRUE,Fee,P&R,3810 Timberglen Rd.,Dallas,75287,www.dallasparks.org,(214) 671-0644,,,,
+Pleasant Oaks Recreation Center,0013100001bdRB7,TRUE,40,Municipal Building,TRUE,Fee,P&R,8701 Greenmound,Dallas,75227,www.dallasparks.org,214-670-0945,48113009002,87,85,Demand = Supply
+Kiest Recreation Center,0013100001bdQZI,TRUE,40,Municipal Building,TRUE,Fee,P&R,3081 S. Hampton,Dallas,75224,www.dallasparks.org,(214)670-1918,48113010804,84,40,Demand < Supply
+Lake Highlands North Recreation Center,0013100001bdbaM,TRUE,40,Child Care Center,TRUE,Fee,For Profit,9940 White Rock Trl.,Dallas,75238,www.dallasparks.org,(214)670-7794,48113013008,97,59,Demand < Supply
+The Salvation Army Dallas Pleasant Grove Corps. Community Center,0013100001beie3,TRUE,40,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,8341 Elam Road,Dallas,75217,www.salvationarmydfw.org/,214.398.6619,48113009202,84,47,Demand < Supply
+Janie C. Turner Recreation Center,0013100001bdlZZ,TRUE,40,Municipal Building,TRUE,Fee,P&R,6424 Elam Rd.,Dallas,75217,www.dallasparks.org,(214) 670-8277,48113009304,75,18,Demand < Supply
+Mattie Nash Myrtle Davis Recreation Center,0013100001bTt7I,TRUE,40,Child Care Center,TRUE,Fee,For Profit,3710 N. Hampton Rd.,Dallas,75212,www.dallasparks.org,(214)670-6194,48113010101,82,64,Demand < Supply
+Kleberg-Rylie Recreation Center,0013100001bdc0j,TRUE,40,Child Care Center,TRUE,Fee,For Profit,1515 Edd,Dallas,75253,www.dallasparks.org,(214)670-8648,48113017101,79,65,Demand = Supply
+Behind Every Door at Roseland Townhomes,0010Z0000274BrG,TRUE,40,Apartment Complex,TRUE,No Charge,Local Nonprofit,"1949 N Washington Ave, Dallas, TX",Dallas,75204,"","",48113001601,93,,
+BridgeBuilders at Turner Courts,0013100001lJHdt,TRUE,40,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,6601 Bexar St,Dallas,75215,https://bridgebuilders.org/,"",48113011500,76,69,Demand = Supply
+Studio Bella Explorers at Martha Turner Reilly,0013r00002TzTMT,TRUE,40,School,TRUE,Sliding Scale,For Profit,11230 Lippitt Ave,DALLAS,75218,"",972-749-7800,48113012802,90,62,Demand < Supply
+Walnut Hill Recreation Center,0013100001bdQcv,TRUE,40,Municipal Building,TRUE,Fee,P&R,10011 Midway Rd.,Dallas,75229,www.dallasparks.org,(214)670-7112,48113009500,86,59,Demand < Supply
+St. Vincent de Paul StudyTime at Santa Clara of Assisi Catholic Academy,0013100001ajym0,TRUE,40,Faith Community,TRUE,No Charge,Local Nonprofit,321 Calumet,Dallas,75211,www.sdvpdallas.org,(214) 794-3036,48113006701,80,39,Demand < Supply
+Juanita J. Craft Recreation Center,0013100001bT7Ec,TRUE,40,Child Care Center,TRUE,Fee,P&R,4500 Spring Ave.,Dallas,75210,www.dallasparks.org,(214)670-8391,48113002703,92,57,Demand < Supply
+Anita N. Martinez Recreation Center,0013100001bT82N,TRUE,40,Municipal Building,TRUE,Fee,P&R,3212 N. Winnetka Ave.,Dallas,75212,www.dallasparks.org,(214)670-4109,48113010102,86,47,Demand < Supply
+After School Cafe at Oak Cliff Cultural Center,0013100001bT2Jj,TRUE,40,Community Center/Nonprofit,TRUE,No Charge,For Profit,223 W. Jefferson Blvd.,Dallas,75208,www.dallasculture.org/occc,(214)670-3777,48113004700,81,41,Demand < Supply
+"Childrens Place Christian Learning Center, LLC",001i000001YBHIp,TRUE,39,Child Care Center,TRUE,Sliding Scale,For Profit,7717 GREENSPAN AVE,DALLAS,75232,"",(972) 293-4215,48113011104,86,55,Demand < Supply
+Liberated Children's House - Montessori Preschool,0010Z0000232Qae,TRUE,38,School,TRUE,Sliding Scale,School Run,10915 GARLAND RD,Dallas,75218,"",972-863-1786,48113012802,90,62,Demand < Supply
+Kiddie Kare,001i000001YBHFx,TRUE,38,Child Care Center,TRUE,Sliding Scale,For Profit,4126 MARYLAND AVE,DALLAS,75216,"",(214) 375-2331,48113005901,99,61,Demand < Supply
+Sonja Lil' Darling,001i000001YBHHk,TRUE,36,Child Care Center,TRUE,Sliding Scale,For Profit,5739 BONNIE VIEW RD,DALLAS,75241,"",(214) 374-9090,48113011401,84,58,Demand < Supply
+Annette's Day Care Center Too!,001i000001YBHIb,TRUE,36,Child Care Center,TRUE,Sliding Scale,For Profit,3034 S BECKLEY AVE,DALLAS,75224,"",(214) 946-1885,48113005600,77,26,Demand < Supply
+Jacksons Playland,001i000001YBHEV,TRUE,36,Child Care Center,TRUE,Sliding Scale,For Profit,2515 PEABODY AVE,DALLAS,75215,"",(214) 565-1118,48113020300,87,64,Demand < Supply
+St. Vincent de Paul StudyTime at Dallas Thrift Store Classroom,0013100001ajybH,TRUE,36,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,3052 W. Northwest Hwy,Dallas,75220,www.sdvpdallas.org,"",48113000410,93,63,Demand < Supply
+Umphress Recreation Center,0013100001bTwb6,TRUE,35,Municipal Building,TRUE,Fee,P&R,7616 Umphress Rd.,Dallas,75217,www.dallasparks.org,(214)670-0956,48113009105,85,56,Demand < Supply
+Fruitdale Recreation Center,0013100001bTvUN,TRUE,35,Municipal Building,TRUE,Fee,P&R,4408 Vandervort Dr.,Dallas,75216,www.dallasparks.org,(214)670-7600,48113008701,88,59,Demand < Supply
+Fireside Recreation Center,0013100001bTv2O,TRUE,35,Municipal Building,TRUE,Fee,P&R,8601 Fireside Dr.,Dallas,75217,www.dallasparks.org,(214)670-0959,48113011603,82,64,Demand < Supply
+Greater Cornerstone Academy,0013100001nSZZZ,TRUE,35,Child Care Center,TRUE,Sliding Scale,For Profit,8350 FOREST LN.,Dallas,75243,"",(214) 864-1113,48113007805,92,62,Demand < Supply
+Kids-U at Otto II Apartment Complex,0013100001lKesT,TRUE,35,Apartment Complex,TRUE,No Charge,Local Nonprofit,8201 Fair Oaks Crossing,Dallas,75231,www.kids-u.org,954-708-7591,48113007825,80,56,Demand < Supply
+Moore's Faithful 2 Learning,0013100001pojLU,TRUE,34,Child Care Center,TRUE,Sliding Scale,For Profit,2120 N. Saint Augustine Dr. Ste. 120,Dallas,75227,"",(214) 576-6739,48113012000,73,17,Demand < Supply
+Kids University Learning Center at S. Marsalis Ave.,001i000001YBHSz,TRUE,34,Child Care Center,TRUE,Sliding Scale,For Profit,4456 S MARSALIS AVE,DALLAS,75216,"",(214) 541-8227,48113005901,99,61,Demand < Supply
+YMCA Town North at The LamplighterSchool,001i000001YBHHl,TRUE,34,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,11611 INWOOD RD,DALLAS,75229,"",(214) 369-9201,48113013500,83,74,Demand = Supply
+Casa de Paz Montessori,001i000001YBHDw,TRUE,34,School,TRUE,Sliding Scale,School Run,335 CENTRE ST,DALLAS,75208,"",(972) 533-5729,48113005000,89,52,Demand < Supply
+The Parks at Wynnewood-After School,001i000001YBHKn,TRUE,34,School,TRUE,Sliding Scale,"",2002 DIDSBURY CIR,DALLAS,75224,"",(214) 948-5154,48113006200,89,57,Demand < Supply
+Exall Recreation Center,0013100001bT6hi,TRUE,34,Municipal Building,TRUE,Fee,P&R,1355 Adair St.,Dallas,75204,www.dallasparks.org/,(214) 670-7812,48113002200,80,61,Demand < Supply
+Tiny 1's Treasured Learning Center,0010Z000023hh0h,TRUE,33,Child Care Center,TRUE,Sliding Scale,For Profit,3418 S BECKLEY AVE,DALLAS,75224,"",214-434-1131,48113005902,77,43,Demand < Supply
+Genesis Foundation Child Care Learning Center,001i000001YBHJG,TRUE,33,Child Care Center,TRUE,Sliding Scale,For Profit,801 W KIEST BLVD,DALLAS,75224,"",(214) 374-0075,48113006001,77,26,Demand < Supply
+Smile of a Child Learning Center,001i000001YBHKb,TRUE,33,Child Care Center,TRUE,Sliding Scale,For Profit,515 N. Saint Augustine Dr.,DALLAS,75217,"",(972) 677-7137,48113011802,83,55,Demand < Supply
+Small World Daycare Center,0010Z0000232QbN,TRUE,33,Child Care Center,TRUE,Sliding Scale,For Profit,4858 BERNAL DR,Dallas,75212,"",469-577-4055,48113010601,93,63,Demand < Supply
+Kids-U at Hunnicut Apartment Complex,001i000000S8WLX,TRUE,32,Apartment Complex,TRUE,No Charge,Local Nonprofit,"7326 Hunnicut Rd., Bldg XIII, Apt. 1073",Dallas,75227,www.kids-u.org,469-855-5115,48113008500,90,58,Demand < Supply
+NV Kids Academy,0010Z000025h6dO,TRUE,32,Child Care Center,TRUE,Sliding Scale,For Profit,1035 WESTMOUNT AVE,DALLAS,75211,"",972-296-4850,48113006800,90,58,Demand < Supply
+Children's Creative World,001i000001YBHIn,TRUE,32,Child Care Center,TRUE,Sliding Scale,For Profit,6011 HOUSTON SCHOOL RD,DALLAS,75241,"",(214) 376-4199,48113011202,98,62,Demand < Supply
+Lil Wiggys Christian Development Center-Gannon Ln,001i000001YBHJt,TRUE,32,Child Care Center,TRUE,Sliding Scale,For Profit,4333 GANNON LN STE 110,DALLAS,75237,"",(972) 572-3500,48113016607,84,42,Demand < Supply
+Kids Time Before and After School Program,0010Z00001uFAHA,TRUE,31,Child Care Center,TRUE,Sliding Scale,For Profit,5909 UNIVERSITY HILLS BLVD,Dallas,75241,"",469-779-6445,48113011202,98,62,Demand < Supply
+Not Home Alone Program at Agape Memorial United Methodist Church,0013100001mPpRb,TRUE,30,Faith Community,TRUE,Fee,For Profit,5111 Capitol Ave.,Dallas,75206,www.agapememorialumc.org,469-235-8769,48113000901,86,73,Demand < Supply
+Heart House Wildflower at Wildflower Apartment Complex,001i000000VPmRh,TRUE,30,Apartment Complex,TRUE,No Charge,Local Nonprofit,8515 Park Lane #303,Dallas,75231,www.hearthousedallas.org,978-822-0076,48113007821,86,54,Demand < Supply
+Just Keep Livin' at L. G. Pinkston High School,0013100001p7hyS,TRUE,30,School,TRUE,No Charge,National Nonprofit,2200 Dennison Street,Dallas,75212,https://www.jklivinfoundation.org/,214-306-8400 x114,48113020500,88,61,Demand < Supply
+Just Keep Livin' at Sunset High School,0013100001p7i0J,TRUE,30,School,TRUE,No Charge,National Nonprofit,2120 W. Jefferson Blvd.,Dallas,75208,https://www.jklivinfoundation.org/,214-306-8400 x114,48113005200,83,38,Demand < Supply
+YMCA at Personalized Prep,0010Z000024Fpcl,TRUE,30,School,TRUE,Sliding Scale,National Nonprofit,2827 Throckmorton Street,Dallas,75219,"",214-415-8527,48113000501,85,,
+Churchill Recreation Center,0013100001bda3Y,TRUE,30,Municipal Building,TRUE,Fee,P&R,6906 Churchill Way,Dallas,75230,www.dallasparks.org,(214)670-6477,48113013202,87,71,Demand < Supply
+Fretz Recreation Center,0013100001bdbbt,TRUE,30,Municipal Building,TRUE,Fee,P&R,6950 Beltline,Dallas,75254,www.dallasparks.org,(214) 670-6203,48113013608,78,60,Demand < Supply
+M.L. King Jr. Recreation Center,0013100001bTtSi,TRUE,30,Municipal Building,TRUE,Fee,P&R,2901 Pennsylvania Avenue Building E,Dallas,75215,www.dallasparks.org,(214)670-8363,48113020300,87,64,Demand < Supply
+Forerunner Junior High Mentoring Program,0010Z00001ud5C1,TRUE,30,School,TRUE,No Charge,Local Nonprofit,10805 Walnut Hill Ln,Dallas,75238,"",214-952-9060,48113013011,75,27,Demand < Supply
+Sharons Playground Learning Center,001i000001YBHHd,TRUE,30,Child Care Center,TRUE,Sliding Scale,For Profit,3949 SAINT FRANCIS AVE STE B,DALLAS,75228,"",(469) 684-8299,48113012207,93,63,Demand < Supply
+KU Champions LLC at George Bannerman Dealey Montessori,001i000001YBHDu,TRUE,30,School,TRUE,Fee,For Profit,6501 Royal Lane,Dallas,75230,"",(972) 794-8400,48113013300,79,70,Demand = Supply
+Jaycee-Zaragoza Recreation Center,0013100001bT8Mc,TRUE,30,Municipal Building,TRUE,Fee,P&R,3114 Clymer St.,Dallas,75212,www.dallasparks.org,(214)670-6188,48113010601,93,63,Demand < Supply
+Forerunner Elementary Mentoring Program,0010Z00002CYA1Z,TRUE,30,Faith Community,TRUE,No Charge,Local Nonprofit,10805 Walnut Hill Lane,Dallas,75238,"",479-236-7741,48113013011,75,27,Demand < Supply
+Blessed Little Angels Academy,0010Z00001xShRm,TRUE,29,Child Care Center,TRUE,Sliding Scale,For Profit,2615 GUS THOMASSON RD,DALLAS,75228,"","",48113012502,87,62,Demand < Supply
+Moores Faithful Learning Academy,001i000001YBHIE,TRUE,28,Child Care Center,TRUE,Sliding Scale,For Profit,4807 S DENLEY DR,DALLAS,75216,"",(214) 576-6739,48113005700,91,59,Demand < Supply
+Refugee Resources,0013r00002HpTyL,TRUE,25,Community Center/Nonprofit,TRUE,No Charge,National Nonprofit,7317 Holly Hill Dr. #A1,Dallas,75231,https://www.refugeeresources.org/,214-934-1686,48113007815,77,28,Demand < Supply
+Eloise Lundy Recreation Center,0013100001bTqmr,TRUE,25,Child Care Center,TRUE,Fee,For Profit,1228 Sabine St.,Dallas,75203,www.dallasparks.org,(214)670-6781,48113021000,96,63,Demand < Supply
+Project Transformation at Christ's Foundry United Methodist Church,001i000000Na3OC,TRUE,25,Faith Community,TRUE,Fee,National Nonprofit,9891 Webb Chapel,Dallas,75220,"",(469) 740-4917,48113009803,94,62,Demand < Supply
+Project Transformation at Elmwood United Methodist Church,001i000000Na3OD,TRUE,25,Faith Community,TRUE,Fee,National Nonprofit,1315 Berkley,Dallas,75224,"",(469) 970-0039,48113006302,76,47,Demand < Supply
+Dallas Prestige Group at Charles Rice Learning Center,0010Z00001ubA59,TRUE,25,School,TRUE,No Charge,"","2425 Pine St,",Dallas,75215,www.dallasprestigegroup.com,(214) 428-5171,48113020800,91,55,Demand < Supply
+Heart House Park Lane at Wildflower Apartment Complex,001i000000WZtkE,TRUE,25,Apartment Complex,TRUE,No Charge,Local Nonprofit,8515 Park Lane #307,Dallas,75231,www.hearthousedallas.org,469-248-6614,48113007821,86,54,Demand < Supply
+Kids-U at Solaire Apartment Complex,0010Z000025hodR,TRUE,25,Apartment Complex,TRUE,No Charge,Local Nonprofit,4753 Duncanville Rd,Dallas,75236,kids-u.org,469-650-1643,48113016533,79,61,Demand < Supply
+Willie B. Johnson Recreation Center,0013100001bdbi6,TRUE,25,Municipal Building,TRUE,Fee,P&R,12225 Willowdell,Dallas,75243,www.dallasparks.org,(214)670-6182,48113007829,89,60,Demand < Supply
+Martin Weiss Recreation Center,0013100001bT7nN,TRUE,25,Child Care Center,TRUE,Fee,For Profit,1111 Martindell Ave.,Dallas,75211,www.dallasparks.org,(214)670-1919,48113006402,77,38,Demand < Supply
+Amarias Learning Center,001i000001YBHIY,TRUE,24,School,TRUE,Sliding Scale,For Profit,768 N SAINT AUGUSTINE DR,DALLAS,75217,"",(214) 309-9301,48113011802,83,55,Demand < Supply
+Children 1st Learning Center,001i000001YBHES,TRUE,21,Child Care Center,TRUE,Sliding Scale,For Profit,3540 WILHURT AVE # 169,DALLAS,75216,"",(214) 812-9366,48113008701,88,59,Demand < Supply
+Thurgood Marshall Recreation Center,0013100001bdRIm,TRUE,20,Municipal Building,TRUE,Fee,P&R,5150 Mark Trail,Dallas,75232,www.dallasparks.org,214-670-1928,48113011004,91,62,Demand < Supply
+Beckley-Saner Recreation Center,0013100001bdQWt,TRUE,20,Municipal Building,TRUE,Fee,P&R,114 W Hobson Ave.,Dallas,75224,www.dallasparks.org,(214) 670-7595,48113005600,77,26,Demand < Supply
+Tommie M. Allen Recreation Center,0013100001bdbeE,TRUE,20,Municipal Building,TRUE,Fee,P&R,7071 Bonnieview Road,Dallas,75241,www.dallasparks.org,(214)670-0986,48113016710,82,60,Demand < Supply
+Family Place Shelter at 3rd and Up,001i000000NZ5HG,TRUE,20,Community Center/Nonprofit,FALSE,No Charge,Local Nonprofit,PO Box 7999,Dallas,75209,http://www.familyplace.org,(214) 559-2170,48113007102,90,61,Demand < Supply
+Heart House Pineland at Wildflower Apartment Complex,001i000000VPmNQ,TRUE,20,Apartment Complex,TRUE,No Charge,Local Nonprofit,8515 Park Lane #2407,Dallas,75231,www.hearthousedallas.org,469-554-8678,48113007821,86,54,Demand < Supply
+Momentous Institute at Main Campus-CERTIFIED,001i000000Uf0sM,TRUE,20,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,9705 Harry Hines Blvd,Dallas,75220,"",(214) 916-4036,48113010001,79,59,Demand < Supply
+Unity Community Gardens,001i000001Uk7TA,TRUE,20,Child Care Center,TRUE,No Charge,For Profit,2813 Troy St,Dallas,75210,www.unitycommunitygardens.net,361-548-7003,48113002703,92,57,Demand < Supply
+Brother Bill's Helping Hand After School Program,0013r00002DcO4Y,TRUE,10,Community Center/Nonprofit,TRUE,"","",3906 North Westmoreland Road,Dallas,75212,"",334-332-6135,48113020500,88,61,Demand < Supply
+Mercy Street Sports,0013100001bTjqt,TRUE,0,Child Care Center,TRUE,Sliding Scale,For Profit,3801 Holystone St.,Dallas,75212,mercystreetdallas.org,(214)730-4832,48113020500,88,61,Demand < Supply
+Little Scholars Learning Center,0013100001mAWv0,TRUE,112,Child Care Center,TRUE,Sliding Scale,For Profit,1518 John West Rd.,Dalllas,75181,"",(214) 321-5437,48113012211,77,34,Demand < Supply
+Kosmic Kids,001i000001YBHG6,TRUE,206,Child Care Center,TRUE,Sliding Scale,For Profit,1101 E PLEASANT RUN RD,DESOTO,75115,"",(469) 567-4543,48113016610,96,60,Demand < Supply
+"DeSoto Private School & Day Care Center, Inc.",001i000001YBHJ0,TRUE,200,Child Care Center,TRUE,Sliding Scale,For Profit,301 E BELT LINE RD,DESOTO,75115,"",(972) 223-6450,48113016620,91,60,Demand < Supply
+DeSoto Children's Academy,0010Z000024CxvZ,TRUE,188,Child Care Center,TRUE,Sliding Scale,For Profit,901 N POLK ST,DESOTO,75115,"",817-682-1504,48113016610,96,60,Demand < Supply
+Park Ridge Academy,001i000001YBHGx,TRUE,175,Child Care Center,TRUE,Sliding Scale,For Profit,415 E PARKERVILLE RD,DESOTO,75115,"",(972) 223-7913,48113016628,85,87,Demand = Supply
+Learning Adventure Children's Center,001i000001YBHGc,TRUE,146,Child Care Center,TRUE,Sliding Scale,For Profit,410 E WINTERGREEN RD,DESOTO,75115,"",(972) 224-3772,48113016619,92,59,Demand < Supply
+Nueva Vida Day Care DeSoto,001i000001YBHGl,TRUE,140,Child Care Center,TRUE,Sliding Scale,For Profit,135 W WINTERGREEN RD,DESOTO,75115,"",(972) 296-4850,48113016634,88,58,Demand < Supply
+First Step Learning Center at Hampton Rd.,001i000001YBHGv,TRUE,136,Child Care Center,TRUE,Sliding Scale,For Profit,335 S HAMPTON RD,DESOTO,75115,"",(972) 230-8100,48113016632,82,67,Demand = Supply
+The Chocolate MINT,0013100001beYpM,TRUE,135,Community Center/Nonprofit,TRUE,Fee,Local Nonprofit,201 Executive Way,Desoto,75115,www.chocolatemint.org,(972) 224-7200,48113016634,88,58,Demand < Supply
+Smithfield Learning Center Inc,001i000001YBHT7,TRUE,113,Child Care Center,TRUE,Sliding Scale,For Profit,1624 FALCON DR,DESOTO,75115,"",(972) 572-1555,48113016634,88,58,Demand < Supply
+KCE Champions LLC @ Uplift-Gradus,0013r00002QWCOa,TRUE,102,School,TRUE,No Charge,For Profit,121 SEAHAWK DR,DESOTO,75115,"",940-368-3794,48113016634,88,58,Demand < Supply
+ACE 21st Century After School Program at Northside Elementary,0013100001m7iVD,TRUE,100,School,TRUE,No Charge,School Run,525 Ray Ave,Desoto,75115,http://www.desotoisd.org/departments/a_c_e_after_school_program,(972) 224-6709,48113016619,92,59,Demand < Supply
+DeSoto ISD ACE Afterschool at Cockrell Hill Elementary School,0013100001m7iPU,TRUE,100,School,TRUE,No Charge,School Run,425 S Cockrell Hill Rd.,Desoto,75115,www.desotoisd.org/departments/a_c_e_after_school_program,(972) 223-6666,48113016631,79,74,Demand = Supply
+DeSoto ISD ACE Afterschool at Meadows Elementary School,0013100001m7iXK,TRUE,100,School,TRUE,No Charge,School Run,1016 The Meadows Pkwy,Desoto,75115,http://www.desotoisd.org/departments/a_c_e_after_school_program,(469)810-4085,48113016610,96,60,Demand < Supply
+DeSoto ISD ACE Afterschool at Woodridge Elementary School,0013100001m7iYb,TRUE,100,School,TRUE,No Charge,School Run,707 Young Blvd,Desoto,75115,http://www.desotoisd.org/departments/a_c_e_after_school_program,(469)810-4085,48113016618,96,60,Demand < Supply
+Forest Park Academy,001i000001YBHGw,TRUE,98,School,TRUE,Sliding Scale,For Profit,2024 N WESTMORELAND RD,DESOTO,75115,"",(972) 298-5437,48113016638,84,72,Demand = Supply
+Sweet Start Childcare,0013r00002HqvYE,TRUE,95,Child Care Center,TRUE,Fee,For Profit,115 W BELT LINE RD,DESOTO,75115,"",469-747-3073,48113016618,96,60,Demand < Supply
+A Heart to Give Early Childhood Center,0010Z00001uITvv,TRUE,92,Child Care Center,TRUE,Sliding Scale,For Profit,106 Barrows Pl,Desoto,75115,"",972-920-5008,48113016618,96,60,Demand < Supply
+"Dixieland Child Care Center, LLC",001i000001YBHJ6,TRUE,85,Child Care Center,TRUE,Sliding Scale,For Profit,1100 E PLEASANT RUN RD STE 108,DESOTO,75115,"",(972) 223-2199,48113016620,91,60,Demand < Supply
+Eagles that Soar Afterschool Program at DeSoto West Middle School,0013100001m7idl,TRUE,80,School,TRUE,No Charge,Local Nonprofit,800 N Westmoreland Rd,Desoto,75115,http://www.desotoisd.org/departments/a_c_e_after_school_program,4698104085,48113016618,96,60,Demand < Supply
+Eagles that Soar Afterschool Program at McCowan Middle School,0013100001m7ici,TRUE,80,School,TRUE,No Charge,Local Nonprofit,1500 Majestic Meadow Dr,Desoto,75115,http://www.desotoisd.org/departments/a_c_e_after_school_program,4698104085,48113016618,96,60,Demand < Supply
+Eagles that Soar Afterschool Program at DeSoto East Middle School,0013100001m7ibB,TRUE,80,School,TRUE,No Charge,Local Nonprofit,601 E Belt Line Rd.,Desoto,75115,http://www.desotoisd.org/departments/a_c_e_after_school_program,(469)810-4085,48113016620,91,60,Demand < Supply
+Kids at Heart,0013r00002YNs2G,TRUE,73,Child Care Center,TRUE,Fee,For Profit,901 N POLK ST STE 365,DESOTO,75115,"",469-438-5201,48113016610,96,60,Demand < Supply
+Engineers of Tomorrow STEM Preschool,0013100001pohWL,TRUE,55,Child Care Center,TRUE,Sliding Scale,For Profit,1615 N. Hampton Rd. Ste. 240,Desoto,75115,www.engineersoftomorrow.org,(972) 360-8258,48113016634,88,58,Demand < Supply
+Kosmic Kids School Age Center,0010Z00001wBiHY,TRUE,50,Child Care Center,TRUE,Sliding Scale,For Profit,1701 N HAMPTON RD STE G,DESOTO,75115,"","",,,,
+Wee Care Youth & Recreation Center,001i000001YBHKr,TRUE,48,Child Care Center,TRUE,Sliding Scale,For Profit,1670 N HAMPTON RD STE 115&116,DESOTO,75115,"",(972) 224-1473,48113016634,88,58,Demand < Supply
+Kids Are Us Private Learning Center,001i000001YBHG0,TRUE,44,Child Care Center,TRUE,Sliding Scale,For Profit,1108 N WESTMORELAND RD,DESOTO,75115,"",(972) 217-2700,48113016618,96,60,Demand < Supply
+Madea's Place,001i000001YBHEp,TRUE,40,Child Care Center,TRUE,Sliding Scale,For Profit,107 N HAMPTON RD,DESOTO,75115,"",(469) 358-9990,48113016618,96,60,Demand < Supply
+Discovery House,001i000001YBHJ1,TRUE,34,Child Care Center,TRUE,Sliding Scale,For Profit,105 TERRACE DR,DESOTO,75115,"",(972) 217-0100,48113016628,85,87,Demand = Supply
+"Duncanville Fieldhouse """"""""Champions"""""""" After School Program",0013100001m8Pa0,TRUE,400,Child Care Center,TRUE,Fee,For Profit,1700 South Main Street,Duncanville,75137,www.duncanvillefieldhouse.com/178/After-School-Program,972-331-8868,48113016517,86,51,Demand < Supply
+Childcare Network #171,0013r00002QSWPK,TRUE,238,Child Care Center,TRUE,Fee,For Profit,707 S CEDAR RIDGE DR,DUNCANVILLE,75137,"",972-298-5296,48113016513,96,61,Demand < Supply
+Kidz Are People Too Early Childhood Academy,0013r00002QWCXO,TRUE,194,Child Care Center,TRUE,Fee,For Profit,107 W DANIELDALE RD,DUNCANVILLE,75137,"",972-670-2476,48113016531,94,57,Demand < Supply
+Spectrum of Love Childcare,0013r00002QWCXS,TRUE,194,Child Care Center,TRUE,Fee,For Profit,703 S CEDAR RIDGE DR,DUNCANVILLE,75137,"",469-868-6455,48113016513,96,61,Demand < Supply
+A 2 Z Learning Center,001i000001YBHFT,TRUE,175,Child Care Center,TRUE,Sliding Scale,For Profit,1323 S MAIN ST,DUNCANVILLE,75137,"",(972) 298-8958,48113016531,94,57,Demand < Supply
+KinderCare Learning Center at Cedar Ridge Dr.,001i000001YBHHY,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,314 N CEDAR RIDGE DR,DUNCANVILLE,75116,"",(972) 296-4725,48113016518,87,50,Demand < Supply
+Cedar Ridge Preschool,0013100001mAWJn,TRUE,126,Child Care Center,TRUE,Sliding Scale,"",419 N. Cedar Ridge Dr.,Duncanville,75116,"",(972) 296-3861,48113016519,83,59,Demand < Supply
+Whiz Kids Learning Center,0010Z000024Fpcj,TRUE,120,Child Care Center,TRUE,Sliding Scale,For Profit,1407 OAK RIDGE DR,DUNCANVILLE,75137,"",817-715-8657,48113016513,96,61,Demand < Supply
+Merrimac Day Care Centre,001i000001YBHFU,TRUE,90,Child Care Center,TRUE,Sliding Scale,For Profit,114 W VINYARD RD,DUNCANVILLE,75137,"",(972) 298-2792,48113016531,94,57,Demand < Supply
+Stepping Stones of Knowledge Academy,0013100001eWtqk,TRUE,65,Child Care Center,TRUE,Sliding Scale,For Profit,205 E. Red Bird Lane,Duncanville,75116,"",(972) 572-3601,48113016536,83,59,Demand < Supply
+Magnificent Learning Academy,0013r00002c3deJ,TRUE,65,"",TRUE,"","",624 N MAIN ST,DUNCANVILLE,75116,"",972-863-8900,48113016516,82,55,Demand < Supply
+Right At School at Hastings Elementary School,0013r00002DdbYl,TRUE,50,School,TRUE,Fee,For Profit,602 W Center St. Duncanville,Duncanville,75116,"","",48113016518,87,50,Demand < Supply
+Child Care Paradise,0013100001n8Yxw,TRUE,44,Child Care Center,TRUE,Sliding Scale,For Profit,1422 W. Danieldale Rd.,Duncanville,75137,"",(469) 513-2610,48113016513,96,61,Demand < Supply
+Hamilton Academy,001i000001YBHFG,TRUE,275,Child Care Center,TRUE,Sliding Scale,For Profit,2725 VALLEY VIEW LN,FARMERS BRANCH,75234,"",(972) 247-3246,48113013902,94,62,Demand < Supply
+"Kalken Education Innovation Inc, STEAMspark",0013r00002TzTMS,TRUE,187,Child Care Center,TRUE,Fee,For Profit,1400 VALLEY VIEW LN,FARMERS BRANCH,75234,"",214-809-5767,48113014002,78,86,Demand > Supply
+Mona Montessori Greentree,0013100001eXOLw,TRUE,136,School,TRUE,Sliding Scale,For Profit,4440 Sigma Rd.,Farmers Branch,75244,www.montessori.com,(972) 488-1277,48113013806,85,69,Demand < Supply
+After The Bell Blair Summer Program,001i000001YBHHE,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,14055 HEARTSIDE PL,FARMERS BRANCH,75234,"",(972) 968-6525,48113013902,94,62,Demand < Supply
+Bright Kids Montessori,0013100001cHUs0,TRUE,74,School,TRUE,Sliding Scale,For Profit,2825 Valley View Ln. Ste. 221,Farmers Branch,75234,www.brightkidsmontessori.com,(972) 484-6400,48113013902,94,62,Demand < Supply
+RCJ Machado Jiu Jitsu After School,0013100001jBtjZ,TRUE,30,Child Care Center,TRUE,Fee,For Profit,14430 Midway Rd,Farmers Branch,75244,www.rcjmjjfarmersbranch.com,972-934-1316,48113013806,85,69,Demand < Supply
+Project Transformation at Chapel Hill United Methodist Church,001i000000Na3OB,TRUE,25,Faith Community,TRUE,Fee,National Nonprofit,12411 Templeton Trail,Farmers Branch,75234,"",(972) 922-1277,48113013804,87,61,Demand < Supply
+Breitling Performing Arts,0013100001fJgWs,TRUE,400,Child Care Center,TRUE,Sliding Scale,For Profit,303 Main St.,Garland,75040,www.ActingForChildren.org,972-658-3915,48113018802,93,64,Demand < Supply
+Oakhill Day School,001i000001YBHFf,TRUE,308,School,TRUE,Sliding Scale,For Profit,1025 E BRAND RD,GARLAND,75044,"",(972) 530-4962,48113019050,88,60,Demand < Supply
+Oak Park School,001i000001YBHGo,TRUE,289,School,TRUE,Sliding Scale,For Profit,2402 FIREWHEEL PKWY,GARLAND,75040,"",(972) 496-6127,48113018120,92,62,Demand < Supply
+First Baptist Church Child Development,001i000001YBHJC,TRUE,256,Faith Community,TRUE,Sliding Scale,Local Nonprofit,801 W AVENUE D,GARLAND,75040,"",(972) 272-3221,48113018802,93,64,Demand < Supply
+For Kids Only Child Learning Center,001i000001YBHJE,TRUE,221,Child Care Center,TRUE,Sliding Scale,For Profit,5210 DUCK CREEK DR,GARLAND,75043,"",(972) 240-4115,48113018128,79,35,Demand < Supply
+Primrose School of Firewheel,0013r00002NExtd,TRUE,211,Child Care Center,TRUE,Fee,For Profit,5074 N PRESIDENT GEORGE BUSH H,GARLAND,75040,"",972-496-0011,48113019050,88,60,Demand < Supply
+Kids Green Acre School,001i000001YBHJc,TRUE,204,Child Care Center,TRUE,Sliding Scale,For Profit,675 W OATES RD,GARLAND,75043,"",(972) 681-2710,48113018129,83,65,Demand = Supply
+Childrens Treehouse Buckingham,001i000001YBHIq,TRUE,202,Child Care Center,TRUE,Sliding Scale,For Profit,3317 W BUCKINGHAM RD,GARLAND,75042,"",(972) 530-8438,48113019020,85,52,Demand < Supply
+Happy Days School,001i000001YBHFH,TRUE,201,Child Care Center,TRUE,Sliding Scale,For Profit,1201 MAIN ST,GARLAND,75040,"",(972) 494-3127,48113018802,93,64,Demand < Supply
+LionHeart Children's Academy,0013100001eXOTl,TRUE,200,Child Care Center,TRUE,Sliding Scale,For Profit,2256 Arapaho Rd.,Garland,75044,Lionheartkid.org,(214) 838-3626,48113019027,91,62,Demand < Supply
+Ace Kids Academy,0010Z0000234Wgq,TRUE,200,Child Care Center,TRUE,Sliding Scale,For Profit,4330 O BANION RD,GARLAND,75043,"",972-278-7946,48113018126,93,61,Demand < Supply
+New Century Montessori Academy,0013r00002NExtb,TRUE,200,Child Care Center,TRUE,Fee,For Profit,1625 FERRIS RD,GARLAND,75044,"",214-802-7770,48113019042,80,74,Demand = Supply
+Mount Hebron DCC,001i000001YBHEE,TRUE,195,Child Care Center,TRUE,Sliding Scale,For Profit,901 DAIRY RD,GARLAND,75040,"",(972) 272-8095,48113018204,75,25,Demand < Supply
+Glenwood Day School,001i000001YBHJI,TRUE,192,School,TRUE,Sliding Scale,School Run,2446 APOLLO RD,GARLAND,75044,"",(972) 530-4460,48113019029,90,63,Demand < Supply
+Castleglen Treehouse Private School,001i000001YBHIj,TRUE,187,Child Care Center,TRUE,Sliding Scale,For Profit,602 CASTLEGLEN DR,GARLAND,75043,"",(972) 240-6530,48113018138,87,58,Demand < Supply
+Blue Ivey School,001i000001YBHDm,TRUE,185,School,TRUE,Sliding Scale,For Profit,2101 FIREWHEEL PKWY,GARLAND,75040,"",(972) 414-4839,48113018120,92,62,Demand < Supply
+New World United Methodist DCC,001i000001YBHKB,TRUE,185,Community Center/Nonprofit,TRUE,Sliding Scale,For Profit,5134 NORTHWEST HWY,GARLAND,75043,"",(972) 279-8393,48113018126,93,61,Demand < Supply
+OakCreek School,001i000001YBHGn,TRUE,170,Child Care Center,TRUE,Sliding Scale,For Profit,3429 COLLINS BLVD,GARLAND,75044,"",(972) 414-1114,48113019031,92,61,Demand < Supply
+Country Club Active Learning School LLC,001i000001YBHIv,TRUE,170,Child Care Center,TRUE,Sliding Scale,For Profit,1601 N COUNTRY CLUB RD,GARLAND,75040,"",(972) 494-1754,48113018105,89,82,Demand = Supply
+Pecan Ranch Early Learning Center,001i000001YBHFz,TRUE,169,Child Care Center,TRUE,Sliding Scale,For Profit,815 E OATES RD,GARLAND,75043,"",(972) 240-0745,48113018148,80,39,Demand < Supply
+Small Miracles Academy Garland Campus,001i000001YBHKa,TRUE,160,Child Care Center,TRUE,Sliding Scale,For Profit,5902 N JUPITER RD,GARLAND,75044,"",(972) 495-0181,48113019031,92,61,Demand < Supply
+Prep Montessori Academy Garland,001i000001YBHJU,TRUE,149,School,TRUE,Sliding Scale,For Profit,1951 PLEASANT VALLEY RD,GARLAND,75040,"",(214) 647-1234,48113018151,85,71,Demand < Supply
+Little Butterflies Learning Center,0010Z00001uITx2,TRUE,146,Child Care Center,TRUE,Sliding Scale,For Profit,2814 Lavon Dr,Garland,75040,"",972-955-1488,48113018152,85,64,Demand < Supply
+Granpas Barnyard School,001i000001YBHGX,TRUE,145,Child Care Center,TRUE,Sliding Scale,For Profit,1521 ROWLETT RD,GARLAND,75043,"",(972) 240-1248,48113018147,83,83,Demand > Supply
+Richardson ISD -Xplore! Big Springs Elementary,0013100001pokMU,TRUE,136,School,TRUE,Sliding Scale,School Run,3301 W. Campbell Rd.,Garland,75044,http://www.edline.net/pages/RISD_Departments_and_Programs/PACE,(469) 593-8076,48113019031,92,61,Demand < Supply
+LaunchPad Learning Center,0013r00002V2bLn,TRUE,131,Child Care Center,TRUE,Fee,For Profit,1520 LAVON DR,GARLAND,75040,"",469-782-1830,48113018105,89,82,Demand = Supply
+Childtime Children's Center at Garland,0010Z00001uFAHD,TRUE,130,Child Care Center,TRUE,Sliding Scale,For Profit,985 W BRAND RD,Garland,75040,"",972-495-9088,48113019027,91,62,Demand < Supply
+KinderCare Learning Center at Northwest Hwy.,001i000001YBHT0,TRUE,127,Child Care Center,TRUE,Sliding Scale,For Profit,1321 NORTHWEST HWY,GARLAND,75041,"",(972) 278-9558,48113018402,89,61,Demand < Supply
+Centerville Learning Center,001i000001YBHIk,TRUE,118,Child Care Center,TRUE,Sliding Scale,For Profit,407 W CENTERVILLE RD,GARLAND,75041,"",(972) 926-8712,48113018402,89,61,Demand < Supply
+Lake Cities Montessori School,001i000001YBHJo,TRUE,115,School,TRUE,Sliding Scale,For Profit,1935 E CENTERVILLE RD,GARLAND,75041,"",(214) 440-4930,48113018205,78,40,Demand < Supply
+Little Butterflies Learning Center North,0010Z00002A9mkJ,TRUE,109,Child Care Center,TRUE,Sliding Scale,For Profit,2885 BELT LINE RD,GARLAND,75044,"",972-689-0837,48113019029,90,63,Demand < Supply
+Kiddie Cloud Learning Academy,0013r00002dlRGI,TRUE,105,"",TRUE,"","",244 S BARNES DR,GARLAND,75042,"",646-286-7017,48113019013,74,22,Demand < Supply
+A Creative Focus Learning Center,001i000001YBHIW,TRUE,101,Child Care Center,TRUE,Sliding Scale,For Profit,720 MEADOWCREEK LN,GARLAND,75043,"",(972) 270-5556,48113018126,93,61,Demand < Supply
+KCE Champions LLC at International Leadership,0013100001hE6IS,TRUE,98,Child Care Center,TRUE,Sliding Scale,"",3301 N. Shiloh Rd.,Garland,75044,discoverchampions.com,(940) 230-3493,48113019029,90,63,Demand < Supply
+UBC Academy,001i000001YBHFh,TRUE,92,Child Care Center,TRUE,Sliding Scale,For Profit,916 N JUPITER RD,GARLAND,75042,"",(972) 276-8040,48113019046,75,26,Demand < Supply
+Frog Academy of Creekside Village LLC,0013r00002DeeJG,TRUE,76,Child Care Center,TRUE,Fee,For Profit,720 N SHILOH RD,GARLAND,75042,"",972-272-8681,48113018900,85,54,Demand < Supply
+Magic Land Child Care and Learning Center,0010Z0000273xxo,TRUE,75,Child Care Center,TRUE,Sliding Scale,For Profit,1517 W BUCKINGHAM RD,GARLAND,75042,"",972-495-0809,48113019048,74,58,Demand < Supply
+Preschool on Shiloh,0013r00002QWCXQ,TRUE,70,Child Care Center,TRUE,Fee,For Profit,410 N SHILOH RD,GARLAND,75042,"",972-905-5430,48113018900,85,54,Demand < Supply
+Willis Early Learning Center,001i000001YBHKz,TRUE,68,Child Care Center,TRUE,Sliding Scale,For Profit,2600 BROADWAY BLVD,GARLAND,75041,"",(469) 371-1780,48113018206,83,47,Demand < Supply
+Eastside Child Development Center,0010Z00001a0Bt5,TRUE,58,Child Care Center,TRUE,Sliding Scale,For Profit,2000 S 1ST ST,GARLAND,75041,"","",48113018206,83,47,Demand < Supply
+Lighthouse Bilingual Academy,001i000001YBHEC,TRUE,48,Child Care Center,TRUE,Sliding Scale,For Profit,935 CASTLE DR,GARLAND,75040,"",(469) 730-0077,48113018105,89,82,Demand = Supply
+Priceless Childcare and Learning Center,0010Z00001a0Bt7,TRUE,47,Child Care Center,TRUE,Sliding Scale,For Profit,5335 BROADWAY BLVD,GARLAND,75043,"","",48113018128,79,35,Demand < Supply
+Cornerstone Christian Learning Center,001i000001YBHER,TRUE,46,Child Care Center,TRUE,Sliding Scale,For Profit,7502 N GARLAND AVE,GARLAND,75044,"",(972) 414-4212,,,,
+Kids Kingdom Learning Center,001i000001YBHG5,TRUE,41,Child Care Center,TRUE,Sliding Scale,For Profit,4105 BROADWAY BLVD,GARLAND,75043,"",(972) 240-4347,48113018128,79,35,Demand < Supply
+The Children's Lounge New Beginnings,0010Z000024Fpci,TRUE,34,Child Care Center,TRUE,Sliding Scale,For Profit,4222 ROSEHILL RD STE 1,GARLAND,75043,"",214-714-3306,48113018148,80,39,Demand < Supply
+Richardson ISD PACE - O Henry Elementary,001i000001YBHIO,TRUE,30,School,TRUE,Sliding Scale,School Run,4100 TYNES DR,GARLAND,75042,risd.org,(469) 593-7539,48113019044,86,64,Demand < Supply
+Poised for Success Learning Academy,0010Z00001uITx0,TRUE,21,Child Care Center,TRUE,Sliding Scale,For Profit,3603 Broadway Blvd,Garland,75043,"",214-794-1486,48113018111,74,44,Demand < Supply
+DeSoto ISD ACE Afterschool at Moates Elementary School,0013100001m7iTW,TRUE,100,School,TRUE,No Charge,School Run,1500 Heritage Blvd.,Glenn Heights,75154,http://www.desotoisd.org/departments/a_c_e_after_school_program,(972) 230-2881,48113016623,83,64,Demand < Supply
+Bear Creek Childrens Center,001i000001YBHIc,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,101 E BEAR CREEK RD,GLENN HEIGHTS,75154,"",(972) 223-7437,48113016622,85,63,Demand < Supply
+The Children's Courtyard at S Carrier,001i000001YBHT8,TRUE,432,Child Care Center,TRUE,Sliding Scale,For Profit,4285 S CARRIER PKWY,GRAND PRAIRIE,75052,"",(972) 263-7330,48113016412,93,62,Demand < Supply
+Crayon Campus,001i000001YBHIw,TRUE,195,Child Care Center,TRUE,Sliding Scale,For Profit,4118 S ROBINSON RD,GRAND PRAIRIE,75052,"",(972) 606-1644,48113016410,95,63,Demand < Supply
+Childcare Network #196,001i000001YBHEX,TRUE,181,Child Care Center,TRUE,Sliding Scale,For Profit,3574 S CARRIER PKWY,GRAND PRAIRIE,75052,"",(972) 262-6683,48113016419,96,62,Demand < Supply
+"WOS, Inc.  D/B/A The Childrens Courtyard",001i000001YBHH1,TRUE,167,Child Care Center,TRUE,Sliding Scale,For Profit,708 W POLO RD,GRAND PRAIRIE,75052,"",(972) 263-9098,48113016415,93,63,Demand < Supply
+First Kids Academy,0013100001hE73M,TRUE,157,Child Care Center,TRUE,Sliding Scale,Local Nonprofit,950 Mayfield Road,Grand Prairie,75052,"",(214) 929-6988,48113016419,96,62,Demand < Supply
+Boys and Girls Club of Grand Prairie,0013100001bejyr,TRUE,150,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,1000 Enterprise St.,Grand Prairie,75051,www.bgca.org,(972) 623-1698,48113016100,87,59,Demand < Supply
+Koti Academy of Grand Prairie,0010Z00002CZ9RS,TRUE,136,Child Care Center,TRUE,Fee,For Profit,615 W MARSHALL DR,GRAND PRAIRIE,75051,"",972-262-4333,48113016204,78,34,Demand < Supply
+My Little Hearts Learning Center Inc,0010Z000024Fpch,TRUE,128,Child Care Center,TRUE,Sliding Scale,For Profit,668 BEATTY DR,GRAND PRAIRIE,75052,"",972-237-7616,48113016420,80,74,Demand = Supply
+Metropolitan Christian Academy No 3,001i000001YBHFn,TRUE,120,Child Care Center,TRUE,Sliding Scale,For Profit,401 ROYAL VALLEY RD,GRAND PRAIRIE,75052,"",(972) 642-7222,48113016420,80,74,Demand = Supply
+Loving Care Wee School,001i000001YBHGL,TRUE,120,Child Care Center,TRUE,Sliding Scale,For Profit,1310 S BELT LINE RD,GRAND PRAIRIE,75051,"",(972) 263-9069,48113016301,91,63,Demand < Supply
+Grand Prairie ISD Powell Beyond the Bell,0013100001mAvai,TRUE,114,School,TRUE,Fee,School Run,5009 S. Carrier Pkwy.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016412,93,62,Demand < Supply
+Grand Prairie ISD Garner Beyond the Bell,0013100001mAuE4,TRUE,105,School,TRUE,Fee,School Run,145 Polo Rd.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016415,93,63,Demand < Supply
+Helping Hands Child Care Inc,001i000001YBHJN,TRUE,102,Child Care Center,TRUE,Sliding Scale,For Profit,1700 W POLO RD STE 240,GRAND PRAIRIE,75052,"",(972) 623-3784,48113016410,95,63,Demand < Supply
+The Perfect Place to Bee Learning Academy,0013r00002ZnCXM,TRUE,102,Child Care Center,TRUE,Fee,For Profit,1510 W POLO RD,GRAND PRAIRIE,75052,"",972-639-3731,48113016410,95,63,Demand < Supply
+Journey's Child Development Center,0010Z000029wiCf,TRUE,98,Child Care Center,TRUE,Sliding Scale,For Profit,1326 N STATE HIGHWAY 161,GRAND PRAIRIE,75050,"",214-293-9038,48113015403,82,46,Demand < Supply
+Voice of Hope Ministries - ASPIRE Afterschool Uplift Grand,0010Z000025h6dP,TRUE,90,School,TRUE,Fee,Local Nonprofit,300 E. Church St.,Grand Prairie,75050,"","",48113015500,94,63,Demand < Supply
+Grand Prairie ISD Marshall Beyond the Bell,0013100001mAvXt,TRUE,88,School,TRUE,Fee,School Run,1160 W. Warrior Dr.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016419,96,62,Demand < Supply
+Grand Prairie ISD Florence Hill Beyond the Bell,0013100001mAu4r,TRUE,88,School,TRUE,Fee,School Run,4213 Robinson Rd.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016414,81,73,Demand = Supply
+Suzannes Early Childhood Development Center,001i000001YBHKj,TRUE,88,Child Care Center,TRUE,Sliding Scale,For Profit,622 FREETOWN RD,GRAND PRAIRIE,75051,"",(972) 266-2503,48113016204,78,34,Demand < Supply
+First Christian Church Child Development,0013100001eDCcX,TRUE,85,Faith Community,TRUE,Sliding Scale,For Profit,202 W TARRANT RD,Grand Prairie,75050,"",(972) 262-7434,48113015500,94,63,Demand < Supply
+Grand Prairie ISD Whitt Beyond the Bell,0013100001mAvc5,TRUE,85,School,TRUE,Fee,School Run,3320 Edelweiss,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016421,81,75,Demand = Supply
+Texas Lighthouse Christian Academy,001i000001YBHGG,TRUE,82,Child Care Center,TRUE,Sliding Scale,For Profit,410 NE 27th ST Lighthouse Baptist Church,Grand Prairie,75050,"",(972) 264-5422,48113015405,83,65,Demand = Supply
+Destined for Greatness Christian Academy,001i000001YBHGS,TRUE,81,Child Care Center,TRUE,Sliding Scale,For Profit,824 S CARRIER PKWY,GRAND PRAIRIE,75051,"",(972) 237-4646,48113016100,87,59,Demand < Supply
+Grand Prairie ISD Moseley Beyond the Bell,0013100001mAva9,TRUE,74,School,TRUE,Fee,School Run,1851 Camp Wisdom Rd.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016416,76,62,Demand < Supply
+Grand Prairie ISD Moore Beyond the Bell,0013100001mAvYr,TRUE,73,School,TRUE,Fee,School Run,3150 Waterwood Dr.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016418,87,63,Demand < Supply
+Grand Prairie ISD De Zavala Beyond the Bell,0013100001mAu1x,TRUE,70,School,TRUE,Fee,School Run,3501 Mark Dr.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016420,80,74,Demand = Supply
+Grand Prairie ISD Crockett Beyond the Bell,0013100001mAu1J,TRUE,68,School,TRUE,Fee,School Run,1340 Skyline Rd.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113015900,79,64,Demand < Supply
+Faruq Islamic Center,0010Z00001xShRo,TRUE,56,Faith Community,TRUE,Sliding Scale,"",2202B SAN ANTONIO ST,GRAND PRAIRIE,75051,"","",48113016100,87,59,Demand < Supply
+YMCA at International Leadership- Grand Prairie,0013100001mAyxD,TRUE,50,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,3501 S. Great Southwest Pkwy.,Grand Prairie,75052,https://www.ymcadallas.org/locations/,(469) 475-6927,,,,
+Grand Prairie Family YMCA,0013100001mBPk2,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,4556  S. Carrier Pkwy.,Grand Prairie,75052,https://www.ymcadallas.org/locations/grand_prairie/,(972) 642-9632,48113016415,93,63,Demand < Supply
+Grand Prairie ISD Eisenhower Beyond the Bell,0013100001mAu4S,TRUE,47,School,TRUE,Fee,School Run,2102 N. Carrier Pk.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113015405,83,65,Demand = Supply
+Grand Prairie ISD Williams Beyond the Bell,0013100001mAvco,TRUE,46,School,TRUE,Fee,School Run,1635 S.E. 14th St.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016301,91,63,Demand < Supply
+Grand Prairie ISD Bush Beyond the Bell,0013100001mAtzr,TRUE,42,School,TRUE,Fee,School Run,511 E. Springdale Rd.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016407,74,20,Demand < Supply
+Grand Prairie ISD Milam Beyond the Bell,0013100001mAvYc,TRUE,39,School,TRUE,Fee,School Run,2030 Proctor Dr.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016204,78,34,Demand < Supply
+Grand Prairie ISD Seguin Beyond the Bell,0013100001mAvb7,TRUE,37,School,TRUE,Fee,School Run,1450 S.E. 14th St.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016301,91,63,Demand < Supply
+Grand Prairie ISD Morton Beyond the Bell,0013100001mAvS0,TRUE,35,School,TRUE,Fee,School Run,401 E. Grand Prairie Rd.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016002,74,23,Demand < Supply
+Grand Prairie ISD Dickinson Beyond the Bell,0013100001mAu2M,TRUE,32,School,TRUE,Fee,School Run,1902 Palmer Trl.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016417,80,59,Demand < Supply
+Grand Prairie ISD Bonham Beyond the Bell,0013100001mAtj5,TRUE,27,School,TRUE,Fee,School Run,1301 E. Coral Way,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016302,78,42,Demand < Supply
+Lighthouse Rescue Mission Church,0013100001k3Pbk,TRUE,25,Child Care Center,TRUE,Sliding Scale,For Profit,402 E. Church St.,Grand Prairie,75050,"",(972) 262-1381,48113015500,94,63,Demand < Supply
+Grand Prairie ISD Bowie Beyond the Bell,0013100001mAtyy,TRUE,18,School,TRUE,Fee,School Run,425 Alice Dr.,Grand Prairie,75052,http://www.gpisd.org/domain/11845,972.237.5512,48113016001,73,27,Demand < Supply
+Shannon's Lil' Angels Hutchins,0013r00002Hp49q,TRUE,66,Child Care Center,TRUE,Fee,For Profit,700 N JJ LEMMON RD,HUTCHINS,75141,"",214-929-5808,48113016902,76,70,Demand = Supply
+Ivy Montessori Academy Valley Ranch,0013100001ciO3i,TRUE,330,School,TRUE,Sliding Scale,For Profit,2750 Ranch Trl.,Irving,75063,www.IvyMontessoriAcademy.com,(469) 314-8080,48113014150,91,78,Demand = Supply
+Rockbrook Montessori Academy at Valley Ranch,001i000001YBHKV,TRUE,298,Child Care Center,TRUE,Sliding Scale,For Profit,1201 RANCH TRL,IRVING,75063,"",(972) 831-0200,48113014156,83,74,Demand = Supply
+Wonderland Montessori Academy of Valley Ranch,001i000001YBHL2,TRUE,291,School,TRUE,Sliding Scale,School Run,2090 MARKET PLACE BLVD,IRVING,75063,"","",48113014150,91,78,Demand = Supply
+Kinwest Montessori Academy,001i000001YBHJk,TRUE,287,School,TRUE,Sliding Scale,For Profit,1009 KINWEST PKWY,IRVING,75063,"",(972) 401-8311,48113014124,84,68,Demand = Supply
+Childrens Courtyard at Valley Ranch,001i000001YBHSv,TRUE,283,Child Care Center,TRUE,Sliding Scale,For Profit,8909 VALLEY RANCH PKWY W,IRVING,75063,"",(972) 869-9908,48113014156,83,74,Demand = Supply
+Shady Grove Learning Center,001i000001YBHHa,TRUE,283,Child Care Center,TRUE,Sliding Scale,For Profit,3200 W SHADY GROVE RD,IRVING,75060,"",(972) 986-9351,48113015306,92,63,Demand < Supply
+The Sloan School,001i000001YBHHj,TRUE,263,School,TRUE,Sliding Scale,For Profit,3131 OCONNOR N,IRVING,75062,"",972-659-1199,48113014308,86,41,Demand < Supply
+Allisons Clubhouse,001i000001YBHIC,TRUE,262,Child Care Center,TRUE,Sliding Scale,For Profit,3425 FINLEY RD,IRVING,75062,"",(972) 258-1800,48113014153,97,62,Demand < Supply
+Wonderland Montessori Academy of Las Colinas,001i000001YBHL1,TRUE,258,School,TRUE,Sliding Scale,For Profit,431 E ROYAL LN,IRVING,75039,"",(972) 225-5962,48113014143,90,59,Demand < Supply
+IGrow Montessori,0013100001nSZeF,TRUE,234,School,TRUE,Sliding Scale,For Profit,6699 RIVERSIDE DR,Irving,75039,www.igrowmontessori.com,(214) 550-6560,48113014143,90,59,Demand < Supply
+The Pierce Academy,001i000001YBHH0,TRUE,204,School,TRUE,Sliding Scale,School Run,9930 VALLEY RANCH PKWY W,IRVING,75063,"",972-831-1199,48113014128,77,34,Demand < Supply
+Landry After the Bell,001i000001YBHHI,TRUE,204,Child Care Center,TRUE,Sliding Scale,For Profit,265 RED RIVER TRL,IRVING,75063,"",(972) 968-6525,48113014142,85,40,Demand < Supply
+Primrose School of Valley Ranch,001i000001YBHFe,TRUE,204,Child Care Center,TRUE,Sliding Scale,For Profit,577 CIMARRON TRL,IRVING,75063,"",(972) 444-9500,48113014128,77,34,Demand < Supply
+Childcare Network #170,0010Z00001uFAFj,TRUE,196,Child Care Center,TRUE,Sliding Scale,For Profit,2020 S MACARTHUR BLVD,Irving,75060,"",972-790-2225,48113015101,92,63,Demand < Supply
+Redeemer Montessori,001i000001YBHKN,TRUE,185,School,TRUE,Sliding Scale,For Profit,2700 WARREN CIR,IRVING,75062,"",(972) 257-3517,48113014203,87,65,Demand < Supply
+Primrose School Of Las Colinas,001i000001YBHGZ,TRUE,184,Child Care Center,TRUE,Sliding Scale,For Profit,700 FLUOR DR,IRVING,75039,"",(972) 831-1000,48113014143,90,59,Demand < Supply
+Irving Montessori Academy,0010Z000023hh0U,TRUE,169,Child Care Center,TRUE,Sliding Scale,For Profit,3801 W NORTHGATE DR,Irving,75062,"",469-565-8975,48113014139,92,60,Demand < Supply
+The Children's Courtyard on Esters,001i000001YBHT9,TRUE,161,Child Care Center,TRUE,Sliding Scale,For Profit,8560 ESTERS BLVD,IRVING,75063,"",(972) 929-2965,48113014124,84,68,Demand = Supply
+YMCA @ Canyon Ranch,0010Z0000273xxr,TRUE,150,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,1205 SANTA FE TRAIL,IRVING,75063,"",469-348-9622,48113014155,75,50,Demand < Supply
+Excel Academy,0013r00002Hp49o,TRUE,148,School,TRUE,Fee,School Run,504 RANCH TRL,IRVING,75063,"",972-462-7536,48113014149,77,55,Demand < Supply
+iBloom Montessori,0013r00002DeeJH,TRUE,138,Child Care Center,TRUE,Fee,For Profit,7650 BENT BRANCH DR,IRVING,75063,"",214-770-6521,48113014151,81,57,Demand < Supply
+Kinder Care #1246 Greenway,001i000001YBHDd,TRUE,135,Child Care Center,TRUE,Sliding Scale,For Profit,1121 GREENWAY CIR,IRVING,75038,"",(972) 550-8479,48113014159,80,69,Demand = Supply
+Education Station,0010Z0000273xxl,TRUE,132,Child Care Center,TRUE,Sliding Scale,For Profit,2328 E GRAUWYLER RD,IRVING,75061,"",972-438-3969,48113020100,81,69,Demand = Supply
+Simply Smarts Learning Center,001i000001YBHHi,TRUE,127,Child Care Center,TRUE,Sliding Scale,For Profit,3430 W ROCHELLE RD,IRVING,75062,"",(972) 257-9746,48113014153,97,62,Demand < Supply
+Wesleyan Academe,001i000001YBHKu,TRUE,125,Child Care Center,TRUE,Sliding Scale,For Profit,1615 W AIRPORT FWY,IRVING,75062,"",(972) 252-4733,48113014315,93,59,Demand < Supply
+Holy Trinity Learning Center,001i000001YBHEs,TRUE,110,Child Care Center,TRUE,Sliding Scale,For Profit,605 METKER ST,IRVING,75062,"",(972) 570-1161,48113014308,86,41,Demand < Supply
+Prestigious Learning Academy,0010Z00001uITwz,TRUE,108,Child Care Center,TRUE,Sliding Scale,For Profit,1906 N Story Rd,Irving,75061,"",972-514-1878,48113014501,86,52,Demand < Supply
+Morgans Private School & Day Care,001i000001YBHK9,TRUE,108,Child Care Center,TRUE,Sliding Scale,For Profit,2933 W PIONEER DR,IRVING,75061,"",(972) 790-4474,48113014405,88,62,Demand < Supply
+Kidquarters Day School,001i000001YBHJY,TRUE,105,Child Care Center,TRUE,Sliding Scale,For Profit,1502 E GRAUWYLER RD,IRVING,75061,"",(972) 438-5437,48113014704,82,42,Demand < Supply
+Little Peoples Learning Academy,001i000001YBHGK,TRUE,103,Child Care Center,TRUE,Sliding Scale,For Profit,610 N MACARTHUR BLVD,IRVING,75061,"",(972) 254-1800,48113014502,80,34,Demand < Supply
+Kings Kids Academy,001i000001YBHF3,TRUE,101,Child Care Center,TRUE,Sliding Scale,For Profit,3511 COUNTRY CLUB RD N,IRVING,75062,"",(972) 255-7181,48113014310,90,60,Demand < Supply
+KCE Champions LLC @ Uplift-Infinity,0010Z0000273xxn,TRUE,100,School,TRUE,Sliding Scale,For Profit,1401 S MACARTHUR BLVD,IRVING,75060,"",940-368-3794,48113015207,86,61,Demand < Supply
+The Learning Tree Academy,001i000001YBHI2,TRUE,94,Child Care Center,TRUE,Sliding Scale,For Profit,700 W PIONEER DR,IRVING,75061,"",(972) 253-4810,48113014502,80,34,Demand < Supply
+Dusk 2 Dawn,001i000001YBHE9,TRUE,88,Child Care Center,TRUE,Sliding Scale,For Profit,919 REDBIRD DR,IRVING,75061,"",(469) 647-5259,48113014502,80,34,Demand < Supply
+YMCA at Farine ES,0010Z00002CY4lZ,TRUE,80,School,TRUE,Sliding Scale,National Nonprofit,615 Metker Street,Irving,75062,"",214-728-7012,48113014308,86,41,Demand < Supply
+Adventure Discovery Center at Fourth St.,001i000001RaSVL,TRUE,78,Child Care Center,TRUE,Sliding Scale,For Profit,2631 W. 4th St.,Irving,75060,irvingdaycare.com,972-790-1958,48113015305,88,60,Demand < Supply
+"Rainbow Academy, Inc",001i000001YBHED,TRUE,77,Child Care Center,TRUE,Sliding Scale,For Profit,2227 CHEYENNE ST,IRVING,75062,"",(972) 594-0005,48113014154,78,64,Demand < Supply
+Kids Palace Learning Center,001i000001YBHJd,TRUE,75,Child Care Center,TRUE,Sliding Scale,For Profit,1001 METKER ST,IRVING,75062,"",(972) 554-4921,48113014308,86,41,Demand < Supply
+Irving Kidz Academy,0010Z00001uFAH7,TRUE,68,Child Care Center,TRUE,Sliding Scale,For Profit,325 E AIRPORT  FRWY,Irving,75062,"",469-643-0787,48113014204,79,64,Demand < Supply
+Above and Beyond Center for Children,001i000001YBHDg,TRUE,54,Child Care Center,TRUE,Sliding Scale,For Profit,503 E 6TH ST,IRVING,75060,"",(972) 870-9282,48113014903,88,58,Demand < Supply
+YMCA at Gilbert ES,0010Z00002CY4nu,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1501 East Pioneer Drive,Irving,75061,"",214-728-7012,48113014704,82,42,Demand < Supply
+YMCA at Brandenburg ES,0010Z00002CY4kl,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,2800 Hillcrest Drive,Irving,75062,"",214-728-7012,48113014316,74,32,Demand < Supply
+YMCA at Good ES,0010Z00002CY4nB,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1200 East Union Bower Road,Irving,75061,"",214-728-7012,48113014704,82,42,Demand < Supply
+YMCA at AS Johnston,0013100001bdZyn,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,2801 Rutgers Dr.,Irving,75062,www.ymcadallas.org/afterschool,214-649-8703,48113014306,82,53,Demand < Supply
+YMCA at Otis Brown ES,001i000000Na3O6,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,2501 10th St W,Irving,75060,www.ymcadallas.org/afterschool,(214) 649-8703,48113015305,88,60,Demand < Supply
+YMCA at T.J. Lee ES,001i000000Na3O7,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1600 Carlisle St.,Irving,75062,www.ymcadallas.org/afterschool,(214) 649-8703,48113014318,85,60,Demand < Supply
+YMCA at Townley ES,001i000000Na3O8,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1030 W. Vilbig St.,Irving,75060,"",(214)649-8703,48113015101,92,63,Demand < Supply
+YMCA at Townsell ES,001i000000Na3O9,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,3700 Pleasant Run Rd.,Irving,75038,www.ymcadallas.org/afterschool,(214) 649-8703,48113014310,90,60,Demand < Supply
+KCE Champions LLC @ Uplift North Hills,0013r00002XSrlA,TRUE,50,School,TRUE,Fee,For Profit,606 E ROYAL LN,IRVING,75039,"",940-368-3794,48113014138,84,74,Demand = Supply
+YMCA at Elliott ES,0013100001lkG9J,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1900 S. Story Rd.,Irving,75060,https://www.ymcadallas.org/locations/,(214) 649-8703,48113015208,74,22,Demand < Supply
+YMCA at Hanes ES,001i000001B766p,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,2730 Cheyenne St,Irving,75062,www.ymcadallas.org/afterschool,214-728-7012,48113014153,97,62,Demand < Supply
+YMCA at Thomas Haley ES,001i000001B7640,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,3601 Cheyenne St.,Irving,75062,www.ymcadallas.org/afterschool,(214) 649-8703,48113014154,78,64,Demand < Supply
+Irving Family YMCA,0013100001mBPcD,TRUE,50,Community Center/Nonprofit,TRUE,Fee,National Nonprofit,2200 W. Irving Blvd.,Irving,75061,https://www.ymcadallas.org/locations/irving_family_ymca/,(972) 986-8898,48113015202,87,62,Demand < Supply
+YMCA at Valley Ranch Elementary,0013100001mBOlr,TRUE,50,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,9800 Rodeo Dr.,Irving,75063,https://www.ymcadallas.org/locations/,(214) 496-8500,48113014128,77,34,Demand < Supply
+YMCA at J. Haley ES,0010Z00002CY4nz,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1100 Schulze Drive,Irving,75060,"",214-728-7012,48113014903,88,58,Demand < Supply
+YMCA at Keyes ES,0010Z00002CY4oi,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,1501 North Britain Road,Irving,75061,"",214-728-7012,48113014601,87,62,Demand < Supply
+YMCA at Stipes Elementary,0010Z00002CY4pW,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,3100 Cross Timbers Drive,Irving,75060,"",(214) 649-8703,48113015306,92,63,Demand < Supply
+YMCA at Schulze ES,0010Z00002CY4mh,TRUE,50,School,TRUE,Fee,National Nonprofit,1200 South Irving Heights Drive,Irving,75060,"",214-728-7012,48113015002,80,66,Demand = Supply
+YMCA at Davis ES,0010Z00002CY4mi,TRUE,50,School,TRUE,Sliding Scale,National Nonprofit,310 Davis Drive,Irving,75061,"","",48113014408,84,60,Demand < Supply
+Adventure Discovery Center at Wm. Brewster,001i000001RaSSv,TRUE,45,Child Care Center,TRUE,Sliding Scale,For Profit,2610 Wm. Brewster St.,Irving,75062,irvingdaycare.com,972-258-2470,48113014315,93,59,Demand < Supply
+Perfect Vision Daycare and Transportation II,0013r00002QSWPM,TRUE,45,Child Care Center,TRUE,Fee,For Profit,1313 W AIRPORT FWY STE 120,IRVING,75062,"",469-417-0103,48113014315,93,59,Demand < Supply
+NAML Academy,0013r00002HqvYD,TRUE,42,School,TRUE,Fee,School Run,8880 N MACARTHUR BLVD,IRVING,75063,"",469-990-0439,48113014142,85,40,Demand < Supply
+Growing Seeds Academy,0013r00002dDOUa,TRUE,40,"",TRUE,"","",2610 WILLIAM BREWSTER DR,IRVING,75062,"",469-565-8290,48113014315,93,59,Demand < Supply
+Cradle to Crayon Learning Center,0013r00002QWCOZ,TRUE,34,Child Care Center,TRUE,Fee,For Profit,2400 E GRAUWYLER RD STE B,IRVING,75061,"",469-571-6994,48113020100,81,69,Demand = Supply
+YMCA at Lively ES,001i000000Na3O5,TRUE,30,School,TRUE,Sliding Scale,National Nonprofit,1800 Plymouth Dr. W,Irving,75061,www.ymcadallas.org/afterschool,(214) 649-8703,48113014501,86,52,Demand < Supply
+Knowledge Hub Learning & Day Care Center,0013100001mAW2e,TRUE,30,Child Care Center,TRUE,Sliding Scale,For Profit,4835 N. O Connor Rd. Ste 208,Irving,75038,www.khkids.com,(214) 300-1558,48113014313,78,73,Demand = Supply
+YMCA at Britain ES,0010Z00002CY4lF,TRUE,30,School,TRUE,Sliding Scale,National Nonprofit,631 Edmondson Drive,Irving,75060,"",214-728-7012,48113015001,77,39,Demand < Supply
+Parkridge Montessori School,001i000001YBHKG,TRUE,29,School,TRUE,Sliding Scale,School Run,1111 KINWEST PKWY STE 130,IRVING,75063,"",(214) 403-1646,48113014124,84,68,Demand = Supply
+Emma's House,0013100001nCLv0,TRUE,15,Child Care Center,TRUE,Sliding Scale,For Profit,920 Bluebonnet Drive #101,Irving,75060,www.emmashouse.net,9728391502,48113020100,81,69,Demand = Supply
+Kids University Learning Center at Wintergreen Rd.,001i000001YBHEi,TRUE,182,Child Care Center,TRUE,Sliding Scale,For Profit,639 W WINTERGREEN RD,LANCASTER,75134,"",(972) 218-0808,48113016704,87,60,Demand < Supply
+Berne Academy DCC,001i000001YBHE3,TRUE,161,Child Care Center,TRUE,Sliding Scale,For Profit,1311 JOHNS AVE,LANCASTER,75134,"",(972) 227-4431,48113016706,95,60,Demand < Supply
+Powerhouse Center in Lancaster,001i000001YBHT4,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,954 S I 35 E,Lancaster,75146,"",(214) 376-8208,48113016802,78,74,Demand = Supply
+Innovation Station Learning Academy,0013r00002c3deI,TRUE,120,"",TRUE,"","",1971 W PLEASANT RUN RD,LANCASTER,75146,"",972-227-7877,48113016707,90,60,Demand < Supply
+Peaceful Images Child Development Center LLC-Pleasant Run Rd,001i000001YBHT3,TRUE,120,Child Care Center,TRUE,Sliding Scale,For Profit,1971 W PLEASANT RUN RD,LANCASTER,75146,"",(972) 224-2438,48113016707,90,60,Demand < Supply
+Londons Kings and Queens Academy,0013r00002HnzA0,TRUE,103,Child Care Center,TRUE,Fee,For Profit,625 W PLEASANT RUN RD,LANCASTER,75146,"",927-227-1118,48113016706,95,60,Demand < Supply
+KCE Champions LLC at ILTX-Lancaster,0010Z00001uITx1,TRUE,100,Child Care Center,TRUE,Sliding Scale,"",1900 Pleasant Run Rd,Lancaster,75146,"",817-271-3526,48113016806,84,63,Demand < Supply
+Shannons Lil Angels,001i000001YBHKY,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,630 W PLEASANT RUN RD STE 104,LANCASTER,75146,"",(972) 275-0092,48113016803,93,63,Demand < Supply
+"The Gardner Preparatory School, LLC",001i000001YBHGE,TRUE,85,Community Center/Nonprofit,TRUE,Sliding Scale,For Profit,100 N HOUSTON SCHOOL RD,LANCASTER,75146,"",(972) 275-1539,48113016802,78,74,Demand = Supply
+New Harmony Academy,0010Z00002A9mkK,TRUE,78,Child Care Center,TRUE,Sliding Scale,For Profit,200 REA AVE,LANCASTER,75146,"",972-293-5590,48113016803,93,63,Demand < Supply
+Peaceful Images Child Development Center LLC-Pleasant Run Rd,001i000001YBHHP,TRUE,72,Child Care Center,TRUE,Sliding Scale,For Profit,875 W PLEASANT RUN RD,LANCASTER,75146,"",(972) 227-7877,48113016706,95,60,Demand < Supply
+Zion Kidz Academy & Learning Center,001i000001YBHL4,TRUE,70,Child Care Center,TRUE,Sliding Scale,For Profit,1004 N JEFFERSON ST,LANCASTER,75146,"",(972) 218-9805,48113016803,93,63,Demand < Supply
+Lancaster ABC Learning Center LLC,0013r00002DeeJI,TRUE,67,Child Care Center,TRUE,Fee,For Profit,1033 W PLEASANT RUN RD,LANCASTER,75146,"",972-275-0335,48113016706,95,60,Demand < Supply
+Precious Lambs Learning Center Inc,0010Z00002E2bpj,TRUE,53,Child Care Center,TRUE,Sliding Scale,For Profit,723 W PLEASANT RUN RD STE 300,LANCASTER,75146,"",469-620-3717,48113016706,95,60,Demand < Supply
+Meadow Oaks Academy Inc.,001i000001YBHHh,TRUE,454,Child Care Center,TRUE,Sliding Scale,For Profit,1412 S BELT LINE RD,MESQUITE,75149,"",(972) 285-6895,48113017400,93,61,Demand < Supply
+Children's Safari Private School,001i000001YBHEQ,TRUE,277,Child Care Center,TRUE,Sliding Scale,For Profit,3550 CLAY MATHIS RD,MESQUITE,75181,"",(972) 222-5522,48113017313,79,71,Demand = Supply
+Legacy Kids Academy,001i000001YBHFW,TRUE,221,Child Care Center,TRUE,Sliding Scale,For Profit,2201 EASTGLEN BLVD,MESQUITE,75181,"",(972) 222-8755,48113017307,90,78,Demand = Supply
+Circle Creek Children's Center,001i000001YBHEU,TRUE,205,Child Care Center,TRUE,Sliding Scale,For Profit,2544 CLAY MATHIS RD,MESQUITE,75181,"",(972) 288-3381,48113017309,83,60,Demand < Supply
+St. Pius X Early Care and Education Center,001i000001YBHEG,TRUE,178,Faith Community,TRUE,Sliding Scale,For Profit,1620 Oates Dr.,Mesquite,75150,www.spxearlycare.org,(972) 279-3232,48113018130,93,60,Demand < Supply
+Lil Rascals Learning Center Inc,001i000001YBHET,TRUE,160,Child Care Center,TRUE,Sliding Scale,For Profit,2424 BAKER DR,MESQUITE,75150,"",(972) 681-2177,48113017816,76,26,Demand < Supply
+La Petite Academy TXMC 0904,001i000001YBHGP,TRUE,153,Child Care Center,TRUE,Sliding Scale,For Profit,910 CLAY MATHIS RD,MESQUITE,75181,"",(972) 222-0970,48113017307,90,78,Demand = Supply
+Family Cathedral of Praise 2,001i000001YBHF1,TRUE,153,Faith Community,TRUE,Sliding Scale,For Profit,790 WINDBELL CIR,MESQUITE,75149,"",(972) 329-1660,48113017704,89,49,Demand < Supply
+Small Miracles Academy-Mesquite Campus,0013100001mAVxA,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,2301 Mesquite Valley Rd.,Mesquite,75149,"",(972) 222-9400,48113017312,80,50,Demand < Supply
+Handprints Academy at Pioneer,001i000001YBHEJ,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,606 PIONEER RD,MESQUITE,75149,"",(972) 285-6683,48113017311,85,80,Demand = Supply
+Childrens Palace Preparatory School,001i000001YBHEd,TRUE,150,Child Care Center,TRUE,Sliding Scale,For Profit,603 S BRYAN BELT LINE RD,MESQUITE,75149,"",(972) 222-7808,48113017400,93,61,Demand < Supply
+Boys and Girls Club of Mesquite,0013100001bejsy,TRUE,150,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,4869 Gus Thomasson Rd.,Mesquite,75150,https://bgcdallas.org/,(972) 270-7645,48113017900,88,54,Demand < Supply
+"Stepping Stones ECDC, Incorporated",0013r00002YQmj3,TRUE,136,Child Care Center,TRUE,Fee,For Profit,1460 EASTGLEN BLVD,MESQUITE,75149,"",214-388-1555,48113017311,85,80,Demand = Supply
+Discovery School,001i000001YBHJ3,TRUE,133,Child Care Center,TRUE,Sliding Scale,For Profit,4805 GUS THOMASSON RD,MESQUITE,75150,"",(972) 279-1202,48113017900,88,54,Demand < Supply
+First United Methodist Church Academy Kids,0013100001gehBz,TRUE,130,Faith Community,TRUE,Sliding Scale,For Profit,300 N. Galloway Ave.,Mesquite,75149,"",(972) 285-1112,48113017706,87,73,Demand < Supply
+Little Guys and Gals Montessori,0010Z00002ACVQ9,TRUE,130,Child Care Center,TRUE,Sliding Scale,For Profit,1615 OATES DR,MESQUITE,75150,"",469-476-2275,48113018130,93,60,Demand < Supply
+Childtime CTR 1212,001i000001YBHIr,TRUE,126,Child Care Center,TRUE,Sliding Scale,For Profit,4111 N GALLOWAY AVE,MESQUITE,75150,"",(972) 279-4779,48113017812,88,63,Demand < Supply
+Tomorrow's Future Learning Center,001i000001YBHKq,TRUE,116,Child Care Center,TRUE,Sliding Scale,For Profit,2138 MOTLEY DR,MESQUITE,75150,"",(972) 279-1500,48113017815,83,73,Demand = Supply
+Corners,001i000001YBHIu,TRUE,115,Child Care Center,TRUE,Sliding Scale,For Profit,5929 NORTHWEST DR,MESQUITE,75150,"",(972) 270-2660,48113018130,93,60,Demand < Supply
+Gingerbread House Academy,001i000001YBHJH,TRUE,115,Child Care Center,TRUE,Sliding Scale,For Profit,612 MATADOR LN,MESQUITE,75149,"",(972) 216-5437,48113017704,89,49,Demand < Supply
+Appleseed Academy,0010Z00001uITx3,TRUE,107,Child Care Center,TRUE,Sliding Scale,For Profit,4346 N Galloway Ave,Mesquite,75150,"",972-681-3900,48113017811,91,60,Demand < Supply
+Kids Discovery Academy Inc.,001i000001YBHJa,TRUE,107,Child Care Center,TRUE,Sliding Scale,For Profit,933 BARNES BRIDGE RD,MESQUITE,75150,"",(972) 698-9338,48113017808,87,62,Demand < Supply
+The Preferred Preschool,0013r00002XSrlB,TRUE,91,Child Care Center,TRUE,Fee,For Profit,1615 OATES DR,MESQUITE,75150,"",469-476-2275,48113018130,93,60,Demand < Supply
+Achievers of Excellence Learning Academy,0013100001eWw1s,TRUE,84,School,TRUE,Sliding Scale,School Run,1040 N. Belt Line Rd.,Mesquite,75149,"",(469) 248-2884,48113017706,87,73,Demand < Supply
+Frog Academy of New Community Church,0013r00002eADTz,TRUE,84,"",TRUE,"","",2600 EASTGLEN BLVD,MESQUITE,75181,"",972-373-4379,48113017307,90,78,Demand = Supply
+A Bright Beginning II,001i000001YBHIV,TRUE,81,Child Care Center,TRUE,Sliding Scale,For Profit,2291 TRADEWIND DR,MESQUITE,75150,"",(972) 279-0170,48113017806,87,62,Demand < Supply
+Little Texans Child Care Center,0013r00002YNs2I,TRUE,65,Child Care Center,TRUE,Fee,For Profit,1515 E KEARNEY ST STE 402,MESQUITE,75149,"",972-707-7157,48113017706,87,73,Demand < Supply
+Right At School at Rugel Elementary School,0013r00002DdbYc,TRUE,50,School,TRUE,Fee,For Profit,2701 Sybil Dr. Mesquite,Mesquite,75149,"","",48113017704,89,49,Demand < Supply
+Right At School at Tosch Elementary School -,0013r00002DdbYd,TRUE,50,School,TRUE,Fee,For Profit,2424 Larchmont Dr. Mesquite,Mesquite,75150,"","",48113017819,87,83,Demand = Supply
+Right At School at Seabourn Elementary School,0013r00002DdbYe,TRUE,50,School,TRUE,Fee,For Profit,2249 Picadilly Blvd. Mesquite,Mesquite,75149,"","",48113017704,89,49,Demand < Supply
+Right At School at Cannaday Elementary School,0013r00002DdbYg,TRUE,50,School,TRUE,Fee,For Profit,2701 Chisolm Trail Mesquite,Mesquite,75150,"","",48113017819,87,83,Demand = Supply
+Right At School at Moss Elementary School,0013r00002DdbYk,TRUE,50,School,TRUE,Fee,For Profit,1208 New Market Rd. Mesquite,Mesquite,75149,"","",48113017704,89,49,Demand < Supply
+Right At School at Austin Elementary School,0013r00002DdbYm,TRUE,50,School,TRUE,Fee,For Profit,3020 Poteet Dr. Mesquite,Mesquite,75150,"","",48113017819,87,83,Demand = Supply
+Right At School at Gentry Elementary School,0013r00002DdbYw,TRUE,50,School,TRUE,Fee,For Profit,1901 Twin Oaks Dr. Mesquite,Mesquite,75181,"","",48113017314,80,61,Demand < Supply
+Right At School at B.J. Smith Elementary School,0013r00002DdbYy,TRUE,50,School,TRUE,Fee,For Profit,2300 Mesquite Valley Rd. Mesquite,Mesquite,75149,"","",48113017704,89,49,Demand < Supply
+Mesquite Parks & Recreation at After-school Adventures at Goodbar Rec.Center,0013r00002DdbZv,TRUE,50,Municipal Building,TRUE,Sliding Scale,P&R,3000 Concord,Mesquite,75150,"","",48113017820,87,64,Demand < Supply
+Town East Learning Center,001i000001YBHI5,TRUE,45,Child Care Center,TRUE,Sliding Scale,For Profit,2201 GUS THOMASSON RD STE CDE,MESQUITE,75150,"",(972) 279-0770,48113017816,76,26,Demand < Supply
+Pats Little Pecan Ranch,001i000001YBHKI,TRUE,30,Child Care Center,TRUE,Sliding Scale,For Profit,909 GROSS RD STE 420,MESQUITE,75149,"",(214) 289-0121,48113017704,89,49,Demand < Supply
+Learning Me Before & After Learning Center,001i000001YBHGD,TRUE,25,Child Care Center,TRUE,Sliding Scale,For Profit,4224 GUS THOMASSON RD STE C,MESQUITE,75150,"",(972) 681-1504,48113018002,78,36,Demand < Supply
+AfterSchool Coding Clubs at Schools,0013100001fzBRV,TRUE,1000,School,TRUE,Sliding Scale,For Profit,800 W. Campbell Road,Richardson,75080,utdallas.edu/k12/access,9723576893,48113980200,81,68,Demand = Supply
+Whistle Stop Station-Murphy Rd,0010Z000026ffKx,TRUE,301,Child Care Center,TRUE,Sliding Scale,For Profit,3501 MURPHY RD,RICHARDSON,75082,"",972-680-3062,,,,
+Primrose School of N. Richardson @ Lookout,0013r00002aRFiO,TRUE,282,Child Care Center,TRUE,Fee,For Profit,2425 N PLANO RD,RICHARDSON,75081,"",469-514-2670,48113019052,79,,
+Primrose School of Richardson,0013100001eXNjN,TRUE,204,Child Care Center,TRUE,Sliding Scale,For Profit,1100 Jonsson Blvd.,Richardson,75080,"",(972) 730-7673,48113019205,88,82,Demand = Supply
+Little Steps Montessori School,001i000001YBHJy,TRUE,200,School,TRUE,Sliding Scale,For Profit,635 W CAMPBELL RD STE 230,RICHARDSON,75080,"",(972) 231-0345,48113019211,89,83,Demand = Supply
+The Learning Experience,0013r00002Re5ZE,TRUE,198,Child Care Center,TRUE,Fee,For Profit,524 CENTENNIAL BLVD,RICHARDSON,75081,"",972-707-0895,48113019040,85,63,Demand < Supply
+Montessori at Bowser,001i000001YBHK8,TRUE,177,School,TRUE,Sliding Scale,For Profit,300 S BOWSER RD,RICHARDSON,75081,"",(972) 690-8351,48113019039,95,59,Demand < Supply
+Richardson ISD-PACE at Arapaho Classical Magnet,0013100001lqRpF,TRUE,160,School,TRUE,Fee,School Run,1300 Cypress,Richardson,75080,www.risd.org/pace,469-593-6404,48113019215,91,79,Demand = Supply
+Care Child Development Center,001i000001YBHHz,TRUE,160,Child Care Center,TRUE,Sliding Scale,For Profit,1504 E CAMPBELL RD,RICHARDSON,75081,"",(972) 644-0766,48113019036,84,72,Demand = Supply
+Boys and Girls Club of Richardson,0013100001bejWY,TRUE,150,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,1210 W. Belt Line Rd.,Richardson,75080,www.bgca.org,(972) 699-0514,48113019215,91,79,Demand = Supply
+Little Scholars Academy-Richardson,0010Z00001vhPTP,TRUE,136,Child Care Center,TRUE,Sliding Scale,For Profit,1200 W Spring Valley Road,Richardson,75080,"",972-231-6998,48113019214,72,8,Demand < Supply
+"KIDS Montessori Academy, LLC",0013r00002YNs2H,TRUE,121,School,TRUE,Fee,School Run,1521 E ARAPAHO RD,RICHARDSON,75081,"",972-235-6930,48113019037,96,61,Demand < Supply
+Small Miracles Academy-Richardson Campus,001i000001YBHEl,TRUE,118,Child Care Center,TRUE,Sliding Scale,For Profit,1015 NEWBERRY DR,RICHARDSON,75080,"",(972) 235-0267,48113019203,95,62,Demand < Supply
+Bluebonnet Learning Center at Collins Blvd.,001i000001YBHHn,TRUE,102,Child Care Center,TRUE,Sliding Scale,For Profit,1414 E COLLINS BLVD,RICHARDSON,75081,"",(972) 664-1666,48113019037,96,61,Demand < Supply
+Rising Stars Academy,001i000001YBHKU,TRUE,100,Child Care Center,TRUE,Sliding Scale,For Profit,1515 BLAKE DR,RICHARDSON,75081,"",(469) 301-6225,48113019037,96,61,Demand < Supply
+Richardson ISD Xplore!-MST Magnet School,001i000001YBHFt,TRUE,100,School,TRUE,Sliding Scale,School Run,450 ABRAMS RD,RICHARDSON,75081,"",(469) 593-7419,48113019102,96,63,Demand < Supply
+Flamingo Island Preschool LLC,001i000001YBHF5,TRUE,93,Child Care Center,TRUE,Sliding Scale,For Profit,1402 BLAKE DR,RICHARDSON,75081,"",(972) 238-7833,48113019037,96,61,Demand < Supply
+Richardson ISD - Northrich Elementary,001i000001YBHIL,TRUE,75,School,TRUE,Sliding Scale,School Run,1301 CUSTER RD,RICHARDSON,75080,"",(469) 593-7419,48113019211,89,83,Demand = Supply
+Richardson ISD - Greenwood Hills Elementary,001i000001YBHDr,TRUE,75,School,TRUE,Sliding Scale,School Run,1313 W SHORE DR,RICHARDSON,75080,www.risd.org/pace,(469) 593-7536,48113019216,86,77,Demand = Supply
+A Bright Beginning Private School,001i000001YBHDb,TRUE,73,Child Care Center,TRUE,Sliding Scale,For Profit,407 E POLK ST,RICHARDSON,75081,"",(972) 235-8213,48113019102,96,63,Demand < Supply
+Richardson ISD - Jess Harben Elementary,001i000001YBHIJ,TRUE,65,School,TRUE,Fee,School Run,600 S GLENVILLE DR,RICHARDSON,75081,"",(469) 593-7419,48113019039,95,59,Demand < Supply
+Richardson ISD- PACE at Prairie Creek Elementary,0013100001lpcGR,TRUE,60,School,TRUE,Sliding Scale,School Run,2120 E Prairie Creek Dr,Richardson,75080,www.risd.org,469-593-6342,48113019210,88,66,Demand < Supply
+Richardson ISD - Richland Elementary,0013100001lpW5r,TRUE,60,School,TRUE,Fee,School Run,550 Park Bend Drive,Richardson,75081,http://www.edline.net/pages/RISD_Departments_and_Programs/PACE,(469) 593-4651,48113019041,87,82,Demand = Supply
+Richardson ISD- PACE at Yale Elementary,0013100001lpi8n,TRUE,50,School,TRUE,Sliding Scale,School Run,1900 E. Collins,Richardson,75081,www.risd.org/pace,469-593-8343,48113019037,96,61,Demand < Supply
+Youth Conversion at Mark Twain Elementary School,0013r00002TzR1Q,TRUE,50,School,TRUE,Fee,Local Nonprofit,1200 LARKSPUR DR,RICHARDSON,75081,"","",48113019039,95,59,Demand < Supply
+Richardson Family YMCA,0013100001mBPys,TRUE,50,Community Center/Nonprofit,TRUE,Fee,For Profit,821 Custer Road,Richardson,75080,https://www.ymcadallas.org/locations/richardson/,(972) 231-3424,48113019203,95,62,Demand < Supply
+Richardson ISD Xplore! - Richardson Terrace Elementary,001i000001YBHIP,TRUE,50,School,TRUE,Sliding Scale,School Run,300 N DOROTHY DR,RICHARDSON,75081,www.RISD.org/PACE,(469) 593-7536,48113019102,96,63,Demand < Supply
+Richardson ISD - Dartmouth Elementary,001i000001YBHKP,TRUE,47,School,TRUE,Sliding Scale,School Run,417 DARTMOUTH LN,RICHARDSON,75081,www.edline.net/pages/RISD_Departments_and_Programs/PACE,469-593-8401,48113019023,87,85,Demand = Supply
+Richardson ISD-Mark Twain Elementary,001i000001YBHIK,TRUE,45,School,TRUE,Sliding Scale,School Run,1200 LARKSPUR DR,RICHARDSON,75081,http://www.edline.net/pages/RISD_Departments_and_Programs/PACE,(469) 593-7536,48113019039,95,59,Demand < Supply
+Richardson ISD- Richardson Heights,001i000001YBHIU,TRUE,45,School,TRUE,Sliding Scale,School Run,101 N FLOYD RD,RICHARDSON,75080,http://www.edline.net/pages/RISD_Departments_and_Programs/PACE,(469) 593-7536,48113019203,95,62,Demand < Supply
+Richardson ISD Xplore! - Springridge Elementary,001i000001YBHFr,TRUE,45,School,TRUE,Sliding Scale,School Run,1801 E SPRING VALLEY RD,RICHARDSON,75081,"",(469) 593-7536,48113019024,91,61,Demand < Supply
+Dallas International School at Campbell Rd.,001i000001YBHSw,TRUE,34,School,TRUE,Sliding Scale,"",800 W CAMPBELL RD,RICHARDSON,75080,"",(972) 991-6379,48113980200,81,68,Demand = Supply
+Richardson ISD Xplore! - Dover Elementary,001i000001YBHE8,TRUE,25,School,TRUE,Sliding Scale,School Run,700 DOVER DR,RICHARDSON,75080,"",(469) 593-7536,48113019214,72,8,Demand < Supply
+Whistle Stop Station-Chiesa,0010Z00001uFAGl,TRUE,284,Child Care Center,TRUE,Sliding Scale,For Profit,8402 CHIESA RD,Rowlett,75089,"",972-412-3900,48113018150,83,73,Demand = Supply
+Pecan Creek Academy,0010Z00001vhPTU,TRUE,272,Child Care Center,TRUE,Sliding Scale,For Profit,5800 Chiesa Rd,Rowlett,75089,"",(972) 463-1661,48113018149,79,55,Demand < Supply
+Cotton Mill Learning Center,001i000001YBHEc,TRUE,260,Child Care Center,TRUE,Sliding Scale,For Profit,5413 CHIESA RD,ROWLETT,75088,"",(972) 412-6864,48113018134,93,62,Demand < Supply
+Whistle Stop Station - Rowlett,001i000001YBHKw,TRUE,258,Child Care Center,TRUE,Sliding Scale,For Profit,2501 HICKOX RD,ROWLETT,75089,"",(972) 412-7036,48113018157,84,87,Demand > Supply
+Oak Leaf Kids Academy,001i000001YBHGq,TRUE,253,Child Care Center,TRUE,Sliding Scale,For Profit,3602 CHAHA RD,ROWLETT,75088,"",(972) 412-7273,48113018145,81,70,Demand = Supply
+Tree House Academy of Rowlett LLC,001i000001YBHI1,TRUE,240,Child Care Center,TRUE,Sliding Scale,For Profit,7501 DALROCK RD,ROWLETT,75089,"",(214) 227-5884,48113018144,87,60,Demand < Supply
+Childtime Learning Center,001i000001YBHIs,TRUE,225,Child Care Center,TRUE,Sliding Scale,For Profit,8100 MILLER RD,ROWLETT,75088,"",(972) 475-5611,48113018135,90,63,Demand < Supply
+Primrose School of Rowlett,001i000001YBHH6,TRUE,195,Child Care Center,TRUE,Sliding Scale,For Profit,8401 LIBERTY GROVE RD,ROWLETT,75089,"",(972) 463-2655,48113018143,79,67,Demand = Supply
+Oaks Trail Academy,001i000001YBHKE,TRUE,102,Child Care Center,TRUE,Sliding Scale,For Profit,4115 DALROCK RD,ROWLETT,75088,"",(469) 298-0356,48113018134,93,62,Demand < Supply
+Lakeview Childrens Academy,001i000001YBHJp,TRUE,58,Child Care Center,TRUE,Sliding Scale,For Profit,7814 LAKEVIEW PKWY,ROWLETT,75088,"",(972) 475-8181,48113018134,93,62,Demand < Supply
+Genesis Child Development Center,001i000001YBHJF,TRUE,54,Child Care Center,TRUE,Sliding Scale,For Profit,2517 DALROCK RD,ROWLETT,75088,"",(972) 475-2956,48113018135,90,63,Demand < Supply
+Dallas ISD DASA at Julius Dorsey,0013r00002TzR8i,TRUE,50,School,TRUE,No Charge,School Run,6200 Dexham Road,Rowlett,75089,"","",48113018156,81,65,Demand = Supply
+By the Barnyard Gate,001i000001YBHE0,TRUE,270,Child Care Center,TRUE,Sliding Scale,For Profit,4701 BUNKER HILL RD,SACHSE,75048,"",(972) 495-0416,48113018151,85,71,Demand < Supply
+Bear Foot Lodge Private School,001i000001YBHHU,TRUE,256,School,TRUE,Sliding Scale,School Run,4415 SACHSE RD,SACHSE,75048,"",(972) 495-7734,48113018154,83,65,Demand = Supply
+Pinnacle Montessori of Sachse,0013r00002bSMsJ,TRUE,231,"",TRUE,"","",4225 MILES RD.,SACHSE,75048,"",972-698-4204,48113018153,87,65,Demand < Supply
+Little Britches Learning Center,001i000001YBHGJ,TRUE,109,Child Care Center,TRUE,Sliding Scale,For Profit,406 CYPRESS ST,SEAGOVILLE,75159,"",(972) 287-7472,48113017006,75,80,Demand > Supply
+Kids Place Learning Center,001i000001RadDa,TRUE,73,Child Care Center,TRUE,Sliding Scale,For Profit,1510 N. Hwy 175,Seagoville,75159,Kids Place Seagoville (facebook),9722875437,48113017007,82,66,Demand = Supply
+Little Ponderosa Day Care Center,001i000001YBHGN,TRUE,220,Child Care Center,TRUE,Sliding Scale,For Profit,3131 N BELT LINE RD,SUNNYVALE,75182,"",(972) 226-4849,48113017814,92,72,Demand < Supply
+"King Arthurs Castle of Little Tikes, Inc",001i000001YBHJh,TRUE,196,Child Care Center,TRUE,Sliding Scale,For Profit,2763 N BELT LINE RD,SUNNYVALE,75182,"",(972) 226-4435,48113017814,92,72,Demand < Supply
+Handprints Child Care 24 LLC,0013r00002dlRGH,TRUE,170,"",TRUE,"","",2763 N BELT LINE RD,SUNNYVALE,75182,"",972-226-4435,48113017814,92,72,Demand < Supply
+Dunkin Academy at Towneast,001i000001YBHJ8,TRUE,168,School,TRUE,Sliding Scale,For Profit,320 TOWNEAST BLVD N,SUNNYVALE,75182,"",(972) 226-6028,48113017814,92,72,Demand < Supply
+AlphaBest@Sunnyvale Elementary-SISD,0010Z0000273xxj,TRUE,120,School,TRUE,Sliding Scale,School Run,300 N COLLINS RD,SUNNYVALE,75182,"",972-668-0640,48113018158,80,69,Demand = Supply
+Childcare Network #244,001i000001YBHIm,TRUE,120,Child Care Center,TRUE,Sliding Scale,For Profit,240 S COLLINS RD,SUNNYVALE,75182,"",(972) 203-1999,48113018158,80,69,Demand = Supply
+West Dallas Boys and Girls Club,0013r00002TzaeT,TRUE,250,Community Center/Nonprofit,TRUE,Sliding Scale,National Nonprofit,2060 Singleton Blvd,"",75212,"","",48113004300,88,67,Demand < Supply
+KCE Champions LLC @ Uplift Atlas Preparatory,0013r00002bRaaw,TRUE,75,School,TRUE,Fee,For Profit,1474 Annex Ave,"",75204,"","",48113001503,88,55,Demand < Supply
+KCE Champions LLC @ Uplift Luna Primary,0013r00002bRaax,TRUE,75,School,TRUE,Fee,For Profit,2020 North Lamar,"",75202,"","",48113002100,87,62,Demand < Supply
+KCE Champions LLC @ Momentous School,0013r00002bRaay,TRUE,75,School,TRUE,Fee,For Profit,106 E. Tenth St,"",75203,"","",48113004800,96,62,Demand < Supply
+TWEENERS (Baylor Scott & White),0013100001cEuEZ,TRUE,60,School,TRUE,No Charge,Local Nonprofit,4500 Spring Avenue,Dallas,75210,"",469.221.0704,48113002703,92,57,Demand < Supply
+Wesley-Rankin Community Center at Middle School Program,001i000000Uf1qx,TRUE,50,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,"",Dallas,75212,"","",48113010102,86,47,Demand < Supply
+Wesley-Rankin Community Center at Elementary School Program,001i000000Uf1pp,TRUE,50,Community Center/Nonprofit,TRUE,No Charge,Local Nonprofit,"",Dallas,75212,"","",48113010102,86,47,Demand < Supply
+Blessed are the Children Ach A,0013100001nSXeO,TRUE,134,Child Care Center,TRUE,Sliding Scale,For Profit,2801 PRINCE GEORGE AVE.,DESOTO,,"",(972) 572-5515,48113016638,84,72,Demand = Supply
+RISD xPlore at Aikin Elementary,0013r00002DdbZ6,TRUE,50,School,TRUE,Sliding Scale,School Run,12300 PLEASANT VALLEY DR,Rchardson,75243,"","",48113019035,74,14,Demand < Supply
+RISD xPlore at Arapaho Classical Magnet,0013r00002DdbZ7,TRUE,50,School,TRUE,Sliding Scale,School Run,"W Arapaho Rd, Richardson, TX",Rchardson,75080,"","",48113019205,88,82,Demand = Supply
+RISD xPlore at Audelia Creek Elementary,0013r00002DdbZ8,TRUE,50,School,TRUE,Sliding Scale,School Run,"12600 Audelia Rd, Dallas TX",Rchardson,75243,"","",48113019019,76,23,Demand < Supply
+RISD xPlore at Big Springs Elementary,0013r00002DdbZ9,TRUE,50,School,TRUE,Sliding Scale,School Run,"3301 W Campbell Rd, Gardland TX",Rchardson,75044,"","",48113019031,92,61,Demand < Supply
+RISD xPlore at Bowie Elementary,0013r00002DdbZA,TRUE,50,School,TRUE,Sliding Scale,School Run,"7643 La Manga Dr, Dallas Tx",Rchardson,75248,"","",48113013605,82,65,Demand = Supply
+RISD xPlore at Brentfield Elementary,0013r00002DdbZB,TRUE,50,School,TRUE,Sliding Scale,School Run,"6767 Brentfield Dr, Dallas Tx",Rchardson,75248,"","",48113013619,89,77,Demand = Supply
+RISD xPlore at Canyon Creeek Elementary,0013r00002DdbZC,TRUE,50,School,TRUE,Sliding Scale,School Run,"2100 Copper Ridge Dr, Richardson Tx",Rchardson,75080,"","",48113019210,88,66,Demand < Supply
+RISD xPlore at Carolyn Bukhair Elementary,0013r00002DdbZD,TRUE,50,School,TRUE,Sliding Scale,School Run,"13900 Esperanza Rd, Dallas Tx",Rchardson,75240,"","",48113019212,72,0,Demand < Supply
+RISD xPlore at Dartmouth Elementary,0013r00002DdbZE,TRUE,50,School,TRUE,Sliding Scale,School Run,"417 Darthmouth Ln, Richardson Tx",Rchardson,75081,"","",48113019023,87,85,Demand = Supply
+RISD xPlore at Dobie Elementary,0013r00002DdbZF,TRUE,50,School,TRUE,Sliding Scale,School Run,"14040 Rolling Hills Ln, Dallas Tx",Rchardson,75240,"","",48113019208,77,22,Demand < Supply
+RISD xPlore at Dover Elementary,0013r00002DdbZG,TRUE,50,School,TRUE,Sliding Scale,School Run,"700 Dover Dr, Richardson Tx",Rchardson,75080,"","",48113019214,72,8,Demand < Supply
+RISD xPlore at Forestridge Elementary,0013r00002DdbZH,TRUE,50,School,TRUE,Sliding Scale,School Run,"10330 Bunchberry Dr, Dallas Tx",Rchardson,75243,"","",48113019018,86,49,Demand < Supply
+RISD xPlore at Forest Lane Elementary,0013r00002DdbZI,TRUE,50,School,TRUE,Sliding Scale,School Run,"9663 Forest Ln, Dallas TX",Rchardson,75243,"","",48113019035,74,14,Demand < Supply
+RISD xPlore at Greenwood Hills Elementary,0013r00002DdbZJ,TRUE,50,School,TRUE,Sliding Scale,School Run,"1313 West Shore Dr, Richardson Tx",Rchardson,75080,"","",48113019216,86,77,Demand = Supply
+RISD xPlore at Jess Harben Elementary,0013r00002DdbZK,TRUE,50,School,TRUE,Sliding Scale,School Run,"600 S Glenville Dr, Richardson Tx",Rchardson,75081,"","",48113019039,95,59,Demand < Supply
+RISD xPlore at Lake Highlands Elementary,0013r00002DdbZL,TRUE,50,School,TRUE,Sliding Scale,School Run,"9501 Ferndale Rd, Dallas Tx",Rchardson,75238,"","",48113013012,92,74,Demand < Supply
+RISD xPlore at Mark Twain Elementary,0013r00002DdbZM,TRUE,50,School,TRUE,Sliding Scale,School Run,"1200 Larkspur Dr, Richardson Tx",Rchardson,75081,"","",48113019039,95,59,Demand < Supply
+RISD xPlore at Math Science Technology Magnet,0013r00002DdbZN,TRUE,50,School,TRUE,Sliding Scale,School Run,"450 Abrams Rd, Richardson Tx",Rchardson,75081,"","",48113019102,96,63,Demand < Supply
+RISD xPlore at Merriman Park Elementary,0013r00002DdbZO,TRUE,50,School,TRUE,Sliding Scale,School Run,"7101 Winedale Dr, Dallas Tx",Rchardson,75231,"","",48113007824,91,65,Demand < Supply
+RISD xPlore at Mohawk Elementary,0013r00002DdbZP,TRUE,50,School,TRUE,Sliding Scale,School Run,"1500 Mimosa Dr, Richardosn Tx",Rchardson,75080,"","",48113019205,88,82,Demand = Supply
+RISD xPlore at Moss Haven Elementary,0013r00002DdbZQ,TRUE,50,School,TRUE,Sliding Scale,School Run,9202 Moss Farm Rd.,Rchardson,75243,"","",48113007812,90,60,Demand < Supply
+RISD xPlore at Northrich Elementary,0013r00002DdbZR,TRUE,50,School,TRUE,Sliding Scale,School Run,"1301 Custer Rd, Richardson Tx",Rchardson,75080,"","",48113019211,89,83,Demand = Supply
+RISD xPlore at Northlake Elementary,0013r00002DdbZS,TRUE,50,School,TRUE,Sliding Scale,School Run,"10059 Ravensway Dr, Dallas Tx",Rchardson,75238,"","",48113013008,97,59,Demand < Supply
+RISD xPlore at Northwood Hills Elementary,0013r00002DdbZT,TRUE,50,School,TRUE,Sliding Scale,School Run,"14532 Meandering Way, Dallas Tx",Rchardson,75254,"","",48113013609,87,55,Demand < Supply
+RISD xPlore at O. Henry Elementary,0013r00002DdbZU,TRUE,50,School,TRUE,Sliding Scale,School Run,"4100 Tynes Dr, Garland Tx",Rchardson,75042,"","",48113019044,86,64,Demand < Supply
+RISD xPlore at Prairie Creek Elementary,0013r00002DdbZV,TRUE,50,School,TRUE,Sliding Scale,School Run,2120 E Prairie Creek Dr,Rchardson,75080,"","",48113019210,88,66,Demand < Supply
+RISD xPlore at Prestonwood Elementary,0013r00002DdbZW,TRUE,50,School,TRUE,Sliding Scale,School Run,6525 La Cosa Dr,Rchardson,75248,"","",48113013606,81,58,Demand < Supply
+RISD xPlore at RISD Academy,0013r00002DdbZX,TRUE,50,School,TRUE,Sliding Scale,School Run,13630 Coit Rd,Rchardson,75240,"","",48113019208,77,22,Demand < Supply
+RISD xPlore at Richardson Heights Elementary,0013r00002DdbZY,TRUE,50,School,TRUE,Sliding Scale,School Run,101 N FLOYD RD,Rchardson,75080,"","",48113019203,95,62,Demand < Supply
+RISD xPlore at Richardson Terrace Elementary,0013r00002DdbZZ,TRUE,50,School,TRUE,Sliding Scale,School Run,300 N DOROTHY DR,Rchardson,75081,"","",48113019102,96,63,Demand < Supply
+RISD xPlore at Richland Elementary,0013r00002DdbZa,TRUE,50,School,TRUE,Sliding Scale,School Run,550 Park Bend Drive,Rchardson,75081,"","",48113019041,87,82,Demand = Supply
+RISD xPlore at Skyview Elementary,0013r00002DdbZb,TRUE,50,School,TRUE,Sliding Scale,School Run,9229 MEADOWKNOLL DR,Rchardson,75243,"","",48113007810,95,60,Demand < Supply
+RISD xPlore at Spring Creek Elementary,0013r00002DdbZc,TRUE,50,School,TRUE,Sliding Scale,School Run,7667 Roundrock Road,Rchardson,75248,"","",48113013607,92,79,Demand = Supply
+RISD xPlore at Spring Valley Elementary,0013r00002DdbZd,TRUE,50,School,TRUE,Sliding Scale,School Run,13535 SPRING GROVE AVE,Rchardson,75240,"","",48113013610,86,60,Demand < Supply
+RISD xPlore at Springridge Elementary,0013r00002DdbZe,TRUE,50,School,TRUE,Sliding Scale,School Run,1801 E SPRING VALLEY RD,Rchardson,75081,"","",48113019024,91,61,Demand < Supply
+RISD xPlore at Stults Elementary,0013r00002DdbZf,TRUE,50,School,TRUE,Sliding Scale,School Run,8700 STULTS RD,Rchardson,75243,"","",48113007805,92,62,Demand < Supply
+RISD xPlore at Thurgood Marshal Elementary,0013r00002DdbZg,TRUE,50,School,TRUE,Sliding Scale,School Run,9666 Ferris Branch Blvd,Rchardson,75243,"","",48113007834,84,47,Demand < Supply
+RISD xPlore at Wallace Elementary,0013r00002DdbZh,TRUE,50,School,TRUE,Sliding Scale,School Run,9921 KIRKHAVEN DR,Rchardson,75238,"","",48113013005,93,60,Demand < Supply
+RISD xPlore at White Rock Elementary,0013r00002DdbZi,TRUE,50,School,TRUE,Sliding Scale,School Run,9229 Chiswell Rd,Rchardson,75238,"","",48113013013,84,89,Demand > Supply
+RISD xPlore at Yale Elementary,0013r00002DdbZj,TRUE,50,School,TRUE,Sliding Scale,School Run,1900 E. Collins,Rchardson,75081,"","",48113019037,96,61,Demand < Supply
+RISD xPlore at Forest Meadow Jr. High,0013r00002DdbZk,TRUE,50,School,TRUE,Sliding Scale,School Run,9373 Whitehurst Dr,Rchardson,75243,"","",48113007810,95,60,Demand < Supply
+RISD xPlore at Lake Highlands Jr. High,0013r00002DdbZl,TRUE,50,School,TRUE,Sliding Scale,School Run,10301 Walnut Hl Ln,Rchardson,75238,"","",48113013005,93,60,Demand < Supply
+RISD xPlore at Liberty Jr. High,0013r00002DdbZm,TRUE,50,School,TRUE,Sliding Scale,School Run,10330 Lawler Rd,Rchardson,75243,"","",48113019018,86,49,Demand < Supply
+RISD xPlore at Westwood Jr. High,0013r00002DdbZn,TRUE,50,School,TRUE,Sliding Scale,School Run,7630 Arapaho Rd,Rchardson,75248,"","",48113013607,92,79,Demand = Supply
+RISD xPlore at West Jr. High,0013r00002DdbZo,TRUE,50,School,TRUE,Sliding Scale,School Run,1309 Holly Dr,Rchardson,75080,"","",48113019215,91,79,Demand = Supply
+RISD xPlore at Park Hill Jr. High,0013r00002DdbZp,TRUE,50,School,TRUE,Sliding Scale,School Run,16500 Shadybank Dr,Rchardson,75248,"","",48113013619,89,77,Demand = Supply
+RISD xPlore at North Jr. High,0013r00002DdbZq,TRUE,50,School,TRUE,Sliding Scale,School Run,1820 N Floyd Rd,Rchardson,75080,"","",48113019211,89,83,Demand = Supply
+RISD xPlore at Apollo Jr. High,0013r00002DdbZr,TRUE,50,School,TRUE,Sliding Scale,School Run,1600 Apollo Rd,Rchardson,75081,"","",48113019023,87,85,Demand = Supply
+Small Miracles Academy Sachse,0010Z00001wBiHZ,TRUE,30,Child Care Center,TRUE,Sliding Scale,For Profit,5545 BROOKVIEW DR,SACHSE,75048,"","",48113018153,87,65,Demand < Supply
+Dallas ISD DASA at Anne Frank Elementary School-Planned,001i000000eZfkk,TRUE,75,School,TRUE,No Charge,School Run,5201 Celestial Rd.,DALLAS,75254,"","",48113013624,82,77,Demand > Supply
+Mesquite Parks & Recreation at After-school Adventures at Achziger Elementary School,0013r00002DdbZs,TRUE,50,School,TRUE,Sliding Scale,P&R,3300 Ridge Ranch,Mesquite,75181,"","",48113017314,80,61,Demand < Supply
+Mesquite Parks & Recreation at After-school Adventures at Dunford Rec Center,0013r00002DdbZt,TRUE,50,Municipal Building,TRUE,Sliding Scale,P&R,1015 Green Canyon,Mesquite,75150,"","",48113017811,91,60,Demand < Supply
+Mesquite Parks & Recreation at After-school Adventures at Florence Elementary School,0013r00002DdbZu,TRUE,50,School,TRUE,Sliding Scale,P&R,4600 Ashwood Dr,Mesquite,75150,"","",48113018002,78,36,Demand < Supply
+Mesquite Parks & Recreation at After-school Adventures at Rutherford Elementary School,0013r00002DdbZw,TRUE,50,School,TRUE,Sliding Scale,P&R,1100 rutherford Dr,Mesquite,75149,"","",48113017312,80,50,Demand < Supply
+Mesquite Parks & Recreation at After-school Adventures at Shaw Elementary School,0013r00002DdbZx,TRUE,50,School,TRUE,Sliding Scale,P&R,707 Purple sage mesquite,"",75149,"","",48113017706,87,73,Demand < Supply
+Mesquite Parks & Recreation at After-school Adventures at Thompson Elementary School,0013r00002DdbZy,TRUE,50,School,TRUE,Sliding Scale,P&R,2525 Helen Ln,Mesquite,75181,"","",48113017309,83,60,Demand < Supply
+CFBISD After the Bell at Blair,0013r00002DdbZz,TRUE,50,School,TRUE,Sliding Scale,School Run,14055 Heartside PL,Farmers Branch,75234,"","",48113013902,94,62,Demand < Supply
+CFBISD After the Bell at Country Place Elementary,0013r00002Ddba3,TRUE,50,School,TRUE,Sliding Scale,School Run,2115 Raintree Dr,Carrollton,75006,"","",48113020700,79,62,Demand < Supply
+CFBISD After the Bell at Farmers Branch Elementary,0013r00002Ddba5,TRUE,50,School,TRUE,Sliding Scale,School Run,13521 Tom Field Rd,Farmers Branch,75234,"","",48113013902,94,62,Demand < Supply
+CFBISD After the Bell at Freeman Elementary,0013r00002Ddba6,TRUE,50,School,TRUE,Sliding Scale,School Run,8757 Valley Ranch Pkwy W,Irving,75063,"","",48113014149,77,55,Demand < Supply
+CFBISD After the Bell at Furneaux Elementary,0013r00002Ddba7,TRUE,50,School,TRUE,Sliding Scale,School Run,3210 Furneaux Ln,Carrollton,75007,"","",,,,
+CFBISD After the Bell at Good Elementary,0013r00002Ddba8,TRUE,50,School,TRUE,Sliding Scale,School Run,1012 Study Ln,Carrollton,75006,"","",48113013716,95,62,Demand < Supply
+CFBISD After the Bell at Kent Elementary,0013r00002Ddba9,TRUE,50,School,TRUE,Sliding Scale,School Run,1800 w rosemeade Pkwy,Carrollton,75007,"","",,,,
+CFBISD After the Bell at Las Colinas Elementary,0013r00002DdbaB,TRUE,50,School,TRUE,Sliding Scale,School Run,2200 Kinwest Pkwy,Irving,75063,"","",48113014124,84,68,Demand = Supply
+CFBISD After the Bell at La Villita Elementary,0013r00002DdbaC,TRUE,50,School,TRUE,Sliding Scale,School Run,1601 Camino lago,Irving,75039,"","",48113014138,84,74,Demand = Supply
+CFBISD After the Bell at McCoy Elementary,0013r00002DdbaD,TRUE,50,School,TRUE,Sliding Scale,School Run,2425 McCoy Rd,Carrollton,75006,"","",48113013719,86,59,Demand < Supply
+CFBISD After the Bell at McKamy Elementary,0013r00002DdbaE,TRUE,50,School,TRUE,Sliding Scale,School Run,3443 Briagrove Ln,Dallas,75287,"","",,,,
+CFBISD After the Bell at McWhorter Elementary,0013r00002DdbaF,TRUE,50,School,TRUE,Sliding Scale,School Run,3678 Timberglen Rd,Dallas,75287,"","",,,,
+CFBISD After the Bell at Rainwater Elementary,0013r00002DdbaG,TRUE,50,School,TRUE,Sliding Scale,School Run,1408 Frankford Rd E,Carrollton,75007,"","",,,,
+CFBISD After the Bell at Riverchase Elementary,0013r00002DdbaH,TRUE,50,School,TRUE,Sliding Scale,School Run,272 S MacArthur Blvd,Coppell,75019,"","",48113014121,93,60,Demand < Supply
+CFBISD After the Bell at Rosemeade Elementary,0013r00002DdbaI,TRUE,50,School,TRUE,Sliding Scale,School Run,3550 Kimberly Dr,Carrollton,75007,"","",,,,
+CFBISD After the Bell at Sheffield Intermediate Elementary,0013r00002DdbaJ,TRUE,50,School,TRUE,Sliding Scale,School Run,"",Dallas,75287,"","",,,,
+CFBISD After the Bell at Sheffield Primary Elementary,0013r00002DdbaK,TRUE,50,School,TRUE,Sliding Scale,School Run,18111 Kelly Blvd,Dallas,75287,"","",,,,
+CFBISD After the Bell at Stark Elementary,0013r00002DdbaL,TRUE,50,School,TRUE,Sliding Scale,School Run,12400 Josey Ln,Farmers Branch,75234,"","",48113014001,83,60,Demand < Supply
+CFBISD After the Bell at Strickland Elementary,0013r00002DdbaM,TRUE,50,School,TRUE,Sliding Scale,School Run,3030 Fyke Rd,Farmers Branch,75234,"","",48113013728,73,17,Demand < Supply
+CFBISD After the Bell at Thompson Elementary,0013r00002DdbaN,TRUE,50,School,TRUE,Sliding Scale,School Run,2915 Scott Mill Rd,Farmers Branch,75007,"","",,,,
+CFBISD After the Bell at Davis Elementary,0013r00002Ddba4,TRUE,50,School,TRUE,Sliding Scale,School Run,3505 Dorchester Dr,Carrollton,75007,"","",,,,
+CFBISD After the Bell at Turner Elementary,0013r00002DdbaO,TRUE,50,School,TRUE,Sliding Scale,School Run,5505 S polk St,Dallas,75232,"","",48113011003,94,61,Demand < Supply
+GPISD Beyond the Bell at Austin Environmental Science Academy,0013r00002DdbaP,TRUE,50,School,TRUE,Sliding Scale,School Run,815 N.W 7th St.,Grand Prairie,75050,"",(972) 343-4698,48113015500,94,63,Demand < Supply
+GPISD Beyond the Bell at Rayburn STEAM Academy,0013r00002DdbaQ,TRUE,50,School,TRUE,Sliding Scale,School Run,2800 Reforma Dr.,Grand Prairie,75052,"",(972) 522-3888,48113016407,74,20,Demand < Supply
+DeSoto ISD ACE Afterschool at Ruby Young Elementary School,0013r00002DdbaV,TRUE,50,School,TRUE,No Charge,School Run,707 Young Blvd,DESOTO,75115,"","",48113016618,96,60,Demand < Supply
+DeSoto ISD ACE Afterschool at Katherine Johnson Elementary School,0013r00002DdbaW,TRUE,50,School,TRUE,No Charge,School Run,1200 Academy Way,DESOTO,75115,"","",48113016618,96,60,Demand < Supply
+DeSoto ISD ACE Afterschool at DeSoto East Middle School,0013r00002DdbaX,TRUE,50,School,TRUE,No Charge,School Run,601 E Belt Line Rd.,DESOTO,75115,"","",48113016620,91,60,Demand < Supply
+DeSoto ISD ACE Afterschool at DeSoto West Middle School,0013r00002DdbaY,TRUE,50,School,TRUE,No Charge,School Run,800 North Westmoreland Road,DESOTO,75115,"","",48113016618,96,60,Demand < Supply
+DeSoto ISD ACE Afterschool at McCowan Middle School,0013r00002DdbaZ,TRUE,50,School,TRUE,No Charge,School Run,1500Majesti Meadow Dr,Glen Hights,75154,"","",48113016623,83,64,Demand < Supply
+Readers 2 Leaders at Booktown,0013r00002XT1SB,TRUE,45,Community Center/Nonprofit,TRUE,Fee,"","2800 N Hampton Rd #120, Dallas, TX 75212","",,"",(214) 905-0095,48113004300,88,67,Demand < Supply

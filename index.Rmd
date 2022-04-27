@@ -32,7 +32,8 @@ highways <- st_read(here::here("data/dallasHighways.geojson")) %>%
   st_transform(crs = 4269) 
 
 citycouncil <- st_read(here::here("data/citycouncil.geojson")) %>%
-  st_transform(crs = 4269) 
+  st_transform(crs = 4269) %>%
+  mutate(name = str_replace(name, "Council District", "CD"))
 
 dotdensity <- st_read(here::here("data/dotdensityPopulation.geojson")) %>%
   st_transform(crs = 4269) 
@@ -88,7 +89,7 @@ ggplot() +
                     guide = guide_legend(direction = "horizontal",
                                          nrow = 1,
                                          label.position = "top")) +
-  labs(title = "Children Between 5-14) in Dallas County (Density per SqMi)",
+  labs(title = "Children Between 5-14 in Dallas County (Density per SqMi)",
        subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
        x = "",
        y = "",
