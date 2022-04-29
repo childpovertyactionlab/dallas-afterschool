@@ -13,22 +13,22 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "The Afterschool Index"
+    - text: "Mapping Tools"
       menu:
-        - text: "Components and Methods"
-          href: component-methods.html
-        - text: "Supply and Demand Index"
+        - text: "Supply and Demand Score"
           href: supply-demand.html
         - text: "Priority Areas"
           href: priority-areas.html
+    - text: "The Afterschool Scores"
+      menu:
+        - text: "Understanding the Landscape"
+          href: component-methods.html
         - text: "Program Cost Analysis"
           href: cost-analysis.html
     - text: "About"
       menu:
         - text: "White Paper"
           href: about.html
-        - text: "Sources"
-          href: sources.html
         - text: "Data Dictionary"
           href: data.html
         - text: "Github"

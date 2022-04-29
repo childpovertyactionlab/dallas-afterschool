@@ -1,5 +1,5 @@
 ---
-title: "Methods White Paper"
+title: "Afterschool Landscape Tool: White Paper"
 output:
   distill::distill_article:
     toc: TRUE

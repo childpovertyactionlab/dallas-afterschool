@@ -1,14 +1,12 @@
 ---
-title: "Components and Methods"
+title: "Understanding Afterschool Programs in Dallas County"
 output:
   distill::distill_article:
     toc: TRUE
     theme: theme.css
 ---
 
-## Understanding Afterschool Programs in Dallas County
-
- To understand the landscape of afterschool programs across Dallas County we assessed two components. The existing afterschool environment and current neighborhood characteristics. Comparing these components  will help identify areas in need of additional afterschool programming.
+To understand the landscape of afterschool programs across Dallas County we assessed two components. The existing afterschool environment and current neighborhood characteristics. Comparing these components  will help identify areas in need of additional afterschool programming.
 
 ```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
 # Generate Jenks Breaks for plot

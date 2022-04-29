@@ -1,5 +1,5 @@
 ---
-title: "Afterschool Supply and Demand in Dallas County"
+title: "Afterschool Landscape in Dallas County"
 output:
   distill::distill_article:
     toc: FALSE
@@ -19,6 +19,12 @@ library(kableExtra)
 
 dallasCounty <- st_read(here::here("data/dallasCounty.geojson")) %>%
   st_transform(crs = 4269)
+
+dallasPlaces <- st_read(here::here("data/dallasPlaces.geojson")) %>%
+  st_transform(crs = 4269) %>%
+  mutate(lon = sf::st_coordinates(.)[,1],
+                lat = sf::st_coordinates(.)[,2]) %>%
+  filter(!NAME %in% c("Flower Mound", "Red Oak", "Ferris", "Euless", "Fort Worth", "Grapevine", "Lewisville"))
 
 dasDemo <- st_read(here::here("data/ACS Demographic Metrics.geojson")) %>%
   st_transform(crs = 4269)
@@ -54,13 +60,6 @@ dasmetrics <- st_read("data/Calculated Tract Metrics.geojson") %>%
 das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
   st_transform(crs = 4269) %>%
   .[dallasCounty, ]
-#hhs_programs <- st_read(here::here("data/hhsPrograms.geojson")) %>%
-#  st_transform(crs = 4269) %>%
-#  .[dallasCounty, ] 
-#cacfp_programs <- st_read(here::here("data/cacfpprograms.geojson")) %>%
-#  st_transform(crs = 4269)  %>%
-#  .[dallasCounty, ]
-
 ```
 
 ## Introduction
@@ -83,6 +82,10 @@ ggplot() +
   geom_sf(data = dasmetrics, aes(fill = group), color = "#595959") +
   geom_sf(data = dallasCounty, color = "#323232", fill = NA, size = 2) +
   geom_sf(data = highways, color = "#323232", size = 1) +
+  geom_sf_text(data=dallasPlaces, aes(label=NAME),
+               check_overlap = TRUE,
+               family = "Oswald",
+               size = 4) +
   scale_fill_brewer(name = "",
                     palette = "BuPu",
                     label = labs_plot,

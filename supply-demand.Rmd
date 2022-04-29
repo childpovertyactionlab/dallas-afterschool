@@ -1,5 +1,5 @@
 ---
-title: "Supply and Demand Index"
+title: "Dallas County Supply and Demand Scores"
 output:
   distill::distill_article:
     toc: TRUE
