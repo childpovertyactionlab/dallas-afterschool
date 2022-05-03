@@ -66,20 +66,48 @@ sup_dem <- dasmetrics %>%
 
 demTsup <- dasmetrics %>%
   filter(MainGrp == "Demand = Supply")
+
+priorityareas <- dasmetrics %>%
+  filter(brkdiff == max(brkdiff, na.rm = TRUE))
 ```
 
 ## Afterschool Program Need in Dallas County
 ```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
+               "<b>", "Median Household Income: ", "</b>", scales::dollar(dasDemo$mhiE), "<br>",
+               "<b>", "Total Population: ", "</b>", scales::comma(round(dasDemo$tot_popE, digits = 0)), "<br>",
+               "<b>", "Asian (%): ", "</b>", round(dasDemo$as_per*100, digits =1), "%", "<br>",
+               "<b>", "Black (%): ", "</b>", round(dasDemo$bl_per*100, digits =1), "%", "<br>",
+               "<b>", "Hispanic (%) : ", "</b>", round(dasDemo$hi_per*100, digits =1), "%", "<br>",
+               "<b>", "White (%): ", "</b>", round(dasDemo$wh_per*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate (u18): ", "</b>", round(dasDemo$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Internet Access (%): ", "</b>", round(dasDemo$int_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mother Households (%): ", "</b>", round(dasDemo$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mother Households Below Poverty (%): ", "</b>", round(dasDemo$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Unemployment Rate: ", "</b>", round(dasDemo$unemE*100, digits =1), "%"
+               )
+
+
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
-    addPolygons(data = dem_sup,
+    addPolygons(data = priorityareas,
+              fillColor = "#84301f",
+              weight = 1,
+              opacity = 1,
+              color = "#84301f ",
+              fillOpacity = 0.7,
+              popup = ~popup,
+              group = "Priority Areas"
+              ) %>%
+  addPolygons(data = dem_sup,
               fillColor = "#DC5034",
               weight = 1,
               opacity = 1,
               color = "#DC5034",
               fillOpacity = 0.7,
-              group = "Demand > Supply"
+              popup = ~popup,
+              group = "Demand Exceeds Supply"
               ) %>%
   addPolygons(data = demTsup,
               fillColor = "#8996A0",
@@ -87,7 +115,8 @@ leaflet() %>%
               opacity = 1,
               color = "#8996A0",
               fillOpacity = 0.6,
-              group = "Demand = Supply"
+              popup = ~popup,
+              group = "Demand Meets Supply"
               ) %>%
   addPolygons(data = sup_dem,
               fillColor = "#0089C4",
@@ -95,7 +124,8 @@ leaflet() %>%
               opacity = 1,
               color = "#0089C4",
               fillOpacity = 0.6,
-              group = "Supply > Demand"
+              popup = ~popup,
+              group = "Supply Exceeds Demand"
               ) %>%
     addPolygons(data = dallasCounty,
               color = "#686158",
@@ -116,23 +146,28 @@ leaflet() %>%
               ) %>%
   addLayersControl(
     baseGroups = c("Dallas County"),
-    overlayGroups = c("Dallas City Council", "Demand > Supply", "Supply > Demand", "Demand = Supply"),
+    overlayGroups = c("Dallas City Council", "Priority Areas", "Demand Exceeds Supply", "Supply Exceeds Demand", "Demand Meets Supply"),
     position = "topright",
-    options = layersControlOptions(collapsed = FALSE))
+    options = layersControlOptions(collapsed = FALSE)) %>% 
+  hideGroup(c("Demand Exceeds Supply", "Supply Exceeds Demand", "Demand Meets Supply", "Dallas City Council"))
 ```
 
 ## What each typology looks like
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 typologytable %>%
+  filter(!is.na(MainGrp)) %>%
   mutate(MainGrp = str_to_title(MainGrp),
          AreaSqMi = round(AreaSqMi),
-         mhi = round(mhi),
+         popden = round(eligPop/AreaSqMi),
+         mhi = scales::dollar(round(mhi)),
+         eligPop = scales::comma(eligPop),
+         dasSeats = scales::comma(dasSeats),
          cpr = paste0(round(cpr*100, digits = 1), "%"),
-         popden = round(eligPop/AreaSqMi)) %>%
-  select(MainGrp, TotalTracts, AreaSqMi, mhi, eligPop, bp_u18, dasPrograms, dasSeats, poppro, cpr, popden) %>%
+         poppro = round(poppro, digits = 1)) %>%
+  select(MainGrp, TotalTracts, AreaSqMi, mhi, eligPop, dasPrograms, dasSeats, poppro, cpr, popden) %>%
   knitr::kable(.,
-               col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Population', 'Below Poverty (Under 18)', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density')) %>%
+               col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Children', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density')) %>%
   kable_styling()
 ```
 

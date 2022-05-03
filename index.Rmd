@@ -60,6 +60,8 @@ dasmetrics <- st_read("data/Calculated Tract Metrics.geojson") %>%
 das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
   st_transform(crs = 4269) %>%
   .[dallasCounty, ]
+
+pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
 ```
 
 ## Introduction
@@ -92,13 +94,14 @@ ggplot() +
                     guide = guide_legend(direction = "horizontal",
                                          nrow = 1,
                                          label.position = "top")) +
-  labs(title = "Children Between 5-14 in Dallas County (Density per SqMi)",
+  labs(title = "Children Between 5 to 14 in Dallas County (Density per SqMi)",
        subtitle = "U.S. Census Bureau, American Community Survey 5-Year Estimates 2020",
        x = "",
        y = "",
        color = "") +
   theme_void() +
   theme(legend.position = "bottom",
+        #legend.title = element_text(),
         legend.key.width = unit(0.5, units = "in"),
         plot.caption = element_text(size = 36, face = "italic"),
         legend.spacing = unit(0, "in"), 

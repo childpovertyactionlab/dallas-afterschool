@@ -7,7 +7,7 @@ output:
 ---
 
 ### Introduction
-The Child Poverty Action Lab in collaboration with Dallas Afterschool developed the Afterschool Program Access Index in order to understand the landscape of afterschool programming across Dallas County and identify where gaps currently exist. The index was developed to aid Dallas Afterschool and other stakeholders in identifying where to make programmatic investments across Dallas County. 
+The Dallas Afterschool in collaboration with the Child Poverty Action Lab developed the Afterschool Program Access Index in order to understand the landscape of afterschool programming across Dallas County and identify where gaps currently exist. The index was developed to aid Dallas Afterschool and other stakeholders in identifying where to make programmatic investments across Dallas County. 
 
 The Afterschool Program Access Index focuses on the current supply and prospective demand of afterschool programs available for children between 5 and 14 years of age. For the purposes of this Index, afterschool programs are defined as programs that run at least 4 afternoons per week for three hours per day. This Index does not track enrichment programs that meet once or twice a week such as sports programs, karate classes, art classes, dance class, or other clubs or similar activities.
 
