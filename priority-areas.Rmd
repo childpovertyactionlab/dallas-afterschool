@@ -68,25 +68,72 @@ demTsup <- dasmetrics %>%
   filter(MainGrp == "Demand = Supply")
 
 priorityareas <- dasmetrics %>%
-  filter(brkdiff == max(brkdiff, na.rm = TRUE))
+  filter(brkdiff >= 2) %>%
+  filter(cpr >= mean(dasmetrics$cpr, na.rm = TRUE)) %>%
+  filter(smhh_per >= mean(dasmetrics$smhh_per, na.rm = TRUE)) %>%
+  filter(mhiE <= mean(dasmetrics$mhiE, na.rm = TRUE)) %>%
+  filter(eligPop >= mean(eligPop, na.rm = TRUE))
+  
+#plot(priorityareas["geometry"])
 ```
 
 ## Afterschool Program Need in Dallas County
 ```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
-popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
-               "<b>", "Median Household Income: ", "</b>", scales::dollar(dasDemo$mhiE), "<br>",
-               "<b>", "Total Population: ", "</b>", scales::comma(round(dasDemo$tot_popE, digits = 0)), "<br>",
-               "<b>", "Asian (%): ", "</b>", round(dasDemo$as_per*100, digits =1), "%", "<br>",
-               "<b>", "Black (%): ", "</b>", round(dasDemo$bl_per*100, digits =1), "%", "<br>",
-               "<b>", "Hispanic (%) : ", "</b>", round(dasDemo$hi_per*100, digits =1), "%", "<br>",
-               "<b>", "White (%): ", "</b>", round(dasDemo$wh_per*100, digits =1), "%", "<br>",
-               "<b>", "Child Poverty Rate (u18): ", "</b>", round(dasDemo$cpr*100, digits =1), "%", "<br>",
-               "<b>", "Internet Access (%): ", "</b>", round(dasDemo$int_per*100, digits =1), "%", "<br>",
-               "<b>", "Single-Mother Households (%): ", "</b>", round(dasDemo$smhh_per*100, digits =1), "%", "<br>",
-               "<b>", "Single-Mother Households Below Poverty (%): ", "</b>", round(dasDemo$smhh_bpE*100, digits =1), "%", "<br>",
-               "<b>", "Unemployment Rate: ", "</b>", round(dasDemo$unemE*100, digits =1), "%"
+popup_pa <- paste0("<b>", "GEOID: ", "</b>", priorityareas$GEOID, "<br>",
+               "<b>", "Median Household Income: ", "</b>", scales::dollar(priorityareas$mhiE), "<br>",
+               "<b>", "Total Population: ", "</b>", scales::comma(round(priorityareas$tot_popE, digits = 0)), "<br>",
+               "<b>", "Asian (%): ", "</b>", round(priorityareas$as_per*100, digits =1), "%", "<br>",
+               "<b>", "Black (%): ", "</b>", round(priorityareas$bl_per*100, digits =1), "%", "<br>",
+               "<b>", "Hispanic (%) : ", "</b>", round(priorityareas$hi_per*100, digits =1), "%", "<br>",
+               "<b>", "White (%): ", "</b>", round(priorityareas$wh_per*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate: ", "</b>", round(priorityareas$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Internet Access (%): ", "</b>", round(priorityareas$int_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households (%): ", "</b>", round(priorityareas$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households Below Poverty (%): ", "</b>", round(priorityareas$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Unemployment Rate: ", "</b>", round(priorityareas$unemE*100, digits =1), "%"
                )
 
+popup_sd <- paste0("<b>", "GEOID: ", "</b>", sup_dem$GEOID, "<br>",
+               "<b>", "Median Household Income: ", "</b>", scales::dollar(sup_dem$mhiE), "<br>",
+               "<b>", "Total Population: ", "</b>", scales::comma(round(sup_dem$tot_popE, digits = 0)), "<br>",
+               "<b>", "Asian (%): ", "</b>", round(sup_dem$as_per*100, digits =1), "%", "<br>",
+               "<b>", "Black (%): ", "</b>", round(sup_dem$bl_per*100, digits =1), "%", "<br>",
+               "<b>", "Hispanic (%) : ", "</b>", round(sup_dem$hi_per*100, digits =1), "%", "<br>",
+               "<b>", "White (%): ", "</b>", round(sup_dem$wh_per*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate: ", "</b>", round(sup_dem$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Internet Access (%): ", "</b>", round(sup_dem$int_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households (%): ", "</b>", round(sup_dem$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households Below Poverty (%): ", "</b>", round(sup_dem$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Unemployment Rate: ", "</b>", round(sup_dem$unemE*100, digits =1), "%"
+               )
+
+popup_ds <- paste0("<b>", "GEOID: ", "</b>", dem_sup$GEOID, "<br>",
+               "<b>", "Median Household Income: ", "</b>", scales::dollar(dem_sup$mhiE), "<br>",
+               "<b>", "Total Population: ", "</b>", scales::comma(round(dem_sup$tot_popE, digits = 0)), "<br>",
+               "<b>", "Asian (%): ", "</b>", round(dem_sup$as_per*100, digits =1), "%", "<br>",
+               "<b>", "Black (%): ", "</b>", round(dem_sup$bl_per*100, digits =1), "%", "<br>",
+               "<b>", "Hispanic (%) : ", "</b>", round(dem_sup$hi_per*100, digits =1), "%", "<br>",
+               "<b>", "White (%): ", "</b>", round(dem_sup$wh_per*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate (u18): ", "</b>", round(dem_sup$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Internet Access (%): ", "</b>", round(dem_sup$int_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households (%): ", "</b>", round(dem_sup$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households Below Poverty (%): ", "</b>", round(dem_sup$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Unemployment Rate: ", "</b>", round(dem_sup$unemE*100, digits =1), "%"
+               )
+
+popup_ti <- paste0("<b>", "GEOID: ", "</b>", demTsup$GEOID, "<br>",
+               "<b>", "Median Household Income: ", "</b>", scales::dollar(demTsup$mhiE), "<br>",
+               "<b>", "Total Population: ", "</b>", scales::comma(round(demTsup$tot_popE, digits = 0)), "<br>",
+               "<b>", "Asian (%): ", "</b>", round(demTsup$as_per*100, digits =1), "%", "<br>",
+               "<b>", "Black (%): ", "</b>", round(demTsup$bl_per*100, digits =1), "%", "<br>",
+               "<b>", "Hispanic (%) : ", "</b>", round(demTsup$hi_per*100, digits =1), "%", "<br>",
+               "<b>", "White (%): ", "</b>", round(demTsup$wh_per*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate: ", "</b>", round(demTsup$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Internet Access (%): ", "</b>", round(demTsup$int_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households (%): ", "</b>", round(demTsup$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households Below Poverty (%): ", "</b>", round(demTsup$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Unemployment Rate: ", "</b>", round(demTsup$unemE*100, digits =1), "%"
+               )
 
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
@@ -97,7 +144,7 @@ leaflet() %>%
               opacity = 1,
               color = "#84301f ",
               fillOpacity = 0.7,
-              popup = ~popup,
+              popup = ~popup_pa,
               group = "Priority Areas"
               ) %>%
   addPolygons(data = dem_sup,
@@ -106,7 +153,7 @@ leaflet() %>%
               opacity = 1,
               color = "#DC5034",
               fillOpacity = 0.7,
-              popup = ~popup,
+              popup = ~popup_ds,
               group = "Demand Exceeds Supply"
               ) %>%
   addPolygons(data = demTsup,
@@ -115,7 +162,7 @@ leaflet() %>%
               opacity = 1,
               color = "#8996A0",
               fillOpacity = 0.6,
-              popup = ~popup,
+              popup = ~popup_ti,
               group = "Demand Meets Supply"
               ) %>%
   addPolygons(data = sup_dem,
@@ -124,7 +171,7 @@ leaflet() %>%
               opacity = 1,
               color = "#0089C4",
               fillOpacity = 0.6,
-              popup = ~popup,
+              popup = ~popup_sd,
               group = "Supply Exceeds Demand"
               ) %>%
     addPolygons(data = dallasCounty,
