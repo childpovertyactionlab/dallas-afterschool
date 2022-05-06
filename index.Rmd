@@ -53,7 +53,6 @@ dasmetrics <- st_read("data/Calculated Tract Metrics.geojson") %>%
          #TotPrograms = hhsPrograms+dasPrograms+cacfpPrograms,
          TotSeats = dasSeats,
          TotPrograms = dasPrograms,
-         
          ProgSqMi = TotPrograms/AreaSqMi,
          eligDen = eligPop/AreaSqMi)
 
