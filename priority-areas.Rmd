@@ -68,7 +68,10 @@ demTsup <- dasmetrics %>%
   filter(MainGrp == "Demand = Supply")
 
 priorityareas <- dasmetrics %>%
-  filter(brkdiff == max(brkdiff, na.rm = TRUE))
+  filter(brkdiff >= 2) %>%
+  filter(mhiE <= mean(dasmetrics$mhiE, na.rm = TRUE)) %>%
+  filter(eligPop >= mean(dasmetrics$eligPop, na.rm = TRUE)) %>%
+  filter(cpr >= mean(dasmetrics$cpr, na.rm = TRUE))
 ```
 
 ## Afterschool Program Need in Dallas County
