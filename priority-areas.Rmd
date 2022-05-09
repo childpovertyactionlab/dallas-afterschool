@@ -67,12 +67,13 @@ sup_dem <- dasmetrics %>%
 demTsup <- dasmetrics %>%
   filter(MainGrp == "Demand = Supply")
 
+mean(dasmetrics$eligPop, na.rm = TRUE)
 priorityareas <- dasmetrics %>%
   filter(brkdiff >= 2) %>%
   filter(mhiE <= mean(dasmetrics$mhiE, na.rm = TRUE)) %>%
   filter(eligPop >= mean(dasmetrics$eligPop, na.rm = TRUE)) %>%
   filter(cpr >= mean(dasmetrics$cpr, na.rm = TRUE))
-
+  
 #plot(priorityareas["geometry"])
 ```
 

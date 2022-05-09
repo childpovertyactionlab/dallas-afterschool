@@ -136,3 +136,8 @@ The afterschool field is an integral component of local communities and is cruci
 ## Objective
 
 To improve access to afterschool programs across Dallas County, Dallas Afterschool seeks to understand, at the systems-level, both where current programs and seats are located and where additional seats are needed. Equipped with this information, Dallas Afterschool can work with afterschool providers, government officials, schools, and funders to address gaps in afterschool availability and build on the strength of existing programs. 
+
+# Test 
+```{r}
+knitr::include_graphics(here::here("images/maps/Afterschool Eligible Child Density in Dallas County.png"))
+```
