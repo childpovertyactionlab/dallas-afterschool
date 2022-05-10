@@ -65,6 +65,7 @@ sum(priorityareas_sup$dasPrograms)
 sum(priorityareas_sup$dasSeats)
 sum(priorityareas_sup$eligPop)
 
+count(priorityareas_dem)
 sum(priorityareas_dem$dasPrograms)
 sum(priorityareas_dem$dasSeats)
 sum(priorityareas_dem$eligPop)

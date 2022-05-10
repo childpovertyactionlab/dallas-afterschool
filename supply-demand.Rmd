@@ -8,7 +8,7 @@ output:
 
 The map below visualizes the supply and demand scores for each census tract. By toggling the layer selection on the top right of the map you will be able to view each score. By clicking on any given census tract a popup will appear as well displaying a variety of demographic metrics of interest including race/ethnicity, income, and employment characteristics.
 
-```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
+```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=6}
 pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
 #names(dasDemo)
 popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
@@ -18,10 +18,10 @@ popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
                "<b>", "Black (%): ", "</b>", round(dasDemo$bl_per*100, digits =1), "%", "<br>",
                "<b>", "Hispanic (%) : ", "</b>", round(dasDemo$hi_per*100, digits =1), "%", "<br>",
                "<b>", "White (%): ", "</b>", round(dasDemo$wh_per*100, digits =1), "%", "<br>",
-               "<b>", "Child Poverty Rate (u18): ", "</b>", round(dasDemo$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate: ", "</b>", round(dasDemo$cpr*100, digits =1), "%", "<br>",
                "<b>", "Internet Access (%): ", "</b>", round(dasDemo$int_per*100, digits =1), "%", "<br>",
-               "<b>", "Single-Mother Households (%): ", "</b>", round(dasDemo$smhh_per*100, digits =1), "%", "<br>",
-               "<b>", "Single-Mother Households Below Poverty (%): ", "</b>", round(dasDemo$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households (%): ", "</b>", round(dasDemo$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households Below Poverty (%): ", "</b>", round(dasDemo$smhh_bpE*100, digits =1), "%", "<br>",
                "<b>", "Unemployment Rate: ", "</b>", round(dasDemo$unemE*100, digits =1), "%"
                )
 
@@ -92,28 +92,24 @@ leaflet() %>%
   hideGroup("Demand Score")
 ```
 
-## Why are we using scores?
-
-The afterschool environment is dynamic. Programs may open or close, add or remove seats based on changes in staffing or other external factors, or change location at almost any time. Dallas Afterschool monitors the overall afterschool landscape, but specific changes are not always available in real time. Additionally, the characteristics of local communities, measured by the U.S. Census Bureau, are based on a relatively small - but robust - sample of the population. Given the changing nature of the afterschool environment, COVID's impact may not be reflected in the underlying census data used to assess the need for afterschool programming.  
-
-As a result, our intention is not to identify the exact number of afterschool seats needed to address unmet demand. For example, data could indicate that a program has capacity for 50 students, but will not show if a program has a waitlist. To account for this gap, we developed two sets of scores to measure the relative position of a neighborhood's afterschool environment: 1) the supply of seats and programs and 2) the potential need or demand for afterschool programming based on population characteristics. 
-
-We assessed these two components through the creation of two indices, which produced scores ranging from 0 to 100. A census tract with a Supply Score of 58 suggests that this particular location falls in the middle when it comes to the availability of afterschool programs and seats.
-
-
-## What the scores are not
-
-The methodology used to generate the supply and demand scores analyzes areas of the county where additional afterschool programming may have an outsized impact in providing children with additional enrichment opportunities and adult supervision.
-
-The demand score includes demographic characteristics metrics related to eligible population, single-mother households, household income, child poverty rate, SNAP receiving households, and transportation accessibility weighted against one another. Whereas the supply score was assessed using a  combination of program density, eligible population, total program count, and total number of seats.  were then  identified based on where each metric most commonly interacts. 
-
-Because these characteristics can often overlap, it is important to note that we are not generating an exact seat count. These scores are relative measures of today's landscape. They identify where there are opportunities for program expansion given what we know about  the afterschool environment.
-
 ## Supply and Demand in Dallas County
 
-As seen in the graphic below, the distribution of supply scores through this analysis reveals that a plurality of census tracts in Dallas County currently have a high score (above 75) with the remaining scores being distributed across the lower half of scores.
+This analysis has revealed that the supply of afterschool programming in Dallas County is highly concentrated into certain communities. About half of all census tracts in Dallas County received a score of 75 or greater on supply. These 379 census tracts contained 95% of all afterschool programs in  the county, while only being accessible to 63% (240,602) of eligible children.
+Meanwhile, very few census tracts scored low on demand, with only 24 census tracts receiving a score less than 50 accounting for about 13,626 eligible children across Dallas County. Our analysis reveals that the demand for afterschool programming is consistently high across all communities across the county. 
 
-```{r, Supply Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
+```{r, Supply Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
+dasmetrics %>%
+  st_drop_geometry(.) %>%
+  filter(indexSupply >= 75) %>%
+  summarize(count = n(),
+            programs = sum(dasPrograms),
+            seats = sum(dasSeats),
+            eligpop = sum(eligPop))
+
+857/903
+
+240602/sum(dasmetrics$eligPop)
+
 dasComponents %>%
   ggplot(aes(x = indexSupply)) +
   geom_histogram(bins = 50, color = "#0089C4", fill = "#0089C4", alpha = 0.7) +
@@ -134,9 +130,9 @@ dasComponents %>%
         legend.box.spacing = margin(0.5))
 ```
 
-The distribution of demand scores below reveals that the majority of census tracts in Dallas County have a moderately high demand (scores between 55-65) for programming based on our analysis.
 
-```{r, Demand Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
+
+```{r, Demand Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
 dasComponents %>%
   ggplot(aes(x = indexDemand)) +
   geom_histogram(bins = 50, color = "#DC5034", fill = "#DC5034", alpha = 0.7) +
@@ -155,4 +151,28 @@ dasComponents %>%
         legend.justification = "center",
         legend.margin=margin(4,4,4,4),
         legend.box.spacing = margin(0.5))
+
+dasmetrics %>%
+  st_drop_geometry(.) %>%
+  filter(indexDemand <= 50) %>%
+  summarize(count = n(),
+            programs = sum(dasPrograms),
+            seats = sum(dasSeats),
+            eligpop = sum(eligPop))
 ```
+
+## Why are we using scores?
+
+The afterschool environment is dynamic. Programs may open or close, add or remove seats based on changes in staffing or other external factors, or change location at almost any time. Dallas Afterschool monitors the overall afterschool landscape, but specific changes are not always available in real time. Additionally, the characteristics of local communities, measured by the U.S. Census Bureau, are based on a relatively small - but robust - sample of the population. Given the changing nature of the afterschool environment, COVID's impact may not be reflected in the underlying census data used to assess the need for afterschool programming.  
+
+As a result, our intention is not to identify the exact number of afterschool seats needed to address unmet demand. For example, data could indicate that a program has capacity for 50 students, but will not show if a program has a waitlist. To account for this gap, we developed two sets of scores to measure the relative position of a neighborhood's afterschool environment: 1) the supply of seats and programs and 2) the potential need or demand for afterschool programming based on population characteristics. 
+
+We assessed these two components through the creation of two indices, which produced scores ranging from 0 to 100. A census tract with a Supply Score of 58 suggests that this particular location falls in the middle when it comes to the availability of afterschool programs and seats.
+
+## What the scores are not
+
+The methodology used to generate the supply and demand scores analyzes areas of the county where additional afterschool programming may have an outsized impact in providing children with additional enrichment opportunities and adult supervision.
+
+The demand score includes demographic characteristics metrics related to eligible population, single-mother households, household income, child poverty rate, SNAP receiving households, and transportation accessibility weighted against one another. Whereas the supply score was assessed using a  combination of program density, eligible population, total program count, and total number of seats.  were then  identified based on where each metric most commonly interacts. 
+
+Because these characteristics can often overlap, it is important to note that we are not generating an exact seat count. These scores are relative measures of today's landscape. They identify where there are opportunities for program expansion given what we know about  the afterschool environment.

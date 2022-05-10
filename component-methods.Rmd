@@ -6,9 +6,13 @@ output:
     theme: theme.css
 ---
 
-To understand the landscape of afterschool programs across Dallas County we assessed two components. The existing afterschool environment and current neighborhood characteristics. Comparing these components  will help identify areas in need of additional afterschool programming.
+To understand the landscape of afterschool programs we assessed two components: the existing afterschool environment and high need neighborhood characteristics. 
 
-```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
+```{r eligible children density map, echo = FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics(here::here("images/maps/DAS Program Density.png"))
+```
+
+```{r, map of DAS afterschool programs in county, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8, include=FALSE}
 pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
 # Generate Jenks Breaks for plot
 brks_das <- BAMMtools::getJenksBreaks(dasmetrics$ProgSqMi, k = 6)
@@ -53,11 +57,7 @@ ggplot() +
 
 Using program data from Dallas Afterschool, we developed a measure of the existing afterschool environment (supply) by comparing afterschool program density, and afterschool eligible children to total seats, and program count. 
 
-### Summary of Current Programs
-
-In Dallas County, programs affiliated with Dallas Afterschool predominantly use a sliding scale payment model and make up % percent of all programs. With sliding scale programs, children only need to pay an affordable fee relative to their household income in order to participate.
-
-Additional facility types and fee structures are broken down below. 
+In Dallas County the majority of afterschool programming takes place either in a school or a child care center. In conjunction they may up 87.7% of all available afterschool seats across Dallas County.
 
 ```{r, table of programs, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 das <- das_programs %>%
@@ -71,7 +71,6 @@ das <- das_programs %>%
          percapStr = paste0(round(percap*100, digits = 1), "%"),
          facility_type = ifelse(facility_type == "", "Not Available", facility_type),
          capacity = scales::comma(capacity))
-
 #hhs <- hhs_programs %>%
 #  st_drop_geometry(.) %>%
 #  dplyr::summarise(count = n(),
@@ -93,7 +92,7 @@ das %>%
   kable_styling()
 ```
 
-```{r, Supply Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE}
+```{r, program facility type, echo = FALSE, message=FALSE, warning=FALSE}
 das %>%
   mutate(facility_type = factor(facility_type, levels = c("Child Care Center", "School", "Community Center/Nonprofit", "Faith Community", "Municipal Building", "Apartment Complex" ,"Not Available"))) %>%
   ggplot(aes(x = percap, y = reorder(facility_type, -percap), fill = facility_type)) +
@@ -211,16 +210,166 @@ leaflet() %>%
 
 ```
 
-## Current Neighborhood Conditions
+## High Need Neighborhood Conditions
 
-We understand that the need for afterschool programs in any given neighborhood  will vary based on the demographic characteristics of local  families and children. To assess demand,  we identified a number of characteristics for residents who may have a higher need for afterschool programming. 
+We understand that the need for afterschool programs in any given neighborhood  will vary based on the demographic characteristics of local families and children. To assess where additional programming may have the greatest impact, we identified a number of characteristics for residents who may benefit the most from afterschool programming for their children. 
 
-These characteristics include children experiencing  food insecurity, , parents who travel longer distances to  work or have irregular work schedules,, single parent households, and households facing unemployment. These are all considerations we took  into account to assess current neighborhood conditions and demand for afterschool programming. 
+Metrics related to food insecurity, parental commute, single parent households, households facing unemployment and child poverty rate among others were identified as priority characteristics by Dallas Afterschool.
 
+```{r, Demographic Metrics, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=6}
+pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
 
-### Summary of Current Conditions
+brkscpr <- BAMMtools::getJenksBreaks(dasmetrics$cpr, k = 6)
+palcpr <- colorBin("BuPu", domain = dasmetrics$cpr, bins = brkscpr)
 
-```{r, Families Below Poverty, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
+brksInt <- BAMMtools::getJenksBreaks(dasmetrics$int_per, k = 6)
+palInt <- colorBin("PuBu", domain = dasmetrics$int_per, bins = brksInt)
+
+brksTravel <- BAMMtools::getJenksBreaks(dasmetrics$trvltime, k = 6)
+palTravel <- colorBin("BuPu", domain = dasmetrics$trvltime, bins = brksTravel)
+
+brksSnap <- BAMMtools::getJenksBreaks(dasmetrics$snap_per, k = 6)
+palSnap <- colorBin("BuPu", domain = dasmetrics$snap_per, bins = brksSnap)
+
+brksMHI <- BAMMtools::getJenksBreaks(dasmetrics$mhiE, k = 6)
+palMHI <- colorBin("BuPu", domain = dasmetrics$mhiE, bins = brksMHI)
+
+brksUnem <- BAMMtools::getJenksBreaks(dasmetrics$unemE, k = 6)
+palUnem <- colorBin("BuPu", domain = dasmetrics$unemE, bins = brksUnem)
+
+leaflet() %>%
+#  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
+  addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
+  addPolygons(data = dasmetrics,
+              fillColor = ~palcpr(cpr),
+              weight = 1,
+              opacity = 1,
+              color = ~palcpr(cpr),#"#686158",
+              #dashArray = "3",
+              fillOpacity = 0.8,
+              group = "Child Poverty Rate"
+              ) %>%
+  addPolygons(data = dasmetrics,
+              fillColor = ~palMHI(mhiE),
+              weight = 1,
+              opacity = 1,
+              color = ~palMHI(mhiE),#"#686158",
+              #dashArray = "3",
+              fillOpacity = 0.8,
+              group = "Median Household Income"
+              ) %>%
+  addPolygons(data = dasmetrics,
+              fillColor = ~palUnem(unemE),
+              weight = 1,
+              opacity = 1,
+              color = ~palUnem(unemE),#"#686158",
+              #dashArray = "3",
+              fillOpacity = 0.8,
+              group = "Unemployment Rate"
+              ) %>%
+  addPolygons(data = dasmetrics,
+              fillColor = ~palInt(int_per),
+              weight = 1,
+              opacity = 1,
+              color = ~palInt(int_per),#"#686158",
+              #dashArray = "3",
+              fillOpacity = 0.8,
+              group = "Broadband Internet Access"
+              ) %>%
+  addPolygons(data = dasmetrics,
+              fillColor = ~palTravel(trvltime),
+              weight = 1,
+              opacity = 1,
+              color = ~palTravel(trvltime),#"#686158",
+              #dashArray = "3",
+              fillOpacity = 0.8,
+              group = "Commute to Work (Minutes)"
+              ) %>%
+  addPolygons(data = dasmetrics,
+              fillColor = ~palSnap(snap_per),
+              weight = 1,
+              opacity = 1,
+              color = ~palSnap(snap_per),#"#686158",
+              #dashArray = "3",
+              fillOpacity = 0.8,
+              group = "Receiving SNAP"
+              ) %>%
+  addPolygons(data = dallasCounty,
+              color = "#686158",
+              weight = 3,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              group = "Dallas County"
+              ) %>%
+  addPolygons(data = highways,
+              color = "#686158",
+              weight = 2,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              group = "Dallas County"
+              ) %>%
+  addLegend(data = dasmetrics,
+            "bottomright", 
+            pal = palcpr, 
+            values = ~cpr,
+            title = "Child Poverty Rate",
+            group = "Child Poverty Rate",
+            labFormat = labelFormat(suffix = "%"),
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomright", 
+            pal = palMHI, 
+            values = ~mhiE,
+            title = "Median Household Income",
+            group = "Median Household Income",
+            labFormat = labelFormat(prefix = "$"),
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomright", 
+            pal = palUnem, 
+            values = ~unemE,
+            title = "Unemployment Rate",
+            group = "Unemployment Rate",
+            labFormat = labelFormat(suffix = "%"),
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomright", 
+            pal = palInt, 
+            values = ~int_per,
+            title = "Broadband Internet Access",
+            group = "Broadband Internet Access",
+            labFormat = labelFormat(suffix = "%"),
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomright", 
+            pal = palTravel, 
+            values = ~trvltime,
+            title = "Commute to Work (Minutes)",
+            group = "Commute to Work (Minutes)",
+            #labFormat = labelFormat(prefix = "$"),
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomright", 
+            pal = palSnap, 
+            values = ~snap_per,
+            title = "Receiving SNAP",
+            group = "Receiving SNAP",
+            labFormat = labelFormat(suffix = "%"),
+            opacity = 1) %>%
+
+  addLayersControl(
+#    overlayGroups = c("Dallas County", "Demand Score", "Supply Score"),
+    overlayGroups = c("Child Poverty Rate", "Median Household Income", "Unemployment Rate", "Broadband Internet Access", "Commute to Work (Minutes)", "Receiving SNAP"),
+    position = "topright",
+    options = layersControlOptions(collapsed = FALSE)) %>% 
+  hideGroup("Median Household Income") %>%
+  hideGroup("Unemployment Rate") %>%
+  hideGroup("Broadband Internet Access") %>%
+  hideGroup("Commute to Work (Minutes)") %>%
+  hideGroup("Receiving SNAP")
+```
+
+```{r, Families Below Poverty, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8, include=FALSE}
 # Generate Jenks Breaks for plot
 brks_das <- BAMMtools::getJenksBreaks(dasmetrics$fambp_per, k = 6)
 dasmetrics$group <- cut(dasmetrics$fambp_per,
@@ -260,7 +409,7 @@ ggplot() +
 
 ```
 
-```{r, Single Mother Households, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
+```{r, Single Mother Households, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8, include=FALSE}
 # Generate Jenks Breaks for plot
 brks_das <- BAMMtools::getJenksBreaks(dasmetrics$smhh_per, k = 6)
 dasmetrics$group <- cut(dasmetrics$smhh_per,

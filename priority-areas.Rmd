@@ -72,13 +72,23 @@ priorityareas <- dasmetrics %>%
   filter(brkdiff >= 2) %>%
   filter(mhiE <= mean(dasmetrics$mhiE, na.rm = TRUE)) %>%
   filter(eligPop >= mean(dasmetrics$eligPop, na.rm = TRUE)) %>%
-  filter(cpr >= mean(dasmetrics$cpr, na.rm = TRUE))
+  filter(cpr >= mean(dasmetrics$cpr, na.rm = TRUE)) %>%
+  mutate(MainGrp = "Priority Area")
   
+nopriorityareas <- dasmetrics %>%
+  filter(brkdiff <= -2) %>%
+  filter(mhiE > mean(dasmetrics$mhiE, na.rm = TRUE)) %>%
+  filter(eligPop < mean(dasmetrics$eligPop, na.rm = TRUE)) %>%
+  filter(cpr < mean(dasmetrics$cpr, na.rm = TRUE)) %>%
+  mutate(MainGrp = "Non-Priority Area")
 #plot(priorityareas["geometry"])
 ```
 
 ## Afterschool Program Need in Dallas County
-```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-page", fig.height=8}
+
+The map below visualizes the gap between the supply and demand score in Dallas County. By toggling the layer selection on the top right of the map you will be able to view each score. By clicking on any given census tract a popup will appear as well displaying a variety of demographic metrics of interest including race/ethnicity, income, and employment characteristics.
+
+```{r Typology Leaflet Map, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=6}
 popup_pa <- paste0("<b>", "GEOID: ", "</b>", priorityareas$GEOID, "<br>",
                "<b>", "Median Household Income: ", "</b>", scales::dollar(priorityareas$mhiE), "<br>",
                "<b>", "Total Population: ", "</b>", scales::comma(round(priorityareas$tot_popE, digits = 0)), "<br>",
@@ -199,7 +209,31 @@ leaflet() %>%
   hideGroup(c("Demand Exceeds Supply", "Supply Exceeds Demand", "Demand Meets Supply", "Dallas City Council"))
 ```
 
-## What each typology looks like
+## Typology of Afterschool Program Access
+
+To assess which census tracts have the highest demand compared to supply, each score was classified into one of five initial groups based on the identified score ranging from very low to very high.
+
+**Total Census Tracts by Classification Group**
+
+```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
+typeJoin %>%
+  arrange(Order) %>%
+  select(-Order) %>%
+  knitr::kable(.) %>%
+  kable_styling()
+```
+
+The group classification for the demand and supply scores were then compared against one another in order to determine a census tract's general typology.
+
+## Primary Typologies
+
+By comparing the distance between the supply and demand score group against one another we were able to identify three primary typologies within Dallas County:
+
+* **Supply Exceeds Demand:** A census tract where the supply score significantly exceeds the demand score. Census tracts in this category tend to have a higher number of program seats available relative to the eligible population.
+
+* **Demand Exceeds Supply:** A census tract where the demand score significantly exceeds the supply score. Census tracts in this category tend to have a lower number of program seats available relative to the eligible population.
+
+* **Supply Meets Demand:** A census tract where the supply score and demand score are similar to one another. Census tracts in this category tend to have a similar number of available program seats relative to the eligible population.
 
 ```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 typologytable %>%
@@ -218,27 +252,60 @@ typologytable %>%
   kable_styling()
 ```
 
-## Typology of Program Access
+## Identifying Priority Areas
 
-In order to assess what census tracts have the highest demand for afterschool programs relative to current supply, each index was classified into one of five initial groups based on their score.
+In order to drive strategy, the group of census tracts identified in the 'Demand Exceeds Supply' typology were refined into communities that are of a higher priority for additional afterschool programming.
 
-**Total Census Tracts for Each Classification**
+Any census tract that belonged to the 'Demand Exceeds Supply' group and contained the following characteristics is identified as a priority area.
 
-```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
-typeJoin %>%
-  arrange(Order) %>%
-  select(-Order) %>%
-  knitr::kable(.) %>%
+* A gap of at least 2 between supply and demand groups.
+
+* Total number of eligible children above the mean of Dallas County (590).
+
+* Household median income  below the mean of Dallas County ($71,739).
+
+* A child poverty rate above the mean for Dallas County (19%).
+
+```{r priority area to non priority table, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
+priorityareas %>%
+  st_drop_geometry(.) %>%
+  rbind(., st_drop_geometry(nopriorityareas)) %>%
+  group_by(MainGrp) %>%
+  summarise(TotalTracts = n(),
+            AreaSqMi = sum(AreaSqMi),
+            mhi = median(med_incE, na.rm = TRUE),
+            eligPop = sum(eligPop),
+            bp_u18 = sum(bp_u18E, na.rm = TRUE),
+            pop_u18 = sum(pop_u18E, na.rm = TRUE),
+            dasPrograms = sum(dasPrograms),
+            dasSeats = sum(dasSeats),
+            #cacfpPrograms = sum(cacfpPrograms),
+            #cacfpSeats = sum(cacfpSeats),
+            #hhsPrograms = sum(hhsPrograms),
+            #hhsSeats = sum(hhsSeats),
+            #totPrograms = sum(dasPrograms+cacfpPrograms+hhsPrograms),
+            #totSeats = sum(dasSeats+cacfpSeats+hhsSeats)
+            ) %>%
+  mutate(poppro = round(eligPop/dasSeats, digits = 3),
+         cpr = round(bp_u18/pop_u18, digits = 3)) %>%
+  mutate(MainGrp = str_to_title(MainGrp),
+         AreaSqMi = round(AreaSqMi),
+         popden = round(eligPop/AreaSqMi),
+         mhi = scales::dollar(round(mhi)),
+         eligPop = scales::comma(eligPop),
+         dasSeats = scales::comma(dasSeats),
+         cpr = paste0(round(cpr*100, digits = 1), "%"),
+         poppro = round(poppro, digits = 1)) %>%
+  select(MainGrp, TotalTracts, AreaSqMi, mhi, eligPop, dasPrograms, dasSeats, poppro, cpr, popden) %>%
+  knitr::kable(.,
+               col.names = c('Typology', 'Total Tracts', 'Area SqMi', 'Median Household Income', 'Eligible Children', 'Total Programs', 'Total Seats', 'Eligible to Seat Ratio', 'Child Poverty Rate', 'Eligible Density')) %>%
   kable_styling()
 ```
 
+With these additional criteria 44 census tracts across Dallas County were identified as high priority where additional afterschool programming contains the opportunity to have an outsized effect on these communities.
 
-## Primary Typologies
+Based on our analysis these priority areas currently do not have any afterschool programming within them despite containing an estimated 38,400 eligible children.
 
-With our classification methods we were able to identify 12 unique categories of need for afterschool programming in Dallas County, which we further classified into three primary categories.
+By contrast, there are 35 census tracts across Dallas County identified as having the highest supply relative to current demand have an estimated 13,391 children eligible for afterschool programming, with 84 total programs across them. 
 
-* Supply Exceeds Demand: A census tract where the supply score significantly exceeds the demand score. Census tracts in this category tend to have a higher number of program seats available relative to the eligible population.
-
-* Demand Exceeds Supply: A census tract where the demand score significantly exceeds the supply score. Census tracts in this category tend to have a lower number of program seats available relative to the eligible population.
-
-* Supply Meets Demand: A census tract where the supply score and demand score are similar to one another. Census tracts in this category tend to have a similar number of available program seats relative to the eligible population.
+This disparity emphasizes the need for more equitably distributed afterschool programming in the areas of highest need for children in Dallas County. 
