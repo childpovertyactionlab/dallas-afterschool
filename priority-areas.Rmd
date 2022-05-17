@@ -209,25 +209,15 @@ leaflet() %>%
   hideGroup(c("Demand Exceeds Supply", "Supply Exceeds Demand", "Demand Meets Supply", "Dallas City Council"))
 ```
 
-## Typology of Afterschool Program Access
+## Classification  of Afterschool Program Access
 
-To assess which census tracts have the highest demand compared to supply, each score was classified into one of five initial groups based on the identified score ranging from very low to very high.
+To assess which census tracts have the highest demand compared to supply, each score was classified into one of five initial groups,  ranging from very low to very high.
 
-**Total Census Tracts by Classification Group**
+The group classifications for the demand and supply scores were then compared against one another in order to determine a census tract's general characteristics.
 
-```{r, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8}
-typeJoin %>%
-  arrange(Order) %>%
-  select(-Order) %>%
-  knitr::kable(.) %>%
-  kable_styling()
-```
+## Primary Classifications 
 
-The group classification for the demand and supply scores were then compared against one another in order to determine a census tract's general typology.
-
-## Primary Typologies
-
-By comparing the distance between the supply and demand score group against one another we were able to identify three primary typologies within Dallas County:
+By comparing the distance between the supply and demand score group against one another we were able to identify three primary classifications  within Dallas County:
 
 * **Supply Exceeds Demand:** A census tract where the supply score significantly exceeds the demand score. Census tracts in this category tend to have a higher number of program seats available relative to the eligible population.
 
@@ -254,11 +244,9 @@ typologytable %>%
 
 ## Identifying Priority Areas
 
-In order to drive strategy, the group of census tracts identified in the 'Demand Exceeds Supply' typology were refined into communities that are of a higher priority for additional afterschool programming.
+The group of census tracts identified in the 'Demand Exceeds Supply' category were refined into higher priority communities.
 
-Any census tract that belonged to the 'Demand Exceeds Supply' group and contained the following characteristics is identified as a priority area.
-
-* A gap of at least 2 between supply and demand groups.
+These census tracts contain the the following characteristics:
 
 * Total number of eligible children above the mean of Dallas County (590).
 
@@ -302,10 +290,10 @@ priorityareas %>%
   kable_styling()
 ```
 
-With these additional criteria 44 census tracts across Dallas County were identified as high priority where additional afterschool programming contains the opportunity to have an outsized effect on these communities.
+Forty four census tracts were identified as high priority.
 
-Based on our analysis these priority areas currently do not have any afterschool programming within them despite containing an estimated 38,400 eligible children.
+There are 38,400 eligible children living in these 44 census tracts, yet there are no programs available for families. 
 
-By contrast, there are 35 census tracts across Dallas County identified as having the highest supply relative to current demand have an estimated 13,391 children eligible for afterschool programming, with 84 total programs across them. 
+In contrast, there are 35 high supply census tracts relative to current demand. These tracts  have an estimated 13,391 eligible children  with a total of 84 afterschool  programs. 
 
-This disparity emphasizes the need for more equitably distributed afterschool programming in the areas of highest need for children in Dallas County. 
+These disparities emphasize the need for a more equitable distribution of afterschool programs in the areas of highest need.. 

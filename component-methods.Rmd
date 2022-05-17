@@ -6,7 +6,7 @@ output:
     theme: theme.css
 ---
 
-To understand the landscape of afterschool programs we assessed two components: the existing afterschool environment and high need neighborhood characteristics. 
+To understand the landscape of afterschool programs we assessed two components: the existing afterschool environment (supply) and high need neighborhood characteristics (demand). 
 
 ```{r eligible children density map, echo = FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics(here::here("images/maps/DAS Program Density.png"))
@@ -55,9 +55,7 @@ ggplot() +
 
 ## Existing Afterschool Environment
 
-Using program data from Dallas Afterschool, we developed a measure of the existing afterschool environment (supply) by comparing afterschool program density, and afterschool eligible children to total seats, and program count. 
-
-In Dallas County the majority of afterschool programming takes place either in a school or a child care center. In conjunction they may up 87.7% of all available afterschool seats across Dallas County.
+There is a greater supply of programs in Dallas compared to the surrounding cities. Furthermore,  the majority of afterschool programming takes place either in a school or a child care center. In conjunction they make up 87.7% of all available afterschool seats across Dallas County.
 
 ```{r, table of programs, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
 das <- das_programs %>%
@@ -212,9 +210,9 @@ leaflet() %>%
 
 ## High Need Neighborhood Conditions
 
-We understand that the need for afterschool programs in any given neighborhood  will vary based on the demographic characteristics of local families and children. To assess where additional programming may have the greatest impact, we identified a number of characteristics for residents who may benefit the most from afterschool programming for their children. 
+We understand that the need for afterschool programs in any given neighborhood  will vary based on the demographic characteristics of local families and children. To assess where additional programming may have the greatest impact, we identified a number of characteristics for residents who may benefit the most from free or low-cost afterschool programming for their children. 
 
-Metrics related to food insecurity, parental commute, single parent households, households facing unemployment and child poverty rate among others were identified as priority characteristics by Dallas Afterschool.
+Metrics related to food insecurity, parental commute, single parent households, households facing unemployment, and the child poverty rate were identified as priority characteristics by Dallas Afterschool.
 
 ```{r, Demographic Metrics, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=6}
 pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
@@ -448,3 +446,27 @@ ggplot() +
         legend.box.spacing = margin(0.5))
 
 ```
+
+## Why Out-of-School-Time (OST) Matters 
+
+Research shows that afterschool programs provide essential services for children and their families. Afterschool programs keep youth safe, support working families, and inspire kids to learn and stay engaged in school. Dallas children enrolled in a program are receiving critical resources  like homework support, , STEM instruction, meals and healthy snacks, and social emotional learning skills. These benefits offer opportunities to bridge the  achievement  gap between students of lower socioeconomic status and their more affluent peers. 
+
+Additionally, Dallas parents report that afterschool programs are a lifeline for their families:
+
+* 89% of parents with a child in an afterschool program agree that the program helps them keep their job or work more hours
+
+* 81% of parents overall agree that afterschool programs provide working parents peace of mind
+
+* 97% of parents overwhelmingly support public funding for afterschool programming
+
+## COVID-19 
+
+Afterschool and summer programs have not been exempt from the stress and economic strain of the pandemic. Throughout the pandemic, OST providers have pivoted to serve the needs of youth and families: 
+
+* 73% of programs have served youth remotely
+
+* 62% have connected families to community resources
+
+* 57% have delivered meals to families 
+
+Afterschool programming is an integral component of local communities and is crucial to the post-pandemic recovery. As communities continue to feel the impact of COVID, youth will need expanded support to emerge from this crisis stronger, resilient, and ready to thrive. 

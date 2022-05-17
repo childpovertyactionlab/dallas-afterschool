@@ -6,3 +6,35 @@ output:
     theme: theme.css
 ---
 
+```{r, include= FALSE}
+library(knitr)
+library(kableExtra)
+
+programcost <- rio::import("data/DAS Program Cost.csv")
+
+facilitycost <- rio::import("data/Cost by Facility Type.csv")
+```
+
+After conducting a thorough analysis of supply and demand dynamics for afterschool care, Dallas Afterschool called programs to obtain the average weekly cost per child in the county. We found that the average cost in Dallas County is \$82 per week per child, with a high of \$350 per week and low of \$20 per week. Further, the cost of programs varied significantly based on facility type. 
+
+```{r, Cost by Classification Type, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
+knitr::kable(programcost,
+               col.names = c('Classification', 'Total Children', 'Children in Programs (%)', 'Total Seats', 'Total Free Seats', 'Children in Free Programs (%)', 'Paid Seats', 'Program Cost Per Week', 'High Cost', 'Low Cost')) %>%
+  kable_styling()
+```
+
+#### * There are no programs in the identified priority areas; for this analysis, we have included programs within 250 feet of priority  areas since they are accessible for neighborhood families.
+
+## Cost by Facility Type
+
+```{r, Cost by Facility Type, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body-outset", fig.height=8}
+knitr::kable(facilitycost,
+               col.names = c('Facility Type', 'Total Seats (#)', 'Total Seats (%)', 'Average Cost', 'Total Free Seats')) %>%
+  kable_styling()
+```
+
+The Afterschool Alliance found that for 69% of Dallas parents, cost is the biggest barrier to accessing an afterschool program. In Dallas County, the majority of afterschool seats are in child care centers. Typically, programs in these centers are more expensive than school and community-based programs. Higher costs can be especially burdensome for low-income families, whose children have limited enrichment opportunities outside of school compared to their higher income peers. 
+ 
+Programs located on school properties, community centers, or similar municipal locations are generally lower in cost due to their ability to leverage the lower cost of utilities, rent, and insurance. Furthermore, federal COVID relief funding has made it possible to increase the number of free seats available in schools and community centers. 
+ 
+Dallas Afterschool alongside community leaders, funders, and partners have come together to help address the concern of access to affordable afterschool programs. We have a history as a community of working together to meet the needs of our children. To stay informed and support this effort [https://dallasafterschool.org/advocate-for-afterschool/](sign up here). 

@@ -2,6 +2,9 @@ library(sf)
 library(tidyverse)
 library(CPALtools)
 
+das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
+  st_transform(crs = "ESRI:102738")
+
 dasComponents <- st_read(here::here("data/dasComponents.geojson")) %>%
   st_transform(crs = 4269) 
 
@@ -114,3 +117,72 @@ dasmetrics %>%
   st_drop_geometry(.) %>%
   group_by(typeSupply) %>%
   summarize(count = n())
+
+cpr <- dem_sup %>%
+  arrange(desc(cpr)) %>%
+  slice_head(n = 40) %>%
+  mutate(top_cpr = "Top 40 CPR") %>%
+  st_transform(crs = "ESRI:102738")
+
+smhh <- dem_sup %>%
+  arrange(desc(smhh_per)) %>%
+  slice_head(n = 40) %>%
+  mutate(top_smhh = "Top 40 SMHH") %>%
+  st_transform(crs = "ESRI:102738")
+
+plot(cpr["geometry"])
+plot(smhh["geometry"])
+
+cpr %>%
+  summarise(TotalTracts = n(),
+            AreaSqMi = sum(AreaSqMi),
+            pop_u18 = sum(pop_u18E),
+            mhi = median(med_incE, na.rm = TRUE),
+            eligPop = sum(eligPop),
+            bp_u18 = sum(bp_u18E, na.rm = TRUE),
+            pop_u18 = sum(pop_u18E, na.rm = TRUE),
+            dasPrograms = sum(dasPrograms),
+            dasSeats = sum(dasSeats)) %>%
+  mutate(bp_u18/pop_u18)
+
+smhh %>%
+  summarise(TotalTracts = n(),
+            AreaSqMi = sum(AreaSqMi),
+            pop_u18 = sum(pop_u18E),
+            mhi = median(med_incE, na.rm = TRUE),
+            eligPop = sum(eligPop),
+            bp_u18 = sum(bp_u18E, na.rm = TRUE),
+            pop_u18 = sum(pop_u18E, na.rm = TRUE),
+            dasPrograms = sum(dasPrograms),
+            dasSeats = sum(dasSeats)) %>%
+  mutate(bp_u18/pop_u18)
+
+cpr_programs <- das_programs[cpr, ] %>%
+  mutate(top = "Top 40 CPR")
+
+smhh_programs <- das_programs[smhh, ] %>%
+  mutate(top = "Top 40 SMHH")
+
+tot_programs <- rbind(cpr_programs, smhh_programs)
+
+tot_programs %>%
+  st_drop_geometry(.) %>%
+  rio::export("data/Top 40 Tracts SMHH and CPR.csv")
+
+test <- dasmetrics %>%
+  filter(indexSupply >= 75)
+
+sum(dasmetrics$dasPrograms)
+sum(dasmetrics$dasSeats)
+
+
+sum(test$dasPrograms)
+sum(test$dasSeats)
+
+sum(test$dasPrograms)/sum(dasmetrics$dasPrograms)
+sum(test$dasSeats)/sum(dasmetrics$dasSeats)
+
+sum(test$eligPop)/sum(dasmetrics$eligPop)
+
+sum(dasmetrics$eligPop)-sum(test$eligPop)
+

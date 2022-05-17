@@ -65,31 +65,28 @@ pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "
 
 ## Introduction
 
-There are 380,000 children between the ages of 5 and 14 in Dallas County, 85,000 of whom attend an afterschool program. While many children are in the care of a guardian or family member, over 100,000 children are without adult supervision between 3 and 6 pm. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety. 
+Of the 380,000 children between the ages of 5 and 14 in Dallas County, 84,900 attend an afterschool program. While many children are in the care of a guardian or family member, there are still over 100,000 children without adult supervision between 3 and 6 pm. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety. 
 
 ```{r eligible children density map, echo = FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics(here::here("images/maps/Afterschool Eligible Child Density in Dallas County.png"))
 ```
 
-
-## Why Out-of-School-Time (OST) Matters
-
-Research shows that afterschool programs provide essential services for children and their families. Afterschool programs keep youth safe, support working families, and inspire kids to learn and stay engaged in school. Dallas children enrolled in a program are receiving critical resources like homework support, life skills, STEM instruction, meals or healthy snacks, and social emotional learning. These benefits offer opportunities to bridge the  opportunity gap between students of lower socioeconomic status and their more affluent peers. Additionally, Dallas parents report that afterschool programs are a lifeline for their families:
-
-* **89%** of parents with a child in an afterschool program agree that the program helps them keep their job or work more hours.
-* **81%** of parents overall agree that afterschool programs provide working parents peace of mind.
-* **97%** of parents overwhelmingly support public funding for afterschool programming.
-
-## COVID-19
-
-Afterschool and summer programs have not been exempt from the stress and economic strain of the pandemic. Throughout the pandemic, OST providers quickly pivoted to serve the needs of youth and families: 
-
-* **73%** of programs served youth remotely.
-* **62%** connected families to community resources.
-* **57%** delivered meals to families.
-
-The afterschool field is an integral component of local communities and is crucial to the post-pandemic recovery. As communities continue to feel the impact of COVID, youth will need expanded support to emerge from this crisis stronger, resilient, and ready to thrive. 
-
 ## Objective
 
-To improve access to afterschool programs across Dallas County, Dallas Afterschool seeks to understand, both where current programs and seats are located and where additional seats are needed. These tools are a follow on to the Afterschool Access Map developed in 2017 and enables the community to see where progress has been made. Equipped with this information, Dallas Afterschool can work with afterschool providers, government officials, schools, and funders to address gaps in afterschool availability and build on the strength of existing programs. 
+To improve access to afterschool programs across Dallas County, Dallas Afterschool seeks to understand both where current programs are located and where additional seats are needed. The tools on this website are a follow on to the Afterschool Access Map we developed in 2017; they enable the community to see where progress has been made and where work remains to be done. Equipped with this information, Dallas Afterschool can work with afterschool providers, public officials, schools, and funders to address gaps in afterschool availability and build on the strength of existing programs. 
+
+## Key Findings
+
+* The mapping tools here have a wealth of information. Our core findings are described below:
+
+* There are 381,376 children in Dallas eligible for an afterschool program (eligibility is defined as being between the ages of 5 - 14). **Only 22% of these children are enrolled in an afterschool  program.**
+
+* **Program supply is not equitably distributed across Dallas County**. Just over half (379) of all census tracts account for 97% of all afterschool programs. The remaining 266 census tracts account for only 3% of programs. Over 140,000 children live in those low supply areas. 
+
+* **A large number of children are living in areas where demand for programs is greater than supply**. These areas experience higher poverty rates, lower median household incomes, and fewer afterschool programs compared to areas where the supply of available programs equals demand. These results are more striking in areas identified as high priority. The average household income in high priority neighborhoods is \$46,728 compared to \$97,075 in high supply areas. The child poverty rate is 33.7% compared to the city's child poverty rate of 19%. **Additionally, there are no programs for the 38,400 eligible children living in these priority census tracts**.
+
+* In Dallas County only **5% of afterschool programs are free**.
+
+* **The average weekly cost of paid programs is \$82 a week per child**. In high supply areas, the average weekly cost of a program is \$75 a week per child. In contrast, the average weekly cost of a program in high priority areas, which experience higher poverty rates, is \$95 a week per child.
+
+* When we work together as a community, we can concentrate our efforts and resources in areas with high need. Using Dallas Afterschool's 2017 Access Map,  Dallas ISD and the City of Dallas made a concentrated effort to place programs where the need was the greatest. This has resulted in improvements in many neighborhoods. Further, Covid-19 relief funds have been used in many of the former priority neighborhoods to create new afterschool programs.

@@ -6,7 +6,7 @@ output:
     theme: theme.css
 ---
 
-The map below visualizes the supply and demand scores for each census tract. By toggling the layer selection on the top right of the map you will be able to view each score. By clicking on any given census tract a popup will appear as well displaying a variety of demographic metrics of interest including race/ethnicity, income, and employment characteristics.
+The map below visualizes the supply and demand scores for each census tract. By toggling the layer selection on the top right of the map you will be able to view each score. By clicking on any given census tract a popup will appear displaying a variety of demographic metrics including race/ethnicity, income, and employment characteristics.
 
 ```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=6}
 pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
@@ -94,8 +94,7 @@ leaflet() %>%
 
 ## Supply and Demand in Dallas County
 
-This analysis has revealed that the supply of afterschool programming in Dallas County is highly concentrated into certain communities. About half of all census tracts in Dallas County received a score of 75 or greater on supply. These 379 census tracts contained 95% of all afterschool programs in  the county, while only being accessible to 63% (240,602) of eligible children.
-Meanwhile, very few census tracts scored low on demand, with only 24 census tracts receiving a score less than 50 accounting for about 13,626 eligible children across Dallas County. Our analysis reveals that the demand for afterschool programming is consistently high across all communities across the county. 
+The demand for afterschool programming is consistently high across Dallas County. However, the supply of afterschool programs is  concentrated in certain communities. About half of all census tracts in Dallas County received a score of 75 or greater on supply. These 379 census tracts contain **97%** of all afterschool programs in the county. Yet, only **63%** of eligible children live in these tracts. 
 
 ```{r, Supply Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
 dasmetrics %>%
@@ -131,7 +130,6 @@ dasComponents %>%
 ```
 
 
-
 ```{r, Demand Scores Histogram, echo = FALSE, message=FALSE, warning=FALSE, include=FALSE}
 dasComponents %>%
   ggplot(aes(x = indexDemand)) +
@@ -161,18 +159,11 @@ dasmetrics %>%
             eligpop = sum(eligPop))
 ```
 
-## Why are we using scores?
+## What do the Scores Mean?
 
-The afterschool environment is dynamic. Programs may open or close, add or remove seats based on changes in staffing or other external factors, or change location at almost any time. Dallas Afterschool monitors the overall afterschool landscape, but specific changes are not always available in real time. Additionally, the characteristics of local communities, measured by the U.S. Census Bureau, are based on a relatively small - but robust - sample of the population. Given the changing nature of the afterschool environment, COVID's impact may not be reflected in the underlying census data used to assess the need for afterschool programming.  
+The scores are not meant to identify the exact number of seats in a census tract. The afterschool environment is dynamic. Programs may open or close, change locations, or add or remove seats based on changes in staffing, funding, or other external factors. Dallas Afterschool monitors the overall afterschool landscape, but specific changes are not always available in real time. Additionally, the characteristics of local communities, measured by the U.S. Census Bureau, are based on a relatively small - but robust - sample of the population. Given the changing nature of the afterschool environment, external factors such as the impact of COVID, may not be reflected in the underlying census data.
 
-As a result, our intention is not to identify the exact number of afterschool seats needed to address unmet demand. For example, data could indicate that a program has capacity for 50 students, but will not show if a program has a waitlist. To account for this gap, we developed two sets of scores to measure the relative position of a neighborhood's afterschool environment: 1) the supply of seats and programs and 2) the potential need or demand for afterschool programming based on population characteristics. 
+As a result, our intention is not to identify the exact number of afterschool seats needed to address unmet demand. For example, data could indicate that a program has capacity for 50 students, but it will not show if a program has a waitlist. To account for this gap, we developed two sets of scores to measure the relative position of a neighborhood's afterschool environment: 1) the supply of seats and programs and 2) the potential need or demand for afterschool programming based on population characteristics. 
 
 We assessed these two components through the creation of two indices, which produced scores ranging from 0 to 100. A census tract with a Supply Score of 58 suggests that this particular location falls in the middle when it comes to the availability of afterschool programs and seats.
 
-## What the scores are not
-
-The methodology used to generate the supply and demand scores analyzes areas of the county where additional afterschool programming may have an outsized impact in providing children with additional enrichment opportunities and adult supervision.
-
-The demand score includes demographic characteristics metrics related to eligible population, single-mother households, household income, child poverty rate, SNAP receiving households, and transportation accessibility weighted against one another. Whereas the supply score was assessed using a  combination of program density, eligible population, total program count, and total number of seats.  were then  identified based on where each metric most commonly interacts. 
-
-Because these characteristics can often overlap, it is important to note that we are not generating an exact seat count. These scores are relative measures of today's landscape. They identify where there are opportunities for program expansion given what we know about  the afterschool environment.
