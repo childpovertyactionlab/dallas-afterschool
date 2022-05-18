@@ -7,7 +7,7 @@ description: |
 output_dir: "docs"
 navbar:
   logo:
-    image: images/DAS-Logo-Standard.png
+    image: images/DAS Logo-Standard-white-01.png
     href: https://childpovertyactionlab.github.io/dallas-afterschool/
 
   right:
