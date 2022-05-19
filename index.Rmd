@@ -63,8 +63,6 @@ das_programs <- st_read(here::here("data/dasPrograms.geojson")) %>%
 pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
 ```
 
-## Introduction
-
 Of the 380,000 children between the ages of 5 and 14 in Dallas County, 84,900 attend an afterschool program. While many children are in the care of a guardian or family member, there are still over 100,000 children without adult supervision between 3 and 6 pm. Across Texas, the lack of access to quality afterschool programming has direct negative consequences for economic growth, academic success, food security, and public safety. 
 
 ```{r eligible children density map, echo = FALSE, message=FALSE, warning=FALSE}
