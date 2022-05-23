@@ -154,6 +154,9 @@ leaflet() %>%
               opacity = 1,
               color = "#84301f ",
               fillOpacity = 0.7,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE),
               popup = ~popup_pa,
               group = "Priority Areas"
               ) %>%
@@ -163,6 +166,9 @@ leaflet() %>%
               opacity = 1,
               color = "#DC5034",
               fillOpacity = 0.7,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE),
               popup = ~popup_ds,
               group = "Demand Exceeds Supply"
               ) %>%
@@ -172,6 +178,9 @@ leaflet() %>%
               opacity = 1,
               color = "#8996A0",
               fillOpacity = 0.6,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE),
               popup = ~popup_ti,
               group = "Demand Meets Supply"
               ) %>%
@@ -181,6 +190,9 @@ leaflet() %>%
               opacity = 1,
               color = "#0089C4",
               fillOpacity = 0.6,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE),
               popup = ~popup_sd,
               group = "Supply Exceeds Demand"
               ) %>%
@@ -189,6 +201,9 @@ leaflet() %>%
               weight = 3,
               smoothFactor = 0.2, 
               fillOpacity = 0,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE),
               opacity = 1,
               group = "Dallas County"
               ) %>%
@@ -296,4 +311,4 @@ There are 38,400 eligible children living in these 44 census tracts, yet there a
 
 In contrast, there are 35 high supply census tracts relative to current demand. These tracts  have an estimated 13,391 eligible children  with a total of 84 afterschool  programs. 
 
-These disparities emphasize the need for a more equitable distribution of afterschool programs in the areas of highest need.. 
+These disparities emphasize the need for a more equitable distribution of afterschool programs in the areas of highest need.

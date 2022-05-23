@@ -11,85 +11,202 @@ The map below visualizes the supply and demand scores for each census tract. By 
 ```{r, Component Index, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=6}
 pal_das <- c("#DC5034", "#0089C4", "#FFB533", "#ADB533", "#8078B6", "#8996A0", "#54494B")
 #names(dasDemo)
-popup <- paste0("<b>", "GEOID: ", "</b>", dasDemo$GEOID, "<br>",
-               "<b>", "Median Household Income: ", "</b>", scales::dollar(dasDemo$mhiE), "<br>",
-               "<b>", "Total Population: ", "</b>", scales::comma(round(dasDemo$tot_popE, digits = 0)), "<br>",
-               "<b>", "Asian (%): ", "</b>", round(dasDemo$as_per*100, digits =1), "%", "<br>",
-               "<b>", "Black (%): ", "</b>", round(dasDemo$bl_per*100, digits =1), "%", "<br>",
-               "<b>", "Hispanic (%) : ", "</b>", round(dasDemo$hi_per*100, digits =1), "%", "<br>",
-               "<b>", "White (%): ", "</b>", round(dasDemo$wh_per*100, digits =1), "%", "<br>",
-               "<b>", "Child Poverty Rate: ", "</b>", round(dasDemo$cpr*100, digits =1), "%", "<br>",
-               "<b>", "Internet Access (%): ", "</b>", round(dasDemo$int_per*100, digits =1), "%", "<br>",
-               "<b>", "Single-Mom Households (%): ", "</b>", round(dasDemo$smhh_per*100, digits =1), "%", "<br>",
-               "<b>", "Single-Mom Households Below Poverty (%): ", "</b>", round(dasDemo$smhh_bpE*100, digits =1), "%", "<br>",
-               "<b>", "Unemployment Rate: ", "</b>", round(dasDemo$unemE*100, digits =1), "%"
+popup <- paste0("<b>", "GEOID: ", "</b>", dasmetrics$GEOID, "<br>",
+                "<b>", "Demand Score: ", "</b>", dasmetrics$indexDemand, "<br>",
+                "<b>", "Supply Score: ", "</b>", dasmetrics$indexSupply, "<br>",
+               "<b>", "Median Household Income: ", "</b>", scales::dollar(dasmetrics$mhiE), "<br>",
+               "<b>", "Total Population: ", "</b>", scales::comma(round(dasmetrics$tot_popE, digits = 0)), "<br>",
+               "<b>", "Asian (%): ", "</b>", round(dasmetrics$as_per*100, digits =1), "%", "<br>",
+               "<b>", "Black (%): ", "</b>", round(dasmetrics$bl_per*100, digits =1), "%", "<br>",
+               "<b>", "Hispanic (%) : ", "</b>", round(dasmetrics$hi_per*100, digits =1), "%", "<br>",
+               "<b>", "White (%): ", "</b>", round(dasmetrics$wh_per*100, digits =1), "%", "<br>",
+               "<b>", "Child Poverty Rate: ", "</b>", round(dasmetrics$cpr*100, digits =1), "%", "<br>",
+               "<b>", "Internet Access (%): ", "</b>", round(dasmetrics$int_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households (%): ", "</b>", round(dasmetrics$smhh_per*100, digits =1), "%", "<br>",
+               "<b>", "Single-Mom Households Below Poverty (%): ", "</b>", round(dasmetrics$smhh_bpE*100, digits =1), "%", "<br>",
+               "<b>", "Unemployment Rate: ", "</b>", round(dasmetrics$unemE*100, digits =1), "%"
                )
 
-brksSupply <- BAMMtools::getJenksBreaks(dasComponents$indexSupply, k = 6)
-brksDemand <- BAMMtools::getJenksBreaks(dasComponents$indexDemand, k = 6)
+brksDemand <- BAMMtools::getJenksBreaks(k = 5, var = dasmetrics$indexDemand)
+brksSupply <- BAMMtools::getJenksBreaks(k = 5, var = dasmetrics$indexSupply)
 
-palSupply <- colorBin("BuPu", domain = dasComponents$indexSupply, bins = brksSupply)
-palDemand <- colorBin("RdPu", domain = dasComponents$indexDemand, bins = brksDemand)
+supply_1 <- dasmetrics %>%
+  filter(indexSupply >= 0 & indexSupply <= 22)
+supply_2 <- dasmetrics %>%
+  filter(indexSupply > 22 & indexSupply <= 56)
+supply_3 <- dasmetrics %>%
+  filter(indexSupply > 56 & indexSupply <= 84)
+supply_4 <- dasmetrics %>%
+  filter(indexSupply > 84 & indexSupply <= 100)
+supply_5 <- dasmetrics %>%
+  filter(is.na(indexSupply))
+
+demand_1 <- dasmetrics %>%
+  filter(indexDemand >= 0 & indexDemand <= 42)
+demand_2 <- dasmetrics %>%
+  filter(indexDemand > 42 & indexDemand <= 66)
+demand_3 <- dasmetrics %>%
+  filter(indexDemand > 66 & indexDemand <= 79)
+demand_4 <- dasmetrics %>%
+  filter(indexDemand > 79 & indexDemand <= 100)
+demand_5 <- dasmetrics %>%
+  filter(is.na(indexDemand))
 
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
-  addPolygons(data = dasComponents,
-              fillColor = ~palDemand(indexDemand),
-              weight = 1,
-              opacity = 1,
-              color = ~palDemand(indexDemand),#"#686158",
-              #dashArray = "3",
-              fillOpacity = 0.6,
-              group = "Demand Score",
-              popup = ~popup
+  addPolygons(data = demand_1,
+              fillColor = "#edf8fb",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Demand Very Low",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
               ) %>%
-  addPolygons(data = dasComponents,
-              fillColor = ~palSupply(indexSupply),
-              weight = 1,
-              opacity = 1,
-              color = ~palSupply(indexSupply), #"#686158",
-              #dashArray = "3",
-              fillOpacity = 0.6,
-              group = "Supply Score",
-              popup = ~popup
+  addPolygons(data = demand_2,
+              fillColor = "#b3cde3",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Demand Low",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
               ) %>%
-  addPolygons(data = dallasCounty,
-              color = "#686158",
-              weight = 3,
-              smoothFactor = 0.2, 
-              fillOpacity = 0,
-              group = "Dallas County"
+  addPolygons(data = demand_3,
+              fillColor = "#8c96c6",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Demand High",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
               ) %>%
-  addPolygons(data = highways,
-              color = "#686158",
-              weight = 2,
-              smoothFactor = 0.2, 
-              fillOpacity = 0,
-              group = "Dallas County"
+  addPolygons(data = demand_4,
+              fillColor = "#88419d",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Demand Very High",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
               ) %>%
-  addLegend(data = dasComponents,
-            "bottomright", 
-            pal = palDemand, 
-            values = ~indexDemand,
-            title = "Demand Score",
-            group = "Demand Score",
-            #labFormat = labelFormat(prefix = "$"),
-            opacity = 1) %>%
-  addLegend(data = dasComponents,
-            "bottomright", 
-            pal = palSupply, 
-            values = ~indexSupply,
-            title = "Supply Score",
-            group = "Supply Score",
-            #labFormat = labelFormat(prefix = "$"),
-            opacity = 1) %>%
+  addPolygons(data = demand_5,
+              fillColor = "#595959",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Demand Unavailable",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
+              ) %>%
+###
+    addPolygons(data = supply_1,
+              fillColor = "#ffffd4",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Supply Very Low",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
+              ) %>%
+    addPolygons(data = supply_2,
+              fillColor = "#fed98e",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Supply Low",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
+              ) %>%
+    addPolygons(data = supply_3,
+              fillColor = "#fe9929",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Supply High",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
+              ) %>%
+    addPolygons(data = supply_4,
+              fillColor = "#cc4c02",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Supply Very High",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
+              ) %>%
+    addPolygons(data = supply_5,
+              fillColor = "#595959",
+              color = "#595959",
+              weight = 0.5,
+              opacity = 0.8,
+              fillOpacity = 0.4,
+              group = "Supply Unavailable",
+              popup = ~popup,
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE)
+              ) %>%
   addLayersControl(
-    overlayGroups = c("Dallas County", "Demand Score", "Supply Score"),
-#    baseGroups = c("Dallas County"),
+    overlayGroups = c("Demand Very Low",
+                      "Demand Low",
+                      "Demand High",
+                      "Demand Very High",
+                      "Demand Unavailable",
+                      "Supply Very Low",
+                      "Supply Low",
+                      "Supply High",
+                      "Supply Very High",
+                      "Supply Unavailable"),
     position = "topright",
     options = layersControlOptions(collapsed = FALSE)) %>% 
-  hideGroup("Demand Score")
+  hideGroup(c("Supply Very Low",
+              "Supply Low",
+              "Supply High",
+              "Supply Very High",
+              "Supply Unavailable")) #%>%
+#  htmlwidgets::onRender("
+#    function(el, x) {
+#      var updateLegend = function () {
+#          var selectedGroup = document.querySelectorAll('input:checked')[0].nextSibling.innerText.substr(1);
+#
+#          document.querySelectorAll('.legend').forEach(a => a.hidden=true);
+#          document.querySelectorAll('.legend').forEach(l => {
+#            if (l.children[0].children[0].innerText == selectedGroup) l.hidden=false;
+#          });
+#      };
+#      updateLegend();
+#      this.on('baselayerchange', e => updateLegend());
+#    }")
 ```
 
 ## Supply and Demand in Dallas County

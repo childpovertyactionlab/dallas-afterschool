@@ -449,7 +449,7 @@ ggplot() +
 
 ## Why Out-of-School-Time (OST) Matters 
 
-Research shows that afterschool programs provide essential services for children and their families. Afterschool programs keep youth safe, support working families, and inspire kids to learn and stay engaged in school. Dallas children enrolled in a program are receiving critical resources  like homework support, , STEM instruction, meals and healthy snacks, and social emotional learning skills. These benefits offer opportunities to bridge the  achievement  gap between students of lower socioeconomic status and their more affluent peers. 
+Research shows that afterschool programs provide essential services for children and their families. Afterschool programs keep youth safe, support working families, and inspire kids to learn and stay engaged in school. Dallas children enrolled in a program are receiving critical resources  like homework support, STEM instruction, meals and healthy snacks, and social emotional learning skills. These benefits offer opportunities to bridge the  achievement  gap between students of lower socioeconomic status and their more affluent peers. 
 
 Additionally, Dallas parents report that afterschool programs are a lifeline for their families:
 
