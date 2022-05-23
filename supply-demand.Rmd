@@ -52,6 +52,9 @@ demand_4 <- dasmetrics %>%
 demand_5 <- dasmetrics %>%
   filter(is.na(indexDemand))
 
+palSupply <- colorBin("YlOrBr", domain = dasComponents$indexSupply, bins = brksSupply)
+palDemand <- colorBin("BuPu", domain = dasComponents$indexDemand, bins = brksDemand)
+
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
@@ -115,7 +118,6 @@ leaflet() %>%
                                                   weight = 2,
                                                   bringToFront = TRUE)
               ) %>%
-###
     addPolygons(data = supply_1,
               fillColor = "#ffffd4",
               color = "#595959",
@@ -176,6 +178,41 @@ leaflet() %>%
                                                   weight = 2,
                                                   bringToFront = TRUE)
               ) %>%
+  addLegend(data = dasmetrics,
+            "bottomleft", 
+            pal = palDemand, 
+            values = ~indexDemand,
+            title = "Demand Score",
+            group = "Demand Very Low",
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomleft", 
+            pal = palDemand, 
+            values = ~indexDemand,
+            title = "Demand Score",
+            group = "Demand Low",
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomleft", 
+            pal = palDemand, 
+            values = ~indexDemand,
+            title = "Demand Score",
+            group = "Demand High",
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomleft", 
+            pal = palDemand, 
+            values = ~indexDemand,
+            title = "Demand Score",
+            group = "Demand Very High",
+            opacity = 1) %>%
+  addLegend(data = dasmetrics,
+            "bottomleft", 
+            pal = palDemand, 
+            values = ~indexDemand,
+            title = "Demand Score",
+            group = "Demand Unavailable",
+            opacity = 1) %>%
   addLayersControl(
     overlayGroups = c("Demand Very Low",
                       "Demand Low",
@@ -193,20 +230,20 @@ leaflet() %>%
               "Supply Low",
               "Supply High",
               "Supply Very High",
-              "Supply Unavailable")) #%>%
-#  htmlwidgets::onRender("
-#    function(el, x) {
-#      var updateLegend = function () {
-#          var selectedGroup = document.querySelectorAll('input:checked')[0].nextSibling.innerText.substr(1);
-#
-#          document.querySelectorAll('.legend').forEach(a => a.hidden=true);
-#          document.querySelectorAll('.legend').forEach(l => {
-#            if (l.children[0].children[0].innerText == selectedGroup) l.hidden=false;
-#          });
-#      };
-#      updateLegend();
-#      this.on('baselayerchange', e => updateLegend());
-#    }")
+              "Supply Unavailable")) %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      var updateLegend = function () {
+          var selectedGroup = document.querySelectorAll('input:checked')[0].nextSibling.innerText.substr(1);
+
+          document.querySelectorAll('.legend').forEach(a => a.hidden=true);
+          document.querySelectorAll('.legend').forEach(l => {
+            if (l.children[0].children[0].innerText == selectedGroup) l.hidden=false;
+          });
+      };
+      updateLegend();
+      this.on('baselayerchange', e => updateLegend());
+    }")
 ```
 
 ## Supply and Demand in Dallas County
