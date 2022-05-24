@@ -178,40 +178,47 @@ leaflet() %>%
                                                   weight = 2,
                                                   bringToFront = TRUE)
               ) %>%
+#  addLegend(data = dasmetrics,
+#            "bottomleft", 
+#            pal = palDemand, 
+#            values = ~indexDemand,
+#            title = "Demand Score",
+#            group = "Demand Very Low",
+#            opacity = 1) %>%
+#  addLegend(data = dasmetrics,
+#            "bottomleft", 
+#            pal = palDemand, 
+#            values = ~indexDemand,
+#            title = "Demand Score",
+#            group = "Demand Low",
+#            opacity = 1) %>%
+#  addLegend(data = dasmetrics,
+#            "bottomleft", 
+#            pal = palDemand, 
+#            values = ~indexDemand,
+#            title = "Demand Score",
+#            group = "Demand High",
+#            opacity = 1) %>%
+#  addLegend(data = dasmetrics,
+#            "bottomleft", 
+#            pal = palDemand, 
+#            values = ~indexDemand,
+#            title = "Demand Score",
+#            group = "Demand Very High",
+#            opacity = 1) %>%
   addLegend(data = dasmetrics,
-            "bottomleft", 
+            "bottomright", 
             pal = palDemand, 
             values = ~indexDemand,
             title = "Demand Score",
-            group = "Demand Very Low",
+            #group = "Demand Unavailable",
             opacity = 1) %>%
   addLegend(data = dasmetrics,
             "bottomleft", 
-            pal = palDemand, 
-            values = ~indexDemand,
-            title = "Demand Score",
-            group = "Demand Low",
-            opacity = 1) %>%
-  addLegend(data = dasmetrics,
-            "bottomleft", 
-            pal = palDemand, 
-            values = ~indexDemand,
-            title = "Demand Score",
-            group = "Demand High",
-            opacity = 1) %>%
-  addLegend(data = dasmetrics,
-            "bottomleft", 
-            pal = palDemand, 
-            values = ~indexDemand,
-            title = "Demand Score",
-            group = "Demand Very High",
-            opacity = 1) %>%
-  addLegend(data = dasmetrics,
-            "bottomleft", 
-            pal = palDemand, 
-            values = ~indexDemand,
-            title = "Demand Score",
-            group = "Demand Unavailable",
+            pal = palSupply, 
+            values = ~indexSupply,
+            title = "Supply Score",
+            #group = "Demand Unavailable",
             opacity = 1) %>%
   addLayersControl(
     overlayGroups = c("Demand Very Low",
@@ -225,25 +232,12 @@ leaflet() %>%
                       "Supply Very High",
                       "Supply Unavailable"),
     position = "topright",
-    options = layersControlOptions(collapsed = FALSE)) %>% 
+    options = layersControlOptions(collapsed = TRUE)) %>% 
   hideGroup(c("Supply Very Low",
               "Supply Low",
               "Supply High",
               "Supply Very High",
-              "Supply Unavailable")) %>%
-  htmlwidgets::onRender("
-    function(el, x) {
-      var updateLegend = function () {
-          var selectedGroup = document.querySelectorAll('input:checked')[0].nextSibling.innerText.substr(1);
-
-          document.querySelectorAll('.legend').forEach(a => a.hidden=true);
-          document.querySelectorAll('.legend').forEach(l => {
-            if (l.children[0].children[0].innerText == selectedGroup) l.hidden=false;
-          });
-      };
-      updateLegend();
-      this.on('baselayerchange', e => updateLegend());
-    }")
+              "Supply Unavailable"))
 ```
 
 ## Supply and Demand in Dallas County

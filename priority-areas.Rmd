@@ -148,7 +148,27 @@ popup_ti <- paste0("<b>", "GEOID: ", "</b>", demTsup$GEOID, "<br>",
 leaflet() %>%
 #  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
-    addPolygons(data = priorityareas,
+    addPolygons(data = dallasCounty,
+              color = "#686158",
+              weight = 3,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              opacity = 1,
+              group = "Dallas County"
+              ) %>%
+  addPolygons(data = citycouncil,
+              color = "#686158",
+              weight = 3,
+              smoothFactor = 0.2, 
+              fillOpacity = 0,
+              opacity = 1,
+              group = "Dallas City Council",
+              highlightOptions = highlightOptions(color = "white", 
+                                                  weight = 2,
+                                                  bringToFront = TRUE),
+              label = ~htmlEscape(name)
+              ) %>%    
+  addPolygons(data = priorityareas,
               fillColor = "#84301f",
               weight = 1,
               opacity = 1,
@@ -196,29 +216,9 @@ leaflet() %>%
               popup = ~popup_sd,
               group = "Supply Exceeds Demand"
               ) %>%
-    addPolygons(data = dallasCounty,
-              color = "#686158",
-              weight = 3,
-              smoothFactor = 0.2, 
-              fillOpacity = 0,
-              highlightOptions = highlightOptions(color = "white", 
-                                                  weight = 2,
-                                                  bringToFront = TRUE),
-              opacity = 1,
-              group = "Dallas County"
-              ) %>%
-  addPolygons(data = citycouncil,
-              color = "#EDE8D5",
-              weight = 3,
-              smoothFactor = 0.2, 
-              fillOpacity = 0,
-              opacity = 1,
-              group = "Dallas City Council",
-              label = ~htmlEscape(name)
-              ) %>%
   addLayersControl(
-    baseGroups = c("Dallas County"),
-    overlayGroups = c("Dallas City Council", "Priority Areas", "Demand Exceeds Supply", "Supply Exceeds Demand", "Demand Meets Supply"),
+    baseGroups = c("Dallas County", "Dallas City Council"),
+    overlayGroups = c("Priority Areas", "Demand Exceeds Supply", "Supply Exceeds Demand", "Demand Meets Supply"),
     position = "topright",
     options = layersControlOptions(collapsed = FALSE)) %>% 
   hideGroup(c("Demand Exceeds Supply", "Supply Exceeds Demand", "Demand Meets Supply", "Dallas City Council"))
