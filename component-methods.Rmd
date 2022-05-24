@@ -242,7 +242,7 @@ leaflet() %>%
               fillColor = ~palcpr(cpr),
               weight = 1,
               opacity = 1,
-              color = ~palcpr(cpr),#"#686158",
+              color = "#595959",
               #dashArray = "3",
               fillOpacity = 0.8,
               group = "Child Poverty Rate"
@@ -251,7 +251,7 @@ leaflet() %>%
               fillColor = ~palMHI(mhiE),
               weight = 1,
               opacity = 1,
-              color = ~palMHI(mhiE),#"#686158",
+              color = "#595959",
               #dashArray = "3",
               fillOpacity = 0.8,
               group = "Median Household Income"
@@ -260,7 +260,7 @@ leaflet() %>%
               fillColor = ~palUnem(unemE),
               weight = 1,
               opacity = 1,
-              color = ~palUnem(unemE),#"#686158",
+              color = "#595959",
               #dashArray = "3",
               fillOpacity = 0.8,
               group = "Unemployment Rate"
@@ -269,7 +269,7 @@ leaflet() %>%
               fillColor = ~palInt(int_per),
               weight = 1,
               opacity = 1,
-              color = ~palInt(int_per),#"#686158",
+              color = "#595959",
               #dashArray = "3",
               fillOpacity = 0.8,
               group = "Broadband Internet Access"
@@ -278,7 +278,7 @@ leaflet() %>%
               fillColor = ~palTravel(trvltime),
               weight = 1,
               opacity = 1,
-              color = ~palTravel(trvltime),#"#686158",
+              color = "#595959",
               #dashArray = "3",
               fillOpacity = 0.8,
               group = "Commute to Work (Minutes)"
@@ -287,7 +287,7 @@ leaflet() %>%
               fillColor = ~palSnap(snap_per),
               weight = 1,
               opacity = 1,
-              color = ~palSnap(snap_per),#"#686158",
+              color = "#595959",
               #dashArray = "3",
               fillOpacity = 0.8,
               group = "Receiving SNAP"
@@ -364,7 +364,20 @@ leaflet() %>%
   hideGroup("Unemployment Rate") %>%
   hideGroup("Broadband Internet Access") %>%
   hideGroup("Commute to Work (Minutes)") %>%
-  hideGroup("Receiving SNAP")
+  hideGroup("Receiving SNAP") %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      var updateLegend = function () {
+          var selectedGroup = document.querySelectorAll('input:checked')[0].nextSibling.innerText.substr(1);
+
+          document.querySelectorAll('.legend').forEach(a => a.hidden=true);
+          document.querySelectorAll('.legend').forEach(l => {
+            if (l.children[0].children[0].innerText == selectedGroup) l.hidden=false;
+          });
+      };
+      updateLegend();
+      this.on('baselayerchange', e => updateLegend());
+    }")
 ```
 
 ```{r, Families Below Poverty, echo = FALSE, message=FALSE, warning=FALSE, layout="l-body", fig.height=8, include=FALSE}
