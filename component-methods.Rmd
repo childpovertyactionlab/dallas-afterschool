@@ -357,7 +357,7 @@ leaflet() %>%
 
   addLayersControl(
 #    overlayGroups = c("Dallas County", "Demand Score", "Supply Score"),
-    overlayGroups = c("Child Poverty Rate", "Median Household Income", "Unemployment Rate", "Broadband Internet Access", "Commute to Work (Minutes)", "Receiving SNAP"),
+    baseGroups = c("Child Poverty Rate", "Median Household Income", "Unemployment Rate", "Broadband Internet Access", "Commute to Work (Minutes)", "Receiving SNAP"),
     position = "topright",
     options = layersControlOptions(collapsed = FALSE)) %>% 
   hideGroup("Median Household Income") %>%
